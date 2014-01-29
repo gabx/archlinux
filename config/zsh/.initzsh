@@ -1,0 +1,54 @@
+# file:   ~/.config/zsh/initzsh 
+# Variables specific to zsh. Other shell common variables are set in ~/.config/profile                  
+# Last modified: 2014-01-29  
+     		
+# http://zsh.sourceforge.net/Doc/Release/zsh.html#Top
+# https://wiki.archlinux.org/index.php/Dotfiles
+
+# For convenience
+export ZSHDIR=$XDG_CONFIG_HOME/zsh
+
+# xdg environment variables are only set under X11
+#XDG_CONFIG_HOME=~/.config
+
+HISTFILE=$XDG_CONFIG_HOME/zsh/.zsh_histfile
+HISTSIZE=5000
+SAVEHIST=5000
+                                 
+# source config files until 09 
+[ -d $ZSHDIR/zshrc.d ] && {
+for f in $ZSHDIR/zshrc.d/0* ; do
+    source $f
+done 
+}
+
+# load functions
+autoload $ZSHDIR/functions/[^_]*(.:t)
+                                                   
+# search Arch repo when a command is not found
+source /usr/share/doc/pkgfile/command-not-found.zsh	
+
+# modules #                                                  
+autoload -Uz compinit && compinit -d $ZSHDIR/.zcompdump		# autoload compinit & dump in -d directory
+autoload -U colors && colors					# load terminal colors  
+autoload -U promptinit && promptinit				# autoload prompt
+autoload vcs_info                           
+# zle -N edit-command-line     
+
+# Prompt - MUST be after autoload colors
+# the | is needed otherwise tab completion will double the first letter of the command
+PROMPT="%n@%{$fg_bold[yellow]%}%m %{$fg[green]%}%1|➤➤ %2~ %{$reset_color%}%# "
+# OR load theme in ZSHDIR/themes
+# ZSH_THEME= 
+                                              
+# Compile the completion dump to increase startup speed.
+zcompdump=$XDG_CONFIG_HOME/zsh/.zcompdump
+if [[ "$zcompdump" -nt "${zcompdump}.zwc" || ! -s "${zcompdump}.zwc" ]]; then
+zcompile "$zcompdump"
+fi		
+
+									
+#speed up builds with the compiler cash
+# export USE_CCACHE=1
+
+

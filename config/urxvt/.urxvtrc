@@ -1,0 +1,101 @@
+
+! file:   ~/urxvt/.urxvtrc                     
+! Last modified: 2013-11-14                         
+
+
+!http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!https://wiki.archlinux.org/index.php/Dotfiles
+!http://xcolors.net/
+!http://www.w3schools.com/tags/ref_colorpicker.asp
+!http://www.colorschemer.com/online.html
+
+
+!--[Font Rendering]--!
+!--URxvt ignore fontconfig settings. We need to set them here--!
+!--$ xdpyinfo | grep dots >> check dpi curent setting and adjust--!
+!--$ xrdb -query -all >> see my current settings--!
+!--$ xrdb -load ~/.Xresources >> load ressources--!
+Xft.dpi:               		        96
+Xft.antialias:         			true
+Xft.rgba:               		rgb
+Xft.hinting:            		true
+Xft.hintstyle:          		hintfull
+Xft.autohint: 				true
+Xft.lcdfilter: 				lcddefault
+
+
+!--[Title]--!
+URxvt.title: 				urxvt
+URxvt.termName: 			rxvt-256color
+
+
+!--[Mouse cursor]--!
+Xcursor.size: 				22
+Xcursor.theme: 				Vanilla-DMZ-AA
+
+
+
+!--[Options]--!
+URxvt.geometry:				100x25
+URxvt.cursorUnderline:        		true
+URxvt.highlightSelection:  		true
+URxvt.loginShell:       	        false
+!URxvt.borderless:       	        true
+URxvt.internalborder: 			0
+URxvt.saveLines:			5000
+URxvt.cursorBlink: 			true
+!URxvt.letterSpace:                	-5
+URxvt.depth: 				32
+URxvt.boldMode:				true
+URxvt.transparent: 			true
+URxvt.shading: 				60
+
+!--[Scrollbar]--!
+URxvt.scrollBar_right:			true
+URxvt.scrollstyle:   			next
+URxvt.scrollWithBuffer:			true
+URxvt.scrollTtyOutput: 			true
+
+
+!--[Fonts]--!
+!--$ xlsfonts for a list of installed X fonts--
+URxvt.font: 				xft:inconsolata-dz:bold:size=13:antialias=true:hinting=true:unifontdashed
+URxvt.boldFont: 			xft:inconsolata-dz:size=13:antialias=true:hinting=true:unifontdashed
+URxvt.italicFont: 			xft:inconsolata-dz:size=13:antialias=true:hinting=true:unifontdashed
+
+!--[Colors]--!
+URxvt.highlightColor:			#575757
+URxvt.highlightTextColore:		#575757
+!URxvt.background:			0
+URxvt.foreground:			12 
+URxvt.scrollColor: 			#B2B2B2
+
+!--[ Color Scheme ]--!
+#include "/home/gabx/.config/xcolors/custom"
+!#include "/home/gabx/.config/xcolors/jwr-dark"
+!#include "/home/gabx/.config/xcolors/tartan"
+!#include "/home/gabx/.config/xcolors/zenburn"
+!#include "/home/gabx/.config/xcolors/solarized"
+
+
+!--[Behavior]--!
+URxvt.perl-lib: 			/usr/lib/urxvt/perl
+URxvt.perl-ext-common:      		default,url-select,keyboard-select,clipboard
+URxvt.url-Launcher:         		/usr/bin/aurora
+URxvt.keysym.M-u:      			perl:url-select:select_next
+URxvt.underlineURLs:    		true
+URxvt.matcher.button:  			1
+URxvt.fading				:30
+! clipboard
+URxvt.keysym.M-c: 			perl:clipboard:copy
+URxvt.keysym.M-v: 			perl:clipboard:paste
+URxvt.keysym.M-C-v: 			perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd: 		xsel -ib
+URxvt.clipboard.pastecmd: 		xsel -ob
+! url-select
+URxvt.url-select.autocopy: 		true
+URxvt.url-select.button: 		1
+URxvt.url-select.launcher: 		/usr/bin/aurora
+URxvt.url-select.underline: 		true
+	
+

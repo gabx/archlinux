@@ -1,0 +1,5 @@
+# directory and files to exclude from rsync back-up home folder
+# $XDG_CONF_HOME/rsync/exclude
+# Last modified 2013-11-02
+
+- /gabx/.ccache

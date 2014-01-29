@@ -1,0 +1,40 @@
+
+! http://www.colorschemer.com/online.html
+! dark/light
+
+! Black
+*color0: 	#161616
+*color8: 	#575757
+
+! Red
+*color1: 	#990000
+*color9: 	#F50031
+
+! Green
+*color2: 	#004D26
+*color10: 	#06B109
+
+! Yellow
+*color3: 	#F0C000
+*color11: 	#FCE94F
+
+! Blue
+*color4: 	#31495B
+*color12: 	#7FA5D7
+
+! Magenta
+*color5: 	#7E2C90
+*color13: 	#C57AD6
+
+! Cyan
+*color6: 	#06AEB1
+*color14: 	#CEE3F8
+
+! White
+*color7: 	#E8EAE6
+*color15: 	#FAFAFA
+
+
+! gabx@hortensia
+
+

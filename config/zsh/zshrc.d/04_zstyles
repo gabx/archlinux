@@ -1,0 +1,51 @@
+
+
+# $HOME/.config/zsh/zshrc.d/04_zstyles
+# last modified 2013-10-20
+
+# speed up with cache
+zstyle ':completion::complete:*' 		use-cache on				 				# use-cache on
+zstyle ':completion:*' 				cache-path $HOME/.cache/zsh						# speed up completion
+
+# general
+zstyle ':completion:*:*:*:*:*' 			menu select 
+zstyle ':completion:*:*:*:*:*'          	menu yes select 							# Enable menu list
+zstyle ':completion:*:matches' 			group 'yes'
+zstyle ':completion:*:options' 			description 'yes'
+zstyle ':completion:*:options' 			auto-description '%d'
+zstyle ':completion:*:functions' 		ignored-patterns '_*' 							# don't auto-complete internal functions (ones prefixed with _)
+zstyle ':completion:*:cd:*' 			tag-order local-directories directory-stack path-directories		# disable named-directories autocompletion
+zstyle ':completion:*' 				group-name ''
+
+
+
+# special functions
+zstyle ':completion:*:*:killall:*' 		menu yes select						# enable menu for kill
+zstyle ':completion:*:*:pacman:*' 		menu yes select						# enable menu for pacman
+zstyle ':completion:*:killall:*' 		force-list always
+zstyle ':completion:*:pacman:*' 		force-list always
+zstyle ':completion:*:*:*:*:processes' 		command "ps -u $USER -o pid,user,comm -w -w"
+
+
+zstyle ':vcs_info:*' enable git
+
+
+zstyle ':completion:*' special-dirs true
+
+
+# style
+zstyle ':completion:*:corrections'             	format '%B%F{green}>> %d (errors: %e)%f%b'
+zstyle ':completion:*:descriptions'            	format '%B%F{magenta}>> %d%f%b'
+zstyle ':completion:*:messages'                	format '%B%F{cyan}>> %d%f%b'
+zstyle ':completion:*:warnings'                	format '%B%F{red}>> no matches found%f%b'		# message when no completion
+zstyle ':completion:*:default' 		       	list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*'                         	format '%B%F{cyan}>> %d%f%b'				
+zstyle ':completion:*:*:kill:*:processes' 	list-colors "=(#b) #([0-9]#) ([0-9a-z-]#)*=$color[green]=0=$color[black]"				
+
+
+zstyle ':completion:*' 				matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'	# case-insensitive (all), partial-word and then substring completion
+
+
+#
+#
+# gabx@hortensia

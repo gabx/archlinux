@@ -1,0 +1,5030 @@
+myps curl
+kill 18914
+wget --no-cookies --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com" "http://download.oracle.com/otn-pub/java/jdk/7/jdk-7-linux-x64.tar.gz"
+curl -fLC - --retry 3 --retry-delay 3 -o http://download.oracle.com/otn-pub/java/jdk/7u40-b43/jdk-7u40-linux-x64.tar.gz --header "Cookie:oraclelicensejdk-${pkgver}-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com"
+curl -fLC - --retry 3 --retry-delay 3  http://download.oracle.com/otn-pub/java/jdk/7u40-b43/jdk-7u40-linux-x64.tar.gz --header "Cookie:oraclelicensejdk-${pkgver}-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com"
+curl -fLC - --retry 3 --retry-delay 3 -o http://download.oracle.com/otn-pub/java/jdk/7u40-b43/jdk-7u40-linux-x64.tar.gz --header "Cookie:oraclelicensejdk-${pkgver}-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com"
+myps wget
+kill 18956
+cd /developement/aur
+cd sun-java7
+tar xvzf su*
+ls
+tar xvzf jdk*
+ls
+cd jdk1.7.0_40
+unzip src.zip
+nproc
+sudo nano /etc/makepkg.conf
+cd ..
+tar xvzf jdk*
+cd /developement/aur/sun-java7
+ls
+tar jdk*
+tar xvzf jdk*
+makepkg -g jdk*
+ls
+md5sums jdk1.7*
+md5sum jdk1.7*
+md5sum jdk-7*
+ls
+http://download.oracle.com/otn-pub/java/jdk/7u40_b43/jdk-7u40_b43-linux-x64.bin
+ls
+cd ..
+ls
+tar xvzf jdk*
+cd jdk
+makepkg -i
+ls -al
+cd ..
+ls -al
+cd jdk
+makepkg -i
+cd ..
+ls
+tar xvzf jdk7-comp*
+cd jdk7-compat
+makepkg -i
+echo $PATH
+echo $java_path
+echo $java_home
+echo $JAVA-HOME
+echo $JAVA_HOME
+echo $HOME
+ls -al
+pactan
+cmatrix
+sudo pacman -Syu cmatrix
+cmatrix
+archey
+ls
+ ls -la
+lsb-release
+lsb-release scrot
+screenfetch
+sudo pacman -Syu screenfetch
+screenfetch
+nano ~/.zshrc
+~/.zshrc
+nano ~/.zshrc
+urxvt
+terminal
+urxvt
+cd developement/aur
+cd /developement/aur
+tar xvzf subli*
+cd sublime-text-dev
+makepkg -i
+r
+makepkg -i
+cd ~
+source .Renviron
+echo $R_EVIRON
+echo $R_EVIRON_USER
+echo $R_HOME
+echo $HOME
+source ~/.zshrc
+echo $R_HOME
+R
+ls
+r
+ls
+sudo pacman -S mate-terminal
+sudo pacman -Rs mate-terminal
+pacman -Ql r
+pacman -Q | grep r
+R
+echo $R_HOME
+R
+sudo pacman -S cvs
+man cvs
+limit 
+echo $LC_PAPER
+sudo mkdir /drawer/system/tmp
+ls -al /usr/lib64/R/etc
+R RHOME
+cd /usr/lib/R/bin/
+ls -al
+sudo nano /usr/bin/R
+R RHOME
+R
+mktexlsr
+sudo mktexlsr
+texhash
+kpsewich koma
+kpsewhich koma
+sudo kpsewhich koma
+sudo kpsewhich 
+kpsewhich 
+tlmgr
+sudo tlmgr
+svn
+sudo pacman -S subversion
+man svn
+svn help
+cd /developement/aur/tlmgr
+svn import svn/texlive/trunk/Master/texmf-dist/scripts/texlive/tlmgr.pl
+svn import tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/texlive/tlmgr.pl
+svn import tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/
+svn import http://tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/texlive/tlmgrp.pl
+sudo pacman -S vim
+svn import http://tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/texlive/tlmgrp.pl
+svn import http://tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/texlive
+svn import http://tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/texlive -m "Initial import"
+svn checkout http://tug.org/svn/texlive/trunk/Master
+svn checkout http://svn/texlive/trunk/Master
+sudo htpasswd -cs /developement/svn/.svn-auth-file gabx
+svnadmin create /developement/svn/texlive
+texmf
+sudo tlmgr
+cd /drawer/scripts
+./tlmgr.pl
+sudo ./tlmgr.pl
+./tlmgr.pl
+kpsewich
+kpsewhich
+pacman -Ql texlive-core | grep TLconfig
+pacman -Ql texlive-bin | grep TLconfig
+pacman -Ql texlive-bin | less
+pacman -Ql texlive-bin | grep TLConfig
+export PATH=/usr/share/tlpkg/TeXLive:$PATH
+./tlmgr.pl
+$PATH
+echo $PATH
+./tlmgr.pl
+pacman -Ql texlive-bin | grep tlmgr
+pacman -Ql texlive-core | grep tlmgr
+/usr/share/texmf-dist/scripts/texlive/tlmgrgui.pl
+sudo /usr/share/texmf-dist/scripts/texlive/tlmgrgui.pl
+sudo /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+echo $PATH
+source ~/.Zshenv
+echo $PATH
+sudo /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+sudo kpsewhich --help
+sudo kpsewhich -path /usr/share/texmf-dist/scripts
+sudo kpsewhich --help
+sudo /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+pacman -Ql texlive-core | grep tlpkg
+pacman -Ql texlive-bin | grep tlpkg
+echo $PATH
+echo $SELFAUTOPARENT
+echo $MASTER
+$tlmgr_config_file
+echo $tlmgr_config_file
+echo $TFC_TEXMFCONFIG
+cd /developement/language/perl
+./perlscript
+perl -E 'say for @INC'
+/usr/share/tlpkg/TeXLive perl -E 'say for @INC'
+PERL5LIB=/usr/share/tlpkg/TeXLive perl -E 'say for @INC'
+sudo /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+cd /drawer/scripts
+./tlmgr.pl
+perl -E 'say for @INC'
+perl I/usr/share/tlpkg/TeXLive /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+perl Iusr/share/tlpkg/TeXLive /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+perl -I/usr/share/tlpkg/TeXLive /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+perl -I/usr/share/tlpkg/TeXLive/ /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+sudo perl -I/usr/share/tlpkg/TeXLive/ /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+sudo ln -s /usr/share/tlpkg /usr/share/texmf-dist/tlpkg
+cd  /usr/share/texmf-dist
+ls -al
+cd tlpkg
+ls
+cd ..
+sudo rm -R tlpkg
+sudo ln -s /usr/share/tlpkg/TeXLive /usr/share/texmf-dist/scripts/tlpkg
+sudo nano /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+cd /usr/share/texmf-dist
+perl scripts/texlive/tlmgr.pl
+sudo nano /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+perl scripts/texlive/tlmgr.pl
+sudo nano /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+perl scripts/texlive/tlmgr.pl
+perl -E 'say for @INC'
+sudo nano /usr/share/texmf-dist/scripts/texlive/tlmgr.pl
+cd scripts/texlive
+ls -al
+sudo chmod o+w tlmgrui.pl
+sudo chmod o+w tlmgrgui.pl
+ls -al
+sudo chmod o+x tlmgrgui.pl
+ls -al
+tlmgrgui.pl
+tlmgr.pl
+echo $PATH
+./tlmgr.pl
+ps -ef | grep caja
+sudo kill 12833
+sudo caja
+echo $PATH
+source ~/.Zshenv
+echo $PATH
+tlmgr
+tlmgr.pl
+export PERL5LIB=/usr/share/texmf-dist/scripts/texlive
+tlmgr.pl
+pacman -Ql telive-core | grep TLConfig
+pacman -Ql texlive-core | grep TLConfig
+pacman -Ql texlive-bin | grep TLConfig
+export PERL5LIB=/usr/share/tlpkg/TeXLive
+tlmgr.pl
+export PERL5LIB=/usr/share/tlpkg
+tlmgr.pl
+pacman -Ql texlive-core | grep TLPDB.pm
+pacman -Ql texlive-bin | grep TLPDB.pm
+tlmgr.pl
+tlmgr.pl --help
+tlmgr.pl --list
+tlmgr.pl --help
+tlmgr.pl update --list
+pacman -Ql texlive-bin | grep texlive.tlpdb
+pacman -Ql texlive-core | grep texlive.tlpdb
+tlmgr.pl update --list
+pacman -Ql texlive-core | grep tlpdb
+pacman -Ql texlive-bin | grep tlpdb
+tlmgr recreate-tlpdb > texlive.tlpdb
+sudo tlmgr recreate-tlpdb > texlive.tlpdb
+sudo tlmgr.pl recreate-tlpdb > texlive.tlpdb
+tlmgr.pl --help
+dump-tlpdb --local
+sudo dump-tlpdb --local
+echo $PATH
+source ~/.Zshenv
+echo $PATH
+sudo tlmgr.pl recreate-tlpdb > texlive.tlpdb
+export PERL5LIB=/usr/share/tlpkg/TeXLive
+sudo tlmgr.pl recreate-tlpdb > texlive.tlpdb
+sudo export PERL5LIB=/usr/share/tlpkg/TeXLive
+export PERL5LIB=/usr/share/tlpkg/TeXLive
+echo $PATH
+echo $PERL5LIB
+echo @INC
+echo $@INC
+tlmgr.pl recreate-tlpdb > texlive.tlpdb
+tlmgr.pl 
+tlmgr.pl --help
+sudo tlmgr.pl --help
+cd /usr/share
+ls -al
+cd tlpkg
+ls -al
+cd TeXLive
+ls -al
+cd ..
+ls
+cd ..
+ls
+cd texmf-dist
+ls -al
+cd scripts
+ls -al
+cd texlive
+ls -al
+sudo chmod 775 tlmgr.pl
+sudo chmod 775 tlmgrgui.pl
+ls -al
+cd ../..
+ls -al
+cd ..
+ls -al
+cd ~/.texlive/texmf-var/arch
+ls -al
+cd tlpkg
+ls -al
+ps -ef | grep svn
+kill 14639
+myps caja
+myps caja
+sudo kill 14038
+sudo caja
+myps caja
+sudo kill 15947
+sudo caja
+ls
+echo $path
+echo $PATH
+echo fpath
+echo $fpath
+ls
+developement
+/developement
+aur
+/aur
+ls
+myps
+aur
+svn copy
+cd /home/gabx/.texlive/texmf-var/arch/tlpkg
+ls -al
+cd /drawer/dowM\
+ad
+cd /drawer/dowM\
+
+cd /drawer/download
+svn copy http://tug.org/svn/texlive/trunk/Master/tlpkg/texlive.tlpdb
+svn help copy
+svn copy http://tug.org/svn/texlive/trunk/Master/tlpkg/texlive.tlpdb ./
+myps caja
+sudo kill 16556
+cd /developement/svn
+mkdir texlive
+cd texlive
+cd /run/media/gabx/bc1b1f39-b94b-4c9d-946f-3f449f108006/gabx/Downloads
+unrar les*
+unrar e les*
+sudo caja
+kill caja
+myps caja
+sudo kill 28040
+sudo caja
+cd /bin
+ls -al
+ls -al --color
+ls -al --color=auto
+cd /bin
+ls -al | less
+ls
+ls -al 
+/bin
+ls -al | less
+source ~/zshrc
+source ~/.zshrc
+source ~/.config/zsh/conf/zenv.sh
+source ~/.config/zsh/conf/zenv.zsh
+source ~/.zshrc
+ls
+compinit
+source ~/.zshrc
+pacman -Ql texlive-bin | grep tl
+pacman -Ql texlive-core | grep tl
+pacman -Ql texlive-core | grep tl-update
+pacman -Ql texlive-bin | grep tl-update
+pacman -Ql texlive-bin | grep thumbpdf
+pacman -Ql texlive-core | grep thumbpdf
+pacman -Ql texlive-core | grep texhash
+sudo ln -s /usr/share/texmf-dist/scripts/texlive/tlmgr.pl /usr/bin/tlmgr
+tlmgr
+tlmgr --help
+pacman -Ql texlive-core | grep texlive
+pacman -Ql texlive-bin | grep texlive
+cd /usr/share
+ls -al
+sudo chown -R root:users texmf-dist
+ls -al
+sudo chmod -R u+w texmf-dist
+sudo pacman -S vim-latexsuite
+sudo pacman -S vim-spell-en
+sudo pacman -S vim-spell-fr
+vim-colorscheme-mustang
+aur
+cd /developement/aur
+ls
+tar vim*
+tar xvzf vim*
+cd vim-colorscheme-mustang
+makepkg -i
+cd ..
+ls
+tar xvzf vim-colors-zen*
+cd vim-colors-zenburn
+makepkg -i
+myinfo
+hostinfo
+pacman -Q | grep zsh
+/aur
+cd /developement/aur
+ls
+cd zsh-completions-git
+makepkg -i
+rm -f ~/.zcompdump; compinit
+hostinfo
+echo $fpath
+source ~/.Zshenv
+echo $fpath
+hostinfo
+netinfoLAN
+netinfo
+myps caja
+sudo kill caja
+sudo kill 19369
+myps caja
+sudo caja
+kill caja
+sudo kill caja
+source ~/.zshrc
+aur
+cd aur
+hash
+man hash
+source ~/.zshrc
+hash -d aur=/developement/aur
+cd aur
+hash -r aur=/developement/aur
+hash -r 
+hash -d aur=/developement/aur
+cd aur
+echo $path
+echo $PATH
+$TERMINAL
+echo $TERMINAL
+source ~/.zshrc
+cd aur
+source ~/.zshrc
+cd aur
+source ~/config/zsh/.zshrc
+source ~/.config/zsh/.zshrc
+cd aur
+source "$HOME/.config/zsh/zdirs"
+cd aur
+source "$HOME/.config/zsh/zdirs"
+cd aur
+source ~/.config/zsh/.zshrc
+cd aur
+aur
+developement
+source ~/.config/zsh/.zshrc
+developement
+source ~/.config/zsh/.zshrc
+developement
+/aur
+aur
+source ~/.config/zsh/.zshrc
+/aur
+ls -al
+source ~/.config/zsh/.zshrc
+ls -al
+ls
+pwd
+myps caja
+source ~/.config/zsh/.zshrc
+ls
+myps
+source zsh: command not found: ls
+(127)gabx@hortensia>>~ % source ~/.config/zsh/.zshrc
+gabx@hortensia>>~ % ls -al
+zsh: command not found: ls
+(127)gabx@hortensia>>~ % ls
+zsh: command not found: ls
+(127)gabx@hortensia>>~ % pwd
+/home/gabx
+gabx@hortensia>>~ % myps caja
+zsh: command not found: grep
+zsh: command not found: ps
+(127)gabx@hortensia>>~ % source ~/.config/zsh/.zshrc
+gabx@hortensia>>~ % ls
+zsh: command not found: ls
+(127)gabx@hortensia>>~ % myps
+zsh: command not found: ps
+zsh: command not found: grep
+(127)gabx@hortensia>>~ % source 
+source ~/.config/zsh/.zshrc/zalias
+source ~/.config/zsh/conf/zalias
+source ~/.config/zsh/conf/zdirs
+ls
+source ~/.config/zsh/.zshrc
+source ~/.config/zsh/conf/zalias
+ls
+source ~/.config/zsh/.zshrc
+rm .config/zsh/zcomp*
+source ~/.zshrc
+ls
+ls --color
+myps
+man ls
+$PATH
+$path
+source ~/.zshrc
+$PATH
+source ~/.zshrc
+export PATH="/usr/local/{bin,sbin}:/usr/{bin,sbin}:/{bin,sbin}:$PATH"
+ls
+man env
+source ~/.zshrc
+/aur
+aur
+man env
+source ~/.zshrc
+echo -e "\x1B]2;$(whoami)@$(uname -n)\x07"
+source ~/.zshrc
+/developement
+~
+developement
+source ~/.zshrc
+/developement
+~
+/etc
+ls -al
+source ~/.zshrc
+ls -al
+source ~/.zshrc
+pacclean
+sudo nano /etc/makepkg.conf
+nproc
+/developement/aur
+ls
+tar xvzf firef*
+cd firefox-aurora
+makepkg -i
+ls /bin
+ls -la /bin
+ls -al /bin
+ls -a /bin
+cd /bin
+ls -a
+ls -al
+ls -al --color=auto
+source ~/.zshrc
+ls -al --color=auto
+ls -al 
+source ~/.zshrc
+ls -al | less
+ls -al pager
+source ~/.zshrc
+ls -al | less
+source ~/.zshrc
+man dircolors
+source ~/.zshrc
+export PERL5LIB=/usr/share/tlpkg/TeXLive
+tlmgr.pl --help
+export PATH=/usr/share/texmf-dist/scripts/texlive:$PATH
+tlmgr.pl --help
+source ~/zshrc
+source ~/.zshrc
+tlmgr.pl --help
+export PERL5LIB=/usr/share/tlpkg
+tlmgr.pl --help
+tlmgr.pl recreate-tlpdb > texlive.tlpdb
+sudo tlmgr.pl recreate-tlpdb > texlive.tlpdb
+su
+tlmgr.pl update --list 
+cd /developement/aur/texlive-localmanager.git
+cd /developement/aur/texlive-localmanager-git
+makepkg -i
+tllocalmgr
+tllocalmgr --help
+tllocalmgr --texhash
+sudo tllocalmgr --texhash
+tllocalmgr --texhashcd /drawer/download
+cd /drawer/download
+./update-tl*
+./update-tl* --noexec --keep
+cd tmp*
+./runme.sh
+./runme.sh /usr/share/texmf-dist
+tlmgr update --self
+sudo tlmgr update --self
+echo $PATH
+tlmgr.pl update --self
+sudo cp ~/.texlive/texmf-var/arch/tlpkg/texlive.tlpdb /usr/share/tlpkg
+tlmgr.pl update --self
+svn co svn://tug.org/texlive/trunk/Master/tlpkg/texlive.tlpdb
+svn co svn://tug.org/texlive/trunk/Master/tlpkg
+tlmgr list --only-installed > installed_texlive_packages.txt
+tlmgr.pl list --only-installed > installed_texlive_packages.txt
+cd ~
+echo $TEXMFHOME
+export TEXMFHOME=/home/gabx/.texlive/texmf-var/arch
+tlmgr --init-usertree
+tlmgr.pl --init-usertree
+tlmgr.pl --help
+tlmgr.pl init-usertree
+tlmgr.pl init-usertree --usermode
+export TEXMFHOME=/home/gabx/.texlive/texmf-var/arch/tlpkg
+tlmgr.pl init-usertree --usermode
+export TEXMFHOME=/home/gabx/.texlive/texmf-var/arch
+tlmgr.pl init-usertree --usermode --usertree ~/.texlive/texmf-var/arch/tlpkg
+tlmgr.pl init-usertree --usertree ~/.texlive/texmf-var/arch/tlpkg
+tlmgr.pl init-usertree --usermode --usertree ~/.texlive/texmf-var/arch/tlpkg
+tlmgr.pl update --self
+tllocalmgr --texhashcd 
+export TEXMFHOME=/home/gabx/.texlive/texmf
+tllocalmgr --texhashcd 
+tlmgr.pl init-usertree --usermode --usertree ~/.texlive/texmf
+tlmgr.pl init-usertree --usermode --usertree ~/.texlive
+tllocalmgr --help
+tllocalmgr --texhash
+tllocalmgr --forceupdate
+export TEXMFHOME=/home/gabx/.texlive/texmf-var/arch
+tlmgr.pl init-usertree 
+tlmgr.pl init-usertree --usermode
+tlmgr.pl init-usertree --usermode --usertree /home/gabx/.texlive/texmf-var/arch/tlpkg
+tlmgr.pl init-usertree --usermode
+sudo tlmgrgui.pl
+tlmgrgui.pl
+sudo tlmgr.pl --gui
+export PERL5LIB=/usr/share/tlpkg/TeXLive
+sudo tlmgr.pl --gui
+tlmgr recreate-tlpdb
+tlmgr.pl recreate-tlpdb
+export PERL5LIB=/usr/share/tlpkg
+tlmgr.pl recreate-tlpdb
+sudo tlmgr.pl recreate-tlpdb
+tlmgr.pl --usermode recreate-tlpdb
+echo $MASTER
+sudo mktexlsr
+sudo texhash
+tlmgr.pl update --self
+tlmgr.pl update --self --usermode
+dump -tlpdb --local
+tlmgr.pl update --self --usermode
+tlmgr.pl update --self
+perl -e "print qq(@INC)"
+su
+sudo caja
+pacman -Ql texlive-core | grep tlmgr.pl
+pacman -Ql texlive-core | grep texlive.tlpdb
+pacman -Ql texlive-bin | grep texlive.tlpdb
+svn checkout http://tug.org/svn/texlive/trunk/Master/tlpkg/
+svn checkout http://svn/texlive/trunk/Master/tlpkg/
+sudo cp /drawer/download/texlive.tlpdb /usr/share/texmf-dist/scripts/texlive/
+ tlmgr.pl update --self 
+ tlmgr.pl update --self --usermode
+sudo rm /usr/share/texmf-dist/scripts/texlive/texlive.tlpdb
+ tlmgr.pl update --list
+ tlmgr update --list
+ tlmgr update --self
+ tlmgr update --self --usermode
+echo $TEXDIR
+export TEXDIR=/usr/share/texmf-dist
+ tlmgr update --self --usermode
+ tlmgr update --list
+ tlmgr check file
+sudo tlmgr update --list
+ tlmgr update --list
+sudo tlmgr update --list
+ tlmgr update --self --usermode
+zsh
+R
+cd /bin
+ls
+ls -al
+ls -al | less
+R CMD INSTALL
+cd ~
+la -al
+ls -al
+cd .config
+ls -al
+cd zsh
+ls -al
+cd zshrc.d
+ls -al
+getenv
+echo $DEV
+cd ~/.config/r
+ls -al
+source ~/.zshrc
+echo $PATH
+source ~/.Rprofile
+source ~/.zshrc
+echo $R_ENVIRON_USER
+source ~/.zshrc
+pacman -Q | grep rstudio
+rstudio
+rstudio --no-site-file
+source ~/.zshrc
+source ~/.Renviron
+export R_HOME_USER=$HOME/config/r
+cd /developement/language/r
+ls -al
+startx
+cd /developement/rapsberry
+ls
+extract Arc*
+ls
+source ~/.zshrc
+extract Arc*
+ls
+extract 
+unzip Arc*
+dd bs=1M if=./gabx@hortensia>>~DEV/rapsberry % extract Arc*   
+gabx@hortensia>>~DEV/rapsberry % ls
+ArchLinuxARM-rpi-latest.zip
+gabx@hortensia>>~DEV/rapsberry % extract     
+gabx@hortensia>>~DEV/rapsberry % unzip Arc*  
+Archive:  ArchLinuxARM-rpi-latest.zip
+  inflating: archlinux-hf-2013-07-22.img  
+gabx@hortensia>>~DEV/rapsberry % dd bs=1M if=./
+dd bs=1M if=./archlinux-hf-2013-07-22.img of=/dev/sde
+sudo dd bs=1M if=./archlinux-hf-2013-07-22.img of=/dev/sde
+sudo gparted /dev/sde
+sudo parted /dev/sde
+sudo gdisk /dev/sde
+lsusb
+netctl status ethernet-dhcp
+locale -a
+ip link
+lsusb
+ip link
+lsmod
+iwconfig
+sudo cp /etc/netctl/examples/wireless-wpa /etc/netctl/
+sudo vim /etc/netctl/wireless-wpa
+sudo netctl start wireless-wpa
+sudo vim /etc/netctl/wireless-wpa
+sudo netctl start wireless-wpa
+systemctl status netctl@wireless\x2dwpa.service
+journalctl -xn
+lsusb
+echo 'install r8192s_ub modprobe --ignore-install r8192s_usb;/bin/echo "0bda 8171" > /sys/bus/usb/drivers/rtl819xu/new_id' | sudo tee /etc/modprobe.d/r8192s_usb.conf
+sudo ln -s /lib/firmware/RTL8192SE /lib/firmware/RTL8192SU
+sudo modprobe -rf r8192s_usb
+sudo modprobe r8192s_usb
+cd /lib/firmware
+ls -al | less
+sudo rm RTL8192SU
+sudo ln -s /lib/firmware/RTL8192E /lib/firmware/RTL8192SU
+sudo modprobe r8192s_usb
+sudo modprobe r8192s_usb.conf
+sudo rm RTL8192SU
+sudo ln -s /lib/firmware/RTL8192E /lib/firmware/RTL8188SU
+echo 'install r8188s_ub modprobe --ignore-install r8188s_usb;/bin/echo "0bda 8171" > /sys/bus/usb/drivers/rtl8188xU/new_id' | sudo tee /etc/modprobe.d/r8188s_usb.conf
+sudo rm RTL8188SU
+sudo rm /etc/modprobe.d/*
+sudo vim /etc/makepkg.conf
+cd /etc
+ls -al
+ls --color --group-directories-first --classify --human-readable
+ls --color=auto --group-directories-first --classify --human-readable -l --almost-all
+ls --color --group-directories-first --classify --human-readable
+ls --color=auto --group-directories-first --classify --human-readable
+source ~/.zshrc
+ls
+ls | less
+cd bin
+cd /bin
+ls
+pacman -Q | less
+ls -a | less
+ls -al | less
+source ~/.zshrc
+ls -al | less
+for conf ($HOME/.config/zsh/zshrc.d/*.sh) source $conf
+for conf ($HOME/.config/zsh/zshrc.d/*.zsh) source $conf
+source ~/.zshrc
+ip link
+lsusb
+modprobe rtl8188u
+modprobe rtl8188su
+iwconfig
+cd /drawer/download
+ls
+unzip RTL*
+ls
+tar xvzf 8192*
+ar firmware*
+ar vx firmware*
+tar xvzf data*
+tar xvzf control*
+lsmod rtl8192su
+modprobe rtl8192su
+modprobe rtl8192cu
+modprobe rtl8192s_usb
+cd lib
+sudo cp -R /firmware/RTL8192SU /usr/lib/firmware
+ls
+cd firmware
+ls
+sudo cp -R RTL8192SU /usr/lib/firmware
+sudo modprobe -a
+modprobe -h
+echo 'install r8192s_usb modprobe --ignore-install r8192s_usb ; /bin/echo "0bda 8171" > /sys/bus/usb/drivers/rtl819xU/new_id' | sudo tee /etc/modprobe.d/r8192s_usb.conf
+sudo modprobe -rf r8192s_usb
+sudo modprobe r8192s_usb
+sudo cat /sys/bus/usb/drivers/rtl819xU/new_id
+sudo nano /sys/bus/usb/drivers/rtl819xU/new_id
+sudo mkdir /sys/bus/usb/drivers/rtl819xU
+sudo mkdir /sys/bus/usb/drivers/rtl819u
+cd /drawer/download/rtl8712_8188_8191_8192SU_usb_linux_v2.6.6.0.20120405/driver
+ls
+tar xvzf rt*
+lsmod
+cd /usr/lib/modules/3.11.1-1-ARCH/kernel/drivers/net
+find 
+find r8712u
+find r8712u*
+ar
+which R
+sudo pacman -Syu
+sudo netctl disable wireless-wpa
+ls /etc/netctl
+sudo rm /etc/netctl/wireless-wpa
+reboot
+source ~/Xresources
+source ~/.Xresources
+systemctl enable urxvtd@$USER
+sudo systemctl enable urxvtd@$USER
+sudo vim /usr/lib/urxvt/perl/clipboard
+source ~/.Xresources
+sources ~/.zshrc
+source ~/.zshrc
+cleanzsh
+compinit
+source .zshrc
+export zcompdump=$HOME/.config/zsh/.zcompdump 
+source .zshrc
+echo $zcompdump
+source .zshrc
+source ~/.zshrc
+source ~/.Xresources
+aur
+hash -d aur=/developement/aur
+aur
+xrdb -merge .Xresources
+xrdb -merge ~/.urxvt/.urxvtrc
+hash -d aur=/developement/aur
+aur
+alias aur=/development/aur
+aur
+ls /
+alias aur=/developement/aur
+aur
+zcompile $zcompdump
+xrdb -merge ~/.urxvt/.urxvtrc
+echo $zcompdump
+zcompile $zcompdump
+ls
+man compinit
+compinit
+compinit -d $HOME/.config/zsh/.zcompdump
+echo $ZDOTDIR
+xrdb -merge ~/.urxvt/.urxvtrc
+source ~/.zshrc
+source ~/.zshrc
+xrdb -merge ~/.urxvt/.urxvtrc
+source ~/.zshrc
+cd /drawer/scripts
+./18_colours.sh
+sudo ./18_colours.sh
+./18_colours.sh
+source ~/.zshrc
+./18_colours.sh
+echo $ZDOTDIR
+source ~/.zshrc
+echo $ZDOTDIR
+source ~/.zshrc
+man hash
+hash -lr /developement/aur aur
+hash /developement/aur aur
+aur
+source ~/.zshrc
+aur
+source ~/.zshrc
+dld
+source ~/.zshrc
+dld
+source ~/.zshrc
+echo $DEV
+man nvidia-settings
+source ~/.zshrc
+enter-password
+cd /developement/aur
+cd firefox-aurora
+makepkg -i
+visudo
+sudo visudo
+iwconfig
+iwlist
+iwlist 
+xrdb -merge ~/.urxvt/.urxvtrc
+source ~/.zshrc
+urxvt
+xrdb -merge ~/.urxvt/.urxvtrc
+urxvt
+xrdb -merge ~/.urxvt/.urxvtrc
+urxvt
+zsh
+man ssh
+cd config/ssh/.keys
+cd $CONF/ssh/.keys
+ls -al
+cd ..
+ls -al
+chown -R gabx:gabx .keys
+sudo groupadd security
+sudo gpasswd -a gabx security
+groups gabx
+chown -R gabx:security .keys
+sudo chown -R gabx:security .keys
+sudo chmod -R go-rx .keys
+ls -al
+cd .keys
+ls -al
+cd /drawer/scripts
+./18_colours.sh
+xrdb -merge ~/.urxvt/.urxvtrc
+source ~/.zshrc
+xrdb -merge ~/.urxvt/.urxvtrc
+source ~/.zshrc
+./18_colours.sh
+18_colours.sh
+ssh -F /home/gabx/.config/ssh/.ssh_config -T github
+xrdb -merge ~/.urxvt/.urxvtrc
+urxvt
+xrdb -merge ~/.urxvt/.urxvtrc
+urxvt
+xrdb -merge ~/.urxvt/.urxvtrc
+urxvt
+xrdb -merge ~/.urxvt/.urxvtrc
+urxvt
+git config --global user.name gabx
+git config --global user.eamil arnaud.gaboury@gmail.com
+git config --global credential.helper cache
+git add README
+cd /developement/github/arch-linux
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git config --global user.name gabx
+git config --global user.eamil arnaud.gaboury@gmail.com
+git config --global credential.helper cache
+git commit --amend --reset-author
+source ~/.zshrc
+git config --global user.eamail arnaud.gaboury@gmail.com
+git config --global user.email arnaud.gaboury@gmail.com
+cd ../android
+git init
+touch README
+git add README
+git commit -m 'commit the README file'
+git remote add origin https://github.com/gabx/android.git
+git push origin master
+git remote add android https://github.com/gabx/android.git
+git remote -v
+git remote remove android
+git remote -v
+git show android
+git show --android
+git --show android
+git -v show -n android
+GET /repositories
+git push origin master
+curl -F 'login=gabx' -F 'token=prootx666' https://github.com/api/v2/json/repos/create -F 'name=android' -F 'description=My android stuff'
+curl -F 'login=gabx' -F 'token=8e16d01da90495877fe580d5d859817700c1a0f4' https://github.com/api/v2/json/repos/create -F 'name=android' -F 'description=My android stuff'
+git remote -v
+ssh
+ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"
+sshd-copy-id 
+ssh --help
+echo $CONF
+source ~/.zshrc
+echo $CONF
+ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"
+echo $CONF
+ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"
+ssh -F $CONF/ssh/.config
+ssh
+ssh-keygen -t rsa -C "arnaud.gaboury@gmail.com"
+ssh -F $CONF/ssh/.config -T git@github.com
+ssh -F $CONF/ssh/.ssh_config -T git@github.com
+ssh -F $CONF/ssh/.ssh_config -T github
+echo $CONF
+ssh -F $CONF/ssh/.ssh_config -i $CONF/ssh/.keys/github_rsa -T github
+ssh -F $CONF/ssh/.ssh_config -i $CONF/ssh/.keys/github_rsa.pub -T github
+ssh -i $CONF/ssh/.keys/github_rsa.pub -T git@github.com
+ssh -i $CONF/ssh/.keys/github_rsa -T git@github.com
+ssh -i $CONF/ssh/.keys/github_rsa.pub -T git@github.com
+ssh -F $CONF/ssh/.ssh_config -T github
+ssh -F /home/gabx/.config/ssh/.ssh_config -T github
+echo $XDG_CONFIG_HOME
+echo $XDG_DATA_HOME
+sudo pacman -S xdg-users-dirs
+sudo pacman -S zip
+sudo pacman -Syu xdg-users-dirs
+sudo pacman -Syu xdg-user-dirs
+echo $XDG_CONFIG_HOME
+source ${XDG_CONFIG_HOME:-~/.config}/user-dirs.dirs
+echo DOWNLOAD
+echo ${XDG_DOWNLOAD_DIR:-$HOME}
+ssh -F /home/gabx/.config/ssh/.ssh_config -T github
+ssh -F $CONF/ssh/.ssh_config -i $CONF/ssh/.keys/github_rsa -T github
+ssh -F $CONF/ssh/.ssh_config -i $CONF/ssh/.keys/github_rsa.pub -T github
+ssh -F /home/gabx/.config/ssh/.ssh_config -i /home/gabx/.config/ssh/.keys/github_rsa.pub -T github
+ssh -F /home/gabx/.config/ssh/.ssh_config -i /home/gabx/.config/ssh/.keys/github_rsa -T github
+ssh -i /home/gabx/.config/ssh/.keys/github_rsa -Tgit@github
+ssh -i /home/gabx/.config/ssh/.keys/github_rsa -T git@github
+ssh -i /home/gabx/.config/ssh/.keys/github_rsa -T git@github.com
+cd ~
+ls -al
+ls -al .config
+cd ssh
+cd /.config/ssh
+cd .config/ssh
+ls -al
+cd ..
+sudo chmod -R go-rx ssh
+ls -al
+ssh -F /home/gabx/.config/ssh/.ssh_config -i /home/gabx/.config/ssh/.keys/github_rsa -T github
+ssh -T git@github.com
+ssh -T github
+sudo vim /etc/ssh/ssh_config
+cd /developement/github/android
+curl -F 'login=gabx' -F 'token=gabx@hortensia>>github/android % curl -F 'login=gabx' -F 'token=
+git remote add origin https://github.com/gabx/android.git
+git push origin master
+git init
+git add README
+vim .config/vim/.vimrc
+myps sha512sum
+kill 24298
+cd /developement/github
+git branch -a shows
+cd android
+git branch -a shows
+git remote rm origin
+ls
+cd ..
+cd android
+ls
+git init
+touch README
+git add README
+git commit -m 'commit android README'
+git remote add origin https://github.com/gabx/android.git
+git push origin master
+git add README
+git commit -m 'commit android README'
+git init
+git add README
+git commit -m 'edited the README'
+git remote add origin https://github.com/gabx/android.git
+git push origin master
+cd ..
+cd r-project
+git init
+cd ..
+cd thetradinghall
+git init
+git config --global core
+echo $GIT_CONFIG
+git config --global color.ui true
+source ~/.zshrc
+cd ~/.ssh
+ls -al
+sudo chmod go+r github_rsa.pub
+ls -al
+cd ~/.config/ssh/.keys
+ls -al
+sudo chmod og+r github_rsa.pub
+ssh -F /home/gabx/.config/ssh/.ssh_config -T github
+ls -al
+sudo chmod og+r id_ecdsa.pub
+dld
+read "REPONAME?New repo name (enter for ${PWD##*/}):"
+echo $REPONAME
+echo REPONAME
+$REPONAME
+cd DOWNLOAD
+CD DOWN
+cd DOWN
+cd DOWNLOADS
+DOW
+DLD
+dld
+exctrat antigen*
+extract antigen*
+extract
+source ~/.zshrc
+extract
+hostinfo
+sprunge
+echo $ZDOTDIR
+fpath=("ZDOTDIR/functions" $fpath)
+hostifno
+extract
+hostinfo
+source ~/.zshrc
+hostinfo
+rm -f $ZDOTDIR/.zcompdump
+hostinfo
+env zsh
+env zsh
+hostinfo
+myps
+tar xvzf aut*
+tar xvzf ant*
+tar zsh-user*
+tar xvzf zsh-user*
+aur
+tar xvzf fire*
+tar vund*
+tar xvzf vund*
+cd firefox-aurora
+makepkg -i
+tar xvzf ../fire*
+cd ..
+aur
+tar xvzf fire*
+cd firefox-aurora
+makepkg -i
+cd ..
+aur/sources
+md5sum firefox*
+sudo pacman sha512sum
+sudo pacman -S sha512sum
+sha512sum 
+sudo pacman -S sha512sum
+sha512sum fire*
+cd ..
+tar xvzf fire*
+cd ..
+tar xvzf fire*
+ls
+tar xvzf fire*
+cd ..
+aur
+tar xvzf fire*
+firef*
+cd firef*
+cd firefox-aurora
+makepkg -i
+aur/aur/sources
+cd ../aur/sources
+sha512sum fire*
+aur
+cd firefox-aurora
+makepkg -i
+dld
+ls
+unrar Sure*
+unrar -e Sure*
+unrar e Sure*
+unzip *doa
+ls
+unzip *.zip
+unzip doa-a675.zip
+unzip doa-b675.zip
+unzip doa-c675.zip
+unzip doa-d675.zip
+unzip doa-e675.zip
+unzip doa-f675.zip
+unzip doa-g675.zip
+unzip doa-h675.zip
+unzip doa-i675.zip
+unzip doa-j675.zip
+unzip doa-k675.zip
+unzip doa-l675.zip
+ls
+unrar e doa.part01.rar
+fc-list
+fc-list | grep mona
+fc-list | grep monalisa
+ls
+unzip mona*
+sudo mv mona-lisa-recut-hu* /usr/share/fonts/ttf/mona-lisa-recut.ttf
+sudo mv mona-lisa-recut-hu* /usr/share/fonts/TTF/mona-lisa-recut.ttf
+fc-cache -fv.
+fc-cache -fv
+sudo pacman -Syu transmission
+sudo pacman -Syu transmission-qt
+sudo pacman -Syu transmission-gtk
+sudo pacman -Syu transmission-qt
+tar xvzf zsh*
+unzip
+unzip -Z solarized.zip
+unzip solarized.zip
+for conf ($ZSH/zshrc.d/*.zsh) source $conf
+for fun ($ZSH/zshrc.d/*.zsh) source $fun
+sprunge
+autoload $ZSH/functions/[^_]*(.:t)
+sprunge
+source ~/.zshrc
+hostinfo
+source ~/.zshrc
+hostinfo
+source ~/.zshrc
+hostinfo
+source ~/.zshrc
+hostinfo
+source ~/.zshrc
+hostinfo
+source ~/.zshrc
+hostinfo
+zsh
+zsh
+18colours
+18colours.sh
+source ~/.zshrc
+18colours
+source ~/.zshrc
+18colours
+source ~/.zshrc
+18colours
+18coulors
+source ~/.zshrc
+18coulors
+source ~/.zshrc
+18coulors
+source ~/.zshrc
+hostinfo
+source ~/.zshrc
+hostinfo
+zsh
+aur
+aur
+echo $ZSH
+aur
+extract comm*
+hostinfo
+18colours
+color
+colors
+xrdb merge ~/.xurvt
+xrdb -merge ~/.urxvt/.urxvt
+xrdb -merge ~/.urxvt/.urxvtc
+xrdb -merge ~/.urxvt/.urxvtrc
+xrdb -merge ~/.urxvt/.urxvtrc
+source ~/.zshrc
+zsh
+autoload -U colors && colors
+colors
+source ~/.zshrc
+source ~/.zshrc
+sudo pacman -S pkgfile
+sudo pkgfile --update
+source ~/.zshrc
+source ~/.zshrc
+source ~/.zshrc
+aur
+hostinfo
+source ~/.zshrc
+aur
+hostinfo
+source ~/.zshrc
+zsh
+exctract comm*
+exctract command-not-found.tar.gz
+hostinfo
+extract command-not-found.tar.gz
+aur
+extract command-not-found.tar.gz
+cd comm*
+comm*
+command-not-found
+makepkg -i
+abiword
+source ~/.zshrc
+abiword
+source ~/.zshrc
+zsh
+~
+cd /developement/mobiles
+ls
+adb sideload gaaps-jb-20130812*
+adb sideload gapps-jb-20130812*
+adb sideload gapps-jb-20130812-signed.zip
+adb devices
+adb sideload gapps-jb-20130812-signed.zip
+adb push gapps-jb-20130812-signed.zip /mnt/sdcard
+adb reboot recovery
+adb sideload gapps-jb-20130812-signed.zip
+adb devices
+adb sideload gapps-jb-20130812-signed.zip
+adb reboot recovery
+colors
+source ~/.zshrc
+dld
+extract Surething1CDLabeler4SE.zip
+extract SureThing1CDLabeler4SE.zip
+ls
+extract SureThing_CDDVD_Labeler_Deluxe_5.2.rar
+enable vcs_info
+hash -d mobiles="/developement/mobiles"
+mobiles
+ cd mobiles
+man hash
+hash
+hash mobiles="/developement/mobiles"
+ cd mobiles
+echo $CONF
+screenfetch
+xrdb -merge ~/.urxvt/.urxvtrc
+screenfetch
+xrdb -merge ~/.urxvt/.urxvtrc
+screenfetch
+colors
+zsh
+screenfetch
+echo -e "\x1B]2;$(whoami)@$(uname -n)\x07"
+source ~/.zshrc
+xrdb -merge ~/.urxvt/.urxvtrc
+source ~/.zshrc
+find . -iregex ".*$@.*" -printf '%P\0' | xargs -r0 ls --color=auto -1d
+clear; while true; do head -n 500 /dev/urandom | hexdump -C | grep --color=auto "`random_hex` `random_hex`"; done; 
+for i in $(seq 1 2); do echo -n $(echo "obase=16; $(($RANDOM # % 16))" | bc | tr '[A-Z]' '[a-z]'); done; 
+/usr/share/texmf-dist/texconfig
+pwd
+./tcfmgr
+sudo ./tcfmgr
+myps vi
+kill 2638
+myps vi
+my ps tlmgr
+myps tlmgr
+source ~/.zshrc
+prompt -l
+prompt -p redhat
+prompt -h redhat
+DEV
+cd DEV
+src
+code
+latex
+cd latex
+extract Font*
+ls
+sudo cp Mon* /usr/share/fonts/OTF/Mona*
+sudo cp Mon* /usr/share/fonts/OTF
+fc-cache -fv
+fc-list | grep Mona
+fc-list | grep libertine
+fc-list | grep linux
+fc-list | grep linlibertine
+fc-list | grep Lin
+ttf2afm
+ls
+cd fonts
+ls
+ttf2afm -e T1-WGL4.enc -o LinLinertine.afm LinLibertine_DRah.ttf
+ls
+pacup
+sudo pacman -S fontforge
+./font2pdf
+ls
+fc-list | grep lmodern
+fc-list | grep latin
+fc-list | grep modern
+fc-list 
+fc-list | grep l
+ls
+exctract FontShop*
+extract FontShop*
+pacman -Qi texlive
+pacman -Qi texlive-most
+pacman -Qi texlive-core
+pacman -Ql texlive-core
+pacman -Q texlive-core
+pacman -Ql texlive-core | grep texmf-config
+pacman -Ql texlive-bin | grep texmf-config
+texconfig
+sudo groupadd tex
+sudo gpasswd -a gabx tex
+texconfig
+cd /drawer/backup/pacman_db
+pacman -Qqen > pkglist.txt
+pacup
+src
+pacup
+which pakbak
+pakbak
+sudo vim /usr/lib/systemd/scripts/pakbak_scripts
+sudo vim /usr/lib/systemd/scripts/pakbak_script
+sudo systemctl restart pakkbak.path
+sudo systemctl restart pakbak.path
+cat /usr/lib/systemd/scripts/pakbak
+sudo vim /etc/pakbak.conf
+sudo vim /usr/lib/systemd/scripts/pakbak_script
+sudo mv /usr/lib/systemd/scripts/pakbak /usr/lib/systemd/scripts/pakbak_script
+sudo vim /etc/pakbak.conf
+cat /usr/lib/systemd/scripts/pakbak_script
+sudo mv /usr/lib/systemd/scripts/pakbak_script /usr/lib/systemd/scripts/pakbak
+cat /usr/lib/systemd/system/pakbak.service
+sudo vim /usr/lib/systemd/system/pakbak.service
+cat /usr/lib/systemd/system/pakbak.path
+sudo systemctl restart pakbak.path
+sudo systemctl load pakbak.path
+sudo systemctl enable pakbak.path
+echo $target_folder
+source /etc/pakbak.conf
+echo $target_folder
+tar -cJf "$target_folder/pakbak-`date -Is`.tar.xz" "/var/lib/pacman/local"
+sudo rm /pakbak.tar.xz
+cd /
+ls
+ls -al
+pacrem texlive-localmanager
+pacrem texlive-localmanager-git
+tlmgr
+tlmgr --help
+tlmgr --update -list
+tlmgr --help
+tlmgr update --all
+kpsepath tex | tr ':' '\n'
+kpsepath 
+echo $TEXMFHOME
+echo ${(o)color}
+which precmd
+print $fg_bold[red] test
+print $fg_bold[00] test
+print $fg_bold[01] test
+print $fg_bold[46] test
+print $fg_bold[bg-blue] test
+print $fg[red] test
+print $fg[cyan] test
+print $fg[green] test
+print $fg[cyan] test
+source ~/.zshrc
+aur
+source ~/.zshrc
+zah
+zsh
+tlmgr
+tlmgr --help
+cd /usr/share/texmf-dist/scripts/texlive
+./tlmgrui.pl
+./tlmgrgui.pl
+pwd
+cd /developement/work/texlive/tlpkg
+ftp://bay.uchicago.edu/tex-archive/systems/texlive/tlnet/tlpkg/
+ftp
+ls
+sudo cp Spla* //usr/share/tlpkg/TeXLive
+ls -al /usr/share/tlpkg/TeXLive
+sudo cp Tex* //usr/share/tlpkg/TeXLive
+sudo cp TeX* //usr/share/tlpkg/TeXLive
+sudo cp TL* //usr/share/tlpkg/TeXLive
+sudo cp * //usr/share/tlpkg/TeXLive
+./tlmgrgui.pl
+ls
+sudo cp * /usr/share/tlpkg/TeXLive
+cd ..
+ls
+./tlmgrgui.pl
+ls -al
+./tlmgrgui.pl
+tlmgr -gui
+kpsewhich texlive.tlpdb
+kpsewhich 
+kpsewhich mona
+kpsewhich mona-lisa
+kpsewhich linlibertine
+tlmgr generate updmap
+getnonfreefonts --lsfonts 
+ls
+kpsewhich -var-value=TEXMFHOME
+kpsewhich --var-value TEXMFLOCAL
+mktexlsr
+ls -a /etc
+ls -al /etc
+ls -al /etc/texmf
+sudo chown -R root:tex /etc/texmf
+ls -al /etc/texmf
+mktexlsr
+sudo chmod -R g+w /etc/texmf
+ls -al /etc/texmf
+mktexlsr
+ls -al /etc
+sudo mkdir /usr/share/texmf-dist/fonts/opentype/itc
+sudo mkdir /usr/share/texmf-dist/fonts/opentype/itc/monalisa
+sudo cp /home/gabx/.texlive/texmf-var/fonts/OT Family/ITC Mona Lisa/* /usr/share/texmf-dist/fonts/opentype/itc/monalisa
+sudo cp /home/gabx/.texlive/texmf-var/fonts/otf/itc/monalisa/* /usr/share/texmf-dist/fonts/opentype/itc/monalisa
+kpsewhich --var-value
+kpsewhich --var-TEXMFHOME
+kpsewhich --help
+kpsewhich -var-value=TEXMFHOME
+kpsewhich -var-value=TEXMFCONFIG
+updmap --enable Map=ntx.map
+mktexlsr
+kpsewhich -var-value=TEXMFLOCAL
+cd /usr/share/texmf-dist
+ls -al
+cd ..
+ls -al
+sudo chown -R root:users texmf
+ls -al texmf-dist
+cd ..
+sudo chmod -R g+w texmf
+ls
+cd share
+sudo chmod -R g+w texmf
+sudo chmod -R g+w texmf-dist
+sudo chown -R root:users /etc/texmf
+sudo chown -R root:users /var/lib/texmf
+sudo chmod -R g+w /var/lib/texmf
+sudo chmod -R g+w /etc/texmf
+mktexlsr
+updmap --enable Map=ntx.map:
+kpsewhich -var-value=TEXMFHOME
+updmap
+updmap-sys
+kpsewhich texmf.cnf
+sudo cp /etc/texmf/web2c/texmf.cnf /usr/share/texmf-dist/web2c
+cd /texmf-dist
+pwd
+cd texmf-dist
+ls -al
+cd web2c
+ls -al
+sudo chown root:users texmf.cnf
+sudo chmod g+w texmf.cnf
+ls -al
+tlmgr conf
+tlmgr conf texmf
+tlmgr conf tlmgr
+tlmgr dump-tlpdb --local
+tlmgr option showall
+tlmgr --usermode
+tlmgr gui
+tlmgr option showall > /developement/work/texlive/options.txt
+tlmgr conf > /developement/work/texlive/options.txt
+sudo pacman -S perl-tk
+tlmgr gui
+pacman -Ql texlive-core | grep trans.pl
+pacman -Ql texlive-bin | grep trans.pl
+pacman -Ql texlive-bin 
+pacman -Ql texlive-bin | grep tlpkg
+use Data::Dumper;
+kpsewhich -var-value=TEXMF
+tlmgr conf tlmgr
+tlmgr conf > /developement/work/texlive/options.txt
+tlmgr gui
+tlmgr option showall
+tlmgr update --all0
+tlmgr update --all
+which tex
+kpsewhich -var-value TEXMFSYSVAR
+tlmgr update --all
+kpsewhich -var-value TLPDB
+echo $tlpb
+tlmgr --version
+ls -al /usr/share/tlpkg
+sudo chown -R root:users /usr/share/tlpkg
+sudo chmod -R g+w /usr/share/tlpkg
+ls -al /usr/share/tlpkg
+ls -al /usr/share/texmf-dist/scripts
+ls -al /usr/share/texmf-dist/scripts/texlive
+cd /usr/share/texmf-dist/scripts/texlive
+sudo chown root:user tlm*
+sudo chown root:users tlm*
+sudo chmod g+w tlm*
+ls -al 
+sudo chmod og+x tlm*
+ls -al 
+sudo chmod og+x tlmgr.pl
+ls -al 
+sudo chmod ug+x tlmgr.pl
+ls -al 
+tlmgr --version
+tlmgr update --all
+tlmgr option showall
+tlmgr --list
+tlmgr update --list
+cd /developement/work/texlive
+./update*
+kpsewhich --var-value=SELFAUTOPARENT
+kpsewhich --help
+kpsewhich --var-value=SELFAUTOPARENT
+./update*
+update-tlmgr-latest.sh --noexec --keep
+./update-tlmgr-latest.sh --noexec --keep
+./update-tlmgr-latest.sh 
+mktexlsr
+./update-tlmgr-latest.sh 
+kpsewhich --var-value=SELFAUTOPARENT
+kpsewhich --var-value=SELFAUTODIR
+kpsewhich --var-value=SELFAUTOLOC
+tlmgr recreate-tlpdb
+sudo tlmgr recreate-tlpdb
+pacup
+startx
+pacrem
+pacrem xdg-users-dirs
+pacrem xdg-user-dirs
+cd /media/music
+ls -al
+sudo rm -R backup
+tlmgr
+tlmgr --help
+tlmgr update --list
+aur
+ls
+exctract firef*
+extract firef*
+extract firefox-aurora.tar.gz
+extract kalu.tar.gz
+extract pax.tar.gz
+extract gnome-colors-icon-theme-extras.tar.gz.tar.gz
+extract gnome-colors-icon-theme-extras.tar.gz
+extract gnome-colors-icon-theme.tar.gz
+cd gnome-colors-icon-theme/
+makepkg -i
+cd ..
+ls
+cd gnome-colors-icon-theme
+makepkg -i
+cd ../kalu
+makepkg -i
+cd ..
+ls
+cd pax
+makepkg -i
+cd ..
+ls
+cd kalu
+makepkg -i
+cd ..
+cd firefox-aurora
+makepkg -i
+pacup
+sudo pacman -Syu i3
+tlmgr info
+tlmgr check
+sudo perl -d `which tlmgr` update --all
+perl -d `which tlmgr` update --all
+cp /etc/i3/config ~/.config/i3/config
+aur
+ls
+extract fontmatrix.tar.gz
+cd fontmatric
+cd fontmatrix
+makepkg -i
+sudo vim /etc/makepkg.conf
+makepkg -i
+cd /media
+la -al
+cd music
+ls -al
+mv -R movies ../
+mv movies ../
+ls -al /
+sudo chown -R users:root media
+sudo chown -R root:users media
+cd /
+sudo chown -R root:users media
+sudo chmod -R g+w media
+ls -al 
+cd /media
+mv music/movies ./
+sudo mv music/movies ./
+sudo mv -R music/movies ./
+ls -al movies/romeo
+ls
+ls -al music/movies/romeo
+sudo chown gabx:users *
+ls -al music/movies/romeo
+sudo chown gabx:users *
+ls -al
+ls -al music/movies/romeo
+sudo chown gabx:users /music/romeo
+ls
+sudo chown gabx:users music/movies/romeo
+ls -al music/movies/romeo
+ls -al music/movies/films
+sudo chown gabx:users music/movies/films/*
+ls -al music/movies/films
+cd music/movies/films
+ls -al
+sudo chown -R gabx:users movies
+sudo chown -R gabx:users music
+cd music/movies/films
+ls -al
+R
+source ~/.zshrc
+aur
+lynx
+touch foo.txt
+foo.txt
+alias -s txt=vim
+foo.txt
+cd ../gabx/Desktop
+cd ../bin/home
+/home
+mkdir foo
+ls
+cd gabx
+mkdir foo
+hash -d ff=foo
+ff
+aur
+pwd
+myinfo
+get_RAM
+getRAM
+cd ..
+ls
+ls -al
+rm foo.txt
+ls -al
+rm foo.txt
+ls -al
+rm -R foo
+man color
+cd ZSHDIR/functions
+./rxvt-colors
+sudo pacman -S gcolor
+sudo pacman -S gcolor2
+./rxvt-colors
+myinfo
+ls -al
+aa_256
+eval-color
+ls -al
+cls -al
+ls -al
+ls -al1
+cd
+aur
+cd
+/home/gabx/.config/zsh/zshrc.d
+source 01_env
+source 01_zenv
+source "$ZSHDIR/zshrc.d/01_zenv"
+$ZSHDIR/functions
+pwd
+eval aa_256
+ls
+eval eval-color
+eval myinfo
+eval ./myinfo
+eval ./eval-color
+eval-color
+./eval-color
+.eval-color
+. eval-color
+. aa_256
+aa_256
+./aa_256
+dirs
+pushd
+aur
+dirs
+pushd
+aur
+cd
+pwd
+aur
+cd
+cd /etc
+cd
+etc
+/etc
+cd
+/ect
+/etc
+pushd
+pwd
+/etc
+/usr
+cd
+/usr/bin
+pushd
+cd
+/home/gabx/.config/zsh/functions
+rxvt-colors
+./rxvt-colors
+xrdb -merge $XDG_CONFIG_HOME/urxvt/.urxvtrc
+ls -al
+xrdb -merge $XDG_CONFIG_HOME/urxvt/.urxvtrc
+echo $XDG_CONFIG_HOME
+myinfo
+cd /home/gabx/.config/zsh/functions
+man eval
+./aa_256
+eval-color
+./eval-color
+ls -al
+./eval-color
+myinfo
+src
+echo -e "\x1B]2;$(whoami)@$(uname -n)\x07";
+src
+ls
+src
+ls -al
+eval-color
+src
+a_256
+aa_256
+rxvt-colors
+src
+X
+rxvt-colors
+src
+16colors
+src
+aur
+www.google.com
+http://www.google.com
+X
+src
+zsh
+src
+prompt -l
+src
+echo %m
+%m
+cdr
+echo $fpath
+src
+eval-color
+getRAM
+rsync
+sudo pacman -S rsync
+src
+back
+rsync -P $XDG_CONFIG_HOME /drawer/backup/hortensia_config/sync/.config
+rsync -P -va $XDG_CONFIG_HOME /drawer/backup/hortensia_config/sync/.config
+src
+back
+src
+syncdot
+src
+syncdev
+src
+syncdev
+src
+syncdev
+syncdot
+sudo vim /etc/cron.weekly/backup
+src
+syncdot
+syncdev
+src
+syncdot
+syncdev
+src
+syncdot
+syncdev
+sudo vim /etc/cron.weekly/backup
+sudo mv /etc/cron.weekly/backup /etc/cron.daily/
+sudo vim /etc/cron.daily/backup
+sudo chmod +x /etc/cron.daily/rsync.backup
+sudo chmod +x /etc/cron.daily/backup
+man rsync
+sudo vim /etc/cron.daily/backup
+msguniq\
+
+aur
+X
+sudo vim /etc/xdg/user-dirs.defaults
+xdg-user-dirs-update
+sudo vim /etc/xdg/user-dirs.defaults
+xdg-user-dirs-update
+X
+xdg-user-dirs-update
+sudo vim /etc/xdg/user-dirs.defaults
+xdg-user-dirs-update
+sudo vim /etc/xdg/user-dirs.defaults
+xdg-user-dirs-update
+sudo vim /etc/xdg/user-dirs.defaults
+R
+/developement/language/r
+ls -al
+R
+ls -al
+R
+adb
+adb reboot recovery
+aur
+ls
+extract monod*
+cd monodevelop-git
+makepkg -i
+sudo pacman -S mono mono-addins gnome-sharp
+makepkg -i
+/developement/tth/bloom/bloom_api_emulate
+extract *
+man ssh-config(5)
+man ssh_config(5)
+man ssh_config
+src
+Rproj
+sudo vim /etc/fstab
+sudo mv /etc/issue /drawer/backup/hortensia_config/etc_issue
+sudo mv /drawer/backup/issue /etc
+src
+conf aliases
+sudo vim "/etc/" & aliases
+sudo vim /etc/aliases
+conf="${1}a${2}"
+conf
+src
+tt="${1}a${2}"
+tt
+echo $tt
+tt="{1}a{2}"
+echo $tt
+tt="trol blabla/"
+echo $tt
+tt uu
+$tt uu
+$tt& uu
+$tt& 'uu'
+$tt 'uu'
+$tt "uu"
+$tt"uu"
+src
+conf"aliases"
+confaliases
+conf "aliases"
+src
+man msmtp
+systemctl status gpg-agent
+systemctl --user status
+gnupg
+sudo pacman -S gnupg
+man gpg
+gpg --gen-key --homedir ~/.config/gnupg
+sudo pacman -Rd monodevelop
+sudo pacman -Rd monodevelop-git
+sudo pacman -Rs monodevelop-git
+sudo pacman -Rd monodevelop-git
+sudo pacman -S mono
+mono
+aur
+ce monodevelop-git
+cd monodevelop-git
+makepkg -i
+cd ~/.config/gnupg
+ls
+gpg -ea -r arnaud.gaboury@gmail.com gmail_pwd
+gpg --export -a arnaud.gaboury@gmail.com > public.key
+gpg --armor --output public.key Arno Gaboury
+gpg --armor --output public.key --export Arno Gaboury
+gpg --keyserver hkp://subkeys.pgp.net --send-keys gabx_public.key
+gpg --export-secret-key -a Arno Gaboury > gabx_private.key
+gpg --armor --output gabx_public.key --export Arno Gaboury
+gpg --edit-key Arno Gaboury
+gpg --edit-key arnaud.gaboury@gmail.com
+gpg --gen-key --homedir ~/.config/gnupg
+ls
+pwd
+gpg --armor --output gabx_public.key --export gaboury
+gpg --edit-key gaboury
+gpg --armor --output ~/.config/gnupg/gabx_public.key --export gaboury
+gpg --export --armor --output ~/.config/gnupg/gabx_public.key
+man gpg
+echo $GNUPGHOME
+gpg --listkeys <arnaud.gaboury@gmail.com>
+gpg --list-keys <arnaud.gaboury@gmail.com>
+cd .config
+la -al
+ls -al
+sudo chmod -r 700 gnupg
+sudo chmod -R 700 gnupg
+sudo chown -R gabx:gabx gnupg
+ls -al
+sudo chown -R gabx gnupg
+ls -al
+chmod 600 gnupg/gpg.conf
+chmod 700 gnupg
+ls -l gnupg
+chmod 600 gnupg/gmail_pwd
+ls -l gnupg
+export GNUPGHOME=$XDG_CONFIG_HOME
+sudo --gen-key
+sudo gpg --gen-key
+cd /drawer/backup
+ls -al
+cd .gnupg
+ls -al
+pg --gen-key --homedir ~/.config/gnupg
+pg --gen-key
+gpg --gen-key --homedir ~/.config/gnupg
+gpg --armor --output gabx_public.key --export gaboury
+echo $GNUPGHOME
+export GNUPGHOME=$HOME/.config/gnupg
+echo $GNUPGHOME
+gpg --armor --output gabx_public.key --export gaboury
+gpg --armor --output $GNUPGHOME/gabx_public.key --export gaboury
+gpg --armor --output $GNUPGHOME/public.key --export gaboury
+gpg --export gaboury --armor --output $GNUPGHOME/public.key
+gpg --list-keys
+sudo gpg --edit-key gaboury
+gpg --export gaboury (first gpg key) <arnaud.gaboury@gmail.com> --armor --output $GNUPGHOME/public.key
+cd /home/gabx/.config/gnupg
+gpg --export gaboury --armor --output $GNUPGHOME/public.key
+gpg --export gaboury --armor > gabx-pub.key
+gpg --export gaboury --armor > gabx-pub.gpg
+sudo gpg --export gaboury --armor > gabx-pub.gpg
+ls -al
+sudo gpg --export <arnaud.gaboury@gmail.com> --armor > gabx-pub.gpg
+gpg --export 174B 03FE FD59 274D F9B4 55CC EF44 BBCC 8599 A3EE -armor  > gabxpubb.gpg
+sudo gpg --export 174B 03FE FD59 274D F9B4 55CC EF44 BBCC 8599 A3EE -armor > gabxpubb.key
+gpg --list-keys gaboury
+sudo gpg --list-keys gaboury
+sudo pgp --gen-key
+sudo gpg --gen-key
+sudo mv ../gpg-agent.sh /etc/profile.d
+sudo vim /etc/X11/xorg.conf
+sudo pgrep agent
+info pinentry
+sudo vim /ect/gpg-agent.sh
+sudo vim /etc/gpg-agent.sh
+sudo vim /etc/profile.d/gpg-agent.sh
+echo $GNUPGHOME
+cd $GNUPGHOME
+ls -al
+chmod 600 gpg-agent-info
+ls -al
+echo $GNUPGHOME
+man gpg-agent
+sudo vim /etc/ssh/ssh_config
+man gpg
+sudo vim /etc/profile.d/ssh-agent.sh
+R
+src
+R
+src
+R
+src
+R
+src
+R
+src
+R
+cat toto > to.txt
+tea toto >> to.txt
+sudo pacman -S tea
+tea toto >> to.txt
+man tea
+tea to.txt
+tee hello to.xt
+my pas tee
+myps pas tee
+myps tee
+kill 214
+kill 10374
+man tee
+echo "tt" | tee -a hello
+echo "tt\ jj" | tee -a hello
+echo "tt\n jj" | tee -a hello
+echo "tt\njj" | tee -a hello
+src
+R
+src
+R
+src
+R
+src
+R
+echo "# this is shell style\nexport R_PROFILE=~/.config/r/Rprofile.r" | tee ~/.Renviron
+R
+echo "# this is shell style\nsource ~/.config/r/Rprofile.r" | tee ~/.Renviron
+R
+echo "# this is shell style\nsource (~/.config/r/Rprofile.r)" | tee ~/.Renviron
+R
+echo "# this is R style\nSys.setenv(R_PROFILE=~/.config/r/Rprofile.r)" | tee ~/.Renviron
+R
+mv .Renviron .Rprofile
+mv .Rprofile .Renviron
+R
+myps echo
+echo "# this is shell style\nexport R_PROFILE=~/.config/r/Rprofile.r" | tee ~/.Renviron
+R
+echo "# this is R style\nSys.setenv(R_PROFILE="~/.config/r/Rprofile.r")" | tee ~/.Renviron
+R
+mv .Renviron .Rprofile
+echo "# this is shell style\nexport R_ENVIRON_USER=~/.config/r/Renviron.r" | tee ~/.Rprofile
+R
+echo "# this is shell style\nexport R_PROFILE_USER=~/.config/r/Rprofile.r" | tee ~/.Renviron
+R
+src
+R
+src
+R
+src
+R
+src
+R
+echo R_ENVIRON_USER
+echo $R_ENVIRON_USER
+src
+R
+src
+R
+src
+R
+echo $R_ENVIRON
+R
+ehoo "# this is R style\nsurce (~/.cconfi//r/Rprofile.r)" | ee  ~/.enviiron
+R
+src
+R
+ehoo "# thi is shell stylennexport R_PROFLEE_USER=~/.confgg/r/Rprofille.r" | ee  ~/.enviiron
+R
+src
+R
+src
+R
+echo "# this is R style\nsource (~/.config/r/Rprofile.r)" | tee ~/.Renviron
+R
+src
+R
+echo $R_HOME
+echo $R_HOME_USER
+echo $R_ENVIRON
+echo $R_ENVIRON_USER
+export R_ENVIRON_USER=~/.Renviron
+echo $R_ENVIRON_USER
+R
+echo $R_ENVIRON_USER
+R
+export R_PROFILE_USER=~/.config/r/Rprofile.r
+R
+src
+R
+R --quiet
+R
+echo $R_ENVIRON_USER
+echo $R_PROFILE_USER
+R
+src
+echo $R_PROFILE_USER
+echo $R_ENVIRON_USER
+R
+src
+R
+echo $R_PROFILE_USER
+echo $R_ENVIRON_USER
+R
+src
+R
+sudo vim /etc/profile.d/gpg-agent.sh
+myps gpg-agent
+kill 12928
+kill 13229
+kill 13263
+kill 13392
+kill 12918
+kill 12882
+kill 12220
+kill 12075
+kill 11975
+myps gpg-agent
+kill 13176
+kill 1317613108
+kill 13176
+kill 13108
+kill 12976
+kill 12945
+kill 12056
+kill 11932
+kill 11813
+kill 11788
+kill 11688
+kill 11625
+kill 11576
+myps gpg-agent
+kill -0 $(grep gpg-agent)
+myps kill
+kill -0 $(grep GPG_AGENT_INFO "$envfile" | cut -d: -f 2)
+/home/gabx/.config/gnupg
+ls -al
+touch sshcontrol
+sudo vim /etc/profile.d/gpg-agent.sh
+R
+16colors
+eval-color
+src
+ls -al
+src
+ls -al
+src
+ls -al
+src
+ls -al
+src
+ls -al
+ls -al /developement/language/r
+src
+ls -al /developement/language/r
+src
+ls -al /developement/language/r
+src
+ls -al /developement/language/r
+src
+ls -al /developement/language/r
+src
+ls -al /developement/language/r
+src
+ls -al /developement/language/r
+src
+ls -al /developement/language/r
+ls -al
+src
+ls -al
+src
+ls -al
+pacup
+sudo pacman -Rd tea
+X
+cd /etc
+ls -al
+X
+ls -al
+X
+ls -al
+X
+ls -al
+cd ..
+cd /etc
+ls -al
+man xrdb
+src
+X
+sudo vim /etc/makepkg.conf
+sudo vim /etc/makepkg.conf.pacnew
+sudo mv /etc/makepkg.conf.pacnew /etc/makepkg.conf
+dld
+ls
+extract lt.tar
+extract lt.rar
+pacup
+myps pacman
+sudo kill 30845
+sudo kill 30847
+sudo pacman-optimize
+sudo vi /etc/pacman.d/mirrorlist
+sudo cp /etc/pacman.d/mirrorlist /drawer/backup/pacman_db/
+sudo cp /etc/pacman.d/mirrorlist /drawer/backup/pacman_db
+sudo vi /etc/pacman.d/mirrorlist
+sudo rankmirrors -n 8 /etc/pacman.d/mirrorlist > /etc/pacman.d/mirrorlist
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+sudo rankmirrors -n 8 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist.backup
+ls -al /etc/pacman.d
+sudo rankmirrors -n 8 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist.backup
+su
+pacup
+sudo cp /etc/pacman.d/mirrorlist /drawer/backup/pacman_db/mirrorlist_by_rank
+logout
+startx
+sudo cp /drawer/backup/hortensia_config/etc_issue /etc/issue
+ls -al /etc/profile.d
+sudo chown gabx:root gpg-agent.sh
+sudo chown gabx:root /etc/profile.d/gpg-agent.sh
+/etc/profile.d/gpg-agent.sh
+ls -al .config/keys
+ls -al .config/ssh/keys
+sudo chattr +i .config/ssh/id_ras.pub
+sudo chattr +i .config/ssh/keys/id_ras.pub
+sudo chattr +i .config/ssh/keys/id_rsa.pub
+sudo chattr +i .config/ssh/keys/github_rsa.pub
+sudo chattr +i .config/ssh/keys
+ssh-agent
+eval $(ssh-agent)
+echo $GPG_TTY
+/usr/bin/pinentry-qt4
+myps pinentry
+kill 1073
+/usr/bin/pinentry-gtk-2
+myps pinentry
+kill 1084
+ssh-add /home/gabx/.config/ssh/keys/id_rsa
+ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"
+ls -al .config
+ls -al .config/ssh
+sudo chattr -R -i .config/ssh
+ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"
+myps ssh
+kill 1212
+ssh-keygen -t ecdsa -b 521 -C "$(whoami)@$(hostname)-$(date -I)"
+sudo chattr -R +i .config/ssh
+sudo chattr -R -i .config/ssh
+sudo chattr -R +i .config/ssh
+systemctl status sshd.service
+sudo vi /usr/lib/systemd/system/gpg-agent.service
+sudo vim /usr/lib/systemd/system/gpg-agent.service
+ls -al .config/gnupg
+sudo rm /usr/lib/systemd/system/gpg-agent.service
+aur
+extract pyth*
+cd pyth*
+cd python-pywer-git
+makepkg -i
+sudo vim /etc/makepkg.conf
+makepkg -i
+sudo vim /etc/makepkg.conf
+cd ..
+ls
+extract xorg*
+systemd-analyze --fuzz=1 critical-chain
+man urxvtd
+man systemd-analyse
+systemd-analyze blame
+systemd-analyze plot
+sudo pacman -S vim-systemd
+aur
+ls
+extract sys*
+cd systemd-cron
+makepkg -i
+sudo pacman -S ccache
+sudo pacman -S colorgcc
+sudo /etc/colorgcc/colorgccrc
+sudo vim /etc/colorgcc/colorgccrc
+src
+makepkg -i
+sudo mkdir /etc/systemd/system/timer-{hourly,daily,weekly}.target.wants
+man systemd-cron
+man systemd.cron
+man system.cron
+man systemd.cron
+man run-parts
+run-parts --list --regex '^p.*d$' /etc
+sudorm -R /etc/systemd/system/timer-{hourly,daily,weekly}.target.wants
+sud orm -R /etc/systemd/system/timer-{hourly,daily,weekly}.target.wants
+sudo rm -R /etc/systemd/system/timer-{hourly,daily,weekly}.target.wants
+man systemd.cron
+sudo mv /etc/systemd/system/crnie.service.d /drawer/backup
+sudo mv /etc/systemd/system/cronie.service.d /drawer/backup
+cd ..
+ls
+extract user*
+cd user-session-units
+makepkg -i
+man systemd.cron
+sudo vim /etc/cron.daily
+sudo vim /etc/cron.daily/backup
+man systemd.cron
+sudo vim /etc/cron.daily/backup
+rsync -va --delete /etc /drawer/backup/sync
+sudo rsync -va --delete /etc /drawer/backup/sync
+rsync -va --delete $HOME /drawer/backup/sync
+rsync -va --delete /developement/language /drawer/backup/sync
+rsync -va --delete /developement/tth /drawer/backup/sync
+man systemd.cron
+sudo systemctl enable rsyncd.service
+sudo vim /usr/lib/systemd/system/backup.service
+systemctl
+sudo vim /usr/lib/systemd/system/drawer.autmount
+man mount
+cd /
+ls -al
+sudo vim /usr/lib/systemd/system/backup.service
+sudo vim /usr/lib/systemd/system/drawer.mount
+sudo vim /usr/lib/systemd/system/drawer.automount
+sudo mv /usr/lib/systemd/system/drawer.autmount /usr/lib/systemd/system/drawer.automount
+sudo vim /usr/lib/systemd/system/drawer.automount
+sudo vim /usr/lib/systemd/system/backup.service
+sudo cp /etc/cron.daily/backup /drawer/scripts/backup.zsh
+ls -al /drawer/scripts
+sudo chown gabx:root backup.zsh
+sudo chown gabx:root /drawer/scripts/backup.zsh
+sudo 755 /drawer/scripts/backup.zsh
+sudo chmod 755 /drawer/scripts/backup.zsh
+ls -al /drawer/scripts
+sudo mv /usr/lib/systemd/system/backup.service /usr/lib/systemd/system/local-backup.service
+systemctl start local-backup.service
+sudo systemctl start local-backup.service
+systemctl status local-backup.service
+sudo vim /usr/lib/systemd/system/local-backup.service
+/drawer/scripts/backup.zsh
+sudo /drawer/scripts/backup.zsh
+sudo vim /usr/lib/systemd/system/local-backup.service
+sudo systemctl start local-backup.service
+systemctl status local-backup.service
+sudo vim /usr/lib/systemd/system/local-backup.service
+man rsync
+man rsync.conf
+man rsyncd.conf
+sudo cp /drawer/scripts/local-backup.zsh /usr/lib/systemd/scripts/local-backup
+sudo pacman -Rs systemd-cron
+sudo mkdir /etc/systemd/system/timer-{hourly,daily,weekly}.target.wants
+sudo mv /drawer/tim* /etc/systemd/system
+ls -al /etc/systemd/system
+sudo chown root:root /etc/systemd/system/timer*
+ls -al /etc/systemd/system
+cd /etc/systemd/system
+sudo mv /drawer/log* timer-daily.target.wants
+sudo mv /drawer/man* timer-daily.target.wants
+sudo mv /drawer/mlo* timer-daily.target.wants
+sudo mv /drawer/veri* timer-daily.target.wants
+cd timer-daily.target.wants
+ls -al
+sudo chown root:root *
+ls -al
+sudo mkdir usr/systemd/system/timer-{hourly,daily,weekly}.target.wants
+sudo mkdir/ usr/systemd/system/timer-{hourly,daily,weekly}.target.wants
+sudo mkdir /usr/systemd/system/timer-{hourly,daily,weekly}.target.wants
+sudo mkdir /usr/lib/systemd/system/timer-{hourly,daily,weekly}.target.wants
+sudo vim /usr/lib/systemd/system/local-backup.service
+sudo kill 6677
+sudo vim /usr/lib/systemd/system/local-backup.service
+sudo rm /usr/lib/systemd/system/local-backup.service.swp
+sudo vim /usr/lib/systemd/system/local-backup.service
+sudo rm /usr/lib/systemd/system/.local-backup.service.swp
+sudo vim /usr/lib/systemd/system/local-backup.service
+printenv
+sudo vim /etc/environment
+sudo vim /usr/lib/systemd/system/local-backup.service
+sudo cp /usr/lib/systemd/system/local-backup.service /home/gabx/.config/systemd/user
+ls -al /home/gabx/.config/systemd/user
+sudo chown gabx:users /home/gabx/.config/systemd/user/local-backup.service
+ls -al /home/gabx/.config/systemd/user
+vim /home/gabx/.config/systemd/user/local-backup.timer
+sysctl status rsyncd
+systemctl status rsyncd
+sudo systemctl rsyncd
+sudo systemctl rsyncd.service
+sudo systemctl start rsyncd.service
+systemctl status rsyncd
+sudo systemctl enable rsyncd.service
+sudo vim /etc/pam.d/login
+sudo vim /etc/pam.d/system-auth
+systemctl --user enable
+systemctl --user start gpg-agent.service
+/usr/lib/systemd/systemd --user
+systemctl --user start adb.service
+loginctl --no-pager show-session $XDG_SESSION_ID | grep Active
+sudo vim /etc/pam.d/system-auth
+sudo vim /etc/pam.d/login
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+whoiam
+whoami
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+sudo cp /usr/lib/systemd/system/user@.service /etc/systemd/system
+sudo vim /etc/systemd/system/user@.service
+sudo vim /etc/environment
+sudo mkdir /etc/systemd/user/1000
+sudo ln -s /home/gabx/.config/systemd/user /etc/systemd/user/1000
+sudo rm -R /etc/systemd/user/1000
+sudo ln -s /home/gabx/.config/systemd/1000 /etc/systemd/user/1000
+sudo rm -R /etc/systemd/user/1000
+sudo ln -s /home/gabx/.config/systemd/usr/1000 /etc/systemd/user/1000
+echo %I
+%I
+ls -al /etc/systemd/user
+sudo rm -R /etc/systemd/user/1000
+sudo ln -s /home/gabx/.config/systemd/user/1000 /etc/systemd/user/1000
+ls -al /etc/systemd/user
+echo %i
+sudo vi /etc/systemd/user@.service
+sudo vi /etc/systemd/system/user@.service
+echo $XDG_SESSION_ID
+systemctl --user set-environment
+systemctl --user
+systemctl
+sudo vim /etc/environment
+link
+link --help
+links
+exec /usr/lib/systemd/systemd --user
+sudo rm /ect/systemd/user/1000
+sudo rm /etc/systemd/user/1000
+sudo vim /etc/systemd/system/urxvtd@.service
+sudo vim /etc/systemd/system/user@.service
+sudo cp /usr/lib/systemd/system/console-shell* ./
+sudo cp /usr/lib/systemd/system/console-getty* ./
+sudo cp /usr/lib/systemd/system/gett* ./
+ls -al
+sudo chown gabx:users consol*
+sudo chown gabx:users gett*
+ls -al
+sudo systemctl start sshd.service
+systemctl status sshd.service
+sudo systemctl enable sshd.service
+sudo systemctl start rsyncd.service
+systemctl status rsyncd.service
+sudo systemctl enable rsyncd.service
+tty
+sudo vim /etc/environment
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+ls -al
+sudo vim /etc/environment
+echo $USER
+sudo vim /etc/security/pam_env_conf
+sudo vim /etc/security/pam_env.conf
+echo $USER
+echo $HOME
+pwd
+echo $WD
+echo $PWD
+sudo vim /etc/profile
+sudo vim /etc/security/pam_env.conf
+echo $HOST
+echo $DISPLAY
+logout
+echo $HOME
+echo $XDG_CONFIG_HOME
+pwd
+echo $PWD
+logout
+echo $HOME
+echo $XDG_CONFIG_HOME
+export XDG_CONFIG_HOME=${home}/.config
+echo $XDG_CONFIG_HOME
+export XDG_CONFIG_HOME=$(home)/.config
+export XDG_CONFIG_HOME=${HOME}/.config
+echo $XDG_CONFIG_HOME
+sudo vim /etc/security/pam_env.conf
+logout
+echo $HOME
+echo $XDG_CONFIG_HOME
+echo $USER
+sudo vim /etc/security/pam_env.conf
+logout
+echo $USER
+echo $XDG_CONFIG_HOME
+echo $HOME
+logout
+echo $HOME
+echo $XDG_CONFIG_HOME
+echo $BROWSER
+echo $DISPLAY
+sudo vim /etc/environment
+logout
+echo $DISPLAY
+echo $BROWSER
+echo $XDG_CONFIG_HOME
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+logout
+echo $XDG_CONFIG_HOME
+ls -al
+cd .config
+ls -al
+logout
+echo $GPG_TTY
+echo $R_PROFILE_USER
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+logout
+echo $GNUPGHOME
+echo $XDG_CONFIG_HOME
+export GNUPGHOME=${XDG_CONFIG_HOME}/gnupg
+echo $GNUPGHOME
+export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
+echo $GNUPGHOME
+echo $PERSONNAL
+echo $CCACHE_PATH
+echo $CODE
+echo $PERSONAL
+ls -al ~/.config/gnupg
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+sudo vim /etc/profile.d/gpg-agent.sh
+sudo vim /etc/environment
+logout
+echo $SSH_ENV
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+logout
+echo $XDG_CACHE_HOME
+echo $XDG_DATA_HOME
+echo $UID
+sudo vim /etc/security/pam_env.conf
+showconsolefont
+sudo vim /etc/vconsole.conf
+logout
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/vconsole.conf
+logout
+echo $LS_COLORS
+echo $TERM
+sudo vim /etc/security/pam_env.conf
+logout
+echo $TERM
+logout
+echo $R_PROFILE_USER
+echo $XDG_CONFIG_HOME
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+logout
+echo $R_PROFILE_USER
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+logout
+echo $R_PROFILE_USER
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+logout
+echo $R_PROFILE_USER
+R CMD
+Rcmd
+echo $XDG_SESSION_CLASS
+echo $XDG_SESSION_ID
+echo $XDG_RUNTIME_DIR
+sudo vim /etc/pam.d/system-auth
+loginctl list-seats
+lginctll seatstaatus satt0
+my ps GetSession
+myps GetSession
+GetSession()\
+exit
+tty
+man sulogin
+man agetty
+man systemd-getty-generator
+tty
+man console_codes
+GetSession()\
+exit
+sudo vim /etc/environment
+GetSession()\
+exit
+exit
+sudo vim /etc/security/pam_env.conf
+echo $DISPLAY
+echo $SHELL
+sudo vim /etc/security/pam_env.conf
+logout
+echo $LC_ALL
+sudo vim /etc/security/pam_env.conf
+echo $SHELL
+echo $USER_ENVFILE
+echo $DISPLAY
+logout
+echo $DISPLAY
+echo $USER_ENVFILE
+echo $REMOTEHOST
+logout
+echo $REMOTEHOST
+echo $LOCALHOST
+echo $HOST
+echo $USER_ENVFILE
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+logout
+echo $DISPLAY
+echo $LOCALHOST
+echo $REMOTEHOST
+sudo vim /etc/security/pam_env.conf
+echo $REMOTEHOST
+echo $LOCALHOST
+logout
+echo $XTERM
+echo $TERM
+X
+echo $XDG_CONFIG_HOME
+X
+echo $XDG_CONFIG_HOME
+echo $TERM
+echo $XDG_CONFIG_HOME
+urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp' >> ~/tt
+echo $XDG_CONFIG_HOME
+echo $LOCALHOST
+echo $XDG_CONFIG_HOME
+echo $TERM
+echo $REMOTEHOST
+logout
+echo $REMOTEHOST
+echo $PATH
+sudo vim /etc/environment
+echo $PWD
+echo $LOGNAME
+xdg-mime
+xdg-mime query filetype photo.jpg
+xdg-mime query filetype jpg
+xdg-mime query filetype .jpg
+xdg-mime query default image/jpeg
+sudo vim /etc/profile
+toto="lala/zz:ut\\
+
+export toto
+echo $toto
+logout
+echo $PATH
+logout
+echo $PATH
+sudo vim /etc/profile
+logout
+echo $PATH
+logout
+echo $PATH
+logout
+echo $PATH
+logout
+echo $HOME
+echo $ENVFILE
+logout
+echo $XDG_CONFIG_HOME
+echo $USER
+logout
+echo $PATH
+logout
+echo $R_PROFILE_USER
+echo $XDG_RUNTIME_DIR
+logout
+echo $R_ENVIRON_USER
+echo $PATH
+logout
+echo $PATH
+logout
+echo $PATH
+logout
+echo $PATH
+logout
+echo $PATH
+echo $USER_ENVFILE
+printenv
+sudo vim /etc/environment
+sudo thunar
+sudo caja
+localhost
+echo $localhost
+echo localhost
+host
+printenv
+myps caja
+sudo kill 19863
+sudo caja
+myps caja
+sudo kill 20184
+sudo vim /etc/environment
+sudo vim /etc/profile
+echo $DBUS_SESSION_BUS_ADDRESS
+sudo vim /usr/lib/systemd/system/drawer.automount
+man dbus-run-session
+man debus-daemon
+man dbus-daemon
+logout
+sudo vim /etc/profile
+logout
+echo $HOME
+⃮��
+sudo vim /etc/profile
+sudo vim /etc/environment
+ps xawf -eo pid,user,cgroup,args
+startx
+sudo pacman -S rtkit
+sudo pacman -Rs rtkit
+sudo pacman -Rd rtkit
+sudo vim /etc/profile
+logout
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/pam.d/login
+sudo vim /etc/pam.d/system-auth
+sudo vim /etc/environment
+logout
+ls -al
+mv .pam_environment pam_envback
+logout
+visudo
+sudo visudo
+logout
+echo $SHELL
+systemd-cgls
+sudo systemctl enable systemd-halt.service
+systemctl status adb.service
+sudo systemctl adb.service stop
+sudo systemctl stop adb.service
+systemctl status adb.service
+systemctl adb.service start
+systemctl start adb.service
+sudo pacman -Rd user-session-units
+systemctl --user status
+startx
+systemctl --user status
+exec systemd
+systemctl --user status
+sudo systemctl --user status
+man ttyname
+ttyname
+echo $TTYNAME
+man ttyname
+tty
+echo $TTY
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/profile
+display
+sudo vim /etc/environment
+sudo vim /etc/profile
+logout
+echo $USER
+echo $LOGNAME
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+sudo vim /etc/profile
+logout
+echo $USER
+sudo vim /etc/profile
+logout
+echo $USER
+logout
+echo $LANG
+echo $USER
+echo $TTY
+echo $LOGNAME
+sudo vim /etc/environment
+logout
+echo $TTY
+echo $LANG
+sudo vim /etc/environment
+logout
+echo $LANG
+echo $SHELL
+echo $LOGNAME
+echo $MANAGERPID
+sudo mkdir /etc/systemd/system/user@.service.d
+sudo vim /etc/systemd/system/user@.service.d/environment.conf
+sudo rm /etc/systemd/system/user@.service
+logout
+systemctl status user
+sudo sed -i s/system-auth/system-login/g /etc/pam.d/systemd-user
+logout
+systemctl --user start adb.service
+startx
+systemctl --user start adb.service
+systemctl --user status
+systemctl status user
+systemctl list-units -t service --all
+sudo systemctl stop user@1000.service
+systemctl daemon-reload
+sudo systemctl daemon-reload
+systemctl list-units -t service --all
+systemctl --failed
+systemctl status user
+sudo mv /etc/systemd/system/user@.service.d/environment.conf /etc/systemd/system/user@.service.d/environmentconfback
+sudo systemctl daemon-reload
+systemctl status user
+systemctl status adb
+systemctl status systemd-user-sessions.service
+sudo cp /usr/lib/systemd/system/user@.service /usr/lib/systemd/system/user.service
+sudo systemctl start user.service
+systemctl status user
+sudo systemctl enable user.service
+man systemd.special
+systemctl enable user.service
+systemctl stop user.service
+sudo systemctl stop user.service
+systemctl start user.service
+sudo systemctl start user.service
+systemctl --user start adb.service
+man systemd-user.conf
+sudo cp /usr/lib/systemd/system/user.service /etc/systemd/system/user.service
+sudo vim /etc/systemd/system/user.service
+sudo mv /usr/lib/systemd/system/user.service /drawer/backup
+sudo systemctl stop user.service
+sudo systemctl daemon-reload
+sudo systemctl start user.service
+systemctl status user.service
+systemctl status --user
+man systemd-user-session.service
+man systemd-user-sessions.service
+systemctl status systemd-user-sessions.service
+sudo mkdir /etc/systemd/system/user.target.wants
+sudo vim /etc/systemd/user.service
+sudo vim /etc/systemd/system/user.service
+sudo systemctl stop user.service
+sudo systemctl daemon-reload
+sudo systemctl start user.service
+sudo systemctl enable user.service
+sudo systemctl stop user.service
+sudo vim /etc/systemd/system/user.service
+man systemd-user-sessions.service
+systemctl status user
+%I
+man systemd
+%u
+u
+echo $u
+sudo pacman -Rd dwmstatus
+sudo systemctl stop user.service
+sudo systemctl disable user.service
+sudo rm -R /etc/systemd/system/user@service.d
+sudo rm -R /etc/systemd/system/user@.service.d
+man systemctl
+man systemd.ressource-management
+man systemctl
+man systemd.ressource-management
+man systemctl
+man systemd.resource-management
+systemctl --user
+sudo vim /etc/pam.d/systemd-user
+logout
+systemctl --user
+startx
+systemctl --user
+logout
+systemctl --user
+startx
+systemctl --user
+logout
+reboot
+startx
+echo $GNUPGHOME
+echo $SSH_ENV
+echo $XDG_CONFIG_HOME
+echo £HOME
+echo $HOME
+sudo vim /tec/environment
+sudo vim /etc/environment
+echo $LOGNAME
+echo $TTY
+echo $DISPLAY
+echo $XDG_CACHE_HOME
+echo $R_PROFILE_USER
+echo $SSH_ENV
+logout
+echo $PATH
+echo $JAVA_HOME
+echo $SHELL
+reboot
+startx
+echo $GNUPGHOME
+echo $SSH_ENV
+echo $SSH_AUTH_SOCK
+sudo vim /etc/environment
+sudo vim /etc/profile
+echo $LOCAL_BACKUP
+sudo vim /etc/environment
+sudo vim /etc/profile
+echo SSH_ENV
+echo $SSH_ENV
+echo $GNUPGHOME
+echo $XDG_CONFIG_HOME
+reboot
+startx
+myps pgp-agent
+systemctl --user
+echo $DISPLAY
+echo $SHELL
+sudo /etc/security/pam_env.conf
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+echo $LANG
+echo $XDG_RUNTIME_DIR
+sudo vim /etc/security/pam_env.conf
+echo $BROWSER
+echo $PAGER
+logout
+echo $BROWSER
+sudo vim /etc/security/pam_env.conf
+man systemctl
+sudo vim /etc/shells
+pam_localuser.so debug
+sudo vim /etc/environment
+echo $XDG_SEAT
+echo $XDG_SESSION_ID
+echo $XAUTHORITY
+sudo vim /etc/environment
+systemd-cgls
+systemctl list-units -t service --all
+sudo vim /etc/systemd/system/user.service
+man systemd-user-session-service
+man systemd-user-session.service
+man systemd-user-sessions.service
+man systemd-logind.service
+man loginctl
+loginctl list-session
+loginctl list-sessions
+loginctl session-status
+loginctl session-status 1
+loginctl show-session 1
+loginctl show-user gabx
+loginctl list-seats
+loginctl seat-status 0
+loginctl seat-status seat0
+man logind.conf
+gduus intospeect -systemm --dest org.fredesktop..login1 --objett-path /rg/freedesktoploogin1/user/10000
+gduus introspect -systemm --dest magnolia.login1 --objett-path magnolia/user/10000
+gdbus introspect -systemm --dest magnolia.login1 --objett-path magnolia/user/10000
+man gdbus
+sudo vim /etc/pam.d/su
+systemctl --user
+sudo vim /etc/pam.d/passwd
+logout
+startx
+systemctl --user
+sudo vim /etc/pam.d/passwd
+logout
+startx
+sudo vim /etc/pam.d/su
+logout
+startx
+systemd-cgls
+startx
+systemd-clgs
+systemd-cgl
+logout
+systemctl list-units
+sudo mv /etc/systemd/system/user.service /etc/systemd/system/user@.service
+sudo mv /usr/lib/systemd/system/user@.service /usr/lib/systemd/system/back_user@service
+sudo systemctl stop user@.service
+sudo systemd daemon reload
+sudo systemctl daemon reload
+sudo systemctl daemon-reload
+sudo systemctl list-units
+sudo systemctl list-units -t service --all
+systemctl --user
+logout
+startx
+systemctl show-session
+systemctl show-sessions
+systemctl list-sessions
+loginctl list-sessions
+loginctl list-seats
+systemctl failed
+systemctl --failed
+systemctl --failed --all
+systemctl --all
+myps polkit
+sudo sed -i s/system-auth/system-login/g /etc/pam.d/systemd-user
+sudo mkdir /etc/systemd/system/user@.service.d
+sudo vim /etc/systemd/system/user@.service.d/environment.conf
+echo $SYSTEMD_UNIT_PATH
+sudo vim /etc/systemd/system/user@.service
+sudo systemctl user@.service restart
+sudo systemctl user@gabx.service restart
+sudo systemctl restart user@.service
+sudo systemctl restart user@gabx.service
+systemctl list-units -t service --all
+sudo cp /etc/systemd/system/urxvt@.service ../user
+sudo cp /etc/systemd/system/urxvtd@.service ../user
+sudo mv /etc/systemd/system/urxvtd@.service /etc/systemd/user/urxvtd@.service
+sudo rm /home/user
+sudo systemctl restart user@gabx.service
+sudo systemctl daemon-reload
+systemctl list-units -t service --all
+sudo mv /etc/systemd/user/urxvtd@.service /etc/systemd/system/urxvtd@.service
+sudo systemctl daemon-reload
+systemctl list-units -t service --all
+systemd-clgs
+ps xawf -eo pid,user,cgroup,args
+myps polkit
+sudo systemctl daemon-reload
+logout
+startx
+sudo pacman -Rd consolekit
+myps consolekit
+echo $HOSTNAME
+sudo systemctl set-hostname=magnolia
+sudo hostnamectl set-hostname=magnolia
+sudo hostnamectl set-hostname magnolia
+echo $HOSTNAME
+mypas caja
+myps caja
+kill 623
+myps caja
+echo $HOSTNAME
+cat /etc/hostname
+logout
+startx
+logout
+echo $HOSTNAME
+echo $LANG
+sudo vim /etc/pam.d/system-auth
+sudo rm /etc/pam.d/.syst*
+sudo vim /etc/pam.d/system-auth
+sudo vim /etc/pam.d/system-login
+myps keyring
+$XDG_SESSION_ID
+echo $XDG_SESSION_ID
+echo $XDG_RUNTIME_DIR
+sudo vim /etc/systemd/system/user@.service
+sudo systemctl stop user@1000.service
+sudo systemctl daemon-reload
+sudo systemctl start user@.service
+sudo systemctl start user@gabx.service
+sudo systemctl enable user@gabx.service
+ps xawf -eo pid,user,cgroup,args
+sytemcttl lis-uniits -t ervice  all
+systemctl list-units -t service --all
+sudo systemctl disable user@gabx.service
+sudo vim /etc/systemd/system/user@.service
+sudo systemctl enable user@gabx.service
+sudo systemctl start user@gabx.service
+sudo systemctl daemon-reload
+systemctl list-units -t service --all
+systemctl status user@gabx.service
+sudo vim /etc/systemd/system/user@.service
+sudo systemctl restart user@gabx.service
+sudo systemctl daemon-reload
+systemctl list-units -t service --all
+sudo vim /etc/systemd/system/user@.service
+sudo systemctl restart user@gabx.service
+sudo systemctl daemon-reload
+systemctl list-units -t service --all
+echo $ENV_FILE
+sudo vim /etc/profile
+sudo vim /etc/systemd/system/user@.service
+sudo vim /etc/profile
+tt=unix:path=/run/user/%I/dbus/user_bus_socket
+echo $tt
+echo $UUID
+echo $UID
+tt=unix:path=/run/user/$UID/dbus/user_bus_socket
+echo tt
+tt=unix:path=/run/user/${UID}/dbus/user_bus_socket
+echo tt
+systemd-analyze critical-chain
+sudo touch /run/user/1000/dbus/user_bus_socket
+sudo touch /run/dbus/user_bus_socket
+sudo rm /run/dbus/user_bus_socket
+sudo mkdir /run/user/1000/dbus
+sudo touch /run/user/1000/dbus/user_bus_socket
+sudo vim /etc/environment
+sudo vim /etc/systemd/system/dbus_user_service
+sudo vim /etc/systemd/system/dbus_user_socket
+man R
+sudo vim /usr/lib/systemd/system/getty@service
+sudo vim /usr/lib/systemd/system/getty@.service
+myps keyring
+myps ssh
+tty
+sudo vim /etc/profile
+echo $TTY
+sudo vim /etc/environment
+echo $HOST
+echo $HOSTNAME
+sudo vim /etc/systemd/system/user@.service.in
+sudo vim /etc/systemd/system/user@.service
+sudo mv /etc/systemd/system/user@.service.in /etc/systemd/system/user@.service
+sudo vim /etc/systemd/system/user@.service
+man agetty
+sudo systemctl daemon-reload
+systemctl list-units -t service --all
+systemctl --failed
+loginctl list-sessions
+ps xawf -eo pid,user,cgroup,args
+systemd-analyze -fuzz=11 criticll-chain
+systemd-clgs
+man systemctl
+systemctl show-environment
+echo $PATH
+sudo vim /etc/profile
+tty
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/profile
+pacup
+reboot
+startx
+pwd
+ls -al
+echo $USER
+ech
+echo $TERM
+echo $SHELL
+sudo nano /*
+nano .pam_environment
+TERM=urxvt-
+TERM=urxvt-256colors
+TERM=urxvt-
+startx
+ls -al
+vim pam_environment
+startx
+sudo vim /etc/profile
+sudo nano /etc/securit
+myps urxvt
+logout
+vim .pam_environment
+sudo reboot -n
+startx
+echo $PATH
+cd .config
+ls -al
+cd zsh
+ls -al
+vim .initzsh
+cd zshrc.d
+ls
+vim 01_zenv
+sudo vim /etc/environment
+sudo vim /etc/profile
+tty
+sudo reboot
+myps ssh
+gpg
+myps gpg
+systemctl list-units -t service --all
+systemd-clgs
+systemd-cgls
+gmcs hello.cs
+adb devices
+adb reboot recovery
+cd /developement/git_codeplex
+git config --gloabl user.name gabx
+git config --gloabl user.name "gabx"
+git config --global user.name "gabx"
+git clone https://git01.codeplex.com/bemu
+/developement/android/mobiles
+adb sideload gapps-jb-20130813-signed.zip
+echo $PATH
+echo $JAVA_HOME
+sudo vim /etc/profile
+echo $PATH
+sudo vim /etc/profile
+echo $PATH
+printenv
+env
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/profile
+logout
+echo $PATH
+sudo vim /etc/security/pam_env.conf
+logout
+echo $PATH
+echo $JAVA_HOME
+sudo vim /etc/profile
+logout
+echo $PATH
+logout
+sudo vim /etc/security/pam_env.conf
+echo $PATH
+echo $JAVA_HOME
+echo $PATH
+sudo vim /etc/security/pam_env.conf
+logout
+echo $PATH
+echo $JAVA_HOME
+sudo vim /etc/security/pam_env.conf
+logout
+echo $PATH
+echo $TERM
+echo $SHELL
+logout
+sudo vim /etc/profile
+echo $PATH
+echo $JAVA_HOME
+logout
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+echo $PATH
+echo $JAVA_HOME
+sudo vim /etc/environment
+logout
+echo $JAVA_HOME
+sudo vim /etc/security/pam_env.conf
+logout
+echo $JAVA_HOME
+sudo vim /etc/environment
+logout
+echo $JAVA_HOME
+logout
+echo $JAVA_HOME
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+logout
+echo $JAVA_HOME
+sudo vim /etc/security/pam_env.conf
+logout
+echo $JAVA_HOME
+sudo vim /etc/profile
+logout
+echo $JAVA_HOME
+echo $PATH
+sudo vim /etc/profile
+logout
+echo $PATH
+echo $JAVA_HOME
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+logout
+echo $JAVA_HOME
+echo $PATH
+sudo vim /etc/security/pam_env.conf
+source /etc/profile
+echo $JAVA_HOME
+source /etc/profile
+echo $JAVA_HOME
+source /etc/profile
+sudo vim /etc/profile
+logout
+echo $PATH
+sudo vim /etc/profile
+sudo vim /etc/environment
+logout
+echo $PATH
+sudo vim /etc/environment
+logout
+echo $PATH
+cd /etc/profile.d
+sudo mv jdk.csh backupjdkcsh
+sudo mv jdk.sh backupjdksh
+sudo mv jre.sh backupjresh
+sudo mv jre.csh backupjrecsh
+logout
+echo $PATH
+echo $JAVA_HOME
+sudo vim /etc/environment
+logout
+echo $TOTO
+logout
+echo $JAVA_HOME
+echo $TERM
+echo $BROWSER
+sudo vim /etc/profile
+logout
+echo $PATH
+sudo vim /etc/profile
+echo $LANG
+man profile
+logout
+ls -al /home/gabx/.config/zsh
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/security/pam_env.conf
+sudo vim /etc/environment
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/profile
+pathappend
+HOME
+pwd
+cd Desktop
+su cp manage_path /etc/profile.d
+sudo cp manage_path /etc/profile.d
+ls -al /etc/profile.d
+echo $SHELL
+echo $ZSH_NAME
+echo $BASH
+cd /etc/profile.d
+ls -al
+sudo mv manage_path manage_path.sh
+sudo chmod 755 manage_path.sh
+ls -al
+sudo cp mamage_path.sh manage_path.csh
+sudo cp manage_path.sh manage_path.csh
+sudo vim manage_path.csh
+ls -al
+sudo vim /etc/profile
+ls -al
+sudo do . manage_path.sh
+. manage_path.sh
+pathappend
+sudo vim /etc/profile
+echo LC_TYPE
+echo $LC_TYPE
+echo $LC_NAME
+echo $HOSTNAME
+env
+sudo vim /etc/environment
+sudo vim /etc/locale.conf
+sudo vim /etc/environment
+ps -p $$
+echo $TIME
+time
+ps -p $$
+ps -ef | grep $$ | awk '{print $8}'
+ps -p $$ | awk '{print $CMD}'
+ps -p $$ | priM
+ps -p $$ | echo $CMD
+ps -p $$ | echo CMD
+ps -p $$ | awk '{print CMD}'
+ps -p $$ -axco command | sed -n '$p'
+ps -p $$ | ed  -n $p''
+sudo vim /etc/xdg/autostart/README
+sudo mv /etc/xdg/autostart/mate-keyring-gpg.desktop /etc/xdg/autostart/back.matekeyringgpgdesktop.up
+sudo mv /etc/xdg/autostart/mate-keyring-ssh.desktop /etc/xdg/autostart/back.matekeyringgsshdesktop.up
+sudo mv /etc/xdg/autostart/polkit-mate-authentication-agent-1.desktop /etc/xdg/autostart/back.polkit-mate-authentication-agent-1-desktop.up
+sudo vim /etc/xdg/autostart/README
+sudo vim /etc/environment
+echo $USER
+sudo vim /etc/environment
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/profile
+sudo vim /etc/environment
+sudo vim /etc/profile
+echo $HISTFILE
+e
+echo $TOTO
+echo $HISTSIZE
+logout
+echo $XDG_CONFIG_HOME
+sudo vim /etc/profile
+sudo vim /etc/profile.d/gpg-agent.sh
+logout
+ls -al /etc/profile.d
+chown users:root gpg-agent.sh
+chown user:root gpg-agent.sh
+chown owner-user gpg-agent.sh
+chown user gpg-agent.sh
+chown users gpg-agent.sh
+sudo chown user gpg-agent.sh
+chown gabx:user gpg-agent.sh
+chattr -i gpg-agent.sh
+chown user gpg-agent.sh
+chown gabx:user gpg-agent.sh
+chown gabx:users gpg-agent.sh
+chown users gpg-agent.sh
+ls -al
+chown security gpg-agent.sh
+chown root gpg-agent.sh
+sudo chown root gpg-agent.sh
+ls -al
+sudo chown root:root gpg-agent.sh
+ls -al
+sudo chown root:security gpg-agent.sh
+ls -al
+sudo vim /etc/profile.d/gpg-agent.sh
+ps -ef | grep gpg
+ssh-add -l
+ssh-add -l > /dev/null
+ssh-add -l
+ps -ef | grep gpg
+logout
+echo $ZOZO
+echo $LANG
+ps -ef | pgrep pgp
+myps pgp
+logout
+echo $HISTFILE
+echo $EDITOR
+sudo vim /etc/environment
+e\
+
+logout
+sudo vim /etc/environment
+logout
+echo $SUDO_EDITOR
+echo $EDITOR
+logout
+echo $SUDO_EDITOR
+myps gpg
+mypid gpg
+cd /etc/xdg/autostart
+ls -al
+sudo mv back.matekeyringgpgdesktop.up mate-keyring-gpg.desktop
+ls -al
+logout
+startx
+myps gpg
+myps mate
+logout
+sudo mv back.polkit-mate-authetication-agent-1-desktop.up polkit-mate-authetication-agent-1.desktop
+sudo mv back.polkit-mate-authentication-agent-1-desktop.up polkit-mate-authentication-agent-1.desktop
+ls -al
+echo $XDG_SESSION_ID
+logout
+logout
+16colors
+eval-color
+e
+\
+
+echo $LANG
+16colors
+echo $ZSH_NAME
+\
+gout
+logout
+\
+oi
+uzzwwpppoooéÃ�
+\
+
+logout
+logout\
+
+\
+oohh
+echo $TERM
+echo $ZSH_NAME
+logout
+showconsolefont
+logout
+logout
+logout
+pwd
+ls -al
+logout
+ls -al
+logout
+sudo pacman -S blender
+X
+urxvt -depth 32 -bg rgba:3f00/3f00/3f00/dddd
+X
+urxvt -depth 32 -bg rgba:1111/1111/1111/dddd
+X
+startx
+logout
+startx
+echo $PGP_TTY
+echo $GPG_TTY
+X
+sudo vim /etc/profile.d/gpg*
+cd .config/gnupg
+ls -al
+systemctl list-units -t service --all
+cd /drawer/download/IAM-Arts_Martiens
+clearMP3
+ls
+find root_audio_path -type f -iname '*mp3' -execdir rename --no-act 's/^\.\/[\d\s\-]+/\.\//' '{}' ';'
+find root_audio_path -type f -iname '*mp3' rename --no-act 's/^\.\/[\d\s\-]+/\.\//' '{}' ';'
+find -type f -iname '*mp3' rename --no-act 's/^\.\/[\d\s\-]+/\.\//' '{}' ';'
+find root_audio_path -type f -iname '*mp3' rename --no-act 's/^\.\/[\d\s\-]+/\.\//' '{}' ';'
+find root_audio_path -type f -iname '*mp3' ./ rename --no-act 's/^\.\/[\d\s\-]+/\.\//' '{}' ';'
+find ./ -type f -iname '*mp3' rename --no-act 's/^\.\/[\d\s\-]+/\.\//' '{}' ';'
+rename 's/ /_/' *.mp3
+ls
+for f in [0-9]*; do echo $f | sed 's/^[0-9]*\W*//'; done
+ls
+sudo pacman -S rdesktop
+rdesktop
+sudo pacman -S remmina
+aur
+ls
+extract grd*
+cd grdesktop
+makepkg -i
+sudo pacman -S grdesktop
+sudo pacman -Rs grdesktop
+sudo pacman -Rd grdesktop
+myps grdesktop
+kill 170
+myps grdesktop
+dld
+ls
+extract Plane*
+adb devices
+adb
+adb reboot recovery
+/developement/android/mobiles/galaxy4
+adb sideload aosp44-beta-2-Fixed-Kernel.zip
+ps -ef | grep gpg | awk '{print $2}'
+myps gpg
+ps -ef | pgrep gpg | awk '{print $2}'
+ps -ef | pgrep gpg
+ps -ef | pgrep gpg | awk '{print $2}'
+TT=ps -ef | pgrep gpg | awk '{print $2}'
+echo $UID
+eval $(gpg-agent --daemon)
+fuser 7795
+echo $GPG_AGENT_INFO
+fuser $GPG_AGENT_INFO
+lsof $GPG_AGENT_INFO
+man pidfile
+/drawer/download/IAM-Arts_Martiens
+rename --no-act 's//_/' *.mp3
+rename --no-act 's/ /_/' *.mp3
+rename 's/^\.\/[\d\s\-]+/\.\//' *mp3
+ls
+rename 's/^\.\/[\d\s\-]+/\.\//' *.mp3
+ls
+rename 's/\.mp3/\^[0-9]*\W*//'
+rename 's/\.mp3/\^[0-9]*\W*//' *
+ls
+/drawer/download/IAM-Arts_Martiens
+rename "s/ *//g" *.mp3
+ls
+rename "s/[0-9]//g" *.mp3
+ls
+rename "s/[0-9] *//g" *.mp3
+ls
+rename "s/\^[0-9]*//g" *.mp3
+ls
+find . -maxdepth 1 -regextype "posix-egrep" -regex '.*/[0-9]+.*\.mp3' -type f
+ls
+zmv '[0-9]## #(*.mp3)' '$1'
+/developement/android/mobiles/nex4/factory_image/occam-jdq39
+fastboot devices
+./flash-all.sh
+/developement/android/mobiles/nex4
+adb devices
+fastboot flash recovery openrecovery-twrp-2.6.3.3-mako.img
+backup/2013-11-12--01-22-42
+/developement/android/mobiles/nex4
+extract CF*
+adb devices
+adb reboot bootloader
+./root-linux.sh
+CF-Auto-Root-mako-occam-nexus4
+./root-linux.sh
+adb reboot recovery
+adb devices
+adb
+/developement/android/mobiles/nex4/backup/adb
+adb restore backup.ab
+adb reboot recovery
+adb restore backup.ab
+adb reboot recovery
+adb restore backup.ab
+adb reboot recovery
+gpg-agent /echo
+gpg-agent /get serverpid
+gpg-connect-agent /get cwd
+gpg-connect-agent /echo
+gpg-connect-agent
+eval $(gpg-agent --daemon)
+myps gpg
+kill 143
+kill 143sudo kill 143
+kill 16519
+kill 25156
+myps gpg
+eval $(gpg-agent --daemon)
+echo $GPG_AGENT_INFO
+gpg-agent --homedir $XDG_CONFIG_HOME/gnupg
+gpg-agent --use-standard-socket-p
+myps gpg-agent
+kill 25166
+myps gpg-agent
+pgrep -x -u "${USER}" gpg-agent
+sudo vim /etc/profile.d/gpg-agent.sh
+gpg2 --card-status
+gpg --card-status
+ssh-add ~/.config/gnupg/sshcontrol
+ssh-agent
+sudo vim /etc/profile
+myps ssh
+ssh-add /home/gabx/.config/ssh/keys/gabx-id_ecdsa
+eval `ssh-agent -s`
+ssh-add /home/gabx/.config/ssh/keys/gabx-id_ecdsa
+ssh-add /home/gabx/.config/gnupg/sshcontrol
+/home/gabx/.config/gnupg
+ls -al
+chown gabx:gabx sshcontrol
+chmod g-r
+chmod o-r
+chmod g-r sshcontrol
+chmod o-r sshcontrol
+ls -al
+ssh-add /home/gabx/.config/gnupg/sshcontrol
+printf "\npersonal-digest-preferences SHA512\ncet-digest-algo SHA512\nndefault-preference-list SHA512 SHA384 SH256 SHA224 AES266 AES192 AES CATT5 ZLIB BZIP2 ZPP Uncompressed"  >> ~/.confi/gnupg//gpg.conf
+gpg --gen-key
+ls -al
+cd /
+ls -al
+pg  -armor  -outputt pubic.kkey -exportt 'Arno_aaboury'
+gpg --keserrver pgp.it..edu --sed-kkeys D3C9C4BB
+gpg --list-keys
+gpg --list-secret-keys
+ssh-add /home/gabx/.config/gnupg/sshcontrol
+pg -armor -tputttt pub.kkkkey -portttt 'Arno_Gaboury'
+gpg --armor --output public.key --export 'Arno_Gaboury'
+ssh-add /home/gabx/.config/gnupg/sshcontrol
+sudo vim /etc/profile.d/gpg-agent.sh
+logout
+sudo vim /etc/profile.d/gpg-agent.sh
+logout
+myps ssh
+myps gpg
+KIll
+kill 25297
+sudo vim /etc/profile.d/gpg-agent.sh
+logout
+ssh-add /home/gabx/.config/gnupg/sshcontrol
+gpg2
+myps gpg2
+kill 32347
+gpg2 --version
+gpg2 --list-keys
+gpg2 --list-secret-keys
+gpg2 --fingerprint
+gpg2 --check-trustdb
+gpg2 --loacte-keys 8D59A73E
+gpg2 --locate-keys 8D59A73E
+gpg2 --locate-8D59A73E
+gpg2 --edit-key
+gpg2 --edit-key Arno_Gaboury
+gpg2 --edit-key Arnaud_Gaboury
+gpg2 --edit-key gabx
+gpg2 --edit-key Gabx
+gpg2 --edit-key Arno_Gaboury
+gpg --edit-key Arno_Gaboury
+gpg2 --edit-key Arno_Gaboury
+gpg --edit-key Arno_Gaboury
+gpg --edit-key
+gpg --edit-key 3D3C9C4B
+sudo vim /etc/profile.d/gpg-agent.sh
+ssh-add -l
+ssh-add
+eval $(ssh-agent)
+ssh-add /home/gabx/.config/ssh/keys/gabx-id_ecdsa.pub
+cd /home/gabx/.config/ssh/keys/gabx-id_ecdsa.pub
+cd /home/gabx/.config/ssh/keys
+ls -al
+cd /home/gabx/.config/ssh/keys/gabx-id_ecdsa
+ssh-add /home/gabx/.config/ssh/keys/gabx-id_ecdsa
+ssh-add /home/gabx/.config/gnipg/sshcontrol
+ssh-add /home/gabx/.config/gnupg/sshcontrol
+/home/gabx/.config/gnupg
+rm sshcontrol
+touch sshcontrol
+ls -al
+chmod go-r sshcontrol
+ssh-add /home/gabx/.config/gnupg/sshcontrol
+pass
+source /usr/share/doc/pkgfile/command-not-found.zsh
+pass
+sudo pacman -S pass
+man pass
+pass
+gpg --list-secret-keys
+pass init 3D3C9C4B
+find .password-store
+pass insert google.com/gmail/arnaud.gaboury@gmail.com
+pass
+pass goog
+pass google.com/
+pass google.com/gmail/arnaud.gaboury@gmail.com
+sudo pacman -Syu
+sudo reboot -n
+startx
+/home/gabx/bin
+.genymotion.bin
+/.genymotion.bin
+.genymotion.bin
+ls -al
+/.genymotion-debian.bin
+ls -al
+sudo pacman -S virtualbox
+sudo modprobe vboxdrv
+chmod +x genymotion.bin
+mkdir genymotion
+./genimotion.bin -d genimotion
+ls
+./genymotion.bin -d genymotion
+cd genymotion
+./genymotion
+sudo pacman -S libpng12
+./genymotion
+sudo /etc/init.d/vboxdrv status
+sudo pacman -S virtualbox-host-modules
+sudo gpasswd -a gabx vboxusers
+./genymotion
+/home/gabx/.config/ssh/keys
+cd ..
+chattr -i config
+ls
+sudo chattr -i config
+sudo chattr +i config
+cd keys
+ssh-keygen -p -f gabx-id_ecdsa
+ls -al
+sudo chattr -i gabx-id_ecdsa
+ssh-keygen -p -f gabx-id_ecdsa
+sudo chattr +i gabx-id_ecdsa
+ssh-agent
+cd ../..
+cd gnupg
+ls
+ssh-add sshcontrol
+sudo chattr -i sshconfig
+sudo chattr -i sshcontrol
+ssh-add sshcontrol
+sudo chattr +i sshcontrol
+sudo chattr -i sshcontrol
+ssh-add sshcontrol
+sudo chattr +i sshcontrol
+ssh-add
+ssh-agent
+ssh-add
+sudo chattr -i sshcontrol
+ssh-add sshcontrol
+ssh-add /home/gabx/.config/ssh/keys/gabx-id_ecdsa
+myps ssh
+kill 5645
+kill 5835
+quit
+logout
+exit
+ssh-add -l
+myps ssh
+ls -l /tmp* | grep gpg
+export | grep -e GPG -e SSH
+$GPGAGENT 2>/dev/null
+echo $GPGAGENT
+/usr/bin/gpg-agent 2>/dev/null
+/home/gabx/bin
+genymotion.bin
+./genymotion.bin
+cd genimotion
+cd genymotion
+genymotion
+sudo launchctl load /Library/LaunchDaemons/org.virtualbox.startup.plist
+genymotion
+VBoxManage -v
+/etc/init.d/vboxdrv setup
+sudo pacman -S offlineimap
+cd ~
+offlineimap
+sudo mkdir /tem/magno
+sudo mkdir /tmp/magno
+sudo fdisk
+sudo fdisk -l
+sudo mount /dev/sda2 /tmp/magno
+offlineimap
+sudo fdisk -l
+sudo fdisk /dev/sdd
+partprobe
+partprobesudo partprobe
+sudo partprobe
+gpt /dev/sdd
+gdisk /dev/sdd
+sudo gdisk /dev/sdd
+sudo fdisk -l
+sudo gdisk /dev/sdd
+sudo fdisk /dev/sdd
+sudo partprobe
+sudo gparted
+adb boot recovery
+adb reboot recovery
+/developement/android/mobiles/galaxy4
+extract open*
+adb shell
+adb reboot recovery
+adb reboot
+fastboot devices
+fastboot device
+fastboot devices
+adb devices
+heimdall
+aur
+ls
+extract hei*
+cd heimdall
+makepkg -i
+heimdall
+heimdall-frontend
+/developement/android/mobiles/galaxy4/heimdall
+extract I9*
+heimdall-frontend
+/developement/android/mobiles/galaxy4/heimdall/I9505GUEUBMKG_FULL_ROOTED
+sudo heimdall flash --APNHLOS NON-HLOS.bin --MDM modem.bin --SYSTEM system.img.ext4 --BOOT boot.img
+adb reboot recovery
+/developement/android/mobiles/galaxy4
+sudo heimdall flash --RECOVERY recovery-clockwork-touch-6.0.4.4-jfltexx.img --no-reboot
+sudo pacman -S gnupg
+sudo pacman -S bison
+sudo pacman -S gperf
+sudo pacman -S libsdl1.2-dev
+sudo pacman -S libesd0-dev
+sudo pacman -S libwxgtk2.8-dev
+sudo pacman -S squashfs-tools
+sudo pacman -S libncurses5-dev
+sudo pacman -S zlib1g-dev
+sudo pacman -S pngcrush
+sudo pacman -S libxml2
+sudo pacman -S libxml2-utils
+sudo pacman -S xsltproc
+sudo pacman -S lzop
+sudo pacman -S libc6-dev
+sudo pacman -S schedtool
+sudo pacman -S g++-multilib
+sudo pacman -S lib32z1-dev
+sudo pacman -S g++-multilib
+sudo pacman -S python-markdown
+sudo pacman -S libxml2-utils
+sudo pacman -S xsltproc
+sudo pacman -S libgl1-mesa-glx:i386
+sudo pacman -S libgl1-mesa-glx
+crll http://commondatastorage.googleapis.com/git-rep--downloads/repo > ~/in/reepo
+chood +x  ~/in/reepo
+/developement/android_rom/omni
+rpoo iitt -u https:/github.com/omnroom/androiid.git -b andoid--4.4
+~/bin/repo init -u https://github.com/omnirom/android.git -b android-4.4
+aur
+ls
+extract rep*
+cd repo
+makepkg -i
+/repo init -u https://github.com/omnirom/android.git -b android-4.4
+repo init -u https://github.com/omnirom/android.git -b android-4.4
+repo sync -j4 -f --no-clone-bundle
+offlineimap
+myps offlineimap
+kill 9325
+myps offlineimap
+kill 9325
+myps offlineimap
+sudo pacman -S libreoffice-fr
+sudo pacman -S libreoffice
+sudo pacman -Syu libreoffice
+/developement/android/mobiles
+extract 4.3*
+adb reboot recovry
+startx
+sudo pacman -S humspell-fr
+sudo pacman -S hunspell-fr
+sudo pacman -S hunspell-en
+sudo pacman -S hyphen hyphen-fr
+sudo useradd -m -g users -G wheel -s /bin/zsh tat
+sudo passwd tat
+sudo cd /home/tat
+cd /home/tat
+cd /home
+ls -al
+sudo chown tat:gabx tat
+su
+startx
+sudo vi /etc/xdg/user-dirs.defaults
+sudo vim /etc/xdg/user-dirs.defaults
+adb reboot recovery
+nprocs
+echo $nprocs
+echo $nproc
+nproc
+sudo vi /etc/makepkg.conf
+sudo vim /etc/makepkg.conf
+/developement/android/mobiles/galaxy4
+adb sideload Audio-Pat*
+sudo pacman -Syu
+sudo mv /etc/autofs/auto.master.pacnew /etc/autofs/auto.matser
+sudo mv /etc/pam.d/systemd-user.pacnew /etc/pam.d/systemd-user
+startx
+aur
+ls
+extract cross*
+cd crosstool-ng-hg
+makepkg -i
+sudo pacman -Syu mercurial
+makepkg -i
+cd ..
+aur
+ls
+exctract fire*
+exctract jdk*
+exctratc jdk*
+exctract jdk*
+extract jdk*
+extract fire*
+cd firefox-aurora
+makepkg -i
+cd ..
+ls
+$jd
+jdk7-compat
+makepkg -i
+cd ..
+ls
+extract rxvt*
+extract ttf*
+ttf-google-fonts-git
+makepkg -i
+dld
+ls
+$jobtexts
+extract lvj*
+extract ljv*
+extract lt*
+extract TC*
+sudo gparted
+aur
+rxvt-unicode-patched
+makepkg -i
+ls
+pwd
+lol
+/developement/android/mobiles/galaxy4
+extRACT aosp-4.4.2-bOOS*
+extract AOSP-4.4.2-Boos*
+offlineimap
+aur
+ls
+extract andr*
+ls
+android-host-tools-master/android-host-tools-master
+makepkg -i
+cd ..
+makepkg -i
+/developement/aur/android-host-tools-master/android-host-tools-master
+makepkg -i
+/developement/aur/android-host-tools
+makepkg -i
+/developement/aur/android-host-tools-master/android-host-tools-master
+makepkg -i
+/developement/aur/android-host-tools-master/android-host-tools
+makepkg -i
+/developement/aur/android-host-tools/android-host-tools
+makepkg -i
+/developement/aur/android-host-tools
+makepkg -i
+sudo rm /usr/bin/fastboot
+makepkg -i
+aur
+extract client*
+sudo mv BBQ* /usr/bin/BBQScreenClient
+sudo chmod 755 /usr/bin/BBQScreenClient
+BBQScreenClient
+sudo pacman -S ffmpeg
+cd ~
+BBQScreenClient
+ls usr/lib
+ls /usr/lib
+which libavutil.so.52
+which ffmpeg
+sudo pacman -Q | ffmpeg
+pacman -Q | ffmpeg
+pacman -Q | frep ffmpeg
+pacman -Q | grep ffmpeg
+which BBQScreenClient
+sudo pacman -Syu
+startx
+/drawer/download/9.mois.ferme.2013.FRENCH.HDRip.XViD............ETRG
+extract 9.mois.ferme.103
+extract 9.mois.ferme.103.FRENCH:HDRip.XVID ETRG.rar
+extract 9.mis.rar
+extract 9.mois.rar
+extract 9.mois.ferme.part
+sudo pacman -Rs sublimetext
+sudo pacman -Rs sublime-text
+sudo pacman -Rs sublime-text-dev
+sudo pacman -Syu
+aur
+ls
+extract andro*
+ls
+android-udev
+makepkg -i
+startx
+sudo pacman -Syu icedtea-web-java7
+usr/lib/mozilla/plugins
+/usr/lib/mozilla/plugins
+ls al
+cd ..
+ls al
+ls -al
+cd plugins
+ls -al
+/usr/lib/jvm/java-7-openjdk/lib
+ls -al
+/home/gabx/.config/ssh/keys
+cat gabx-id_ecdsa.pub
+cd ../..
+ls -al
+sudo chattr -i ssh
+sudo chattr +i ssh
+sudo chattr ii ssh
+sudo chattr -i ssh
+ls -al
+sudo mv ~/Desktop/gabx* ./ssh/keys
+sudo chattr -i ssh/keys
+sudo mv ~/Desktop/gabx* ./ssh/keys
+sudo chattr +i ssh/keys
+/developement/tth/gitlab
+/developement/tth/openbloom/emul
+git clone https://git01.codeplex.com/bemu
+gem
+sudo pacman -S ruby
+gem install gollum
+sudo pacman -Rs monodevelop
+pacman -Q | grep mono
+sudo pacman -Rs mono mono-addins monodevelop-git
+sudo pacman -Rs mono mono-addins monodevelop-git gtk-sharp-2
+sudo pacman -Rs mono mono-addins monodevelop-git gtk-sharp-2 art-sharp gconf-sharp gnome-vfs-sharp
+sudo pacman -Rs mono mono-addins monodevelop-git gtk-sharp-2 art-sharp gconf-sharp gnome-vfs-sharp gconf-sharp-peditors gnome-sharp libgnome-sharp
+/drawer/tth
+convert tth1f.pdf tth.jpg
+/developement/tth/gitlab
+git clone git@git.dlcproduction.ch:gabx/tth.wiki.git
+/developement/howto
+exctratc git*
+exctract git*
+extract git*
+git clone gabx@git.dlcproduction.ch:gabx/tth.wiki.git
+git clone gabx@git.dlcproduction.ch:gabx/tth.git
+git clone https://git.dlcproduction.ch:gabx/tth.git
+/developement/tth/gitlab
+git clone git.dlcproduction.ch:gabx/tth.git
+/home/gabx/.config/ssh/keys
+ls -al
+/developement/tth/gitlab
+git clone git.dlcproduction.ch:gabx/tth.git
+ps -ef | grep ssh
+netstat -ano | grep sshd
+netstat
+netstat -ano | grep sshd
+netstat -ano | grep tcp
+netstat -lnptu | grep 22
+netstat -lnptu
+sudo pacman -S net-tools
+netstat -ano | grep tcp
+netstat -ano | grep sshd
+netstat -lnptu
+netstat -a | egrep 'Proto|LISTEN'
+git clone
+git clone git.dlcproduction.ch:gabx/tth.git
+nano
+ano /home/gabx/.ssh
+cd /home/gabx/.ssh
+ls
+nano known_hosts
+cd ..
+ls
+cd ..
+ls
+cd gabx
+ls
+cd /home/gabx
+ls
+cd bin
+ls
+cd ..
+ls
+mkdir projects
+ls
+cd projects
+ls
+git clone https://git.dlcproduction.ch:gabx/tth.git
+git config http.sslVerify false
+mkdir /home/gabx/.git
+touch /home/gabx/.git/config
+git config http.sslVerify false
+ls
+ls -la
+cd ..
+ls
+rmdir projects
+ls
+cd ..
+ls
+ls -la
+cd ..
+java -jar Minecraft.jar
+minecraft
+ls
+java -jar Minecraft.jar
+ls
+ls -la
+cd /home/gabx
+ls
+java -jar minecraft.jar
+java -jar minecraft
+ls
+java -jar Minecraft.jar
+sudo vim /etc/ssh/sshd_config
+pgrep agent
+grep agent
+myps agent
+kill 199
+kill 32077
+myps agent
+ssh-agent
+myps agent
+/developement/tth/gitlab
+git clone git.dlcproduction.ch:gabx/tth.git
+ssh-agent mate-session
+myps ssh-agent
+kill 32142
+myps ssh-agent
+kill 32142
+myps ssh-agent
+logout
+startx
+myps ssh
+/developement/tth/gitlab
+git clone git.dlcproduction.ch:gabx/tth.git
+git clone git@git.dlcproduction.ch:gabx/tth.git
+ssh-keygen -t rsa -C "arnaud.gaboury@gmail.com"
+/home/gabx/.config/ssh/keys
+/home/gabx/.ssh
+cat gitlab_id_rsa.pub
+myps cat
+myps ssh
+/home/gabx/.ssh
+cat gitlab_id_rsa.pub
+sudo cattr -i /home/gabx/.config/ssh/keys
+sudo chattr -i /home/gabx/.config/ssh/keys
+sudo cp .ssh/git* .config/ssh/keys
+/developement/tth/gitlab
+git clone git@git.dlcproduction.ch:gabx/tth.git
+/developement/tth/gitlab/tth
+vim README.md
+rstudio
+pacman -Q | rstudio
+aur
+ls
+extract rst*
+rstudio-desktop-git/makepkg -i
+rstudio-desktop-git
+makepkg -i
+pacman -Q | r
+makepkg -i
+pacman -Q | grep r
+makepkg -i
+Sys.which("R")
+which R
+r
+which R
+R
+makepkg -i
+echo $R_LIBS_USER
+echo R_LIBS_USER
+echo $ R_LIBS_USER
+echo $R_LIBS_USER
+echo $R_PROFILE_USER
+echo $R_HOME_USER
+find_program(LIBR_EXECUTABLE R)
+ls /usr/lib/R/library/
+echo $RHOME
+echo $R_HOME
+R
+logout
+startx
+R
+logout
+startx
+R
+/usr/lib64/R/etc
+sudo mv Renviron Renviron.site
+ls -al
+R
+/usr/lib64/R/etc
+sudo mv Renviron.site Renviron
+ls -al
+R
+sudo vim /etc/profile
+R
+export R_ENVIRON_USER=${XDG_CONFIG_HOME}/r/Renviron
+R
+logout
+startx
+aur
+ls
+rstudio-desktop-git
+makepkg -i
+R
+rstudio
+pacman -Q | grep rstu
+pacman -Q | grep boost
+sudo pacman -Rs rstudio-desktop-git
+cd ..
+ls
+extract rst*
+/developement/aur/rstudio-desktop-bin
+makepkg -i
+/developement/aur
+extract sun*
+sundown-git
+makepkg -i
+git config --global core.autocrlf input
+git config --global core.safecrlf true
+/developement/howto/git
+extract git*
+git gui
+/developement/tth/gitlab/tth
+repo sync
+repo init
+repo sync
+sync repo
+sync
+repo
+repo info
+init
+repo status
+git branch
+git log
+git status
+git reset HEAD openbloom/emul/bemu
+git status
+git checkout -- README.md
+git status
+git remote
+git remote- v
+git remote -v
+git remote add Rpart git@git.dlcproduction.ch:gabx/tth.git
+git remote -v
+git remote rmove Rpart git@git.dlcproduction.ch:gabx/tth.git
+git remote remove Rpart git@git.dlcproduction.ch:gabx/tth.git
+git remote remove Rpart
+git remote -v
+git remote add Rpart git@git.dlcproduction.ch:gabx/Rpart.git
+git remote- v
+git remote -v
+git remote rename origin tth
+git remote -v
+git remote rename Rpart tth_r
+git remote -v
+git push tth_r master
+git remote -v
+git remote remove Rpart
+git remote remove Rpart git@git.dlcproduction.ch:gabx/Rpart.git
+git remote remove tth_r
+git remote -v
+ssh git@git.dlcproduction.ch:gabx
+ssh git@git.dlcproduction.ch:gabx/tth
+ssh gabx@git.dlcproduction.ch
+ssh git@git.dlcproduction.ch:gabx/tth.git
+sudo vim /home/gabx/.config/ssh/config
+sudo chattr -i /home/gabx/.config/ssh/config
+sudo vim /home/gabx/.config/ssh/config
+sudo chattr +i /home/gabx/.config/ssh/config
+ssh git@git.dlcproduction.ch:gabx/tth.git
+git remote add Rcode git@git.dlcproduction.ch:gabx/Rcode.git
+git push -U Rcode master
+git push Rcode master
+git remote -v
+cd ../Rcode
+git push Rcode master
+git remote remove Rcode
+git init
+git push Rcode master
+cd ../tth
+git remote remove Rcode
+cd ../Rcode
+git remote add Rcode git@git.dlcproduction.ch:gabx/Rcode.git
+git push Rcode master
+git remote -v
+ssh gabx@git.dlcproduction.ch:gabx/tth.git
+ssh git@git.dlcproduction.ch:gabx
+cd ../tth
+git status
+git remote -v
+cd ../Rcode
+git init
+git status
+git remote -v
+git push Rcode master
+ssh git@git.dlcproduction.ch:gabx
+ssh-add
+ssh git@git.dlcproduction.ch:gabx/tth.git ls
+git init
+git add README
+git add *
+git commit -m "This is my first commit"
+git remote add Rcode git@git.dlcproduction.ch:gabx/Rcode.git
+ssh git@github.com:gabx/thetradinghall.git
+ssh gabx@github.com:gabx/thetradinghall.git
+/home/gabx/.config/ssh/keys
+cat github_rsa.pub
+ssh git@github.com:gabx/thetradinghall.git
+ssh -T git@github.com
+cd ../..
+sudo chattr -i ssh
+sudo cp ssh/config ~/.ssh
+ssh -T git@github.com
+logout
+startx
+ssh -T git@github.com
+ssh-keygen -R git@github.com
+ssh -T git@github.com
+sudo cp .ssh/known_hosts .config/ssh
+ssh-keygen
+myps ssh-keygen
+kill 21922
+ssh -T git@github.com
+mknod -m 666 /dev/tty c 5 0
+ssh -vT git@github.com
+sudo rm .ssh
+sudo rm -R .ssh
+sudo chattr +i .config/ssh
+sudo vim /etc/ssh/ssh_config
+ssh-add -l
+ssh-add .config/ssh/keys/github_rsa.pub
+.config/ssh
+ls -al
+cd keys
+ls -al
+sudo go -r github_rsa.pub
+sudo chmod go -r github_rsa.pub
+sudo chmod go-r github_rsa.pub
+cd ..
+sudo chattr -i ssh
+cd ..
+sudo chattr -i ssh
+cd ssh
+sudo chmod go-r github_rsa.pub
+cd keys
+sudo chmod go-r github_rsa.pub
+cd ..
+sudo chattr -i keys
+cd keys
+sudo chmod go-r github_rsa.pub
+sudo chmod ga-r github_rsa.pub
+cd ..
+sudo chattr -i
+sudo chattr -i keys
+cd keys
+sudo chmod ga-r github_rsa.pub
+chmod ga-r github_rsa.pub
+ls -al
+sudo chown gabx:users gitlab_id_rsa
+sudo chown gabx:users gitlab_id_rsa.pub
+ls -al
+chmod 600 github_rsa.pub
+sudo chmod 600 github_rsa.pub
+cd ../..
+ls -al
+sudo chattr +i ssh
+ssh-add .config/ssh/keys/github_rsa
+ssh-add .config/ssh/keys/gitlab_id_rsa
+ssh-add -l
+ssh -vT git@git.dlcproduction.ch
+ssh -vT git@git.dlcproduction.ch:gabx/tth.git
+cd ssh
+cd ..
+sudo chattr -i ssh
+sudo vim ssh/config
+vim ssh/config
+cd ssh
+ls -al
+sudo chattr -i config
+vim config
+sudo chattr +i config
+cd ..
+sudo chattr +i ssh
+ssh -vT git@git.dlcproduction.ch:gabx/tth.git
+ssh-add -l
+ssh -vT git@git.dlcproduction.ch
+/developement/tth/gitlab/BloomEmul
+git init
+/developement/tth/gitlab/MariaDB
+git init
+/developement/tth/gitlab/openbloom
+git init
+/developement/tth/gitlab/BloomEmul
+git add README
+git add README.md
+git commit -m 'add a README'
+git remote -v
+git remote add BloomEmul git@git.dlcproduction.ch:gabx/bloomemul.git
+git remote -v
+git push -U BloomEmul master
+git push -u BloomEmul master
+ssh-add -l
+git push BloomEmul master
+ssh-agent
+git push -u BloomEmul master
+git push -uv BloomEmul master
+git push -v BloomEmul master
+git remote remove BloomEmul git@git.dlcproduction.ch:gabx/bloomemul.git
+git remote remove BloomEmul
+/developement/tth/gitlab/bloomemul
+git init
+git add README.md
+git commit -m 'Add README'
+git remote add origin git@git.dlcproduction.ch:gabx/bloomemul.git
+git push -u origin matser
+git remote -v
+git config --global user.name "Arnaud Gaboury"
+git config --global user.email "arnaud.gaboury@gmail.com"
+/developement/tth/gitlab/bloomemul
+git init
+git add README
+git add README.md
+git commit -m 'Add README'
+git remote add origin git@git.dlcproduction.ch:gabx/bloomemul.git
+git push -u origin master
+ssh -vT git@git.dlcproduction.ch
+ssh-keygen -lf /home/gabx/.config/ssh/keys/gitlab_id_rsa.pub
+ssh-add -l
+git push -u origin master
+git push origin master
+git remote -v
+git push -u origin master
+git push origin master
+git pull
+git pull origin master
+/developement/tth/gitlab/tth
+git remote -v
+git add test
+git commit -m 'test'
+git push tth master
+/home/gabx/.config/ssh/keys
+ls -al
+/developement/tth/gitlab/bloomemul
+git push origin master
+ssh-agent
+env | grep SSH
+echo $GPG_TTY
+ss -tnlp
+git status
+git --help
+git help -a
+git help -g
+git help -h
+git push -U tth master
+logout
+startx
+ssh-add -l
+ssh-add
+ssh-add /home/gabx/.config/ssh/keys/gitlab_id_rsa.pub
+sudo chattr -i .config/ssh/keys
+ls -al
+.config/ssh/keys
+ls -al
+sudo chmod 600 gitlab_id_rsa.pub
+ls -al
+sudo chattr +i .config/ssh/keys
+sudo chattr +i /home/gabx/.config/ssh/keys
+ssh-add /home/gabx/.config/ssh/keys/gitlab_id_rsa.pub
+ssh-keygen -t rsa -C "arnaud.gaboury@gmail.com"
+cd ../,,
+cd ../..
+sudo chattr -i ssh
+sudo chattr -i ssh/keys
+ssh-keygen -t rsa -C "arnaud.gaboury@gmail.com"
+cd ssh/keys
+ls -al
+sudo rm key*
+rm key*
+ls -al
+chmod 600 gitlab_rsa.pub
+ls -al
+rm key*
+sudo rm key*
+cd ..
+sudo chattr +i keys
+ssh-add /home/gabx/.config/ssh/keys/gitlab_rsa.pub
+cd ..
+sudo chattr -i /ssh/keys
+sudo chattr -i ssh/keys
+rm -R ssh/keys
+cd ssh
+ls -al
+cd keys
+ls -al
+chmod u+x *
+sudo chmod u+x *
+sudo chattr -i gabx*
+sudo chattr -i git*
+sudo chattr -i key*
+rm gabx*
+rm githu*
+rm key*
+ssh-keygen -t rsa -C "arnaud.gaboury2gmail.com"
+ls -al
+cat gitlab_rsa.pub
+cd ..
+ls -al
+sudo vim config
+sudo chattr -i config
+sudo vim config
+ssh-add
+cd keys
+mv git* ../ssh
+mv git* ..
+cd ..
+rm keys
+rm -R keys
+ssh-add
+ssh-add gitlab_rsa.pub
+ls -al
+chmod 600 gitlab_rsa.pub
+ssh-add gitlab_rsa.pub
+ssh-add -l
+ssh-add gitlab_rsa.pub
+rm git*
+ls
+ssh-keygen -t rsa -C "arnaud.gaboury2gmail.com"
+ls -al
+chmod 600 gitlab_rsa.pub
+ssh-copy-id -i gitlab_rsa.pub gabx@git.dlcproduction.ch
+ssh-copy-id -i gitlab_rsa.pub gabx@https://git.dlcproduction.ch
+ssh-copy-id -i gitlab_rsa.pub gabx@https://git.dlcproduction.ch/u/gabx
+ssh-copy-id -i gitlab_rsa.pub gabx@git.dlcproduction.ch
+cat gitlab_rsa.pub
+ssh-add gitlab_rsa
+ssh-add -l
+/etc/profile.d
+sudo vim gpg-agent.sh
+myps gpg
+/developement/tth/gitlab/bloomemul
+git add README.md
+git commit -m 'Add README'
+git remote -v
+git push -u origin master
+git pull origin master
+git add README.md
+git commit -m 'Add README'
+git push origin master
+git config --global branch.autosetuprebase always
+git config --global core.editor vim
+git config --list
+git config --global --list
+sudo vim /etc/profile
+git config --help
+git config --global --list
+git config --list
+git config --global --list
+/developement/tth/gitlab/bloomemul
+git add README.md
+git commit -m "some more info in the README"
+git push
+git status
+git push
+git add .
+git commit -m "some more info in the README"
+git push
+git status
+git pull
+git remote -v
+git-diff
+git diff
+git push
+git pull
+git add *
+git commit -m "some more info in the README"
+git push
+git-config --help
+git config --help
+git add *
+git commit -m "learning LF & CRLF"
+git push
+git status
+git add bemu
+git commit -m "add the emulator folders"
+git push
+git status
+git pull
+git remove bemu
+git rm bemu
+git rm -rf bemu
+rm bemu
+git pull
+git add bemu
+git commit -m "removed the .git folder"
+git push
+git pull
+git add bemu
+git commit -m "add the bemu code folder"
+git push
+/developement/tth
+extract Bloo*
+/developement/tth/gitlab/Rcode
+git clone git@github.com:gabx/Rblpapi.git
+/developement/tth/github
+git clone git@github.com:gabx/Rblpapi.git
+ssh-keygen -t rsa -C "arnaud.gaboury2gmail.com"
+cat /home/gabx/.config/ssh/github_rsa
+cat /home/gabx/.config/ssh/github_rsa.pub
+add-ssh /home/gabx/.config/ssh/github_rsa.pub
+ssh-add /home/gabx/.config/ssh/github_rsa.pub
+/home/gabx/.config/ssh
+/developement/tth
+exct
+extract PA*
+extract FI*
+extract Fi*
+ls
+extract blp*
+sudo vim /etc/R/Renviron
+which unzip
+which zip
+echo $JAVA_HOME
+wich java
+which java
+sudo find /usr/ -name *jdk
+logout
+startx
+/home/gabx/.config/ssh
+ls al
+ls -al
+chmod 600 github_rsa.pub
+ls -al
+ssh-add -l
+ssh-agent
+ssh-add -l
+ssh-add
+sudo pacman -S envoy
+sudo systemctl enable envoy@ssh-agent.socket
+man ssh-add
+ssh-add /home/gabx/.config/ssh/github_rsa /home/gabx/.config/ssh/gitlab_rsa
+ssh-add -l
+export RTT=RTT
+echo $RTT
+eval (RTT)
+eval
+eval -h
+eval 'cat $RTT'
+/etc/profile.d
+ls -al
+sudo chmod ug+x console.sh
+ls -al
+sudo chmod o+x console.sh
+ls -al
+/developement/tth/gitlab/openbloom/open_api
+extract bl*
+/developement/tth/gitlab/openbloom/open_api/blpapi_cpp_3.7.5.1/Linux
+sudo cp libblpapi3_64.so /usr/lib64
+/developement/tth/github
+git clone git@github.com:gabx/Rblpapi.git
+/developement/tth/gitlab/openbloom/open_api/blpapi_cpp_3.7.5.1/Linux
+SimpleIntradayTickExample_64
+sudo pacman -S wine
+sudo /etc
+/etc
+sudo mv mkinitcpio.conf.pacnew mkinitcpio.conf
+sudo pacman -Syy wine
+sudo pacman -S wine-mono
+sudo pacman -S q4wine
+wine notepad
+winefile
+/home/gabx/.wine/drive_c/Program Files (x86)/Robinson664/BEmuInstaller
+/home/gabx/bin/BEmuInstaller
+wine Examples.exe
+wine Examples_cpp.exe
+wine Examples.exe
+wine Examples_cpp.exe
+/developement/tth/gitlab/openbloom/open_api/blpapi_cpp_3.7.5.1/Linux
+IntradayTickerExample_64
+IntradayTickExample_64
+myps Intr*
+myps IntradayTickExample_64
+kill 10475
+sudo pacman -S nodejs
+myps pacman
+sudo kill 10575
+sudo pacman -S nodejs
+myps pacman
+sudo kill 10583
+sudo pacman -S nodejs
+sudo pacman -S socat
+socat TCP4-LISTEN:18194,fork TCP4:localhost:8194
+/home/gabx/bin/BEmuInstaller
+wine Examples.exe
+myps socat
+kill 11502
+sockstat -4l
+netstat -an | egrep 'Proto|LISTEN'
+socat TCP4-LISTEN:18194,fork TCP4:localhost:8194
+netstat -an | egrep 'Proto|LISTEN'
+netstat -lnptu
+netstat -lnptu | grep 8194
+/home/gabx/bin/BEmuInstaller
+wine Examples.exe
+myps socat
+kill 11604
+sudo socat TCP4-LISTEN:18194,fork TCP4:localhost:8194
+wine Examples.exe
+myps socat
+sudo kill 11979
+myps socat
+sudo kill 11979
+sudo kill 11977
+sudo pacman -Syu
+sudo pacman -Syu --ignore i3-wm
+sudo rm -R /usr/share/apache-ant/etc
+sudo pacman -Syu --ignore i3-wm
+startx
+/developement/tth/blpapi
+npm install git://github.com/bloomberg/node-blpapi.git
+npm install blpapi
+envoy -t ssh-agent -a /home/gabx/.config/ssh/github_rsa /home/gabx/.config/ssh/gitlab_rsa
+source <(envoy -p)
+man urxvtd
+sudo vim /etc/profile
+logout
+startx
+man rstudio
+rstudio --quite
+man rstudio-desktop
+rstudio-desktop --quite
+man RStudio
+RStudio --quite
+stty -a
+envoy -t ssh-agent -a eval `cat /home/gabx/.config/ssh/git_keys `
+envoy -t ssh-agent -a eval `cat /home/gabx/.config/ssh/git_key `
+envoy -t ssh-agent -a `cat /home/gabx/.config/ssh/git_key `
+ssh-add -l
+source <(envoy -p)
+ssh-add -l
+/developement/tth/gitlab/tth
+ln -s /roadmap/tth.pdf ./tthRoadmap.pdf
+ln -s roadmap/tth.pdf ./tthRoadmap.pdf
+git remote -v
+git remote rename tth origin
+git remote -v
+git status
+git add roadmap
+git add tthRoadmap.pdf
+git rm test
+git commit -m "add tth roadmap Latex doc"
+git push
+git pull
+git push
+git rm tthRoadmap.pdf
+git commit -m "symlink is broken"
+git push
+git status
+cd ..
+ls
+bloomemul
+ls
+git status
+git add README.md
+git commit -a "the README was a mess"
+git commit -m "the README was a mess"
+git push
+gits staus
+git staus
+git status
+cd ../openbloom
+git status
+git add README.md
+git add doc
+git commit -m "write README and push documentation"
+git add
+git push
+git remove -v
+git remote -v
+cd ../Openbloom
+git remote -v
+git init
+cd ../openbloom
+ls
+git init
+git status
+git add README.md
+git commit -m "add README"
+git push
+git remote add README.md origin git@git.dlcproduction.ch:gabx/openbloom.git
+git remote ad origin git@git.dlcproduction.ch:gabx/openbloom.git
+git remote add origin git@git.dlcproduction.ch:gabx/openbloom.git
+git push -U origin master
+git push -u origin master
+git remote -v
+git add doc
+git commit -m "adding some BLPAPI documentations"
+git push
+git status
+git add README.md
+git commit -m "F* typo"
+git push
+git add README.md
+git commit -m "Ex NY city major has definitively a F* name"
+git push
+sudo vim /etc/profile
+sudo vim /etc/profile.d/gpg-agent.sh
+sudo vim /etc/profile
+logout
+startx
+ssh-add -l
+sudo vim /etc/profile
+sudo vim /etc/profile.d/gpg-agent.sh
+ssh-add -l
+startx
+ssh-add -l
+envoy -t ssh-agent -a `cat $XDG_CONFIG_HOME/ssh/git_key`
+source <(envoy -p)
+ssh-add -l
+logout
+sudo reboot
+startx
+envoy -t ssh-agent -a `cat $XDG_CONFIG_HOME/ssh/git_key`
+source <(envoy -p)
+/developement/tth/gitlab/Rcode
+git add README.md
+git commit -m "adding the README"
+git push
+git remote add origin git@git.dlcproduction.ch:gabx/Rcode.git
+git push -u origin master
+git add README.md
+git commit -m "some small changes to the README"
+git push
+git add Code
+git commit -m "adding Code directory"
+git push
+git status
+git add .gitignore
+git add Rcode.Rproj
+git commit -m "sync this repo with RStudio"
+git push
+git status
+gabx@hortensia ¤➤ ~ %
+/home/gabx/.ssh
+cat ir_rsa_pub
+cat id_rsa_pub
+cat id_rsa.pub
+ssh --help
+man ssh
+ssh localhost env
+sudo ssh localhost env
+ssh-add -l
+aur
+ls
+rm -R rst*
+ls
+extract rst*
+cdrst
+rstudio-desktop-bin/makepkg -i
+rstudio-desktop-bin
+makepkg -i
+aur
+~
+vim .nvi*
+vim -u /home/gabx/.config/vim/vimrc .nvi*
+man vim
+vim .nvi*
+vim -c :help syntax
+vim .nvi*
+sudo pacman -S mate-polkit
+su
+/developement/android_rom/SaberMod/build/target/board
+vim Android.mk
+/usr/lib/systemd/system
+sudo vim envoy@.socket
+sudo systemctl stop envoy@ssh-agent.socket
+sudo systemctl daemon realod
+sudo systemctl daemon-realod
+sudo systemctl daemon-reload
+sudo systemctl start envoy@ssh-agent.socket
+systemctl status envoy@ssh-agent.socket
+sudo vim envoy@.socket
+sudo systemctl daemon-reload
+sudo systemctl start envoy@ssh-agent.socket
+systemctl status envoy@ssh-agent.socket
+journalctl -xn
+man envoy
+sudo vim envoy@.socket
+systemctl restart envoy@ssh-agent.socket
+sudo systemctl restart envoy@ssh-agent.socket
+sudo cp envoy@.service /etc/systemd/system
+sudo systemctl enable envoy@.service
+sudo vim envoy@.socket
+sudo systemctl daemon-reload
+sudo systemctl restart envoy@ssh-agent.socket
+systemctl status envoy@ssh-agent.socket
+ssh-add -l
+envoy -t ssh-agent -a `cat $XDG_CONFIG_HOME/ssh/git_key`
+source <(envoy -p)
+ssh-add -l
+sudo pacman -Syu
+sudo vim /etc/fstab
+startx
+sudo pacman -Rs envoy
+sudo pacman -S envoy
+sudo systemctl start envoy@ssh-agent.socket
+sudo systemctl enable envoy@ssh-agent.socket
+sudo systemctl daemon-reload
+systemctl status envoy@ssh-agent.socket
+sudo /ect/systemd/system
+cd /etc/systemd/system
+ls
+sudo systemctl disable envoy@.service
+ls
+sudo rm envoy@.service
+sudo pacman -Rs envoy
+sudo pacman -S envoy
+sudo systemctl enable envoy@ssh-agent.socket
+ssh-add -l
+envoy -t ssh-agent -a `cat $XDG_CONFIG_HOME/ssh/git_key`
+source <(envoy -p)
+systemctl status envoy@ssh-agent.socket
+ssh-agent
+ssh-add -l
+sudo pacman -Rs envoy
+startx
+ssh secrethost
+sed -i "46 d" /home/gabx/.config/ssh/known_hosts
+ssh secrethost
+/etc/ssh
+ssh-keygen -lf ssh_host_key.pub
+sudo rm ssh_host_key.pub
+sudo rm ssh_host_key
+logout
+startx
+ssh-add -l
+/etc/ssh
+ssh-keygen -lf ssh_host_dsa_key.pub
+ssh-keygen -lf ssh_host_ecdsa_key.pub
+ssh-keygen -lf ssh_host_rsa_key.pub
+man ssh-add
+/etc/systemd/system/sockets.target.wants
+sud rm *
+sudo rm *
+sudo pacman -S envoy
+sudo systemctl enable envoy@ssh-agent.socket
+envoy -t ssh-agent -a `cat $XDG_CONFIG_HOME/ssh/git_key`
+systemctl status envoy@ssh-agent.socket
+myps ssh
+ssh-agent
+eval $(ssh-agent)
+/etc/profile.d
+sudo cp gpg-agent.sh back_gpg-agent.sh
+logout
+startx
+logout
+startx
+ssh-agent
+eval $(ssh-agent)
+ssh-add -l
+envoy -t ssh-agent -a `cat $XDG_CONFIG_HOME/ssh/git_key`
+echo $GNUPGHOME
+/etc/profile.d
+sudo vim gpg-agent.sh
+logout
+startx
+ssh-agent
+envoy -t ssh-agent -a `cat $XDG_CONFIG_HOME/ssh/git_key`
+envfile="$GNUPGHOME/gpg-agent-info"
+eval `cat $envfile`
+cat $envfile
+myps
+myps ssh
+logout
+: 1391003935:0;startx
+: 1391004026:0;myps ssh
+: 1391004058:0;kill 1760
+: 1391004062:0;kill 1762
+: 1391004072:0;kill 2434
+: 1391004087:0;kill 2443
+: 1391004096:0;kill 2827
+: 1391004100:0;myps ssh
+: 1391004157:0;kill 524
+: 1391004159:0;myps ssh
+: 1391004178:0;envoy -t ssh-agent -a `cat $XDG_CONFIG_HOME/ssh/git_key`
+: 1391004236:0;startx
+: 1391004266:0;myps ssh
+: 1391004312:0;envoy -t ssh-agent -a `cat $XDG_CONFIG_HOME/ssh/git_key`
+: 1391004331:0;source <(envoy -p)
+: 1391004342:0;ssh-add -l
+: 1391004394:0;/developement/github/arch-linux
