@@ -1,6 +1,6 @@
 " $XDG_CONFIG_HOME/vim/vimrc
 " need  < alias vim='vim -u $XDG_CONFIG_HOME/vim/vimrc > in zsh.rc to read this file
-" Last modified 2014-01-29
+" Last modified 2014-03.12
 
 
 " use LanguageTool plugin
@@ -10,11 +10,12 @@ filetype plugin on
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-set history=50		" keep 50 lines of command line history
+set history=100		" keep 100 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set autoindent		" always set autoindenting on
 set number
+set viminfo+=n~/.config/vim/viminfo
 
 " defaults for tabs
 set tabstop=4
@@ -43,8 +44,16 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-" For all text files set 'textwidth' to 78 characters.
-autocmd FileType text setlocal textwidth=78
-
 " choose color theme
 colorscheme mustang
+
+" Jump back to the last edit position when opening a file
+:au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+" Only define it when not defined already.
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+		  \ | wincmd p | diffthis
+endif
