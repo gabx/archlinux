@@ -1,6 +1,6 @@
 # $R_ENVIRON_USER
 # $XDG_HOME_CONFIG/r/Renviron                                           
-# Last modified: 2014-01-22 
+# Last modified: 2014-05-30
 
 R_HOME_USER=/developement/language/r
 R_LIBS_USER=/developement/language/r/library
@@ -8,5 +8,5 @@ R_HISTFILE=/developement/language/r/R.Rhistory
 R_HISTSIZE=5000
 
 # default package
-R_DEFAULT_PACKAGES='datasets,utils,grDevices,graphics,stats,methods,rJava'
+R_DEFAULT_PACKAGES='datasets,utils,grDevices,graphics,stats,methods,rJava,colorout'
 

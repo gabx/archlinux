@@ -1,22 +1,29 @@
 # $R_PROFILE_USER
-# $XDG_HOME_CONFIG/r/Rprofile.r                                           
-# Last modified: 2014-01-27
+# $XDG_HOME_CONFIG/r/Rprofile.r @ hortensia                                          
+# Last modified: 2014-05-30
 
 # http://gettinggeneticsdone.blogspot.com.es/2013/07/customize-rprofile.html    
 # http://stackoverflow.com/questions/1189759/expert-r-users-whats-in-your-rprofile                
 
 
+# set working directory
+setwd("/developement/language/r/wd")
+
 # welcome message
- cat("Welcome back gabx!\n")
+cat("Welcome back", Sys.getenv("USER"),"!\n")
+cat("working directory:", getwd(), "\n")
 
 # customize prompt
 options(prompt=paste(paste (Sys.info () [c ("user", "nodename")], collapse="@"),"[R] "))
+
+# load packages
+
 
 
 # User options 
 ## > options() : list options||style: name=value## 
 options(
-	digits=4, 
+	digits = 12,
 	show.signif.stars=FALSE, 
 	stringsAsFactors=FALSE, 
 	error = quote(dump.frames("${R_HOME_USER}/testdump", TRUE)),
@@ -25,45 +32,20 @@ options(
 	deparse.max.lines = 2
 )
 
-
-## user functions ##
-#Create a new invisible environment for all the user functions to go in so it doesn't clutter your workspace.
-.env <- new.env()
-
+# user functions
 # retrive user info
-.env$ThisUser <- paste (Sys.info () [c ("user", "nodename")], collapse=".")
+ThisUser <- paste (Sys.info () [c ("user", "nodename")], collapse=".")
 
-
-# set working directory according to user and hostname
-setwd (switch (.env$ThisUser, 
-           gabx.hortensia  = "/developement/language/r/wd",
-           ))
-
-
-   
-#Strip row names from a data frame 
-.env$unrowname <- function(x) {
-rownames(x) <- NULL
-x
-}
-
+# clean global environment
+clean <- function(){
+	rm(list = ls())
+  
 # automatically load devtools in interactive sessions
 if (interactive()) {
   suppressMessages(require(devtools))
 }
 
-# List objects and classes 
-.env$lsa <- function() {
-obj_type <- function(x) { class(get(x)) }
-foo=data.frame(sapply(ls(envir=.GlobalEnv),obj_type))
-foo$object_name=rownames(foo)
-names(foo)[1]="class"
-names(foo)[2]="object"
-return(unrowname(foo))
-}
 
-# Attach all the variables above
-attach(.env)
 
 
  .Last <- function(){
@@ -75,9 +57,9 @@ attach(.env)
 }
 
 
- .First <- function() {	
-cat("\nSuccessfully loaded .Rprofile at", date(), "\n")
-}
+# .First <- function() {	
+#cat("\nSuccessfully loaded Rprofile on", date(), "\n")
+#}
 
 
 
