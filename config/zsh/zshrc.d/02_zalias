@@ -1,27 +1,29 @@
 # $HOME/.config/zsh/zshrc.d/02_zalias
 # user aliases. System-wide aliases are definied in /etc/aliases
-# Last modified 2013-11-10
+# Last modified 2014-03-31
 
 # usual ones #
 alias ls='ls -hF --color=auto --group-directories-first'
 alias less=$PAGER
 alias grep='grep -nI --color'
 alias weechat='weechat-curses'
-alias rm='rm -i'
-alias mv='mv -i'
-alias vi='vim'
+alias vi='vim -u $XDG_CONFIG_HOME/vim/vimrc -i $XDG_CONFIG_HOME/vim/viminfo'
 alias R='R --quiet'
+alias pacman='pacman --color=auto'
 
-# load configuration files at startup #
+# load startup configuration files with custom directory #
 alias vim='vim -u $XDG_CONFIG_HOME/vim/vimrc -i $XDG_CONFIG_HOME/vim/viminfo'
 alias ssh='ssh -F $HOME/.config/ssh/config'
 alias msmtp='msmtp -C $HOME/.config/msmtp/msmtprc'
+alias tmux='tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf'
+alias weechat='weechat-curses -d $XDG_CONFIG_HOME/weechat'
 
 # pacman alias
 #alias pacup='sudo pacman -Syu --noconfirm;rm /drawer/backup/pacman_db/updates.txt;touch /drawer/backup/pacman_db/updates.txt'
 alias pacins='sudo pacman -Syu && sudo pacman -S --noconfirm'
 alias pacclean='pacman -Qqdt|sudo pacman -Rns -'
-
+alias mypac='pacman -Q | grep'
+alias mypaclist='pacman -Ql'
 
 # common directories #
 hash -d dld=/drawer/download
@@ -44,7 +46,11 @@ alias zshenv='$EDITOR $ZSHDIR/zshrc.d/01_zenv.zsh && source $ZSHDIR/.initzsh'
 alias syncdot='rsync -P -av --delete $XDG_CONFIG_HOME /drawer/backup/sync/home'
 alias syncdev='rsync -P -av --delete /developement/language /drawer/backup/sync'
 alias synctth='rsync -P -av --delete /developement/tth /drawer/backup/sync' 
-# alias conf='sudo vim /etc/'
+alias tths='sudo machinectl login dahlia'
+alias ttht='sudo machinectl terminate dahlia'
+alias mbk='sudo mount /dev/vg1/backup /mnt/backup'
+alias umbk='sudo umount /dev/vg1/backup'
+alias str='strace -o ~/strace.txt'
 
 #
 #gabx@hortensia
