@@ -1,5 +1,5 @@
 # ~/.config/i3/config
-# Last edited 2014-05-28
+# Last edited 2014-07-20
 #
 # i3 config file 
 #
@@ -20,9 +20,10 @@ font pango: inconsolata-dz Bold 12
 # put workspace on specific screen
 workspace 1 output DVI-I-0
 workspace 2 output DVI-I-1
-workspace 3 output DVI-I-1
-workspace 4 output DVI-I-0
-workspace 5 output DVI-I-1
+workspace 3 output DVI-I-0
+workspace 4 output DVI-I-1
+workspace 5 output DVI-I-0
+workspace 6 output DVI-I-1
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -92,17 +93,15 @@ bindsym $mod+p focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# screenshot
+bindsym Print exec screenshot
 
 exec --no-startup-id i3-msg "workspace 1; exec firefox-aurora"
-#exec --no-startup-id i3-msg "workspace 2; exec i3-sensible-terminal"
-#exec --no-startup-id i3-msg "workspace 2; exec i3-sensible-terminal"
-#exec --no-startup-id i3-msg 'workspace 3; exec i3-sensible-terminal'
 exec --no-startup-id i3-msg "workspace 2; exec urxvt"
 exec --no-startup-id i3-msg "workspace 2; exec urxvt"
-exec --no-startup-id i3-msg 'workspace 3; exec urxvt'
-#exec --no-startup-id i3-msg 'workspace 5; exec urxvt -e zsh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -n$USER"'
-# exec --no-startup-id i3-msg 'workspace 5; exec tmux -q has-session && exec tmux attach-session -d || exec tmux -2 -c zsh -f $XDG_CONFIG_HOME/tmux/tmux.conf ; splitwindow -d'
-exec --no-startup-id i3-msg "workspace 4; exec nautilus"
+exec --no-startup-id i3-msg "workspace 3; exec nautilus"
+exec --no-startup-id i3-msg "workspace 4; exec urxvt"
+#exec --no-startup-id i3-msg "workspace 5; exec chromium"
 
 
 # logout,shutdown or reboot
