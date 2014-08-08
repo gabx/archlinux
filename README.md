@@ -1,7 +1,8 @@
 arch-linux
 ==========
 
-My arch-linux stuff 
-As possible, most of configuration files are using the **$XDG_HOME_DIR** as home folder.
+My arch-linux stuff.
 
-Some small hacks on /etc too
+As possible, most of configuration files are using the **$XDG_HOME_DIR** as home folder. Home config files are in the **config** folder
+
+
