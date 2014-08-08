@@ -1,0 +1,89 @@
+#!/bin/bash
+
+# Script to backup personal files to the external USB drive.
+# /etc/scripts/cron_backup @ hortensia
+# Last edited 2014-08-08
+
+
+
+now=`date +"%m_%d_%Y"`
+BKLOG=/mnt/error_$now.txt
+PACBAK=/backup/pacman/lib/local
+
+
+# Log everything to log file
+exec &> $BKLOG
+
+
+# define mount point
+MP=/mnt/backup
+
+# create mount point if does not exist
+if [ ! -d $MP ]; then
+	mkdir /mnt/backup
+fi 
+
+# mount backup drive if not already mounted
+if ! mountpoint -q $MP; then
+	mount /dev/vg1/backup_external $MP
+fi
+
+
+# backup directory path
+BKHO=$MP/hortensia
+#BKDA=$MP/dahlia
+
+
+# exclude file
+EXCLHO=/etc/conf.d/exclude-hortensia
+#EXCLDA=/etc/conf.d/exclude-dahlia
+
+# backup host
+START=$(date +%s)
+# use rsync for backup
+# usage rsync source destination --exclude
+rsync -av --delete /* $BKHO --exclude-from $EXCLHO 
+FINISH=$(date +%s)
+# tell the date of backup
+echo "total time: $(( ($FINISH-$START) / 60 )) minutes, $(( ($FINISH-$START) % 60 )) seconds" | tee $BKHO/"Backup_hortensia_from $(date '+%A, %d %B %Y, %T')"
+
+
+# backup container
+#START=$(date +%s)
+#rsync -av --delete /var/lib/container/dahlia/* $BKDA --exclude-from $EXCLDA
+#FINISH=$(date +%s)
+#echo "total time: $(( ($FINISH-$START) / 60 )) minutes, $(( ($FINISH-$START) % 60 )) seconds" | tee $BKDA/"Backup_dahlia_from $(date '+%A, %d %B %Y, %T')"
+
+# some pacman stuff
+pacman -Qen > $BKHO/pkglist_$now.txt
+tar -cJf $BKHO/pacDB_$now.tar.xz $PACBAK 
+
+# check some usual stuff
+systemctl --failed | tee -a /mnt/weekly.bck.txt
+systemctl list-timers | tee -a /mnt/weekly.bck.txt
+cat $BKLOG | tee -a /mnt/weekly.bck.txt
+
+
+# send email
+cat /mnt/weekly.bck.txt | msmtp -a default arnaud.gaboury@gmail.com
+
+
+# print only if a failed result
+if [ $? = 0 ]; then 
+	rm /mnt/error*
+fi
+
+# remove files to cleanup
+rm $BKHO/Backup*
+#rm $BKDA/Backup*
+rm $BKHO/pkglist*
+rm /mnt/weekly.bck.txt
+
+# unmount backup drive
+umount /mnt/backup
+
+
+
+
+
+
