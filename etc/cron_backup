@@ -4,7 +4,6 @@
 # /etc/scripts/cron_backup @ hortensia
 # Last edited 2014-08-13
 
-
 now=`date +"%m_%d_%Y"`
 BKLOG=/mnt/error_$now.txt
 touch $BKLOG
