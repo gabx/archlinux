@@ -1,10 +1,13 @@
-" $XDG_CONFIG_HOME/vim/vimrc
+" $XDG_CONFIG_HOME/vim/vimrc  @ hortensia
 " need  < alias vim='vim -u $XDG_CONFIG_HOME/vim/vimrc > in zsh.rc to read this file
-" Last modified 2014-03.12
+" Last modified 2014-08-19
 
 
 " use LanguageTool plugin
 set nocompatible
+
+" allow file format detection and plugin use
+filetype on
 filetype plugin on
 
 " allow backspacing over everything in insert mode
@@ -14,8 +17,15 @@ set history=100		" keep 100 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set autoindent		" always set autoindenting on
+set smartindent		
 set number
+set showmode
+set laststatus=2
+set display+=lastline
+set linebreak
 set viminfo+=n~/.config/vim/viminfo
+
+silent! set mouse=a
 
 " defaults for tabs
 set tabstop=4
