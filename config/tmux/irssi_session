@@ -1,0 +1,12 @@
+
+
+
+# this file is for starting a custom tmux session
+# use:  source-file ~/.config/tmux/irssi_session
+
+# irssi session
+new -s irssi -n irssi irssi
+# split pane in two
+selectp -t 0 # select the first (0) pane
+splitw -h -p 50 # split it into two halves
+
