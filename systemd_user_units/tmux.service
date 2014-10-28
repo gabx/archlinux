@@ -1,0 +1,13 @@
+[Unit]
+Description=Start tmux in detached session
+Before=i3.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPost=/usr/bin/tmux source-file /home/%u/.config/tmux/tmux.conf
+ExecStart=/usr/bin/tmux new-session -d -n 'irc' 'irssi && zsh'
+ExecStop=/usr/bin/tmux kill-session -t 0
+
+[Install]
+WantedBy=default.target
