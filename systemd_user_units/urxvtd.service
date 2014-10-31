@@ -1,6 +1,5 @@
 [Unit]
 Description=Urxvt Terminal Daemon
-# Before=xrdb.service
 Requires=urxvtd.socket
 
 [Service]

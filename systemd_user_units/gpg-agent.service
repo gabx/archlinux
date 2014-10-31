@@ -1,14 +1,12 @@
 [Unit]
 Description=GnuPG private key agent
-Wants=session.target
 IgnoreOnIsolate=true
 
 [Service]
 Type=forking
-Environment=GPG_ENVFILE=%h/.config/gnupg/gpg-agent.info
-ExecStart=/usr/bin/gpg-agent --homedir %h/.config/gnupg --daemon --write-env-file ${GPG_ENVFILE}
-ExecStartPost=/bin/sh -c "xargs systemctl --user set-environment < ${GPG_ENVFILE}"
-ExecStopPost=/bin/rm ${GPG_ENVFILE}
+Environment=GPG_AGENT_INFO=%h/.config/gnupg/gpg-agent.info
+ExecStart=/usr/bin/gpg-agent --homedir %h/.config/gnupg --daemon --write-env-file $GPG_AGENT_INFO
+ExecStop=/usr/bin/pkill gpg-agent ; /usr/bin/systemctl --no-block --user unset-environment GPG_AGENT_INFO
 Restart=on-abort
 
 [Install]
