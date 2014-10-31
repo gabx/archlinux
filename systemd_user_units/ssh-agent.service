@@ -1,9 +1,9 @@
 [Unit]
 Description=ssh-agent
+Requires=ssh-agent.socket
 
 [Service]
 ExecStart=/usr/bin/ssh-agent -d -a %t/ssh_auth_sock
-# ExecStartPost=/usr/bin/ssh-add %h/.config/ssh/id_rsa
 ExecStop=/usr/bin/ssh-agent -k
 
 
