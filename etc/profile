@@ -1,0 +1,126 @@
+# /etc/profile @ hortensia
+# read by the login shell after a successful login
+# shell startup file will take precedent
+# Last modified 2014-11-07
+
+
+#Set our umask
+# umask 022
+
+# export hostname
+export HOST=$(</etc/hostname)
+
+
+# xdg environment variables 
+export XDG_CONFIG_HOME=${HOME}/.config
+export XDG_CACHE_HOME=${HOME}/.cache
+export XDG_CONFIG_DIRS=/etc/xdg
+export XDG_DATA_DIRS=/usr/local/share:/usr/share
+export XDG_DATA_HOME=${HOME}/.local/share
+export XDG_RUNTIME_DIR=/run/user/${UID}
+
+# be sure variable output reflects output of tty command
+export TTY=$(tty)
+export GPG_TTY=$(tty)
+
+# python virtualenv
+export WORKON_HOME=/developement/virtualenv
+
+# allow to move .zshrc into it
+export ZDOTDIR=$XDG_CONFIG_HOME/zsh
+
+export CCACHE_PATH=/usr/bin
+export CCACHE_DIR=/developement/.ccache
+
+# service specific variables
+export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh_auth_sock
+#export RXVT_SOCKET=${XDG_RUNTIME_DIR}/urxvt-${HOST}
+export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/password-store
+export PULSE_CLIENTCONFIG=$XDG_CONFIG_HOME/pulse/client.conf
+export R_PROFILE_USER=$XDG_CONFIG_HOME/r/Rprofile.r
+export R_ENVIRON_USER=$XDG_CONFIG_HOME/r/Renviron
+
+
+# move this file out of home directory
+export ICEAUTHORITY=${XDG_RUNTIME_DIR}/Iceauthority
+export XAUTHORITY=${XDG_RUNTIME_DIR}/Xauthority
+
+
+ #Load profiles from /etc/profile.d
+if test -d /etc/profile.d/; then
+        for profile in /etc/profile.d/*.sh; do
+                test -r "$profile" && . "$profile"
+        done
+        unset profile
+fi
+
+
+
+# set our default path
+PATH=/usr/local/bin:$HOME/bin\
+:/usr/bin:/usr/lib/ccache/bin:/usr/lib/colorgcc/bin\
+:$JAVA_HOME:$ANDROID_HOME:/usr/bin/vendor_perl:/usr/share
+export PATH
+
+# add some path for UID 0
+if [ $EUID -eq 0 ] ; then
+	pathappend /sbin:/usr/sbin:/usr/local/sbin
+	unset HISTFILE
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export GPG_TTY=$(tty)
+
+# local back-up directory
+export LOCAL_BAKUP=/drawer/backup
+
+# directory with code writing
+export CODE=/developement/language
+
+# user directory to stock personnal stuff
+export PERSONAL=/drawer/personnel
+
+
+# Load profiles from /etc/profile.d
+if test -d /etc/profile.d/; then
+	for profile in /etc/profile.d/*.sh; do
+		test -r "$profile" && . "$profile"
+	done
+	unset profile
+fi
+
+# Source global bash config
+if test "$PS1" && test "$BASH" && test -r /etc/bash.bashrc; then
+	. /etc/bash.bashrc
+fi
+
+# Termcap is outdated, old, and crusty, kill it.
+unset TERMCAP
+
+# Man is much better than us at figuring this out
+unset MANPATH
