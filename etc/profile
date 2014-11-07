@@ -26,21 +26,22 @@ export GPG_TTY=$(tty)
 # python virtualenv
 export WORKON_HOME=/developement/virtualenv
 
-# allow to move .zshrc into it
+
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
 export CCACHE_PATH=/usr/bin
 export CCACHE_DIR=/developement/.ccache
 
-# service specific variables
+export R_PROFILE_USER=$XDG_CONFIG_HOME/r/Rprofile.r
+export R_ENVIRON_USER=$XDG_CONFIG_HOME/r/Renviron
+
+
 export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh_auth_sock
 #export RXVT_SOCKET=${XDG_RUNTIME_DIR}/urxvt-${HOST}
 export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/password-store
-export PULSE_CLIENTCONFIG=$XDG_CONFIG_HOME/pulse/client.conf
-export R_PROFILE_USER=$XDG_CONFIG_HOME/r/Rprofile.r
-export R_ENVIRON_USER=$XDG_CONFIG_HOME/r/Renviron
 
+export PULSE_CLIENTCONFIG=$XDG_CONFIG_HOME/pulse/client.conf
 
 # move this file out of home directory
 export ICEAUTHORITY=${XDG_RUNTIME_DIR}/Iceauthority
@@ -58,7 +59,7 @@ fi
 
 
 # set our default path
-PATH=/usr/local/bin:$HOME/bin\
+PATH=/usr/local/bin:$HOME/bin:/etc/scripts\
 :/usr/bin:/usr/lib/ccache/bin:/usr/lib/colorgcc/bin\
 :$JAVA_HOME:$ANDROID_HOME:/usr/bin/vendor_perl:/usr/share
 export PATH
