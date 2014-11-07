@@ -1,12 +1,11 @@
 [Unit]
-Description=GnuPG private key agent
+Description=GnuPG private key agent daemon
 IgnoreOnIsolate=true
 
 [Service]
 Type=forking
-Environment=GPG_AGENT_INFO=%h/.config/gnupg/gpg-agent.info
-ExecStart=/usr/bin/gpg-agent --homedir %h/.config/gnupg --daemon --write-env-file $GPG_AGENT_INFO
-ExecStop=/usr/bin/pkill gpg-agent ; /usr/bin/systemctl --no-block --user unset-environment GPG_AGENT_INFO
+ExecStart=/usr/bin/gpg-agent --daemon --homedir=%h/.config/gnupg 
+ExecStop=/usr/bin/pkill gpg-agent
 Restart=on-abort
 
 [Install]
