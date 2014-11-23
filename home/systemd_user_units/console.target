@@ -1,6 +1,5 @@
 [Unit]
 Description=Non-graphical services
-# Requires=dbus.socket 
 Requires=dbus.service
 After=dbus.service
 
