@@ -8,5 +8,5 @@ RemainAfterExit=yes
 ExecStart=/usr/bin/urxvtd -o -q -f
 
 [Install]
-WantedBy=default.target
+WantedBy=console.target
 

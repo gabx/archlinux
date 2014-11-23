@@ -1,0 +1,10 @@
+[Unit]
+Description=devmon Service
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/conf.d/devmon
+ExecStart=/usr/bin/devmon $ARGS 
+
+[Install]
+WantedBy=wm.target

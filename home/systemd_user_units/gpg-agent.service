@@ -9,7 +9,7 @@ ExecStop=/usr/bin/pkill gpg-agent
 Restart=on-abort
 
 [Install]
-WantedBy=default.target
+WantedBy=console.target
 
 
 

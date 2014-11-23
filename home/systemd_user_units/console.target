@@ -1,7 +1,8 @@
 [Unit]
 Description=Non-graphical services
-Requires=dbus.socket 
-After=dbus.socket 
+# Requires=dbus.socket 
+Requires=dbus.service
+After=dbus.service
 
 [Install]
 Alias=default.target
