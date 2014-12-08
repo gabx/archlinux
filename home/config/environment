@@ -1,9 +1,0 @@
-# File ~/.config/environment
-# user environment variables. Take precedent on system-wide variables /etc/environment
-# Last modified 2013-11-09
-
-
-GIT_EDITOR=$EDITOR
-SUDO_EDITOR=$EDITOR
-MAIL='arnaud.gaboury@gmail.com'
-NAME='arnaud_gaboury'
