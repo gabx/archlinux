@@ -1,0 +1,13 @@
+# Sourced by startx 
+# ~/.xprofile @ hortensia
+# Last modified 2014-12-08
+
+
+# start systemctl --user gui target after startx
+systemctl --user start wm.target
+
+# change dpi
+xrandr --dpi 168
+
+
+
