@@ -1,6 +1,6 @@
 # file:   ~/.config/zsh/initzsh 
 # Variables specific to zsh. Other shell common variables are set in ~/.config/profile                  
-# Last modified: 2014-03-24
+# Last modified: 2014-12-08
 # Do not forget to set ~/.config/locale.conf otherwise zsh comp will repeat letters after [TAB]
      		
 # http://zsh.sourceforge.net/Doc/Release/zsh.html#Top
@@ -8,6 +8,9 @@
 
 # For convenience
 export ZSHDIR=$XDG_CONFIG_HOME/zsh
+
+# Pass variables values to systemd
+xargs systemctl --user set-environment < /home/gabx/.config/systemd/user@.service.d/env.conf
 
 
 HISTFILE=$XDG_CONFIG_HOME/zsh/.zsh_histfile
