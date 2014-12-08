@@ -8,6 +8,7 @@
 
 # For convenience
 export ZSHDIR=$XDG_CONFIG_HOME/zsh
+export XAUTHORITY=$XDG_RUNTIME_DIR/Xauthority
 
 # Pass variables values to systemd
 xargs systemctl --user set-environment < /home/gabx/.config/systemd/user@.service.d/env.conf
@@ -41,25 +42,24 @@ autoload vcs_info
 # Prompt - MUST be after autoload colors
 # the | is needed otherwise tab completion will double the first letter of the command
 # need to remove the "➤➤" when on VT
-# different prompt for root
+# different prompt for root and different prompt for screen
+
 if [[ $TERM = "linux" || $TERM = "vt102" ]] 
-then
-	if [[ "$EUID" = "0" || "$USER" = "root" ]]
+	then
+		if [[ "$EUID" = "0" || "$USER" = "root" ]]
 		then
 			PROMPT="%{$fg_bold[red]%}%n%{$reset_color%}@%{$fg_bold[yellow]%}%m %{$fg[green]%}%1|%2~ %{$reset_color%}%# "
 		else 	
 			PROMPT="%n@%{$fg_bold[yellow]%}%m %{$fg[green]%}%1|%2~ %{$reset_color%}%# "
-	fi
-else
+		fi
+	else
 	if [[ "$EUID" = "0" || "$USER" = "root" ]]
 		then	
 			PROMPT="%{$fg_bold[red]%}%n%{$reset_color%}@%{$fg_bold[yellow]%}%m %{$fg[green]%}%1|➤➤ %2~ %{$reset_color%}%# "	
 		else
 			PROMPT="%n@%{$fg_bold[yellow]%}%m %{$fg[green]%}%1|➤➤ %2~ %{$reset_color%}%# "
-	fi	
+		fi	
 fi
-
-
 
                                            
 # Compile the completion dump to increase startup speed.
@@ -69,7 +69,10 @@ zcompile "$zcompdump"
 fi		
 
 									
-#speed up builds with the compiler cash
+# speed up builds with the compiler cash
 # export USE_CCACHE=1
+
+# import user environment needed ny systemd --user
+# /usr/bin/systemctl --user import-environment
 
 
