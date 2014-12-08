@@ -1,12 +1,25 @@
-archlinux
-==========
+# Archlinux
 
 My archlinux stuff.
 
-As possible, most of configuration files use the **$XDG_HOME_DIR** as home folder. 
 
-Home config files are in the **home** folder, when systemwide are in **etc** folder.
+## etc
+__etc__ folder contains some system wide configurations.
+```etc/profile``` export most systemd wide needed variables.
 
-I now use systemd/User to start some services. 
+
+## home
+__home__ folder contains some per user configurations
+
+```home/systemd_user_units``` contains per user systemd service files.
+
+
+
+As possible, most of configuration files use the **$XDG_HOME_DIR** ```(~/.config)```
+as home folder. 
+
+
+
+
 
 
