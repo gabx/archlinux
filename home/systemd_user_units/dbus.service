@@ -4,7 +4,7 @@ Requires=dbus.socket
 
 
 [Service]
-ExecStart=/usr/bin/dbus-daemon --session --address=systemd: --nofork --systemd-activation
+ExecStart=/usr/bin/dbus-daemon --config-file=/etc/dbus-1/session.conf --nofork --nopidfile --systemd-activation
 ExecReload=/usr/bin/dbus-send --print-reply --session --type=method_call --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig
 
 [Install]

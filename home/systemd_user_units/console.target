@@ -1,6 +1,7 @@
 [Unit]
 Description=Non-graphical services
 Requires=dbus.service
+Before=wm.target
 After=dbus.service
 
 [Install]

@@ -4,7 +4,7 @@ IgnoreOnIsolate=true
 
 [Service]
 Type=forking
-ExecStart=/usr/bin/gpg-agent --daemon --homedir=%h/.config/gnupg 
+ExecStart=/usr/bin/gpg-agent --daemon --homedir=%h/.config/gnupg
 ExecStop=/usr/bin/pkill gpg-agent
 Restart=on-abort
 

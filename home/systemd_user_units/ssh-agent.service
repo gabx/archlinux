@@ -1,10 +1,8 @@
 [Unit]
 Description=ssh-agent
-Requires=ssh-agent.socket
 
 [Service]
 ExecStart=/usr/bin/ssh-agent -d -a %t/ssh_auth_sock
-# ExecStartPost=/usr/bin/ssh-add
 ExecStop=/usr/bin/ssh-agent -k
 
 
