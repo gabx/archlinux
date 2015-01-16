@@ -1,6 +1,6 @@
 
-! file:   ~/urxvt/.urxvtrc                     
-! Last modified: 2013-11-14                         
+! file:   ~/.config/urxvt/.urxvtrc @ hortensia                    
+! Last modified: 2015-16-01                       
 
 
 !http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
@@ -15,7 +15,7 @@
 !--$ xdpyinfo | grep dots >> check dpi curent setting and adjust--!
 !--$ xrdb -query -all >> see my current settings--!
 !--$ xrdb -load ~/.Xresources >> load ressources--!
-Xft.dpi:               		        96
+Xft.dpi:               		    	96
 Xft.antialias:         			true
 Xft.rgba:               		rgb
 Xft.hinting:            		true
@@ -25,8 +25,8 @@ Xft.lcdfilter: 				lcddefault
 
 
 !--[Title]--!
-URxvt.title: 				urxvt
-URxvt.termName: 			rxvt-256color
+!URxvt.title: 				urxvt
+!URxvt.termName: 			rxvt-256color
 
 
 !--[Mouse cursor]--!
@@ -40,19 +40,21 @@ URxvt.geometry:				100x25
 URxvt.cursorUnderline:        		true
 URxvt.highlightSelection:  		true
 URxvt.loginShell:       	        false
-!URxvt.borderless:       	        true
-URxvt.internalborder: 			0
+URxvt.borderless:       	        true
+URxvt.internalborder: 		    	0
 URxvt.saveLines:			5000
 URxvt.cursorBlink: 			true
 !URxvt.letterSpace:                	-5
 URxvt.depth: 				32
 URxvt.boldMode:				true
-URxvt.transparent: 			true
+!URxvt.transparent: 			true
 URxvt.shading: 				60
+URxvt.urgentOnBell: 			true
 
 !--[Scrollbar]--!
-URxvt.scrollBar_right:			true
-URxvt.scrollstyle:   			next
+!URxvt.scrollBar_right:			false
+URxvt.scrollBar:                	false
+!URxvt.scrollstyle:   			next
 URxvt.scrollWithBuffer:			true
 URxvt.scrollTtyOutput: 			true
 
@@ -66,7 +68,7 @@ URxvt.italicFont: 			xft:inconsolata-dz:size=13:antialias=true:hinting=true:unif
 !--[Colors]--!
 URxvt.highlightColor:			#575757
 URxvt.highlightTextColore:		#575757
-!URxvt.background:			0
+URxvt.background:			#161616
 URxvt.foreground:			12 
 URxvt.scrollColor: 			#B2B2B2
 
@@ -80,11 +82,8 @@ URxvt.scrollColor: 			#B2B2B2
 
 !--[Behavior]--!
 URxvt.perl-lib: 			/usr/lib/urxvt/perl
-URxvt.perl-ext-common:      		default,url-select,keyboard-select,clipboard
-URxvt.url-Launcher:         		/usr/bin/aurora
+URxvt.perl-ext-common:      		default,matcher,url-select
 URxvt.keysym.M-u:      			perl:url-select:select_next
-URxvt.underlineURLs:    		true
-URxvt.matcher.button:  			1
 URxvt.fading				:30
 ! clipboard
 URxvt.keysym.M-c: 			perl:clipboard:copy
@@ -92,10 +91,9 @@ URxvt.keysym.M-v: 			perl:clipboard:paste
 URxvt.keysym.M-C-v: 			perl:clipboard:paste_escaped
 URxvt.clipboard.copycmd: 		xsel -ib
 URxvt.clipboard.pastecmd: 		xsel -ob
-! url-select
-URxvt.url-select.autocopy: 		true
-URxvt.url-select.button: 		1
-URxvt.url-select.launcher: 		/usr/bin/aurora
-URxvt.url-select.underline: 		true
-	
-
+!URxvt.perl-ext-common:			osc-xterm-clipboard
+! url
+URxvt.url-select.underline:    		true
+URxvt.url-select.button:  		2
+URxvt.url-select.launcher:   		/usr/bin/firefox-aurora
+URxvt.colorUL:				#6371B6
