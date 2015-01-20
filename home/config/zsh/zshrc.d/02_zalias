@@ -1,36 +1,39 @@
 # $HOME/.config/zsh/zshrc.d/02_zalias
 # user aliases. System-wide aliases are definied in /etc/aliases
-# Last modified 2014-03-31
+# Last modified 2015-01-13
 
 # usual ones #
 alias ls='ls -hF --color=auto --group-directories-first'
 alias less=$PAGER
 alias grep='grep -nI --color'
-alias weechat='weechat-curses'
-alias vi='vim -u $XDG_CONFIG_HOME/vim/vimrc -i $XDG_CONFIG_HOME/vim/viminfo'
 alias R='R --quiet'
 alias pacman='pacman --color=auto'
 
 # load startup configuration files with custom directory #
-alias vim='vim -u $XDG_CONFIG_HOME/vim/vimrc -i $XDG_CONFIG_HOME/vim/viminfo'
-alias ssh='ssh -F $HOME/.config/ssh/config'
+# alias ssh='ssh -F $HOME/.config/ssh/config'
 alias msmtp='msmtp -C $HOME/.config/msmtp/msmtprc'
-alias tmux='tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf'
+# alias tmux='tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf'
 alias weechat='weechat-curses -d $XDG_CONFIG_HOME/weechat'
+alias vi='vim -u $XDG_CONFIG_HOME/vim/vimrc -i $XDG_CONFIG_HOME/vim/viminfo'
+# alias xbindkeys='xbindkeys -f $XDG_CONFIG_HOME/xbindkeys/xbindkeysrc'
 
 # pacman alias
-#alias pacup='sudo pacman -Syu --noconfirm;rm /drawer/backup/pacman_db/updates.txt;touch /drawer/backup/pacman_db/updates.txt'
 alias pacins='sudo pacman -Syu && sudo pacman -S --noconfirm'
 alias pacclean='pacman -Qqdt|sudo pacman -Rns -'
 alias mypac='pacman -Q | grep'
 alias mypaclist='pacman -Ql'
+alias reflector='reflector --verbose -l 7 --sort rate --save /etc/pacman.d/mirrorlist'
+
+# curl
+alias pic2geneva='curl -F channels=C0302HZ9R -F token=xoxp-2415830320-2941362412-2984900263-e8305a https://slack.com/api/files.upload -F file='
+
 
 # common directories #
 hash -d dld=/drawer/download
 hash -d aur=/developement/aur
 hash -d dev=/developement/language
 hash -d tth=/developement/tth
-hash -d Rproj=/developement/language/r
+
 
 
 # miscellaneous
@@ -41,6 +44,7 @@ alias usbumount='sudo umount /mnt/usb'
 alias X='xrdb -merge $XDG_CONFIG_HOME/urxvt/.urxvtrc && fc-cache -vf'
 alias myps='ps -ef | grep'
 alias mypid='ps -ef | pgrep'
+alias myavi='mencoder -oac mp3lame -lameopts cbr=128 -ovc xvid -xvidencopts bitrate=900'
 alias zshinit='$EDITOR $ZSHDIR/.initzsh && source $ZSHDIR/.initzsh'
 alias zshenv='$EDITOR $ZSHDIR/zshrc.d/01_zenv.zsh && source $ZSHDIR/.initzsh'
 alias syncdot='rsync -P -av --delete $XDG_CONFIG_HOME /drawer/backup/sync/home'
@@ -51,6 +55,7 @@ alias ttht='sudo machinectl terminate dahlia'
 alias mbk='sudo mount /dev/vg1/backup /mnt/backup'
 alias umbk='sudo umount /dev/vg1/backup'
 alias str='strace -o ~/strace.txt'
+alias aura-up='sudo aura -Akua'
 
-#
-#gabx@hortensia
+
+

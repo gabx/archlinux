@@ -1,5 +1,5 @@
-# $HOME/.config/zsh/zshrc.d/01_zenv
-# last modified 2013-10-27
+# $HOME/.config/zsh/zshrc.d/01_zenv @ hortensia
+# last modified 2014-11-15
 
 
 # setting up the system path. 
@@ -16,7 +16,8 @@ fpath=($ZSHDIR/functions  $fpath)						# path to zsh functions
 fpath=($ZSHDIR/completion $fpath)						# path to zsh completion
 
 
-
+# some custom path
+export npm_config_userconfig=$XDG_CONFIG_HOME/npm/.npmrc
 
 
 

@@ -6,12 +6,13 @@ if [[ -e "$XDG_CONFIG_HOME/zsh/.initzsh" ]]; then
 . "$XDG_CONFIG_HOME/zsh/.initzsh"
 fi
 
-
+# Perl path
 PATH="/home/gabx/perl5/bin${PATH+:}${PATH}"; export PATH;
-PERL5LIB="/home/gabx/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/gabx/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/gabx/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/gabx/perl5"; export PERL_MM_OPT;
+PERL5LIB="/developement/language/perl/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/developement/language/perl/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/developement/language/perl/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/developement/language/perl/perl5"; export PERL_MM_OPT;
+
 
 # r-plugin-setup
 # Change the TERM environment variable (to get 256 colors) and make Vim

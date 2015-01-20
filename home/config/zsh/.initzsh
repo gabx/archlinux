@@ -1,6 +1,6 @@
 # file:   ~/.config/zsh/initzsh 
-# Variables specific to zsh. Other shell common variables are set in ~/.config/profile                  
-# Last modified: 2014-12-08
+# Variables specific to zsh.               
+# Last modified: 2015-01-12
 # Do not forget to set ~/.config/locale.conf otherwise zsh comp will repeat letters after [TAB]
      		
 # http://zsh.sourceforge.net/Doc/Release/zsh.html#Top
@@ -8,7 +8,6 @@
 
 # For convenience
 export ZSHDIR=$XDG_CONFIG_HOME/zsh
-export XAUTHORITY=$XDG_RUNTIME_DIR/Xauthority
 
 # Pass variables values to systemd
 xargs systemctl --user set-environment < /home/gabx/.config/systemd/user@.service.d/env.conf
@@ -24,6 +23,9 @@ for f in $ZSHDIR/zshrc.d/0* ; do
     source $f
 done 
 }
+
+# needed by Python virtualenvwarpper
+source /usr/bin/virtualenvwrapper.sh
 
 # load functions
 autoload $ZSHDIR/functions/[^_]*(.:t)
@@ -70,9 +72,9 @@ fi
 
 									
 # speed up builds with the compiler cash
-# export USE_CCACHE=1
+export USE_CCACHE=1
 
-# import user environment needed ny systemd --user
-# /usr/bin/systemctl --user import-environment
+
+
 
 

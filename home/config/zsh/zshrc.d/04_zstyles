@@ -1,7 +1,11 @@
 
 
-# $HOME/.config/zsh/zshrc.d/04_zstyles
-# last modified 2013-10-20
+# $HOME/.config/zsh/zshrc.d/04_zstyles @ hortensia
+# last modified 2014-09-23
+
+setopt auto_menu
+setopt complete_in_word
+setopt always_to_end
 
 # speed up with cache
 zstyle ':completion::complete:*' 		use-cache on				 				# use-cache on
@@ -17,7 +21,11 @@ zstyle ':completion:*:functions' 		ignored-patterns '_*' 							# don't auto-com
 zstyle ':completion:*:cd:*' 			tag-order local-directories directory-stack path-directories		# disable named-directories autocompletion
 zstyle ':completion:*' 				group-name ''
 
-
+# COMMANDS {{{1
+zstyle ':completion:*'                         list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*:*:cd:*'                  tag-order local-directories directory-stack path-directories
+zstyle ':completion:*:-tilde-:*'               group-order 'named-directories' 'path-directories' 'users' 'expand'
+zstyle ':completion:*'                         squeeze-slashes true
 
 # special functions
 zstyle ':completion:*:*:killall:*' 		menu yes select						# enable menu for kill
@@ -48,4 +56,4 @@ zstyle ':completion:*' 				matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
 
 #
 #
-# gabx@hortensia
+# 
