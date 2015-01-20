@@ -22,7 +22,7 @@ alias pacins='sudo pacman -Syu && sudo pacman -S --noconfirm'
 alias pacclean='pacman -Qqdt|sudo pacman -Rns -'
 alias mypac='pacman -Q | grep'
 alias mypaclist='pacman -Ql'
-alias reflector='reflector --verbose -l 7 --sort rate --save /etc/pacman.d/mirrorlist'
+alias myreflector='sudo reflector --verbose -l 7 --sort rate --save /etc/pacman.d/mirrorlist'
 
 # curl
 alias pic2geneva='curl -s -S -F channels=C0302HZ9R -F token=xoxp-2415830320-2941362412-2984900263-e8305a https://slack.com/api/files.upload -F file='
