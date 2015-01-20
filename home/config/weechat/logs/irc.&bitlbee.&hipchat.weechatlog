@@ -1,0 +1,27 @@
+2014-10-04 18:10:58	-->	gabx (gabx@localhost.localdomain) has joined &hipchat
+2014-10-04 18:10:58	--	Mode &hipchat [+Ct] by localhost.localdomain
+2014-10-04 18:10:58	--	Channel &hipchat: 10 nicks (2 ops, 0 halfops, 7 voices, 1 normal)
+2014-10-04 18:11:44	@gabx	chat add hipchat 176637_ingressreboot@conf.hipchat.com #ingressreboot
+2014-10-04 18:11:44	@root	Could not add chatroom.
+2014-10-04 18:13:55	@gabx	test
+2014-10-04 18:13:55	@root	Unknown command: test. Please use help commands to get a list of available commands.
+2014-10-04 18:14:35	@gabx	channel #ingressreboot set nick "Poison Ivy"
+2014-10-04 18:14:35	@root	nick = `Poison Ivy'
+2014-10-04 18:16:28	<--	gabx (gabx@localhost.localdomain) has left &hipchat (WeeChat 1.0.1)
+2014-10-04 18:17:36	-->	gabx (gabx@localhost.localdomain) has joined &hipchat
+2014-10-04 18:17:36	--	Mode &hipchat [+Ct] by localhost.localdomain
+2014-10-04 18:17:36	--	Channel &hipchat: 10 nicks (2 ops, 0 halfops, 7 voices, 1 normal)
+2014-10-04 18:19:14	<--	_176637_1276987 (176637_1276987@chat.hipchat.com) has quit (Leaving...)
+2014-10-04 18:19:19	-->	_176637_1276941 (176637_1276941@chat.hipchat.com) has joined &hipchat
+2014-10-04 18:19:19	--	Mode &hipchat [+v _176637_1276941] by localhost.localdomain
+2014-10-04 18:19:39	--	Mode &hipchat [-v _176637_1276941] by localhost.localdomain
+2014-10-04 18:20:08	-->	_176637_1276987 (176637_1276987@chat.hipchat.com) has joined &hipchat
+2014-10-04 18:20:08	--	Mode &hipchat [+v _176637_1276987] by localhost.localdomain
+2014-10-04 18:21:51	<--	_176637_1276941 (176637_1276941@chat.hipchat.com) has quit (Leaving...)
+2014-10-04 18:23:20	-->	_176637_1276941 (176637_1276941@chat.hipchat.com) has joined &hipchat
+2014-10-04 18:23:20	--	Mode &hipchat [+v _176637_1276941] by localhost.localdomain
+2014-10-04 18:23:58	--	Mode &hipchat [-v _176637_1276941] by localhost.localdomain
+2014-10-04 18:24:02	<--	_176637_1276941 (176637_1276941@chat.hipchat.com) has quit (Leaving...)
+2014-10-04 18:24:29	-->	_176637_1276941 (176637_1276941@chat.hipchat.com) has joined &hipchat
+2014-10-04 18:24:29	--	Mode &hipchat [+v _176637_1276941] by localhost.localdomain
+2014-10-04 18:25:11	--	irc: disconnected from server

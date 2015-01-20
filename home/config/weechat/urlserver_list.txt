@@ -1,0 +1,3 @@
+{
+  0: ('13/01/15 13:33:24', 'arnaudgaboury', 'irc.pickups.#arnaudgaboury[d97e066]', 'https://weechat.org/files/doc/devel/weechat_scripting.fr.html', 'arnaudgaboury\tplease see https://weechat.org/files/doc/devel/weechat_scripting.fr.html'),
+}

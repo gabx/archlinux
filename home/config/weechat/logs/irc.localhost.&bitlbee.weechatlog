@@ -1,0 +1,169 @@
+2014-10-04 12:59:36	-->	gabx (gabx@localhost.localdomain) has joined &bitlbee
+2014-10-04 12:59:36	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2014-10-04 12:59:36	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2014-10-04 12:59:36	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2014-10-04 12:59:36	--	Topic set by root (root@localhost.localdomain) on Sat, 04 Oct 2014 12:59:36
+2014-10-04 12:59:36	@root	Welcome to the BitlBee gateway!
+2014-10-04 12:59:36	@root	 
+2014-10-04 12:59:36	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2014-10-04 12:59:36	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2014-10-04 13:56:04	@gabx	register prootx
+2014-10-04 13:56:04	@root	Account successfully created
+2014-10-04 13:57:55	@gabx	identify prootx
+2014-10-04 13:57:55	@root	You're already logged in.
+2014-10-04 13:58:56	@gabx	account add jabber 176637_1276724@chat.hipchat.com
+2014-10-04 13:58:56	@root	Account successfully added with tag jabber
+2014-10-04 13:58:56	@root	You can now use the /OPER command to enter the password
+2014-10-04 13:58:56	@root	Alternatively, enable OAuth if the account supports it: account jabber set oauth on
+2014-10-04 13:59:18	@gabx	account jabber set oauth on
+2014-10-04 13:59:18	@root	oauth = `on'
+2014-10-04 14:07:23	@gabx	account add jabber 176637_1276724 176637_ingressreboot
+2014-10-04 14:07:23	@root	Account successfully added with tag jabber2
+2014-10-04 14:16:14	@gabx	account list
+2014-10-04 14:16:14	@root	 0 (jabber): jabber, 176637_1276724@chat.hipchat.com
+2014-10-04 14:16:14	@root	 1 (jabber2): jabber, 176637_1276724
+2014-10-04 14:16:14	@root	End of account list
+2014-10-04 14:16:56	@gabx	account on  176637_1276724@chat.hipchat.com
+2014-10-04 14:16:56	@root	Could not find account `on'.
+2014-10-04 14:17:02	@gabx	account on 176637_1276724@chat.hipchat.com
+2014-10-04 14:17:02	@root	Could not find account `on'.
+2014-10-04 14:17:22	@gabx	help account
+2014-10-04 14:17:22	@root	Syntax: account [<account id>] <action> [<arguments>]
+2014-10-04 14:17:22	@root	 
+2014-10-04 14:17:22	@root	Available actions: add, del, list, on, off and set. See help account <action> for more information.
+2014-10-04 14:17:33	@gabx	help account on
+2014-10-04 14:17:33	@root	Syntax: account [<account id>] on
+2014-10-04 14:17:33	@root	 
+2014-10-04 14:17:33	@root	This command will try to log into the specified account. If no account is specified, BitlBee will log into all the accounts that have the auto_connect flag set.
+2014-10-04 14:17:33	@root	 
+2014-10-04 14:17:33	@root	The account ID can be a number/tag (see account list), the protocol name or (part of) the screenname, as long as it matches only one connection.
+2014-10-04 14:18:01	@gabx	account on 
+2014-10-04 14:18:01	@root	Trying to get all accounts connected...
+2014-10-04 14:18:01	@root	jabber - Logging in: Starting OAuth authentication
+2014-10-04 14:18:01	@root	jabber2 - Login error: Incomplete account name (format it like <username@jabberserver.name>)
+2014-10-04 14:18:01	@root	jabber2 - Logging in: Signing off..
+2014-10-04 14:18:28	@gabx	account on 176637_1276724@chat.hipchat.com
+2014-10-04 14:18:28	@root	Could not find account `on'.
+2014-10-04 14:19:21	@gabx	account 176637_1276724@chat.hipchat.com on
+2014-10-04 14:19:21	@root	Account already online
+2014-10-04 14:19:45	@gabx	save
+2014-10-04 14:19:45	@root	Configuration saved
+2014-10-04 14:20:54	@gabx	account jabber set tag hipchat
+2014-10-04 14:20:54	@root	tag = `hipchat'
+2014-10-04 14:22:31	@gabx	account hipchat set Poison_Ivy 176637_1276724
+2014-10-04 14:22:31	@root	Setting `Poison_Ivy' does not exist.
+2014-10-04 14:23:07	@gabx	account hipchat set nick_source Posion_Ivy
+2014-10-04 14:23:07	@root	nick_source = `Posion_Ivy'
+2014-10-04 14:24:41	@gabx	chat add hipchat 176637_ingressreboot@conf.hipchat.com #channel_name
+2014-10-04 14:24:41	@root	Chatroom successfully added.
+2014-10-04 14:25:43	@gabx	channel #channel_name set nick 'Posion Ivy'
+2014-10-04 14:25:43	@root	nick = `Posion Ivy'
+2014-10-04 14:29:25	@root	hipchat - Logging in: Requesting OAuth access token
+2014-10-04 14:29:26	@root	hipchat - Logging in: Connecting
+2014-10-04 14:29:26	@root	hipchat - Logging in: Connected to server, logging in
+2014-10-04 14:29:26	@root	hipchat - Logging in: Converting stream to TLS
+2014-10-04 14:29:26	@root	hipchat - Logging in: Connected to server, logging in
+2014-10-04 14:29:26	@root	hipchat - Login error: OAuth requested, but not supported by server
+2014-10-04 14:29:26	@root	hipchat - Logging in: Signing off..
+2014-10-04 14:29:26	@root	hipchat - Logging in: If you're having problems logging in, try re-requesting an OAuth token: account hipchat set password ""
+2014-10-04 14:30:23	@gabx	account hipchat set password ""
+2014-10-04 14:30:23	@root	Setting changed successfully
+2014-10-04 14:32:48	@gabx	account jabber set oauth on
+2014-10-04 14:32:48	@root	Could not find account `jabber'.
+2014-10-04 14:33:16	@gabx	account hipchat set oauth on
+2014-10-04 14:33:16	@root	oauth = `on'
+2014-10-04 14:33:37	@gabx	acc hipchat on
+2014-10-04 14:33:37	@root	hipchat - Logging in: Starting OAuth authentication
+2014-10-04 14:35:48	@root	hipchat - Logging in: Requesting OAuth access token
+2014-10-04 14:35:48	@root	hipchat - Logging in: Connecting
+2014-10-04 14:35:48	@root	hipchat - Logging in: Connected to server, logging in
+2014-10-04 14:35:49	@root	hipchat - Logging in: Converting stream to TLS
+2014-10-04 14:35:49	@root	hipchat - Logging in: Connected to server, logging in
+2014-10-04 14:35:49	@root	hipchat - Login error: OAuth requested, but not supported by server
+2014-10-04 14:35:49	@root	hipchat - Logging in: Signing off..
+2014-10-04 14:35:49	@root	hipchat - Logging in: If you're having problems logging in, try re-requesting an OAuth token: account hipchat set password ""
+2014-10-04 14:40:45	@gabx	account hipchat set oauth on
+2014-10-04 14:40:45	@root	oauth = `on'
+2014-10-04 14:43:22	@gabx	acc hipchat on
+2014-10-04 14:43:23	@root	hipchat - Logging in: Connecting
+2014-10-04 14:43:23	@root	hipchat - Logging in: Connected to server, logging in
+2014-10-04 14:43:23	@root	hipchat - Logging in: Converting stream to TLS
+2014-10-04 14:43:23	@root	hipchat - Logging in: Connected to server, logging in
+2014-10-04 14:43:23	@root	hipchat - Login error: OAuth requested, but not supported by server
+2014-10-04 14:43:23	@root	hipchat - Logging in: Signing off..
+2014-10-04 14:43:23	@root	hipchat - Logging in: If you're having problems logging in, try re-requesting an OAuth token: account hipchat set password ""
+2014-10-04 14:43:45	@gabx	account hipchat set password ""
+2014-10-04 14:43:45	@root	Setting changed successfully
+2014-10-04 14:43:52	@gabx	acc hipchat on
+2014-10-04 14:43:52	@root	hipchat - Logging in: Starting OAuth authentication
+2014-10-04 14:43:59	@gabx	a118f59a607d0ed3645316270ed2cc
+2014-10-04 14:43:59	@root	Unknown command: a118f59a607d0ed3645316270ed2cc. Please use help commands to get a list of available commands.
+2014-10-04 14:44:07	@root	hipchat - Logging in: Requesting OAuth access token
+2014-10-04 14:44:08	@root	hipchat - Login error: OAuth failure (invalid_grant)
+2014-10-04 14:44:08	@root	hipchat - Logging in: Signing off..
+2014-10-04 14:44:08	@root	hipchat - Logging in: Reconnecting in 5 seconds..
+2014-10-04 14:44:13	@root	hipchat - Logging in: Starting OAuth authentication
+2014-10-04 14:44:39	@root	hipchat - Logging in: Requesting OAuth access token
+2014-10-04 14:44:39	@root	hipchat - Login error: OAuth failure (invalid_grant)
+2014-10-04 14:44:39	@root	hipchat - Logging in: Signing off..
+2014-10-04 14:44:39	@root	hipchat - Logging in: Reconnecting in 15 seconds..
+2014-10-04 14:44:54	@root	hipchat - Logging in: Starting OAuth authentication
+2014-10-04 14:45:49	@root	hipchat - Logging in: Requesting OAuth access token
+2014-10-04 14:45:49	@root	hipchat - Login error: OAuth failure (invalid_grant)
+2014-10-04 14:45:49	@root	hipchat - Logging in: Signing off..
+2014-10-04 14:45:49	@root	hipchat - Logging in: Reconnecting in 45 seconds..
+2014-10-04 14:46:34	@root	hipchat - Logging in: Starting OAuth authentication
+2014-10-04 14:47:30	@root	hipchat - Logging in: Requesting OAuth access token
+2014-10-04 14:47:30	@root	hipchat - Login error: OAuth failure (invalid_grant)
+2014-10-04 14:47:30	@root	hipchat - Logging in: Signing off..
+2014-10-04 14:47:30	@root	hipchat - Logging in: Reconnecting in 135 seconds..
+2014-10-04 14:47:50	@gabx	acc hipchat off
+2014-10-04 14:47:50	@root	Reconnect cancelled
+2014-10-04 17:58:38	@gabx	account hipchat set resource bot
+2014-10-04 17:58:38	@root	resource = `bot'
+2014-10-04 17:59:03	@gabx	account hipchat on
+2014-10-04 17:59:03	@root	hipchat - Logging in: Starting OAuth authentication
+2014-10-04 18:00:42	@root	hipchat - Logging in: Requesting OAuth access token
+2014-10-04 18:00:42	@root	hipchat - Login error: OAuth failure (Unusable response)
+2014-10-04 18:00:42	@root	hipchat - Logging in: Signing off..
+2014-10-04 18:00:42	@root	hipchat - Logging in: Reconnecting in 405 seconds..
+2014-10-04 18:01:12	@gabx	account hipchat set password prootx
+2014-10-04 18:01:12	@root	Setting changed successfully
+2014-10-04 18:01:27	@gabx	account hipchat set oauth off
+2014-10-04 18:01:27	@root	oauth = `off'
+2014-10-04 18:01:57	@gabx	account hipchat on
+2014-10-04 18:01:57	@root	hipchat - Logging in: Connecting
+2014-10-04 18:01:58	@root	hipchat - Logging in: Connected to server, logging in
+2014-10-04 18:01:58	@root	hipchat - Logging in: Converting stream to TLS
+2014-10-04 18:01:58	@root	hipchat - Logging in: Connected to server, logging in
+2014-10-04 18:01:58	@root	hipchat - Logging in: Authentication finished
+2014-10-04 18:01:58	@root	hipchat - Logging in: Authenticated, requesting buddy list
+2014-10-04 18:01:58	@root	hipchat - Logging in: Authenticated, requesting buddy list
+2014-10-04 18:01:59	@root	hipchat - Logging in: Logged in
+2014-10-04 18:01:59	-->	_176637_1276724 (176637_1276724@chat.hipchat.com) has joined &bitlbee
+2014-10-04 18:01:59	--	Mode &bitlbee [+v _176637_1276724] by localhost.localdomain
+2014-10-04 18:01:59	-->	_176637_1276995 (176637_1276995@chat.hipchat.com) has joined &bitlbee
+2014-10-04 18:01:59	--	Mode &bitlbee [+v _176637_1276995] by localhost.localdomain
+2014-10-04 18:01:59	-->	_176637_1277281 (176637_1277281@chat.hipchat.com) has joined &bitlbee
+2014-10-04 18:01:59	--	Mode &bitlbee [+v _176637_1277281] by localhost.localdomain
+2014-10-04 18:01:59	-->	_176637_1278506 (176637_1278506@chat.hipchat.com) has joined &bitlbee
+2014-10-04 18:01:59	--	Mode &bitlbee [+v _176637_1278506] by localhost.localdomain
+2014-10-04 18:01:59	-->	_176637_1278123 (176637_1278123@chat.hipchat.com) has joined &bitlbee
+2014-10-04 18:01:59	--	Mode &bitlbee [+v _176637_1278123] by localhost.localdomain
+2014-10-04 18:01:59	-->	_176637_1276944 (176637_1276944@chat.hipchat.com) has joined &bitlbee
+2014-10-04 18:01:59	--	Mode &bitlbee [+v _176637_1276944] by localhost.localdomain
+2014-10-04 18:01:59	-->	_176637_1276953 (176637_1276953@chat.hipchat.com) has joined &bitlbee
+2014-10-04 18:01:59	--	Mode &bitlbee [+v _176637_1276953] by localhost.localdomain
+2014-10-04 18:01:59	-->	_176637_1277039 (176637_1277039@chat.hipchat.com) has joined &bitlbee
+2014-10-04 18:01:59	--	Mode &bitlbee [+v _176637_1277039] by localhost.localdomain
+2014-10-04 18:01:59	-->	_176637_1276987 (176637_1276987@chat.hipchat.com) has joined &bitlbee
+2014-10-04 18:01:59	--	Mode &bitlbee [+v _176637_1276987] by localhost.localdomain
+2014-10-04 18:03:41	@gabx	chat add hipchat 176637_ingressreboot@conf.hipchat.com #ingressreboot
+2014-10-04 18:03:41	@root	Chatroom successfully added.
+2014-10-04 18:04:16	@gabx	channel #ingressreboot set nick 'Poison Ivy'
+2014-10-04 18:04:16	@root	nick = `Poison Ivy'
+2014-10-04 18:08:39	@gabx	save
+2014-10-04 18:08:39	@root	Configuration saved
+2014-10-04 18:08:52	@gabx	quit
+2014-10-04 18:08:52	@root	Unknown command: quit. Please use help commands to get a list of available commands.
+2014-10-04 18:09:06	--	irc: disconnected from server

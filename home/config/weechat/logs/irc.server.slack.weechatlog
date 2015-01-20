@@ -1,0 +1,170 @@
+2015-01-15 18:32:19	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:32:19	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:32:19	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:32:19	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:32:19	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:32:19	--	Invalid user name or password
+2015-01-15 18:32:19	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:32:19	--	irc: disconnecting from server...
+2015-01-15 18:32:19	--	irc: disconnected from server
+2015-01-15 18:32:19	--	irc: reconnecting to server in 10 seconds
+2015-01-15 18:32:29	--	irc: reconnecting to server...
+2015-01-15 18:32:29	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:32:29	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:32:29	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:32:29	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:32:29	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:32:29	--	Invalid user name or password
+2015-01-15 18:32:29	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:32:29	--	irc: disconnecting from server...
+2015-01-15 18:32:29	--	irc: disconnected from server
+2015-01-15 18:32:29	--	irc: reconnecting to server in 20 seconds
+2015-01-15 18:32:49	--	irc: reconnecting to server...
+2015-01-15 18:32:49	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:32:49	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:32:49	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:32:49	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:32:49	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:32:49	--	Invalid user name or password
+2015-01-15 18:32:49	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:32:49	--	irc: disconnecting from server...
+2015-01-15 18:32:49	--	irc: disconnected from server
+2015-01-15 18:32:49	--	irc: reconnecting to server in 40 seconds
+2015-01-15 18:33:29	--	irc: reconnecting to server...
+2015-01-15 18:33:29	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:33:29	--	irc: connected to chenl.irc.slack.com/6667 (107.21.124.222)
+2015-01-15 18:33:29	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:33:29	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:33:29	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:33:29	--	Invalid user name or password
+2015-01-15 18:33:29	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:33:29	--	irc: disconnecting from server...
+2015-01-15 18:33:29	--	irc: disconnected from server
+2015-01-15 18:33:29	--	irc: reconnecting to server in 1 minute, 20 seconds
+2015-01-15 18:34:49	--	irc: reconnecting to server...
+2015-01-15 18:34:49	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:34:49	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:34:49	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:34:49	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:34:49	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:34:49	--	Invalid user name or password
+2015-01-15 18:34:49	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:34:49	--	irc: disconnecting from server...
+2015-01-15 18:34:49	--	irc: disconnected from server
+2015-01-15 18:34:49	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2015-01-15 18:37:29	--	irc: reconnecting to server...
+2015-01-15 18:37:29	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:37:29	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:37:29	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:37:29	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:37:29	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:37:29	--	Invalid user name or password
+2015-01-15 18:37:29	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:37:29	--	irc: disconnecting from server...
+2015-01-15 18:37:29	--	irc: disconnected from server
+2015-01-15 18:37:29	--	irc: reconnecting to server in 5 minutes, 20 seconds
+2015-01-15 18:39:01	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:39:02	--	irc: connected to chenl.irc.slack.com/6667 (107.21.124.222)
+2015-01-15 18:39:02	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:39:02	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:39:02	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:39:02	--	Invalid user name or password
+2015-01-15 18:39:02	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:39:02	--	irc: disconnecting from server...
+2015-01-15 18:39:02	--	irc: disconnected from server
+2015-01-15 18:39:02	--	irc: reconnecting to server in 10 seconds
+2015-01-15 18:39:12	--	irc: reconnecting to server...
+2015-01-15 18:39:12	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:39:12	--	irc: connected to chenl.irc.slack.com/6667 (107.21.124.222)
+2015-01-15 18:39:12	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:39:12	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:39:12	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:39:12	--	Invalid user name or password
+2015-01-15 18:39:12	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:39:12	--	irc: disconnecting from server...
+2015-01-15 18:39:12	--	irc: disconnected from server
+2015-01-15 18:39:12	--	irc: reconnecting to server in 20 seconds
+2015-01-15 18:39:32	--	irc: reconnecting to server...
+2015-01-15 18:39:32	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:39:32	--	irc: connected to chenl.irc.slack.com/6667 (107.21.124.222)
+2015-01-15 18:39:32	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:39:32	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:39:32	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:39:32	--	Invalid user name or password
+2015-01-15 18:39:32	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:39:32	--	irc: disconnecting from server...
+2015-01-15 18:39:32	--	irc: disconnected from server
+2015-01-15 18:39:32	--	irc: reconnecting to server in 40 seconds
+2015-01-15 18:40:12	--	irc: reconnecting to server...
+2015-01-15 18:40:12	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:40:12	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:40:12	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:40:12	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:40:12	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:40:12	--	Invalid user name or password
+2015-01-15 18:40:12	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:40:12	--	irc: disconnecting from server...
+2015-01-15 18:40:12	--	irc: disconnected from server
+2015-01-15 18:40:12	--	irc: reconnecting to server in 1 minute, 20 seconds
+2015-01-15 18:40:19	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:40:20	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:40:20	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:40:20	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:40:20	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:40:20	--	Invalid user name or password
+2015-01-15 18:40:20	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:40:20	--	irc: disconnecting from server...
+2015-01-15 18:40:20	--	irc: disconnected from server
+2015-01-15 18:40:20	--	irc: reconnecting to server in 10 seconds
+2015-01-15 18:40:30	--	irc: reconnecting to server...
+2015-01-15 18:40:30	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:40:30	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:40:30	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:40:30	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:40:30	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:40:30	--	Invalid user name or password
+2015-01-15 18:40:30	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:40:30	--	irc: disconnecting from server...
+2015-01-15 18:40:30	--	irc: disconnected from server
+2015-01-15 18:40:30	--	irc: reconnecting to server in 20 seconds
+2015-01-15 18:40:50	--	irc: reconnecting to server...
+2015-01-15 18:40:50	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:40:50	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:40:50	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:40:50	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:40:50	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:40:50	--	Invalid user name or password
+2015-01-15 18:40:50	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:40:50	--	irc: disconnecting from server...
+2015-01-15 18:40:50	--	irc: disconnected from server
+2015-01-15 18:40:50	--	irc: reconnecting to server in 40 seconds
+2015-01-15 18:41:30	--	irc: reconnecting to server...
+2015-01-15 18:41:30	--	irc: connecting to server chenl.irc.slack.com/6667...
+2015-01-15 18:41:30	--	irc: connected to chenl.irc.slack.com/6667 (23.21.214.229)
+2015-01-15 18:41:30	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:41:30	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:41:30	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:41:30	--	Invalid user name or password
+2015-01-15 18:41:30	=!=	irc: reading data on socket: error 2 (connection closed by peer)
+2015-01-15 18:41:30	--	irc: disconnecting from server...
+2015-01-15 18:41:30	--	irc: disconnected from server
+2015-01-15 18:41:30	--	irc: reconnecting to server in 1 minute, 20 seconds
+2015-01-15 18:54:48	--	irc: connecting to server chenl.irc.slack.com/6667 (SSL)...
+2015-01-15 18:54:48	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2015-01-15 18:54:48	--	gnutls: receiving 2 certificates
+2015-01-15 18:54:48	--	 - certificate[1] info:
+2015-01-15 18:54:48	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2014-12-03 00:00:00 UTC', expires `2015-12-03 23:59:59 UTC', SHA-1 fingerprint `ddcf57c9212e95add5b4b370e0d1d1d83ac438b2'
+2015-01-15 18:54:48	--	 - certificate[2] info:
+2015-01-15 18:54:48	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2015-01-15 18:54:48	--	gnutls: peer's certificate is trusted
+2015-01-15 18:54:48	--	irc: connected to chenl.irc.slack.com/6667 (107.21.124.222)
+2015-01-15 18:54:48	--	CTCP requested by slackbot: VERSION
+2015-01-15 18:54:48	--	CTCP reply to slackbot: VERSION WeeChat 1.1 (Jan 11 2015)
+2015-01-15 18:54:48	--	irc.tinyspeck.com IRC-SLACK gateway
+2015-01-15 18:54:49	--	Welcome to Slack IRC Gateway server
+2015-01-15 18:54:49	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2015-01-15 18:54:49	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2015-01-15 18:54:49	--	there are 481 users
+2015-01-15 18:54:49	--	 Message of the day
+2015-01-15 18:54:49	--	 WELCOME TO SLACK...
+2015-01-15 18:54:49	--	 End of MOTD command
