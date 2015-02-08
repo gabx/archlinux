@@ -1,0 +1,70 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "floating": "auto_off",
+    "geometry": {
+       "height": 429,
+       "width": 804,
+       "x": 0,
+       "y": 0
+    },
+    "name": "urxvt",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^URxvt$",
+        "instance": "^urxvt$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1052,
+               "width": 478,
+               "x": 2160,
+               "y": 0
+            },
+            "name": "i3",
+            "percent": 0.703422053231939,
+            "swallows": [
+               {
+                "class": "^Caja$",
+                "instance": "^caja$" 
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "floating": "auto_off",
+            "geometry": {
+               "height": 429,
+               "width": 804,
+               "x": 0,
+               "y": 0
+            },
+            "name": "urxvt",
+            "percent": 0.296577946768061,
+            "swallows": [
+               {
+                "class": "^URxvt$",
+                "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
