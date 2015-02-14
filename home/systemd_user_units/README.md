@@ -8,16 +8,26 @@ Please visit [systemd/user on Archlinux wiki](https://wiki.archlinux.org/index.p
 
 ## How it works
 
-* a user __dbus__ session is first started
+1. a user __dbus__ session is first started at init
 
-* *console.target* services are started. These services do not need X11
+2. *console.target* services are started at init. These services do not need X11
     + gpg-agent
     + ssh-agent
     + tmux
     + urxvtd
     
-* *wm.target* services are started. These services need X11 to be run first
+3. **X** session is started this way from virtual console : `$ xinit`
+
+_Xorg is now run by user_
+    
+4. *wm.target* services are started. These services need X11 to be run first
     + mate-settings-daemon
+    + kalu.service
+    + pickups.service
+    
+wm.target is started by adding a line in **xinitrc**:
+
+`systemctl --user start wm.target`
     
 Each service file is started and enabled running these commands:
 ```
@@ -35,7 +45,8 @@ $ systemctl --user show-environment
 ```
 
 Some services need aditional variables to be passed to __systemctl__. The needed
-variables are stored in a file `~/.config/systemd/user@.service.d/env.conf`. It is a list of blank separated keys in the form `VARIABLE=value`.
+variables are stored in a file `~/.config/systemd/user@.service.d/env.conf`. It is 
+a list of blank separated keys in the form `VARIABLE=value`.
 
 *N.B: the path and name of this file is your choice.*
 
