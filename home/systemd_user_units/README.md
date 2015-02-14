@@ -11,15 +11,15 @@ Please visit [systemd/user on Archlinux wiki](https://wiki.archlinux.org/index.p
 1. a user __dbus__ session is first started at init
 
 2. *console.target* services are started at init. These services do not need X11
-    + gpg-agent
-    + ssh-agent
-    + tmux
-    + urxvtd
+    + gpg-agent.service
+    + ssh-agent.service
+    + tmux.service
+    + urxvtd.service
     
 3. **X** session is started this way from virtual console : `$ xinit`
     
 4. *wm.target* services are started. These services need X11 to be run first
-    + mate-settings-daemon
+    + mate-settings-daemon.service
     + kalu.service
     + pickups.service
     + ssh-add.service
