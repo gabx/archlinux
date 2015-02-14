@@ -17,8 +17,6 @@ Please visit [systemd/user on Archlinux wiki](https://wiki.archlinux.org/index.p
     + urxvtd
     
 3. **X** session is started this way from virtual console : `$ xinit`
-
-_Xorg is now run by user_
     
 4. *wm.target* services are started. These services need X11 to be run first
     + mate-settings-daemon
@@ -33,6 +31,19 @@ Each service file is started and enabled running these commands:
 ```
 $ systemctl --user start MyService
 $ systemctl --user enable MyService
+```
+
+### dbus
+Only two debus sessions: **pid1** and **user**
+```
+113:dbus 491  1  0 Feb11 ?  00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+120:gabx 619  575  0 Feb11 ? 00:00:01 /usr/bin/dbus-daemon --config-file=/etc/dbus-1/session.conf
+```
+
+### Xorg
+_Xorg is now run by user_
+```
+128:gabx      1547  1546  1 Feb11 tty1     00:52:02 /usr/bin/Xorg.bin -nolisten tcp vt1
 ```
 
 ## Configuration
