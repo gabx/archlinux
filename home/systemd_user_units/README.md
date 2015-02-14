@@ -22,6 +22,7 @@ Please visit [systemd/user on Archlinux wiki](https://wiki.archlinux.org/index.p
     + mate-settings-daemon
     + kalu.service
     + pickups.service
+    + ssh-add.service
     
 wm.target is started by adding a line in **xinitrc**:
 
