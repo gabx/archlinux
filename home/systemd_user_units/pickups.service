@@ -1,0 +1,9 @@
+[Unit]
+Description=start pickup IRC server
+Documentation=https://github.com/maiksensi/pickups/
+
+[Service]
+ExecStart=/usr/bin/python -m pickups
+
+[Install]
+WantedBy=wm.target

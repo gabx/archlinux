@@ -1,0 +1,12 @@
+[Unit]
+Description=Upgrade notifier w/ AUR support
+
+[Service]
+ExecStart=/usr/bin/kalu 
+
+[Install]
+WantedBy=wm.target
+
+
+
+
