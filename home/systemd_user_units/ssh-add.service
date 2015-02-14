@@ -1,0 +1,13 @@
+[Unit]
+Description=ssh-add
+
+[Service]
+ExecStart=/usr/bin/ssh-add ~/.config/ssh/id_rsa 
+
+
+[Install]
+WantedBy=wm.target
+
+
+
+
