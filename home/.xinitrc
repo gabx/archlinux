@@ -5,29 +5,36 @@
 # Last modified 2014-12-10
 
 
-# source ~/.xprofile by startx
-[ -f ~/.xprofile ] && source ~/.xprofile
+# source ~/.xprofile 
+[ -f ~/.xprofile ] && . ~/.xprofile 
 
+# adjust dpi
+xrandr --dpi 168 
 
+#hide mouse coursor when it isn't used
+unclutter -root -visible &
 			
-xset fp rehash &
-# load my X resources
-xrdb -merge $HOME/.config/urxvt/.urxvtrc &
+xset fp rehash 
 
-# Start the notification daemon.
-# dunst &
+# load my X resources
+[ -f $HOME/.config/urxvt/.urxvtrc ] && xrdb -merge $HOME/.config/urxvt/.urxvtrc 
+
 
 # make some cleaning
-rm -rf $HOME/.cache/chromium
-rm -rf $HOME/.cache/thumbnails
-rm -rf $HOME/.cache/fontconfig
+rm -rf $HOME/.cache/chromium 
+rm -rf $HOME/.cache/thumbnails 
+rm -rf $HOME/.cache/fontconfig 
 
-# Vacuuming SQLite databases
-find $HOME/.mozilla/ \( -name "*.sqlite" \) -execdir sqlite3 {} "vacuum" \;
+# Vacum SQLite databases
+find $HOME/.mozilla/ \( -name "*.sqlite" \) -execdir sqlite3 {} "vacuum" \; 
+
+# start wm.target
+systemctl --user start wm.target
 
 						
 # start desktop environment
 exec i3
+
 
 
 					

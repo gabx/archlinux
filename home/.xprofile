@@ -20,6 +20,9 @@ export XDG_CONFIG_DIRS=/etc/xdg
 export XDG_DATA_DIRS=/usr/local/share:/usr/share
 export XDG_DATA_HOME=${HOME}/.local/share
 export XDG_RUNTIME_DIR=/run/user/${UID}
+export XDG_CURRENT_DESKTOP=MATE
+export XDG_SESSION_DESKTOP=mate
+
 
 # be sure variable output reflects output of tty command
 export TTY=$(tty)
@@ -28,7 +31,7 @@ export GPG_TTY=$TTY
 # python 
 # export PYENV_ROOT=/developement/language/python
 export WORKON_HOME=/developement/language/python/Envs
-export PYTHONPATH=/developement/language/python_modules
+export PYTHONPATH=/developement/python_modules
 
 
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
