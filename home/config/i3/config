@@ -14,8 +14,7 @@ font pango: inconsolata-dz Bold 6
 # Don't make the focus follow the mouse.
 focus_follows_mouse no
 # Use normal borders.
-new_window 1pixel
-
+new_window pixel 0
 # Hide edge borders(vertical & horizontal)
 hide_edge_borders both
 # logout i3
@@ -26,6 +25,7 @@ bindsym $mod+Shift+w reload
 bindsym $mod+Shift+r restart
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
+
 
 
 # start-up
@@ -150,13 +150,8 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-
-
 # screenshot
 bindsym Print exec screenshot
-
-
-
 
 # resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
