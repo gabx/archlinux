@@ -9,9 +9,6 @@
 # sudo chattr +i <keyfile> ; sudo chattrr -R +i <ssh folder>
 # unset it : sudo chattr -i
 # Keyfingerprint : $ ssh-keygen -lf myKey_rsa.pub
-# id_rsa (2048)
-#7a:2a:dc:cf:fb:78:95:30:93:17:d3:86:6c:6c:a3:14  arnaud.gaboury@gmail.com (RSA)
-
 #########################################################
 # general public key #
 # IdentityFile $HOME/.ssh/id_rsa.pub
@@ -28,16 +25,6 @@ User git
 # IdentitiesOnly=yes
 # ControlMaster no
 # ForwardAgent yes
-
-# ControlPath ~/.config/ssh/socket-%r@%h:%p
-
-# tth
-# Hostname http://212.147.52.214/
-# Port 730
-# User gab
-#ControlMaster auto
-#ControlPersist yes
-#ControlPath ~/.config/ssh/socket-%r@%h:%p
 
 
 # passphrase quering is disabled when used in scripts #
