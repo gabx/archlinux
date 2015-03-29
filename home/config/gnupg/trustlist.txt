@@ -1,4 +1,0 @@
-# List of trust keys for the gpg-agent
-# $XDG_CONFIG_HOME/gnupg/trustlist.txt
-# fingerprint + space + S
-
