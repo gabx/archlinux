@@ -25,7 +25,7 @@ export XDG_SESSION_DESKTOP=mate
 
 
 # be sure variable output reflects output of tty command
-export TTY=$(tty)
+TTY=$(tty)
 export GPG_TTY=$TTY
 
 # python 
