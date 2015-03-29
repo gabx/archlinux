@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# Script to backup personal files to the external USB drive.
+# /etc/scripts/cron_backup @ hortensia
+# Last edited 2015-03-21
+
+
+now=`date +"%m_%d_%Y"`
+
+# define backup directory and mount it
+BCK=/mnt/backup
+# create mount point if does not exist
+if [ ! -d $BCK ]; then
+	mkdir /mnt/backup
+fi 
+# mount backup drive if not already mounted
+if ! mountpoint -q $BCK; then
+	mount /dev/vg1/backup_hortensia $BCK
+fi
+
+BCKLOG=$BCK/error_$now.txt
+touch $BCKLOG
+PACBAK=/drawer/system/pacman/lib/local
+
+
+# Log everything to log file
+exec &>> $BCKLOG
+
+echo -e "Subject: weekly backup logs\n"
+
+
+# exclude and include file
+EXCL=/etc/conf.d/exclude-hortensia
+INCL=/etc/conf.d/include-hortensia
+
+
+echo -e "\nRUNNING RSYNC\n" 
+
+# backup host
+# use rsync for backup
+# usage rsync source destination --exclude
+rsync -av --delete /* $BCK --exclude-from $EXCL 
+
+# some pacman stuff
+pacman -Qen > $BCK/pkglist_$now.txt
+tar -cJf $BCK/pacDB_$now.tar.xz $PACBAK 
+
+echo -e "\nRUNNIG SYSTEMCTL --FAILED\n" 
+systemctl --failed 
+
+echo -e "\nRUNNING SYSTEMCTL LIST-TIMERS\n" 
+systemctl list-timers
+
+
+# send email
+cat $BCKLOG | msmtp -a default arnaud.gaboury@gmail.com 
+
+
+# remove log if nothing failed
+if [ $? = 0 ]; then 
+	rm $BCKLOG
+fi
+
+# remove files to cleanup
+# rm $BCK/pkglist*
+
+# unmount
+umount $BCK
