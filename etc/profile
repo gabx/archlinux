@@ -1,7 +1,7 @@
 # /etc/profile @ hortensia
 # read by the login shell after a successful login
 # shell startup file will take precedent
-# Last modified 2015-01.11
+# Last modified 2015-10-06
 
 
 
@@ -15,14 +15,8 @@ export HOST=$(</etc/hostname)
 # set our default path
 PATH=/usr/local/bin:$HOME/bin:/etc/scripts:/developement/node_modules/bin\
 :/usr/bin:/usr/lib/ccache/bin:/usr/lib/colorgcc/bin\
-:$JAVA_HOME:$ANDROID_HOME:/usr/bin/vendor_perl:/usr/share
+:/usr/bin/vendor_perl:/usr/share
 export PATH
-# add some path for UID 0
-if [ $EUID -eq 0 ] ; then
-	pathappend /sbin:/usr/sbin:/usr/local/sbin
-	unset HISTFILE
-fi
-
 
 ## XDG environment variables 
 export XDG_CONFIG_HOME=${HOME}/.config
@@ -37,10 +31,13 @@ export XDG_RUNTIME_DIR=/run/user/${UID}
 # python 
 # export PYENV_ROOT=/developement/language/python
 export WORKON_HOME=/developement/language/python/Envs
-export PYTHONPATH=/developement/language/python_modules
+export PYTHONPATH=/developement/python_modules
 # R
 export R_PROFILE_USER=$XDG_CONFIG_HOME/r/Rprofile.r
 export R_ENVIRON_USER=$XDG_CONFIG_HOME/r/Renviron
+export R_LIBS_USER=/developement/language/r/library
+# Ruby
+export GEM_HOME=/developement/language/ruby/gem/ruby
 
 ## Miscellaneous
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
@@ -51,8 +48,8 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh_auth_sock
 #export RXVT_SOCKET=${XDG_RUNTIME_DIR}/urxvt-${HOST}
 export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/password-store
 export PULSE_CLIENTCONFIG=$XDG_CONFIG_HOME/pulse/client.conf
-export GPG_TTY=$(tty)
-
+#export GPG_TTY=$(tty)
+export PGROOT=/drawer/pgsql
 ## For convenience
 # local back-up directory
 export LOCAL_BAKUP=/drawer/backup
