@@ -18,6 +18,7 @@ PATH=/usr/local/bin:$HOME/bin:/etc/scripts:/developement/node_modules/bin\
 :/usr/bin/vendor_perl:/usr/share
 export PATH
 
+
 ## XDG environment variables 
 export XDG_CONFIG_HOME=${HOME}/.config
 export XDG_CACHE_HOME=${HOME}/.cache
@@ -37,7 +38,10 @@ export R_PROFILE_USER=$XDG_CONFIG_HOME/r/Rprofile.r
 export R_ENVIRON_USER=$XDG_CONFIG_HOME/r/Renviron
 export R_LIBS_USER=/developement/language/r/library
 # Ruby
-export GEM_HOME=/developement/language/ruby/gem/ruby
+export GEM_SPEC_CACHE=/developement/language/ruby/gems/specifications
+PATH=$PATH:/developement/language/ruby/gems/bin
+export PATH
+
 
 ## Miscellaneous
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
