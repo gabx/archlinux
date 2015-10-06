@@ -2,6 +2,7 @@
 
 # --user-install is used to install to $HOME/.gem/ by default since we want to separate
 #                pacman installed gems and gem installed gems
+# for system wide installation, /root/.gemrc have been edited with --install-dir /usr/lib/ruby/gems/2.2.0
 gem: --no-ri --no-rdoc
 gemhome: /developement/language/ruby/gems
 gempath:
