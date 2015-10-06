@@ -1,0 +1,11 @@
+# Read about the gemrc format at http://guides.rubygems.org/command-reference/#gem-environment
+
+# --user-install is used to install to $HOME/.gem/ by default since we want to separate
+#                pacman installed gems and gem installed gems
+gem: --no-ri --no-rdoc
+gemhome: /developement/language/ruby/gems
+gempath:
+- /developement/language/ruby/gems
+- /usr/lib/ruby/gems
+
+
