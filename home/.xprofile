@@ -1,16 +1,11 @@
 # ~/.xprofile @ hortensia
 # read by xinit
-# Last modified 2015-01-11
+# Last modified 2015-03-03
 
-export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/dbus/user_bus_socket
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/dbus/user_bus_socket
 #export DCONF_PROFILE=${HOME}/.config/dconf/user
 
-# prevent GTK3 to start a dbus session
-# /etc/at-spi2/accessibility.conf.bck
-export NO_AT_BRIDGE=1
 
-# export hostname
-export HOST=$(</etc/hostname)
 
 
 # xdg environment variables 
@@ -19,7 +14,7 @@ export XDG_CACHE_HOME=${HOME}/.cache
 export XDG_CONFIG_DIRS=/etc/xdg
 export XDG_DATA_DIRS=/usr/local/share:/usr/share
 export XDG_DATA_HOME=${HOME}/.local/share
-export XDG_RUNTIME_DIR=/run/user/${UID}
+export XDG_RUNTIME_DIR=/run/user/$UID
 export XDG_CURRENT_DESKTOP=MATE
 export XDG_SESSION_DESKTOP=mate
 
@@ -28,13 +23,6 @@ export XDG_SESSION_DESKTOP=mate
 TTY=$(tty)
 export GPG_TTY=$TTY
 
-# python 
-# export PYENV_ROOT=/developement/language/python
-export WORKON_HOME=/developement/language/python/Envs
-export PYTHONPATH=/developement/python_modules
-
-
-export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
 export CCACHE_PATH=/usr/bin
 export CCACHE_DIR=/developement/.ccache
@@ -45,24 +33,16 @@ export R_ENVIRON_USER=$XDG_CONFIG_HOME/r/Renviron
 
 export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh_auth_sock
-#export RXVT_SOCKET=${XDG_RUNTIME_DIR}/urxvt-${HOST}
 export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/password-store
 
 export PULSE_CLIENTCONFIG=$XDG_CONFIG_HOME/pulse/client.conf
 
+export WINEPREFIX=/drawer/system/wine
+export GIMP2_DIRECTORY=/drawer/system/gimp
+
 # move this file out of home directory
 export ICEAUTHORITY=${XDG_RUNTIME_DIR}/Iceauthority
 #export XAUTHORITY=${XDG_RUNTIME_DIR}/Xauthority
-
-
-# local back-up directory
-export LOCAL_BAKUP=/drawer/backup
-
-# directory with code writing
-export CODE=/developement/language
-
-# user directory to stock personnal stuff
-export PERSONAL=/drawer/personnel
 
 
 # Source global bash config
@@ -85,13 +65,6 @@ if test -d /etc/profile.d/; then
 fi
 
 
-
-# set our default path
-PATH=/usr/local/bin:$HOME/bin:/etc/scripts:/developement/node_modules/bin\
-:/usr/bin:/usr/lib/ccache/bin:/usr/lib/colorgcc/bin\
-:$JAVA_HOME:$ANDROID_HOME:/usr/bin/vendor_perl:/usr/share\
-:/usr/bin/core_perl
-export PATH
 
 # add some path for UID 0
 if [ $EUID -eq 0 ] ; then

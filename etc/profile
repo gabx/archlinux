@@ -6,7 +6,7 @@
 
 
 #Set our umask
-# umask 022
+umask 022
 
 # export hostname
 export HOST=$(</etc/hostname)
@@ -36,7 +36,6 @@ export PYTHONPATH=/developement/python_modules
 # R
 export R_PROFILE_USER=$XDG_CONFIG_HOME/r/Rprofile.r
 export R_ENVIRON_USER=$XDG_CONFIG_HOME/r/Renviron
-export R_LIBS_USER=/developement/language/r/library
 # Ruby
 export GEM_SPEC_CACHE=/developement/language/ruby/gems/specifications
 PATH=$PATH:/developement/language/ruby/gems/bin
@@ -49,10 +48,8 @@ export CCACHE_PATH=/usr/bin
 export CCACHE_DIR=/developement/.ccache
 export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh_auth_sock
-#export RXVT_SOCKET=${XDG_RUNTIME_DIR}/urxvt-${HOST}
 export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/password-store
 export PULSE_CLIENTCONFIG=$XDG_CONFIG_HOME/pulse/client.conf
-#export GPG_TTY=$(tty)
 export PGROOT=/drawer/pgsql
 ## For convenience
 # local back-up directory
