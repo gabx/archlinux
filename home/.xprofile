@@ -3,10 +3,6 @@
 # Last modified 2015-03-03
 
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/dbus/user_bus_socket
-#export DCONF_PROFILE=${HOME}/.config/dconf/user
-
-
-
 
 # xdg environment variables 
 export XDG_CONFIG_HOME=${HOME}/.config
@@ -63,7 +59,6 @@ if test -d /etc/profile.d/; then
         done
         unset profile
 fi
-
 
 
 # add some path for UID 0
