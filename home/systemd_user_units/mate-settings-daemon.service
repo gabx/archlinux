@@ -2,11 +2,7 @@
 Description=Mate settings daemon
 
 [Service]
-#Type=dbus
-Type=daemon
-# EnvironmentFile=%h/.dbus/session-bus/77f348a2b3fb429b85a5de751ea9175a-0
 ExecStart=/usr/lib/mate-settings-daemon/mate-settings-daemon 
-
 
 [Install]
 WantedBy=wm.target
