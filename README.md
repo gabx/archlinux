@@ -23,7 +23,7 @@ as home folder.
 - window manager: i3
 - file manager: ranger + PCmanFM
 - theme: started with mate-settings-daemon service file
-
+- mount: udisk2
 
 
 
