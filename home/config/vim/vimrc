@@ -1,51 +1,76 @@
 " $XDG_CONFIG_HOME/vim/vimrc  @ hortensia
 " need  < alias vim='vim -u $XDG_CONFIG_HOME/vim/vimrc > in zsh.rc to read this file
-" Last modified 2014-08-19
+" Last modified 2014-10-11
 
 
-" use LanguageTool plugin
+" Use Vim settings. This must be first
 set nocompatible
 
 " allow file format detection and plugin use
-filetype on
+syntax enable
+filetype off " required by Vundle
 filetype plugin on
+filetype indent on
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.config/vim/bundle/Vundle.vim
+call vundle#begin('~/.config/vim/bundle')
+" let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim'
+" add all plugins here 
+Plugin 'rstacruz/sparkup'
+Plugin 'bling/vim-airline'
+Plugin 'plasticboy/vim-markdown'
+" Plugin '
+" all plugins must be added before this line
+call vundle#end()
+filetype plugin indent on
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-set history=100		" keep 100 lines of command line history
+" Basic settings
+set viminfo+=n~/.config/vim/viminfo
+set history=500		" keep 100 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set autoindent		" always set autoindenting on
-set smartindent		
-set number
+set smartindent	
+set showcmd		" display incomplete commands
+set showmatch		" highlight matching braces/brackets	
+set number		" turns line numbering on
 set showmode
-set laststatus=2
+set laststatus=2	" always show status line
 set display+=lastline
 set linebreak
-set viminfo+=n~/.config/vim/viminfo
-
-silent! set mouse=a
-
-" defaults for tabs
-set tabstop=4
+set title
+set encoding=utf-8
+set fileencoding=utf-8
+set t_co=256		" enable 256 colors 
+set tabstop=4		" defaults for tabs 
 set shiftwidth=4
 set softtabstop=4
+set mouse=a		" enable mouse
+set mousehide 		" hide when characters are typed
+set nobackup		" turn backup off
+set nowritebackup
 
-" In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  set mouse=a
-endif
+" tmux support
+let g:ScreenImpl = 'Tmux'
+let g:ScreenShellInitialFocus = 'shell' 
+" latex stuff
+" For Latex work: open *.pdf files in evince/xpdf upon opening of *.tex files in vim 
+au BufRead *.tex silent !xpdf %<.pdf 2>/dev/null &
+au BufRead *.Rnw silent !xpdf %<.pdf 2>/dev/null &
+
 
 " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+autocmd FileType text setlocal textwidth=78
 
 " set up languagetool_jar
 "let g:languagetool_jar=$HOME . 'usr/share/java/languagetool/LanguageTool.jar'
 
-set encoding=utf-8
-set fileencoding=utf-8
-set t_co=256		" enable 256 colors "
+
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -67,3 +92,6 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+
+
