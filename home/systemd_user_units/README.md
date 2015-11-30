@@ -8,17 +8,20 @@ Please visit [systemd/user on Archlinux wiki](https://wiki.archlinux.org/index.p
 
 ## How it works
 
-1. a user __dbus__ session is first started at init
+1. a user __dbus__ session is first started at init. As of systemd 226-1 and dbus 1.10.0-3, the D-Bus user session is started automatically. 
 
 2. *console.target* services are started at init. These services do not need X11
     + ssh-agent.service
     + urxvtd.service
+    + devmon.service
     
 3. **X** session is started this way from virtual console : `$ xinit`
     
 4. *wm.target* services are started. These services need X11 to be run first
     + mate-settings-daemon.service
     + kalu.service
+    + adb.service
+    + psd.service
     
 wm.target is started by adding a line in **xinitrc**:
 
@@ -44,8 +47,6 @@ _Xorg is now run by user_
 ```
 
 ## Configuration
-
-
 __Systemd__ user session starts with fresh environment variables. These variable 
 values are returned by this command:
 ```
@@ -53,17 +54,8 @@ $ systemctl --user show-environment
 ```
 
 Some services need aditional variables to be passed to __systemctl__. The needed
-variables are stored in a file `~/.config/systemd/user@.service.d/env.conf`. It is 
-a list of blank separated keys in the form `VARIABLE=value`.
+variables are stored in a file `/etc/systemd/user.conf.d/MyService.conf`. 
 
-*N.B: the path and name of this file is your choice.*
-
-This line has to be added in your shell startup file:
-```
-xargs systemctl --user set-environment < ~/.config/systemd/user@.service.d/env.conf
-```
-
-This way, variable values will be parsed to __systemd__
 
 ## fixing issues
 
