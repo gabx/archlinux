@@ -1,9 +1,0 @@
-[Unit]
-Description=mate-settings-daemon socket activation
-
-[Socket]
-# ListenStream=%t/dconf/user
-ListenStream=/run/user/%U/dconf/user
-
-[Install]
-WantedBy=sockets.target
