@@ -37,9 +37,10 @@ export PYTHONPATH=/developement/python_modules
 export R_PROFILE_USER=$XDG_CONFIG_HOME/r/Rprofile.r
 export R_ENVIRON_USER=$XDG_CONFIG_HOME/r/Renviron
 # Ruby
-export GEM_HOME=/developement/language/ruby/gems/bin
+export GEM_HOME=/developement/language/ruby/gems
 export GEM_SPEC_CACHE=/developement/language/ruby/gems/specifications
-PATH=$PATH:${GEM_HOME}
+export GEM_PATH=${GEM_HOME}
+PATH=$PATH:${GEM_HOME}/bin
 export PATH
 
 
