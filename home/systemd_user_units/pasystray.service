@@ -1,5 +1,6 @@
 [Unit]
 Description=Pulseaudio system tray
+Documentation=man:pasystray(1)
 
 [Service]
 ExecStart=/usr/bin/pasystray
