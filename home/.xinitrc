@@ -29,8 +29,6 @@ find $HOME/.mozilla/ \( -name "*.sqlite" \) -execdir sqlite3 {} "vacuum" \;
 # start wm.target
 systemctl --user start wm.target &
 
-exec urxvtd -q -o -f &
-
 #start pcmanfm daemon  
 exec pcmanfm -d &
 						
