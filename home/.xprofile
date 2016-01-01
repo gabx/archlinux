@@ -2,7 +2,11 @@
 # read by xinit
 # Last modified 2015-03-03
 
-export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/dbus/user_bus_socket
+#export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/dbus/user_bus_socket
+#export DCONF_PROFILE=${HOME}/.config/dconf/user
+
+
+
 
 # xdg environment variables 
 export XDG_CONFIG_HOME=${HOME}/.config
@@ -11,8 +15,8 @@ export XDG_CONFIG_DIRS=/etc/xdg
 export XDG_DATA_DIRS=/usr/local/share:/usr/share
 export XDG_DATA_HOME=${HOME}/.local/share
 export XDG_RUNTIME_DIR=/run/user/$UID
-export XDG_CURRENT_DESKTOP=MATE
-export XDG_SESSION_DESKTOP=mate
+#export XDG_CURRENT_DESKTOP=MATE
+#export XDG_SESSION_DESKTOP=mate
 
 
 # be sure variable output reflects output of tty command
@@ -38,7 +42,7 @@ export GIMP2_DIRECTORY=/drawer/system/gimp
 
 # move this file out of home directory
 export ICEAUTHORITY=${XDG_RUNTIME_DIR}/Iceauthority
-#export XAUTHORITY=${XDG_RUNTIME_DIR}/Xauthority
+export XAUTHORITY=${XDG_RUNTIME_DIR}/Xauthority
 
 
 # Source global bash config
@@ -59,6 +63,7 @@ if test -d /etc/profile.d/; then
         done
         unset profile
 fi
+
 
 
 # add some path for UID 0
