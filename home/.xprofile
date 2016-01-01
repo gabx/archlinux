@@ -1,6 +1,6 @@
 # ~/.xprofile @ hortensia
 # read by xinit
-# Last modified 2015-03-03
+# Last modified 2016-01-01
 
 #export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/dbus/user_bus_socket
 #export DCONF_PROFILE=${HOME}/.config/dconf/user

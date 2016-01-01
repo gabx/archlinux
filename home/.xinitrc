@@ -2,7 +2,7 @@
 #
 # ~/.xinitrc
 # Executed by startx (run your window manager from here)
-# Last modified 2014-12-10
+# Last modified 2016-01-01
 
 
 # source ~/.xprofile 
