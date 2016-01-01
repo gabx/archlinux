@@ -1,5 +1,5 @@
 # ~/.config/i3/config
-# Last edited 2015-02-03
+# Last edited 2015-04-11
 # i3 config file 
 # http://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -26,24 +26,26 @@ bindsym $mod+Shift+r restart
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
-
+# class		border	    background	text	indicator
+#client.focused	#0C2E05
 
 # start-up
 # now use lyaout saving facilities
 # http://i3wm.org/docs/layout-saving.html#EditingLayoutFiles
 # i3-save-tree --workspace x > ~/.config/i3/workspace-x.json
-exec caja --no-desktop
+
+
+exec --no-startup-id i3-msg "workspace 1; exec firefox-aurora"
+exec --no-startup-id i3-msg "workspace 2; append_layout /home/gabx/.config/i3/workspace-2.json"
+exec --no-startup-id i3-msg "workspace 3; exec pcmanfm"
+exec urxvt
 exec urxvt
 exec urxvt 
-exec urxvt 
-exec urxvt 
-exec urxvt 
-#exec --no-startup-id i3-msg "workspace 1; exec firefox-aurora"
-exec --no-startup-id i3-msg "workspace 1; exec /opt/firefox-aurora/firefox-bin"
-exec --no-startup-id i3-msg "workspace 2; append_layout /home/gabx/.config/i3/workspace-2.json"
-exec --no-startup-id i3-msg "workspace 4; append_layout /home/gabx/.config/i3/workspace-4.json"
-
-
+#exec --no-startup-id i3-msg "workspace 4; append_layout /home/gabx/.config/i3/workspace-4.json"
+#exec urxvt
+#exec urxvt 
+#exec urxvt
+#exec urxvt
 
 # startup applications
 exec_always --no-startup-id numlockx on
