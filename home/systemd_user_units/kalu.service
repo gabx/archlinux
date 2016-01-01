@@ -1,5 +1,6 @@
 [Unit]
 Description=Upgrade notifier w/ AUR support
+Documentation=man:kalu(1)
 
 [Service]
 ExecStart=/usr/bin/kalu 
