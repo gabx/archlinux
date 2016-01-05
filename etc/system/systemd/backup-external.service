@@ -1,0 +1,8 @@
+[Unit]
+Description=Backup system to external drive
+Requires=mnt-backup.automount
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rsync -avzr --exclude-from /etc/conf.d/exclude-hortensia / /mnt/backup
+

@@ -1,0 +1,10 @@
+[Unit]
+Description=Start external-backup service periodically
+
+[Timer]
+OnCalendar=Mon *-*-* 00:00:00
+Persistent=True
+
+[Install]
+WantedBy=timers.target
+

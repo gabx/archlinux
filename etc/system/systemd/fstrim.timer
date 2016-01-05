@@ -1,0 +1,9 @@
+[Unit]
+Description=run fstrim.service once in a month
+
+[Timer]
+OnCalendar=monthly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
