@@ -8,6 +8,7 @@ alias less=$PAGER
 alias grep='grep -nI --color'
 alias R='R --quiet'
 alias pacman='pacman --color=auto'
+alias r='/usr/local/bin/r'
 
 # load startup configuration files with custom directory #
 alias msmtp='msmtp -C $HOME/.config/msmtp/msmtprc'
