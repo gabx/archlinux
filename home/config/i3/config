@@ -1,13 +1,14 @@
 # ~/.config/i3/config
-# Last edited 2015-04-11
+# Last edited 2016-12-8
 # i3 config file 
 # http://i3wm.org/docs/userguide.html for a complete reference!
 
 ## HINTS ##
-# $ xprop + clic on application to get class/instance
+# $ xprop + clic on application to get instance/class
 # $ i3-save-tree --workspace 1 to dump workspace config
 
-### basic stuff ###
+
+######### basic stuff ################
 set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 font pango: inconsolata-dz Bold 6
@@ -17,50 +18,43 @@ focus_follows_mouse no
 new_window pixel 0
 # Hide edge borders(vertical & horizontal)
 hide_edge_borders both
-# logout i3
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+
+#i3-msg 'debuglog on; shmlog on'
+
+#### i3
+# exit i3
 bindsym $mod+Shift+e exit
-# reload the configuration file
+# write the configuration file
 bindsym $mod+Shift+w reload
 # restart i3
-bindsym $mod+Shift+r restart
+#bindsym $mod+Shift+r restart
+# restart computer
+bindsym $mod+Shift+r exec --no-startup-id systemctl reboot
+
+#### commands
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-
-# class		border	    background	text	indicator
-#client.focused	#0C2E05
-
-# start-up
-# now use lyaout saving facilities
-# http://i3wm.org/docs/layout-saving.html#EditingLayoutFiles
-# i3-save-tree --workspace x > ~/.config/i3/workspace-x.json
-
-
-exec --no-startup-id i3-msg "workspace 1; exec firefox-aurora"
-exec --no-startup-id i3-msg "workspace 2; append_layout /home/gabx/.config/i3/workspace-2.json"
-exec --no-startup-id i3-msg "workspace 3; exec pcmanfm"
-exec urxvt
-exec urxvt
-exec urxvt 
-#exec --no-startup-id i3-msg "workspace 4; append_layout /home/gabx/.config/i3/workspace-4.json"
-#exec urxvt
-#exec urxvt 
-#exec urxvt
-#exec urxvt
-
-# startup applications
-exec_always --no-startup-id numlockx on
-exec_always --no-startup-id setxkbmap -model pc104 -layout ch -variant fr
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+# kill focused window
+bindsym $mod+Shift+q kill
+# resize window
+bindsym $mod+r mode "resize"
 
-# set volume
-bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
-bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
-bindsym XF86AudioMute exec pulseaudio-ctl mute 
 
-### workspace ###
-# keep HO pop up on same workspace
-assign [class="^Firefox$"] 1
+
+############ workspace ######################
+
+# Assign workspace
+set $ws1 1-files
+set $ws2 term
+set $ws3 slack
+set $ws4 web
+set $ws5 com
+set $ws6 poppy
 # put workspace on specific screen
 #workspace 1 output DVI-I-0
 #workspace 2 output DVI-I-1
@@ -70,28 +64,29 @@ assign [class="^Firefox$"] 1
 #workspace 6 output DVI-I-1
 # put workspace on specific screen: nouveau driver
 # do not know why, monitor name changes
-workspace 1 output DVI-I-1
-workspace 2 output DVI-I-2
-workspace 3 output DVI-I-1
-workspace 4 output DVI-I-2
-workspace 5 output DVI-I-1
-workspace 6 output DVI-I-2
+workspace $ws1 output DVI-I-1
+workspace $ws2 output DVI-I-2
+workspace $ws3 output DVI-I-1
+workspace $ws4 output DVI-I-2
+workspace $ws5 output DVI-I-1
+workspace $ws6 output DVI-I-2
+workspace 7 output DVI-I-1
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
+bindsym $mod+1 workspace 1 $ws1
+bindsym $mod+2 workspace 2 $ws2
+bindsym $mod+3 workspace 3 $ws3
+bindsym $mod+4 workspace 4 $ws4
+bindsym $mod+5 workspace 5 $ws5
+bindsym $mod+6 workspace 6 $ws6
+bindsym $mod+7 workspace 7 
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+1 move container to workspace 1 
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+4 move container to workspace 4 
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
@@ -100,13 +95,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
-
-
-
-
-### windows ###
+############## windows ###################
 # split in horizontal orientation
 bindsym $mod+h split h
 # split in vertical orientation
@@ -123,15 +112,14 @@ bindsym $mod+Shift+space floating toggle
 for_window [window_role="pop-up"] floating enable
 for_window [class="Pinentry"] floating enable
 for_window [class="Firefox"] floating enable
+for_window [class="XCalc" instance="xcalc"] floating enable
 for_window [class="Firefox" instance="Navigator"] floating disable
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+p focus parent
 
-# focus window #
-# kill focused window
-bindsym $mod+Shift+q kill
+### focus window 
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -153,11 +141,8 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# screenshot
-bindsym Print exec screenshot
+### resize window (you can also use the mouse for that)
 
-# resize window (you can also use the mouse for that)
-bindsym $mod+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -181,8 +166,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 # colors:  border background text
@@ -193,11 +176,66 @@ bar {
         status_command exec i3status --config=~/.config/i3/i3status.conf
 	font pango:inconsolata-dz Bold 6 
 	colors {
-		statusline  #C57AD6
-		focused_workspace #06B109 #161616 #FCE94F
+		statusline  #477AB3
 
+#                                   border  backgr  text
+		focused_workspace  #ff8c00 #161616 #FCE94F
+		inactive_workspace #161616 #161616 #a44ffc
+#		active_workspace 
 	}
 }
+
+
+
+##### PERSONNAL CONFIGURATION ############
+
+## start-up
+# now use lyaout saving facilities
+# http://i3wm.org/docs/layout-saving.html#EditingLayoutFiles
+# i3-save-tree --workspace x > ~/.config/i3/workspace-x.json
+
+exec_always --no-startup-id numlockx on &
+exec_always --no-startup-id setxkbmap -model pc104 -layout ch -variant fr &
+
+# 1
+exec --no-startup-id exec pcmanfm
+assign [class="Pcmanfm"] $ws1
+# 2
+exec --no-startup-id "i3-msg 'workspace term; append_layout /home/gabx/.config/i3/workspace-2.json; exec urxvt; exec urxvt; exec urxvt'"
+# 3
+exec --no-startup-id exec slack
+assign [class="Slack"] $ws3
+# 4
+exec --no-startup-id exec firefox-aurora
+assign [class="Firefox"] $ws4
+# 5 
+exec --no-startup-id "i3-msg 'workspace com; append_layout /home/gabx/.config/i3/workspace-1.json; exec telegram-desktop ; exec corebird'"
+# 6
+exec --no-startup-id "i3-msg 'workspace poppy; append_layout /home/gabx/.config/i3/workspace-2.json; exec urxvt; exec urxvt; exec urxvt'"
+
+
+# set volume
+bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
+bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
+bindsym XF86AudioMute exec pulseaudio-ctl mute 
+
+
+# screenshot
+bindsym Print exec screenshot
+
+
+#exec urxvt
+#exec urxvt
+#exec urxvt 
+#exec --no-startup-id i3-msg "workspace 3; exec slack"
+#exec --no-startup-id i3-msg "workspace 4; exec firefox-aurora"
+#exec --no-startup-id i3-msg "workspace 6; append_layout /home/gabx/.config/i3/workspace-2.json"
+#exec --no-startup-id i3-msg "workspace 7; append_layout /home/gabx/.config/i3/workspace-7.json"
+#exec_always --no-startup-id i3-msg 'exec thunderbird; exec chromium; exec urxvt'
+# keep HO pop up on same workspace
+# assign [class="^Firefox$"] 4
+
+
 
 
 
