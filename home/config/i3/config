@@ -7,54 +7,75 @@
 # $ xprop + clic on application to get instance/class
 # $ i3-save-tree --workspace 1 to dump workspace config
 
-
+######################################
 ######### basic stuff ################
 set $mod Mod4
+
 # Font for window titles. Will also be used by the bar unless a different font
-font pango: inconsolata-dz Bold 6
+font pango:inconsolata-dz Bold 6
+
 # Don't make the focus follow the mouse.
 focus_follows_mouse no
+
 # Use normal borders.
 new_window pixel 0
+
 # Hide edge borders(vertical & horizontal)
 hide_edge_borders both
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# lock mouse & keyboard
+bindsym $mod+Shift+s exec xtrlock
 
+#debug
 #i3-msg 'debuglog on; shmlog on'
 
-#### i3
+
+#########################
+#### i3 stuff ###########
+
 # exit i3
 bindsym $mod+Shift+e exit
+
 # write the configuration file
 bindsym $mod+Shift+w reload
-# restart i3
-#bindsym $mod+Shift+r restart
-# restart computer
-bindsym $mod+Shift+r exec --no-startup-id systemctl reboot
 
-#### commands
-# start a terminal
-bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
-# start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+# restart i3
+bindsym $mod+Shift+r restart
+
 # kill focused window
 bindsym $mod+Shift+q kill
+
 # resize window
 bindsym $mod+r mode "resize"
 
+# start dmenu (a program launcher)
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 
 
-############ workspace ######################
+################################
+#### various commands ##########
+
+# restart computer
+#bindsym $mod+Shift+r exec --no-startup-id systemctl reboot
+
+# start a terminal
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
+
+
+######################################
+############ workspace ###############
 
 # Assign workspace
-set $ws1 1-files
-set $ws2 term
-set $ws3 slack
-set $ws4 web
-set $ws5 com
-set $ws6 poppy
+set $ws1 "files"
+set $ws2 "hortensia"
+set $ws3 "media"
+set $ws4 "poppy"
+set $ws5 "thunderbird"
+set $ws6 "firefox"
+
 # put workspace on specific screen
 #workspace 1 output DVI-I-0
 #workspace 2 output DVI-I-1
@@ -70,18 +91,19 @@ workspace $ws3 output DVI-I-1
 workspace $ws4 output DVI-I-2
 workspace $ws5 output DVI-I-1
 workspace $ws6 output DVI-I-2
-workspace 7 output DVI-I-1
+workspace $ws7 output DVI-I-1
+workspace $ws8 output DVI-I-2
+workspace $ws9 output DVI-I-1
 # switch to workspace
-bindsym $mod+1 workspace 1 $ws1
-bindsym $mod+2 workspace 2 $ws2
-bindsym $mod+3 workspace 3 $ws3
-bindsym $mod+4 workspace 4 $ws4
-bindsym $mod+5 workspace 5 $ws5
-bindsym $mod+6 workspace 6 $ws6
-bindsym $mod+7 workspace 7 
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace  $ws1
+bindsym $mod+2 workspace  $ws2
+bindsym $mod+3 workspace  $ws3
+bindsym $mod+4 workspace  $ws4
+bindsym $mod+5 workspace  $ws5
+bindsym $mod+6 workspace  $ws6
+bindsym $mod+7 workspace  $ws7
+bindsym $mod+8 workspace  $ws8
+bindsym $mod+9 workspace  $ws9
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1 
 bindsym $mod+Shift+2 move container to workspace 2
@@ -111,6 +133,7 @@ bindsym $mod+Shift+space floating toggle
 # popup
 for_window [window_role="pop-up"] floating enable
 for_window [class="Pinentry"] floating enable
+for_window [class="TelegramDesktop"] floating enable
 for_window [class="Firefox"] floating enable
 for_window [class="XCalc" instance="xcalc"] floating enable
 for_window [class="Firefox" instance="Navigator"] floating disable
@@ -173,10 +196,13 @@ bar {
 	mode dock
 	position bottom
 	tray_output DVI-I-1
-        status_command exec i3status --config=~/.config/i3/i3status.conf
-	font pango:inconsolata-dz Bold 6 
+        #status_command exec i3status --config=~/.config/i3/i3status.conf
+	status_command $HOME/bin/conky-i3-bar
+	font pango:inconsolata-dz Bold 12 
 	colors {
-		statusline  #477AB3
+		separator #bb072e
+		background #203650
+		statusline  #749bc8
 
 #                                   border  backgr  text
 		focused_workspace  #ff8c00 #161616 #FCE94F
@@ -196,34 +222,39 @@ bar {
 
 exec_always --no-startup-id numlockx on &
 exec_always --no-startup-id setxkbmap -model pc104 -layout ch -variant fr &
+#exec_always --no-startup-id telegram-desktop 
 
+#for_window [class=""] move to workspace 1
+
+## left screen
 # 1
-exec --no-startup-id exec pcmanfm
-assign [class="Pcmanfm"] $ws1
-# 2
-exec --no-startup-id "i3-msg 'workspace term; append_layout /home/gabx/.config/i3/workspace-2.json; exec urxvt; exec urxvt; exec urxvt'"
+exec --no-startup-id nautilus
+assign [class="Nautilus"] $ws1
 # 3
-exec --no-startup-id exec slack
-assign [class="Slack"] $ws3
+exec --no-startup-id rambox
+assign [class="Rambox"] $ws3
+# 5
+exec --no-startup-id thunderbird
+assign [class="Thunderbird"] $ws5
+
+
+## right screen
+# 2
+exec --no-startup-id "i3-msg 'workspace hortensia; append_layout /home/gabx/.config/i3/workspace-2.json; exec urxvt; exec urxvt; exec urxvt'"
 # 4
-exec --no-startup-id exec firefox-aurora
-assign [class="Firefox"] $ws4
-# 5 
-exec --no-startup-id "i3-msg 'workspace com; append_layout /home/gabx/.config/i3/workspace-1.json; exec telegram-desktop ; exec corebird'"
-# 6
 exec --no-startup-id "i3-msg 'workspace poppy; append_layout /home/gabx/.config/i3/workspace-2.json; exec urxvt; exec urxvt; exec urxvt'"
+# 6
+exec --no-startup-id firefox-nightly
+assign [class="FirefoxNightly"] $ws6
 
 
-# set volume
-bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
-bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
-bindsym XF86AudioMute exec pulseaudio-ctl mute 
 
 
 # screenshot
 bindsym Print exec screenshot
 
 
+### OLD ###
 #exec urxvt
 #exec urxvt
 #exec urxvt 
@@ -234,8 +265,14 @@ bindsym Print exec screenshot
 #exec_always --no-startup-id i3-msg 'exec thunderbird; exec chromium; exec urxvt'
 # keep HO pop up on same workspace
 # assign [class="^Firefox$"] 4
-
-
+#exec --no-startup-id "i3-msg 'workspace com; append_layout /home/gabx/.config/i3/workspace-1.json; exec telegram-desktop ; exec corebird'"
+#exec --no-startup-id "i3-msg 'workspace com; append_layout /home/gabx/.config/i3/workspace-1.json'"
+#assign [class="TelegramDesktop"] $ws5
+#assign [class="Corebird"] $ws5
+# set volume
+#bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
+#bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
+#bindsym XF86AudioMute exec pulseaudio-ctl mute 
 
 
 
