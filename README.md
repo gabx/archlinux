@@ -16,7 +16,7 @@ As possible, most of configuration files use the **$XDG_HOME_DIR**, `~/.config`,
 
 - window manager: i3
 - file manager: ranger + PCmanFM
-- theme: started with mate-settings-daemon service file
+- theme: started with `mate-settings-daemon` systemd service file
 - mount: udisk2
 
 ## Kernel configuration
