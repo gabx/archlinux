@@ -14,10 +14,10 @@ As possible, most of configuration files use the **$XDG_HOME_DIR**, `~/.config`,
 
 ## X environment
 
-- window manager: i3
-- file manager: ranger + PCmanFM
+- window manager: [i3](https://wiki.archlinux.org/index.php/I3)
+- file manager: [ranger](https://wiki.archlinux.org/index.php/Ranger) + [PCmanFM](https://wiki.archlinux.org/index.php/PCManFM)
 - theme: started with `mate-settings-daemon` systemd service file
-- mount: udisk2
+- mount: [udisk2](https://wiki.archlinux.org/index.php/Udisks)
 
 ## Kernel configuration
 
