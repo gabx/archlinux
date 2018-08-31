@@ -1,48 +1,39 @@
 # $XDG_CONFIG_HOME/git/config: git-config(1) - Git configuration
-# if this file does not exist, ~/gitconfig is read
-# Last modified 2014-01-25
+# if this file does not exist, ~/.gitconfig is read
+# Last modified 2018-08-30
 
 [user]
-	name = Arnaud Gaboury
+	name = arnaud gaboury
 	email = arnaud.gaboury@gmail.com
+	username = gabx
 [credential]
-	helper = cache
+	helper = cache --timeout=3600
 [color]
-	ui = true
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
-	grep = auto
-[merge]
-	tool = vimdiff
-	log = true
+	ui = auto
+[color "branch"]
+	current = yellow
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
 [push]
-	default = current
-[sendemail]
-        from = Arno Gaboury <arnaud.gaboury@gmail.com>
-        smtpserver = smtp.gmail.com
-        smtpserverport = 587
-        smtpencryption = tls
-        smtpuser = arnaud.gaboury@gmail.com
-        confirm = auto
-        confirm = auto
-        chainReplyTo = false
-        smtpServer = /usr/bin/msmtp
-        smtpServerOption = --read-envelope-from
-[core]
-	
+	default = matching
+[core]	
 	editor = vim
-
+	autocrlf = input
+	# autocrlf = true
 [web]
-        browser = aurora
-[browser "aurora"]
-        cmd = aurora
+        browser = firefox
 [branch]
 	autosetuprebase = always
-[code]
-        editor = vim
-
-[branch "master"]
-        remote = origin
-         merge = master
+[difftool]
+	prompt = false
+[diff]
+	tool = vimdiff
