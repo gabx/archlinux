@@ -1,63 +1,75 @@
 # $HOME/.config/zsh/zshrc.d/02_zalias
 # user aliases. System-wide aliases are definied in /etc/aliases
-# Last modified 2015-04-08
+# Last modified 2016-08-17
 
 # usual ones #
 alias ls='ls -hF --color=auto --group-directories-first'
-alias less=$PAGER
 alias grep='grep -nI --color'
 alias R='R --quiet'
 alias pacman='pacman --color=auto'
-alias r='/usr/local/bin/r'
+alias r='/usr/loacl/bin/r'
 
 # load startup configuration files with custom directory #
 alias msmtp='msmtp -C $HOME/.config/msmtp/msmtprc'
 alias weechat='weechat-curses -d $XDG_CONFIG_HOME/weechat'
-alias vi='vim -u $XDG_CONFIG_HOME/vim/vimrc -i $XDG_CONFIG_HOME/vim/viminfo'
+alias vim='vim -u $XDG_CONFIG_HOME/vim/vimrc -i $XDG_CONFIG_HOME/vim/viminfo'
 alias irssi='irssi --config=$XDG_CONFIG_HOME/irssi'
 # alias tmux='tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf'
 # alias getmail='getmail -d --getmaildir=$XDG_CONFIG_HOME/getmail'
+alias chromium='chromium --ssl-version-min=tlsl'
+#alias geth='geth --datadir "/developement/ether/etherum"'
 
+
+# kubectl
+alias kube-rancher='kubectl --kubeconfig /developement/TTH/rancher/kubeconfig/config-local'
+alias kube-tth='kubectl --kubeconfig /developement/TTH/rancher/kubeconfig/config-tth'
+ 
 # pacman alias
 alias pacins='sudo pacman -Syu && sudo pacman -S --noconfirm'
-alias pacclean='pacman -Qqdt|sudo pacman -Rns -'
+alias pacclean='pacman -Rns $(pacman -Qtdq)'
+alias pacsave='find /etc -regextype posix-extended -regex ".+\.pac(new|save)" 2> /dev/null'
 alias mypac='pacman -Q | grep'
 alias mypaclist='pacman -Ql'
 alias myreflector='sudo reflector --verbose -l 7 --sort rate --save /etc/pacman.d/mirrorlist'
-
-# curl
-alias pic2geneva='curl -s -S -F channels=XXXXX -F token=XXXXXX https://slack.com/api/files.upload -F file='
 
 
 # common directories #
 hash -d dld=/drawer/download
 hash -d aur=/developement/aur
 hash -d dev=/developement/language
-hash -d tth=/developement/tth
+hash -d tth=/drawer/projects/tth
+hash -d pop=/var/lib/machines/poppy
 
 
-
-# miscellaneous
-alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
-alias zshinit='$EDITOR $ZSHDIR/.initzsh && source $ZSHDIR/.initzsh'
-alias zshenv='$EDITOR $ZSHDIR/zshrc.d/01_zenv.zsh && source $ZSHDIR/.initzsh'
-alias syncdot='rsync -P -av --delete $XDG_CONFIG_HOME /drawer/backup/sync/home'
-alias syncdev='rsync -P -av --delete /developement/language /drawer/backup/sync'
-alias synctth='rsync -P -av --delete /developement/tth /drawer/backup/sync' 
-alias tths='sudo machinectl login dahlia'
-alias ttht='sudo machinectl terminate dahlia'
-alias mbk='sudo mount /dev/vg1/backup /mnt/backup'
-alias umbk='sudo umount /dev/vg1/backup'
+# helpers
 alias myX='xrdb -merge $XDG_CONFIG_HOME/urxvt/.urxvtrc && fc-cache -vf'
 alias myps='ps -ef | grep'
+alias mypsselinux='ps axZ | grep'
 alias mypid='ps -ef | pgrep'
-alias myavi='mencoder -oac mp3lame -lameopts cbr=128 -ovc xvid -xvidencopts bitrate=900'
+alias myavi='mencoder -oac mp3lame -lameopts cbr=128 -ovc xvid -xvidencopts bitrate=900' # file.mkv -o file.avi
 alias mystrace='strace -o ~/strace.txt'
 alias myaura='sudo aura -Akua --aurignore=firefox-aurora,nvidia-utils-beta,nvidia-beta-dkms'
 alias mygrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias mylsblk='lsblk -o NAME,KNAME,MAJ:MIN,FSTYPE,LABEL'
-alias mykernel='ABSROOT=/developement/aur abs core/linux'
+alias mylsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL'
+alias myfree='df -Th'
+alias myfreedir='du -sh * | sort -hr | head -n1'
+alias mykernel='ASPROOT=. asp checkout linux'
 alias myquit='clear && logout'
+alias myxerrors='journalctl -b -u session-c1.scope'
+alias myequalizer='qpaeq'
+alias myspace='du -h --max-depth=1 | sort -hr'
+alias myX='xinit -- :1'
+alias mymicro='arecord -vvv -f dat /dev/null'
+alias myYoga='sudo mount.cifs //yoga/Users/gabx/Share /home/gabx/yogashare -o user=gabx,sec=ntlm'
+alias atom='LD_PRELOAD=libcurl.so.3 atom'
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias mypwd='pwgen -syBv'
+alias myport='netstat -plant | grep'
+alias mypassword='pwgen -scny' 
+
+# miscellaneous
+alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 
-
+alias zshinit='$EDITOR $ZSHDIR/.initzsh && source $ZSHDIR/.initzsh'
+alias zshenv='$EDITOR $ZSHDIR/zshrc.d/01_zenv.zsh && source $ZSHDIR/.initzsh'

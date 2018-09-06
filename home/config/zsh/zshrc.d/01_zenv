@@ -16,8 +16,8 @@ fpath=($ZSHDIR/functions  $fpath)						# path to zsh functions
 fpath=($ZSHDIR/completion $fpath)						# path to zsh completion
 
 
-# some custom path
-export npm_config_userconfig=$XDG_CONFIG_HOME/npm/.npmrc
+
+
 
 
 

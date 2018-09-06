@@ -1,14 +1,15 @@
 # file:   ~/.config/zsh/initzsh 
-# Variables specific to zsh.               
-# Last modified: 2015-11-30
+# Last modified: 2015-11-28
 # Do not forget to set ~/.config/locale.conf otherwise zsh comp will repeat letters after [TAB]
      		
 # http://zsh.sourceforge.net/Doc/Release/zsh.html#Top
 # https://wiki.archlinux.org/index.php/Dotfiles
 
+# source $HOME/.profile
+. $HOME/.config/profile
+
 # For convenience
 export ZSHDIR=$XDG_CONFIG_HOME/zsh
-
 
 
 HISTFILE=$XDG_CONFIG_HOME/zsh/.zsh_histfile
@@ -17,13 +18,13 @@ SAVEHIST=5000
                                  
 # source config files until 09 
 [ -d $ZSHDIR/zshrc.d ] && {
-for f in $ZSHDIR/zshrc.d/0* ; do
-    source $f
-done 
+for f in $ZSHDIR/zshrc.d/0*; do source $f; done
 }
+ 
+
 
 # needed by Python virtualenvwarpper
-source /usr/bin/virtualenvwrapper.sh
+# source /usr/bin/virtualenvwrapper.sh
 
 # load functions
 autoload $ZSHDIR/functions/[^_]*(.:t)
@@ -37,29 +38,24 @@ autoload -Uz compinit -u && compinit -u -d $ZSHDIR/.zcompdump		# autoload compin
 autoload -U colors && colors						# load terminal colors  
 autoload -U promptinit && promptinit					# autoload prompt
 autoload vcs_info                           
-# zle -N edit-command-line     
+
 
 # Prompt - MUST be after autoload colors
 # the | is needed otherwise tab completion will double the first letter of the command
 # need to remove the "➤➤" when on VT
 # different prompt for root and different prompt for screen
-
-if [[ $TERM = "linux" || $TERM = "vt102" ]] 
-	then
-		if [[ "$EUID" = "0" || "$USER" = "root" ]]
-		then
-			PROMPT="%{$fg_bold[red]%}%n%{$reset_color%}@%{$fg_bold[yellow]%}%m %{$fg[green]%}%1|%2~ %{$reset_color%}%# "
-		else 	
-			PROMPT="%n@%{$fg_bold[yellow]%}%m %{$fg[green]%}%1|%2~ %{$reset_color%}%# "
-		fi
-	else
+# test prompt with echo -e "<......>$ "
+          	
 	if [[ "$EUID" = "0" || "$USER" = "root" ]]
-		then	
+			then	
 			PROMPT="%{$fg_bold[red]%}%n%{$reset_color%}@%{$fg_bold[yellow]%}%m %{$fg[green]%}%1|➤➤ %2~ %{$reset_color%}%# "	
-		else
+	else
 			PROMPT="%n@%{$fg_bold[yellow]%}%m %{$fg[green]%}%1|➤➤ %2~ %{$reset_color%}%# "
-		fi	
-fi
+	fi
+
+
+        
+
 
                                            
 # Compile the completion dump to increase startup speed.
@@ -69,8 +65,8 @@ zcompile "$zcompdump"
 fi		
 
 									
-# speed up builds with the compiler cash
-export USE_CCACHE=1
+
+
 
 
 
