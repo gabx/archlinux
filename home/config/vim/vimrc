@@ -2,36 +2,38 @@
 " need  < alias vim='vim -u $XDG_CONFIG_HOME/vim/vimrc > in zsh.rc to read this file
 " Last modified 2018-08-10
 
+" get the default
+" source $VIMRUNTIME/defaults.vim
 
 " Use Vim settings. This must be first
+" Vundle start
 set nocompatible
-filetype off " required by Vundle
-
-" allow file format detection and plugin use
-syntax enable
-filetype plugin on
-filetype indent on
-
+filetype off 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.config/vim/bundle/Vundle.vim
 call vundle#begin()
-" call vundle#begin(~/.config/vim/bundle/Vundle.vim)
+
+
+
+
 " let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
 " add all plugins here 
 " format for git : user/repository
 " to install, place below plugin then run vim, :PluginUpdate
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
 Plugin 'rstacruz/sparkup'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Yggdroot/indentLine'
-Plugin 'Mustang2'
 Plugin 'justb3a/vim-smarties'
-Plugin 'xmledit'
 Plugin 'chriskempson/base16-vim'
+Plugin 'fatih/vim-go'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'prettier/vim-prettier'
 
 "!!!!!!!!!!!!!!!!!!!!!!!
 " Plugin '
@@ -41,8 +43,15 @@ call vundle#end() "required
 " turn filetype functionality back on
 filetype plugin indent on "required
 
+" Set color scheme
+" colorscheme Mustang
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
+" allow file format detection 
+syntax on
+
 
 " Basic settings
 set viminfo+=n~/.config/vim/viminfo
@@ -56,7 +65,7 @@ set showmatch		" highlight matching braces/brackets
 set number		" turns line numbering on
 set showmode
 set laststatus=2	" always show status line
-set display+=lastline
+set display=truncate " show @@@ in the last line if trucated
 set linebreak
 set title
 set encoding=utf-8
@@ -69,6 +78,10 @@ set mouse=a		" enable mouse
 set mousehide 		" hide when characters are typed
 set nobackup		" turn backup off
 set nowritebackup
+set directory=.swp/,~/.swp/,/tmp//	" set dir for swap files
+set nrformats-=octal
+
+
 
 " tmux support
 let g:ScreenImpl = 'Tmux'
@@ -83,10 +96,26 @@ au BufRead *.Rnw silent !xpdf %<.pdf 2>/dev/null &
 autocmd FileType text setlocal textwidth=78
 " override default tab to 4 spaces
 autocmd FileType html setlocal ts=2 sw=2 expandtab
-" set up languagetool_jar
-"let g:languagetool_jar=$HOME . 'usr/share/java/languagetool/LanguageTool.jar'
+" Set autocomplete and filetype settings
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
+" Markdown settings 
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_conceal = 0
 
+" Prevent underlines in markup
+let html_no_rendering=1
+
+" Prevent comment chars been added on new line creation
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" When a curly brace pair is added, add a new tabbed line inside them
+inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
+
+" save file as su even when edited by user - quickly enter :w!! to save
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -97,9 +126,13 @@ endif
 
 " indent line color
 let g:indentLine_color_term = 239
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:html_indent_inctags = "html,body,head,tbody"
+" let g:indent_guides_enable_on_vim_startup = 1
+
 " choose color theme
-" colo mustang
+" /usr/share/vim/vimNN/colors
+colorscheme blue
 
 " Jump back to the last edit position when opening a file
 :au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
