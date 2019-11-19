@@ -51,8 +51,28 @@ bindsym $mod+Shift+q kill
 # resize window
 bindsym $mod+r mode "resize"
 
+
+#################################
+###### exit, reboot #############
+mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
+  bindsym l exec i3-msg exit
+  bindsym r exec systemctl reboot
+  bindsym s exec systemctl shutdown
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+
+bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
+
+
+
+#################################
+##### menu ######################
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+
+# start rofi. a window switcher, application launcher and dmenu replacement 
+bindsym $mod+d exec "rofi -modi window,drun,ssh -show drun"
 
 
 ################################
@@ -70,11 +90,15 @@ bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # Assign workspace
 set $ws1 "files"
-set $ws2 "hortensia"
+set $ws2 "localhost"
 set $ws3 "media"
-set $ws4 "poppy"
-set $ws5 "thunderbird"
+set $ws4 "remote"
+set $ws5 "rstudio"
 set $ws6 "firefox"
+#set $ws7 "ssh"
+
+assign [class="Firefox"] $workspace6
+assign [class="Slack"] $workspace3
 
 # put workspace on specific screen
 #workspace 1 output DVI-I-0
@@ -85,15 +109,15 @@ set $ws6 "firefox"
 #workspace 6 output DVI-I-1
 # put workspace on specific screen: nouveau driver
 # do not know why, monitor name changes
-workspace $ws1 output DVI-I-1
-workspace $ws2 output DVI-I-2
-workspace $ws3 output DVI-I-1
-workspace $ws4 output DVI-I-2
-workspace $ws5 output DVI-I-1
-workspace $ws6 output DVI-I-2
-workspace $ws7 output DVI-I-1
-workspace $ws8 output DVI-I-2
-workspace $ws9 output DVI-I-1
+#workspace $ws1 output DVI-I-1
+#workspace $ws2 output DVI-I-2
+#workspace $ws3 output DVI-I-1
+#workspace $ws4 output DVI-I-2
+#workspace $ws5 output DVI-I-1
+#workspace $ws6 output DVI-I-2
+#workspace $ws7 output DVI-I-1
+#workspace $ws8 output DVI-I-2
+#workspace $ws9 output DVI-I-1
 # switch to workspace
 bindsym $mod+1 workspace  $ws1
 bindsym $mod+2 workspace  $ws2
@@ -116,7 +140,7 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
-
+##########################################
 ############## windows ###################
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -126,7 +150,6 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+y layout stacking
-bindsym $mod+x layout tabbed
 bindsym $mod+c layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -141,6 +164,9 @@ for_window [class="Firefox" instance="Navigator"] floating disable
 bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+p focus parent
+
+#for_window [class="Firefox"] floating enable, move to scratchpad, scratchpad show
+#bindsym $mod+b [class="Firefox"] scratchpad show
 
 ### focus window 
 # change focus
@@ -212,67 +238,39 @@ bar {
 }
 
 
-
+##########################################
 ##### PERSONNAL CONFIGURATION ############
+
+#for_window [class=""] move to workspace 1
 
 ## start-up
 # now use lyaout saving facilities
 # http://i3wm.org/docs/layout-saving.html#EditingLayoutFiles
-# i3-save-tree --workspace x > ~/.config/i3/workspace-x.json
+# i3-save-tree --workspace x > ~/.config/i3/layouts/workspace-x.json
 
 exec_always --no-startup-id numlockx on &
-exec_always --no-startup-id setxkbmap -model pc104 -layout ch -variant fr &
+exec_always --no-startup-id setxkbmap -model pc104 -layout ch -variant fr 
 #exec_always --no-startup-id telegram-desktop 
 
-#for_window [class=""] move to workspace 1
 
-## left screen
-# 1
-exec --no-startup-id nautilus
-assign [class="Nautilus"] $ws1
-# 3
-exec --no-startup-id rambox
-assign [class="Rambox"] $ws3
-# 5
-exec --no-startup-id thunderbird
-assign [class="Thunderbird"] $ws5
+#### Layouts
 
+# exec --no-startup-id $HOME/.config/i3/scripts/load_layout.sh
 
-## right screen
 # 2
-exec --no-startup-id "i3-msg 'workspace hortensia; append_layout /home/gabx/.config/i3/workspace-2.json; exec urxvt; exec urxvt; exec urxvt'"
+exec --no-startup-id "i3-msg 'workspace localhost; append_layout /home/gabx/.config/i3/layouts/workspace-2.json; exec urxvt; exec urxvt; exec urxvt'"
 # 4
-exec --no-startup-id "i3-msg 'workspace poppy; append_layout /home/gabx/.config/i3/workspace-2.json; exec urxvt; exec urxvt; exec urxvt'"
+exec --no-startup-id "i3-msg 'workspace remote; append_layout /home/gabx/.config/i3/layouts/workspace-2.json; exec urxvt; exec urxvt; exec urxvt'"
 # 6
-exec --no-startup-id firefox-nightly
-assign [class="FirefoxNightly"] $ws6
-
-
+#exec --no-startup-id "i3-msg 'workspace Firefox; append_layout $HOME/.config/i3/layouts/firefox.json; exec firefox-developer-edition'"
+# 3
+#exec --no-startup-id "i3-msg 'workspace media; append_layout $HOME/.config/i3/layouts/media.json; exec firefox-developer-edition'"
 
 
 # screenshot
 bindsym Print exec screenshot
 
 
-### OLD ###
-#exec urxvt
-#exec urxvt
-#exec urxvt 
-#exec --no-startup-id i3-msg "workspace 3; exec slack"
-#exec --no-startup-id i3-msg "workspace 4; exec firefox-aurora"
-#exec --no-startup-id i3-msg "workspace 6; append_layout /home/gabx/.config/i3/workspace-2.json"
-#exec --no-startup-id i3-msg "workspace 7; append_layout /home/gabx/.config/i3/workspace-7.json"
-#exec_always --no-startup-id i3-msg 'exec thunderbird; exec chromium; exec urxvt'
-# keep HO pop up on same workspace
-# assign [class="^Firefox$"] 4
-#exec --no-startup-id "i3-msg 'workspace com; append_layout /home/gabx/.config/i3/workspace-1.json; exec telegram-desktop ; exec corebird'"
-#exec --no-startup-id "i3-msg 'workspace com; append_layout /home/gabx/.config/i3/workspace-1.json'"
-#assign [class="TelegramDesktop"] $ws5
-#assign [class="Corebird"] $ws5
-# set volume
-#bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
-#bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
-#bindsym XF86AudioMute exec pulseaudio-ctl mute 
 
 
 

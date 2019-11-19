@@ -1,6 +1,7 @@
 // vim:ts=4:sw=4:et
 {
     "border": "pixel",
+    "current_border_width": 0,
     "floating": "auto_off",
     "geometry": {
        "height": 429,
@@ -13,7 +14,9 @@
     "swallows": [
        {
         "class": "^URxvt$",
-        "instance": "^urxvt$"
+        "instance": "^urxvt$",
+       // "title": "^urxvt$",
+        "transient_for": "^$"
        }
     ],
     "type": "con"
@@ -29,38 +32,44 @@
     "nodes": [
         {
             "border": "pixel",
+            "current_border_width": 0,
             "floating": "auto_off",
             "geometry": {
-               "height": 1052,
-               "width": 478,
-               "x": 2160,
+               "height": 429,
+               "width": 904,
+               "x": 0,
                "y": 0
             },
-            "name": "i3",
-            "percent": 0.703422053231939,
+            "name": "urxvt",
+            "percent": 0.5,
             "swallows": [
                {
-                "class": "^Caja$",
-                "instance": "^caja$" 
+                "class": "^URxvt$",
+                "instance": "^urxvt$",
+               // "title": "^urxvt$",
+                "transient_for": "^$"
                }
             ],
             "type": "con"
         },
         {
             "border": "pixel",
+            "current_border_width": 0,
             "floating": "auto_off",
             "geometry": {
                "height": 429,
-               "width": 804,
+               "width": 904,
                "x": 0,
                "y": 0
             },
             "name": "urxvt",
-            "percent": 0.296577946768061,
+            "percent": 0.5,
             "swallows": [
                {
                 "class": "^URxvt$",
-                "instance": "^urxvt$"
+                "instance": "^urxvt$",
+               // "title": "^urxvt$",
+                "transient_for": "^$"
                }
             ],
             "type": "con"
