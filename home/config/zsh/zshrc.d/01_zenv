@@ -12,9 +12,8 @@
 ## PATH in zsh style ##
 ## When adding a new path, leave a space. Ex: (~/bin $path) ##
 typeset -gU path fpath
-fpath=($ZSHDIR/functions  $fpath)						# path to zsh functions
-fpath=($ZSHDIR/completion $fpath)						# path to zsh completion
-
+fpath=($ZDOTDIR/functions  $fpath)						# path to zsh functions
+fpath=($ZDOTDIR/completion $fpath)						# path to zsh completion
 
 
 

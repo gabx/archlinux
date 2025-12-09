@@ -1,5 +1,0 @@
-
-
-function getRAM () {
-  free -m | awk '{if (NR==3) print $4}' | xargs -i echo 'scale=1;{}/1000' | bc
-}
