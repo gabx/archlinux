@@ -1,8 +1,8 @@
 
 # secret and API keys (till 2025-01-05)
-BINANCE_KEY = TiAq5E6yD1l4SfRo4XWNIMjhysavvLYcyr1YmHZhLDgz8xmNCMQmdcVxXazMTKkW
-BINANCE_SECRET = VPSjPSuJ0sVI3bG4BhKU2wnIS9IWz6t8Y8PV1D69JG795hJu9Dot5FuxAHdpxUt7
+BINANCE_KEY = xxxxxxxxxxxxxxyyyyyyyyyyyyyyyy
+BINANCE_SECRET = xxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyy
 
-# API Key for a.gaboury@monlivretc.com
-BINANCE_KEY2 = XHhJXADmYvMj9q4D5GtH7ECVglHqt4rv7vUmFuyE2yLnKWGexe9QrLPQ4NkF3ba8
-BINANCE_SECRET2 = hknRyThy29U18B1jNUkVxDps5EUq0Rb9yHsZj07HEbQx32LWq6MxFEyoPYWpfMec
+# API Key for myemailadress
+BINANCE_KEY2 = xxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyy
+BINANCE_SECRET2 = xxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyy
