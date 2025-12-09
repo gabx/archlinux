@@ -1,0 +1,16 @@
+1- script avec la fonction placé dans $HOME/.config/r/helper/vault.R
+2- sourcer le script
+3- commande: > vault_save(merged_ok, "daily_portfolio")         # écrit ~/.local/share/portfolio-vault/daily_portfolio_YYYYmmdd-HHMMSS.rds
+4- lister:
+ vault_list()
+                                                                         file            name       timestamp
+1 /home/gabx/.local/share/portfolio-vault/daily_portfolio_20250908-191952.rds daily_portfolio 20250908-191952
+5- load 
+# Recharger la dernière version (et la garder en mémoire dans vault_env)
+snap <- vault_load("daily_portfolio")
+6- accéder à la copie
+gabx@magnolia [R] ls(vault_env)
+[1] "daily_portfolio"
+vault_env$daily_portfolio %>% dplyr::glimpse()
+# Nettoyer les vieilles versions (garder 7 dernières)
+vault_prune("daily_portfolio", keep = 7)

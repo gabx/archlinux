@@ -1,0 +1,102 @@
+## =====================================================================
+##               RSTUDIO-SAFE USER PROFILE (~/.config/r/.Rprofile)
+## =====================================================================
+## Ce profil est chargé seulement lorsque R tourne dans RStudio.
+## Il ajoute : tidyverse, conflicted, usethis/devtools, options modernes,
+## notations plus sûres, et configurations de confort.
+## =====================================================================
+
+require(utils, quietly = TRUE) 
+
+
+## -- Ne rien exécuter si pas dans RStudio ------------------------------
+if (Sys.getenv("RSTUDIO") != "1") {
+  message("(.Rprofile) Non-RStudio environment detected → skipping user profile.")
+  return(invisible(NULL))
+}
+
+message("Loading RStudio user profile…")
+
+## -- Options globales --------------------------------------------------
+## > utils::str(options()) : list options||style: name=value## 
+# Setting 'scipen=10' effectively forces R to never use scientific notation to express very small or large numbers
+options(
+  repos = c(CRAN = 'https://cran.rstudio.com/'),
+  ropensci = 'https://ropensci.r-universe.dev', 
+  cloud = 'https://cloud.r-project.org'),
+  scipen = 999,            # éviter la notation scientifique
+  digits = 7,              # affichage plus lisible
+  continue = '... ',
+  width = 80,
+  show.signif.stars = FALSE, 
+  stringsAsFactors = FALSE,
+  defaultPackages = c('datasets','utils','grDevices','graphics','stats','methods','readr'),
+  browserNLdisabled = TRUE,
+  dplyr.summarise.inform = FALSE, # messages silencieux tidyverse
+  readr.show_col_types = FALSE,
+  editor = 'nvim',
+  pager = 'vimrpager',
+  pdfviewer = "okular",
+  googlesheets4_quiet = TRUE
+  usethis.description = list(
+    `Authors@R` = 'person("Gaboury", "Arnaud", role = c("aut", "cre"))'
+  ),
+  warnPartialMatchAttr = TRUE,
+  warnPartialMatchDollar = TRUE,
+  warnPartialMatchArgs = TRUE
+)
+
+#------------ Customize prompt --------------
+if(interactive()){
+	options(prompt=paste(paste (Sys.info () [c ("user", "nodename")], collapse="@"),"[R] "))
+}
+
+## -- Chargements automatiques sûrs -------------------------------------
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(conflicted)
+  library(usethis)
+  library(devtools)
+})
+
+## -- Conflits : règles par défaut --------------------------------------
+conflict_prefer("filter", "dplyr")
+conflict_prefer("lag", "dplyr")
+conflict_prefer("select", "dplyr")
+conflict_prefer("rename", "dplyr")
+
+## -- RStudio Addins : support ------------------------------------------
+if (requireNamespace("shiny", quietly = TRUE)) {
+  options(shiny.autoreload = TRUE)
+}
+
+##-- local ---------------
+local({
+	n <- max(parallel::detectCores() - 2L, 1L)                  # Detect the number of cores available for use in parallelisation
+  	options(Ncpus = n)                                          # Parallel package installation in install.packages()
+  	options(mc.cores =  n)                                      # Parallel apply-type functions via 'parallel' package
+})
+
+## ----------- Session info ---------
+# retrive user info
+.thisUser <- paste(c(Sys.info()["user"], '@', Sys.info()["nodename"]), collapse="")
+.thisMachine <- paste(Sys.info()[c ("sysname", "machine", 'release')], 
+                      collapse=".")
+.thisR <- sessionInfo()[[1]]$version.string
+
+## -- Historique propre --------------------------------------------------
+## Permet de conserver un historique long sans corrompre les sessions
+options(
+  savehistory = TRUE,
+  historysize = 50000,
+  max.print = 100000
+)
+
+# set default working directory
+setwd("/development/language/r")
+
+## -- Messages finaux ----------------------------------------------------
+message("RStudio profile loaded successfully.")
+sessionInfo()
+
+tryCatch(startup::startup(), error=function(ex) message(".Rprofile error: ", conditionMessage(ex)))
