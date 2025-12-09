@@ -1,0 +1,32 @@
+# $R_ENVIRON_USER
+# $XDG_CONFIG_HOME/r/.Renviron                                           
+# Last modified: 2025-12-01
+
+# NOTE: Rstudio will not honore $XDG_CONFIG_HOME/r/.Renviron. We need to symlink ~/.Renviron to this file
+
+R_HOME_USER=/development/language/r
+R_LIBS=/usr/lib/R/library
+R_LIBS_SITE=/usr/lib/R/library
+R_PROFILE_USER=/home/gabx/.config/r/.Rprofile
+R_HISTFILE=${R_HOME_USER}/R.Rhistory
+R_HELPER=/home/gabx/.config/r/helper
+R_HISTSIZE=5000
+R_MAX_VSIZE=16000000000
+MYSQL_HOME=/var/lib/mysql
+
+# secret and API keys (till 2025-01-05)
+BINANCE_KEY = TiAq5E6yD1l4SfRo4XWNIMjhysavvLYcyr1YmHZhLDgz8xmNCMQmdcVxXazMTKkW
+BINANCE_SECRET = VPSjPSuJ0sVI3bG4BhKU2wnIS9IWz6t8Y8PV1D69JG795hJu9Dot5FuxAHdpxUt7
+
+# API Key for a.gaboury@monlivretc.com
+BINANCE_KEY2 = XHhJXADmYvMj9q4D5GtH7ECVglHqt4rv7vUmFuyE2yLnKWGexe9QrLPQ4NkF3ba8
+BINANCE_SECRET2 = hknRyThy29U18B1jNUkVxDps5EUq0Rb9yHsZj07HEbQx32LWq6MxFEyoPYWpfMec
+
+# Github PAT (Personnal access token)
+GITHUB_PAT=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
+
+# needed to access github API
+GITHUB_CONSUMER_ID=c866ce2602b402b423bf
+GITHUB_CONSUMER_SECRET=0eb4ccaf15ea860afe109d0f22a0d8c95f8a022b
+
+
