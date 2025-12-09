@@ -1,0 +1,6 @@
+# load flavors via pkg manager ya pkg add BennyOe/tokyo-night
+# flvor will be placed in flavor directory
+
+[flavor]
+ dark = "tokyo-night"
+
