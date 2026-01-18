@@ -1,6 +1,0 @@
-[Unit]
-Description=Window manager target
-After=console.target 
-
-
-

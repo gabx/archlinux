@@ -1,8 +1,0 @@
-[Unit]
-Description=Mate settings daemon
-
-[Service]
-ExecStart=/usr/lib/mate-settings-daemon/mate-settings-daemon 
-
-[Install]
-WantedBy=wm.target
