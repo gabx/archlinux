@@ -1,0 +1,5215 @@
+systemctl status open-webui.service
+systemctl start open-webui.service
+systemctl status open-webui.service
+systemctl start open-webui.service
+systemctl status open-webui.service
+aconfmgr save
+su
+aconfmgr save
+su
+sudo pacman -Syu
+su
+sudo pacman -Syu
+pwck
+sudo pwck
+su
+systemctl reboot
+yay -S whatsapp-for-linux
+yay -Sy whatsapp-for-linux
+sudo pacman -Rd gstreamer
+yay -S whatsapp-nativefier
+/usr/bin/whatsapp-nativefier
+whatsapp-nativefier
+ls -al /usr/bin/whatsapp-nativefier
+ls -al /usr/bin/
+ls -al /usr/bin/whatsapp-nativefier
+sudo pacman -Rd whatsapp-nativefier
+sudo btrfs subvolume list /home
+sudo btrfs subvolume list -t /home
+sudo btrfs filesystem usage /
+pwd
+cd ..
+sudo btrfs subvolume list -t ./
+sudo btrfs subvolume list -t .
+homectl inspect gabx
+sudo homectl update gabx --emailAddress="arnaud.gaboury@gmail.com"
+sudo homectl update gabx --email-address="arnaud.gaboury@gmail.com"
+homectl inspect gabx
+ls -al ~
+homectl update --identity=/home/gabx/.identity
+rm .Renviron
+ln -s /home/gabx/.config/r/.Renviron .Renviron
+rm .Rprofile
+ln -s /home/gabx/.config/r/.Rprofile .Rprofile
+ls -al
+ls -al .config
+ls -al .config/gnupg
+cat .config/gnupg/gabx-public-key.asc
+gpg --list-secret-keys
+id
+cd ..
+sudo btrfs subvolume list
+sudo btrfs subvolume list .
+echo "test ALL=(ALL) ALL" | sudo tee /etc/sudoers.d/90-homectl
+ls -al /etc/sudoers.d
+sudo ls -al /etc/sudoers.d
+sudo rm /etc/sudoers.d/03_toto
+sudo ls -al /etc/sudoers.d
+sudo cat /etc/sudoers.d
+sudo cat /etc/sudoers.d/01_gabx
+sudo cat /etc/sudoers.d/90_homectl
+sudo cat /etc/sudoers.d/90-homectl
+sudo rm /etc/sudoers.d/90-homectl
+cat /etc/systemd/homed.conf
+ystemd-analyze cat-config systemd/homed.conf
+systemd-analyze cat-config systemd/homed.conf
+systemd-analyze --help
+pkill telegram
+myps telegram
+homectl inspect gabx
+homectl update gabx --login-background="/home/.identity-blob/Arnaud_profile.png"
+homectl update gabx --login-background="/home/gabx/.identity-blob/Arnaud_profile.png"
+homectl inspect gabx
+ls -al /var/cache/systemd/home/gabx
+ls -al /etc/gdm/
+ls -al /etc/dconf/
+ls -al /etc/dconf/db
+ls -al
+magick login-background -resize 128x128 resize_login-background
+convert login-background -resize 128x128\! resize_login.png
+magick login-background -resize 128x128\! resize_login.png
+sudo magick login-background -resize 128x128\! resize_login.png
+sudo rm resize_login.png
+calc
+sudo pacman -Rd openweb-ui
+sudo pacman -Rd open-webui
+calc
+adb devices
+calc
+pkill firefox
+calc
+4.9689955-5.39134572
+cacl
+calc
+systemctl status cups.service
+lsusb
+systemctl status avahi-daemon.service
+systemctl start avahi-daemon.service
+systemctl list-unit-files | grep masked
+sudo systemctl unmask --now avahi-daemon.service
+systemctl start avahi-daemon.service
+sudo systemctl unmask --now avahi-daemon.socket
+sudo systemctl start avahi-daemon.service
+sudo systemctl status avahi-daemon.service
+sudo systemctl status avahi-daemon.socket
+systemctl list-unit-files | grep masked
+sudo vim /etc/cups/cupsd.conf
+sudo tail -n 100 -f /var/log/cups/error_log
+lpinfo --include-schemes dnssd -v
+sudo pacman -Rd cups
+sudo pacman -Rd cups cups-pdf
+sudo pacman -S cups cups-pdf
+systemctl start cups.service
+systemctl status cups.service
+lsusb
+(0.2886-0.2581)*892045
+calc
+pkill discord
+myps discord
+kill 1663491
+kill 1663497
+kill 1663498
+kill 1663500
+myps discord
+yay -S discord
+sudo pacman -Sy discord
+calc
+sudo pacman -Syu kitty
+sudo rm /usr/lib/firmware/nvidia/ad103
+sudo rm -r /usr/lib/firmware/nvidia/ad103
+sudo rm -r /usr/lib/firmware/nvidia/ad104
+sudo rm -r /usr/lib/firmware/nvidia/ad106
+sudo rm -r /usr/lib/firmware/nvidia/ad107
+sudo pacman -Syu kitty
+pacsave
+pacreflector
+cat /etc/pacman.d/mirrorlist
+sudo rm /etc/pacman.d/mirrorlist.pacnew
+cat /etc/hosts.pacnew
+cat /etc/hosts
+sudo rm /etc/hosts.pacnew
+cat /etc/dhcpcd.conf
+sudo mv /etc/dhcpcd.conf.pacnew /etc/dhcpcd.conf
+kitty +list-fonts
+systemctl list-timers
+systemctl status yabsnap.service
+cat /usr/lib/systemd/system/yabsnap.service
+yabsnap list
+su
+yabsnap rollback-gen 20250721020024 | tee ~/rollback.sh
+su
+ls -al /.snapshots/back-home-20250721185614
+ls -al /.snapshots/back-home-20250721185614/gabx
+sudo ls -al /.snapshots/back-home-20250721185614/gabx
+sudo ls -al /.snapshots/back-home-20250721185614/gabx.homedir
+cd /.snapshots
+ls -al
+cd ..
+sudo chwon -R gabx:wheel /.snapshots
+sudo chown -R gabx:wheel /.snapshots
+ls -al /.snapshots
+su
+sudo vim /etc/fstab
+cat /etc/fstab
+su
+sudo rm -r /.snapshots/back-home-20250722183738
+ls -al /.snapshots
+findmnt -T '/.snapshots/back-root-20250721020024/usr/share/help/ca/gnome-text-editor/media/org.gnome.TextEditor.svg'
+man findmnt
+mount | grep /.snapshots
+dmesg | grep -i btrfs | tail -n 50
+su
+dmesg
+su
+yay -Syu snapper
+yay -S coppwr-bin
+journalctl --help
+journalctl --unit=yabsnap.service
+ls -al /
+mkdir /backup/.snapshots
+ls -al /backup
+ls -al /.snapshots
+yabsnap list
+sudo snapper ls
+sudo snapper -c snaphome create-config -f btrfs /home
+su
+systemctl status snapper-backup.service
+systemctl status snapperd.service
+calc
+lsblk
+sudo rm -r /backup/.snapshots
+ls -al /backup
+sudo mkdir /backup/.snapshots
+ls -al /backup
+ls -al /home
+ls -al /home/gabx
+ls -al /home/gabx.homedir
+sudo tar -zcvf back-gabx.homedir-20250723.tar.gz /home/gabx.homedir
+ls -al
+sudo cp back-gabx.homedir-20250723.tar.gz /backup
+sudo mv back-gabx.homedir-20250723.tar.gz /backup
+su
+yabsnap --sync internal-cronrun
+su
+ls -al /root/var/log/journal
+sudo ls -al /root/var/log/journal
+sudo ls -al /root/
+sudo ls -al /root/snap
+btrfs check --readonly --progress --force /dev/nvme0n1p2
+su
+calc
+su
+sudo pacman -Syu wezterm yazi
+ls -al /
+ls -al /backup
+sudo btrfs subvolume snapshot -r /home /backup/.snapshots/back-home-20250815143918
+btrfs subvolume list /
+sudo btrfs subvolume list /
+yabsnap list
+ls -al /usr/share/libalpm/hooks/
+cat /usr/share/libalpm/hooks/01-yabsnap-pacman-pre.hook
+sudo mv /usr/share/libalpm/hooks/01-yabsnap-pacman-pre.hook /usr/share/libalpm/hooks/01-yabsnap-pacman-pre.hook.brok
+sudo pacman -Syu wezterm yazi
+sudoedit /etc/mkinitcpio.conf
+sudo mkinitcpio -P
+yay -S aic94xx-firmware ast-firmware linux-firmware-qlogic upd72020x-fw wd719x-firmware
+sudo cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bck
+sudoedit /etc/mkinitcpio.conf
+sudo mkinitcpio -P
+sudoedit /etc/mkinitcpio.conf
+sudo mkinitcpio -P
+sudoedit /etc/mkinitcpio.conf
+sudo mkinitcpio -P
+mv .config/vim .config/vim.bck
+sudo mv /backup/vim .config
+sudo chown -R gabx:gabx .config/vim
+ls -al .config
+yay -S vundle-git
+vim +PluginInstall +qall
+vim
+vim .config/vim/vimrc
+sudo rm -r /root/.config/vim
+su
+ls -al .config
+ls -al
+vim
+vim .config/vim/vimrc
+ls -al /usr/share/vim/vim91/colors
+vim .config/vim/vimrc
+sudo cp -r .config/vim /root/.config
+sudoedit .config/vim/vimrc
+sudoedit /root/.config/vim/vimrc
+sudo pacman -Rd gluster
+sudo pacman -Rd glusterfs
+sudo pacman -Rd glusterfs qemu-block-gluster
+sudo pacman -Rd glusterfs qemu-full
+sudo pacman -Rd glusterfs qemu-block-gluster qemu-full
+sudo pacman -Syu qemu-base qemu-desktop
+sudo mkinitcpio -P
+sudoedit /etc/mkinitcpio.conf
+sudo mkinitcpio -P
+yay -S aconfmgr-git
+sudoedit back-home.conf
+ls -al /usr/share/libalpm/hooks
+sudo mv /usr/share/libalpm/hooks/01-yabsnap-pacman-pre.hook.brok /usr/share/libalpm/hooks/01-yabsnap-pacman-pre.hook
+ls -al /usr/share/libalpm/hooks
+aconfmgr save
+ls -al
+chmod ou+x 10-ignores.sh
+ls -al
+aconfmgr save
+vim 10
+vim 10-ignores.sh
+pacman -Qi vim
+neovim
+zsh
+vim .config/vim/vimrc
+yay -S neovim-gtk
+rustup component add rust-std
+rustc --explain E0463
+cargo build -Z build-std
+sudo pacman -S rustup
+cargo build --release
+touch hello.rs
+rustc hello.rs && ./hello
+ls -al /usr/bin/rustup
+ls -al /usr/bin/rustc
+ls -al /usr/bin/cargo
+rustup default stable
+rustup toolchain install stable
+rustup target add x86_64-unknown-linux-gnu
+sudo pacman -Rns --needed rust cargo
+sudo pacman -Rns rust cargo
+pacman --help
+pacman -R --help
+sudo pacman -Rns --unneeded rust cargo
+sudo pacman -Rd rust cargo
+sudo pacman -R rust
+sudo pacman -R cargo
+sudo pacman -S --needed rustup
+rustup default stable
+rustup target add x86_64-unknown-linux-gnu
+rustup show
+rustup toolchain list
+rustup target list --installed
+which rustc
+echo $PATH
+echo $RUSTUP_TOOLCHAIN
+zsh
+echo $RUSTUP_TOOLCHAIN
+sudo pacman -Rns --needed rust cargo
+sudo pacman -Rns rust cargo
+pacman -Qo /usr/bin/rustc || ls -l /usr/bin/rustc
+\
+pacman -Qo /usr/bin/cargo || ls -l /usr/bin/cargo\
+
+which -a rustc
+env | egrep '^(RUST|CARGO|TARGET)=' || true
+env | grep -E '^(RUST|CARGO|TARGET)=' || true
+rustup show
+rustup target list --installed
+rustc -Vv
+rustc --print sysroot
+cargo -V
+ls ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-*.rlib
+rustup update stable
+rustup toolchain list -v | sed -n '1p;/^stable/,$p'
+rustup self update
+sudo pacman -Syu rustup
+exec zsh -l
+rustup --version
+rustup target remove x86_64-unknown-linux-musl --toolchain stable || true
+rustup toolchain install nightly
+rustup default nightly
+rustc -Vv | sed -n '1,6p'
+rustup toolchain uninstall stable || rustup toolchain uninstall stable --force
+rustup set profile default
+rustup toolchain install stable
+rustup default stable
+rustup target add x86_64-unknown-linux-gnu
+rustc -Vv | sed -n '1,8p'
+echo "$(rustc --print sysroot)"
+ls "$(rustc --print sysroot)"/lib/rustlib/x86_64-unknown-linux-gnu/lib/ | grep -E '^libstd-.*\.rlib$'\
+rustup target list --installed
+cargo clean 2>/dev/null || true
+rm -rf target
+makepkg -sic
+yay -S neovim-gtk-git
+sudo pacman -S neovim ripgrep fd lazygit wl-clipboard
+sudo pacman -S lazygit wl-clipboard
+mkdir .config/nvim
+touch .config/nvim/init.lua.txt
+yay -S vim-plug
+yay -S lazy.nvim
+nvim
+myps neovim
+myps vim
+pkill nvim
+myps vim
+ls -al
+sudo cp -r cosmic-settings ~/.config/cosmic/
+sudo cp -r cosmic-term ~/.config/cosmic/
+sudo chown -R gabx:gabx ~/.config/cosmic/cosmic-settings
+sudo chown -R gabx:gabx ~/.config/cosmic/cosmic-term
+sudo cp -r yazi ~/.config
+sudo chown -R gabx:gabx ~/.config/yazi
+sudo rm -r cosmic-settings
+sudo rm -r cosmic-term
+sudo rm -r zsh
+sudo rm -r yazi
+sudo rm -r gtk-4.0
+sudo rm -r .snapshots
+mkdir .config/wezterm
+touch .config/wezterm/wzterm.lua.txt
+dgdggdgd
+dgdggdg
+yazi
+
+kitty +list-fonts
+vim
+mkdir -p ~/.local/state/vim/{swap,undo,backup}
+vim
+yay -S vim-plug
+vim
+sdudo pacman -Rd vim-plug
+sudo pacman -Rd vim-plug
+ls -al ~/.local/share/vim/site/autoload
+ls -al ~/.local/share/vim/site/
+ls -al ~/.local/share/vim/
+ls -al ~/.local/share/
+curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim\
+"
+curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim\
+
+vim
+curl -fLo ~/.local/share/vim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim
+ls -al ~/.local/share/vim/site/autoload/
+echo $XDG_STATE_HOME
+pacman -Sg vim-plugins
+ls -l ~/.local/share/vim/site/autoload/plug.vim
+vim
+sudo pacman -S yarn
+vim
+cd ~/.local/share/vim/plugged/vim-prettier
+yarn install --frozen-lockfile --production
+vim
+yay vim-bufexplorer
+ls -al ~/.vim/pack/plugins/
+yay -S vim-grammalecte
+yay -S vim-latexsuite
+vim
+myps box
+pkill qemu
+myps box
+aconfmgr save
+sudo pacman -Syu balen-etcher
+yay -S balena-etcher
+calc
+ls -al /usr/share/libalpm/hooks
+touch .config/wezterm/wezterm.lua
+ls -al
+bash -c "$(wget -qO- https://git.io/vQgMr)"
+wezterm ls-fonts
+ls -al
+wezterm show-keys --lua
+wezterm show-keys
+mv .config/wezterm/ .config/wezterm.bck
+cd .config
+git clone https://github.com/sravioli/wezterm.git
+touch wezterm.lua
+cd /
+sudo pacman -S nerd-fonts
+sudo pacman -S ded.\
+
+ded.\
+
+sudo pacman -S ttf-inconsolata-go-nerd
+sudo pacman -S ttf-cousine-nerd
+sudo pacman -S ttf-jetbrains-mono-nerd
+ls -al
+yazi
+env
+yazi
+print -r -- $VIMINIT
+vim
+yazi
+CLEAR
+clear
+calc
+nvim
+sudo pacman -Syu luarocks
+ls --help
+ls -al /usr/bin/lua
+ls -al /usr/bin/lua5.4
+nvim
+pkill nvim
+yazi
+mkdir yazi/flavors
+ya pkg add BennyOe/tokyo-night
+yazi
+cd yazi
+ls -al
+mv theme-dark.toml theme-dark.toml.bck
+touch theme.toml
+vim theme.toml
+yazi
+ya pkg add gosxrgxx/flexoki-dark
+yazi
+ls -al /dev/sd*
+sudo pacman -S evisum
+evisum
+yazi
+ya pkg add yazi-rs/plugins:piper
+sudo pacman -S mediainfo-gui mediainfo
+mediainfo --version
+mediainfo-gui
+ya pkg add boydaihungst/mediainfo
+rustc --version
+ya pkg add KKV9/compress
+yazi
+sudo pacman -S 7zip
+sudo pacman -S lazygit
+ya pkg add Lil-Dank/lazygit
+yazi
+ya pkg add boydaihungst/gvfs
+ya pack -a grappas/wl-clipboard
+yazi
+on = "<C-y>"\
+
+git clone https://github.com/Sonico98/yazi-prompt.sh ./yazi-prompt && chmod +x ./yazi-prompt/posix/yazi.sh && cp ./yazi-prompt/posix/yazi.sh "$ZDOTDIR"/.yazi.sh && echo '''source "$ZDOTDIR"/.yazi.sh''' >> "$ZDOTDIR"/.zshrc && rm -rf ./yazi-prompt
+source "$ZDOTDIR"/.zshrc
+yazi
+env
+echo $ZDOTDIR
+zsh
+echo $PS1
+echo $PROMPT
+echo $PS1$YAZI_TERM
+echo $YAZI_TERM
+ls -al
+chmod o+x yazi_p10k.zsh
+ls -al
+chmod u+x yazi_p10k.zsh
+ls -al
+chmod o-x yazi_p10k.zsh
+ls -al
+./yazi_p10k.zsh
+yazi
+ya pack -a imsi32/yatline
+nvim
+ls -al
+ls -al compress.yazi
+nvim compress.yazi/README.md
+vim compress.yazi/README.md
+nvim compress.yazi/README.md
+echo $EDITOR
+nvim
+mkdir -p ~/.config/nvim/lua/config/
+touch ~/.config/nvim/lua/config/lazy.lua
+nvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+mv ~/.config/nvim{,.bak}
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+nvim
+sudo pacman -Syu perl-image-exiftool
+pacman -Qqo '/usr/lib/perl5/5.40'
+which simplex
+sudo pacman -S simplex-desktop-bin
+sudo pacman -Rd simplex-desktop-bin
+sudo pacman -Rd simplex-chat-bin
+yay -S simplex-desktop-bin
+simplex
+/opt/simplex/bin/simplex
+sudo pacman -Rd simplex-chat-bin
+sudo pacman -Rd simplex-desktop-bin
+yay -S simplex-desktop-bin
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+echo $XDG_DATA_DIRS
+echo $XDG_CONFIG_HOME
+env | grep XDG
+source .config/.profile
+echo $XDG_CONFIG_HOME
+sh -c 'curl -fLo "${XDG_CONFIG_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+touch .config/nvim/init.lua
+vim
+nvim
+nvim .config/nvim/init.lua
+nvim
+nvim .config/nvim/init.lua
+neovide
+gnvim
+pacman -S neovide
+sudo pacman -S neovide
+neovide
+sudo pacman -Rd neovide
+cat /usr/share/nvim/archlinux.lua
+ls -al /usr/share/vim/vimfiles
+cat /usr/share/vim/vimfiles/archlinux.vim
+zsh
+git clone https://github.com/LazyVim/starter ~/.config/nvimLazyvim
+source .config/.profile
+zsh
+v
+NVIM_APPNAME=nvimLazyvim nvim
+nvim
+sudo pacman -S tree-sitter-cli
+NVIM_APPNAME=nvimLazyvim nvim
+nvim
+zsh
+nvim
+NVIM_APPNAME=nvimLazyvim nvim
+nvim
+echo $XDG_STATE_HOME
+source .config/.profile
+echo $XDG_CONFIG_HOME
+zsh
+echo $XDG_CONFIG_HOME
+echo $XDG_STATE_HOME
+source .config/.profile
+echo $XDG_STATE_HOME
+echo $XDG_CONFIG_HOME
+nvim
+nvim .config/nvim/init.lua
+nvim .config/nvim/lua/config/nvimtree.lua
+calc
+nvim
+calc
+env | grep GNUPG
+gpg --list-secret-keys
+gpg --edit-key Arnaud_Gaboury
+gpg --list-keys
+gpg --edit-key E9876272C25AC145A5A83C9CB497B543A258552D
+gpg --edit-key 926E284079B52A50
+gpg --list-keys
+gpg --list-secret-keys
+gpg --export --armor --output gabx-public-key.asc Arnaud_Gaboury
+ls -al
+gpg --send-keys E9876272C25AC145A5A83C9CB497B543A258552D
+gpg --list-secret-keys
+$ gpg --gen-revoke --armor --output revcert.asc B497B543A258552D
+gpg --gen-revoke --armor --output revcert.asc B497B543A258552D
+gpg --list-secret-keys --with-subkey-fingerprint
+gpg --edit-key B497B543A258552D
+calc
+gpg --fingerprint arnaud.gaboury@gmail.com
+GPG_TTY=`tty`\
+export GPG_TTY
+evolution
+nvim
+pacman -Qs elementary
+pacman -Qi elementary
+pacman -Qe
+comm -23 <(pacman -Qqe | sort)
+pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)\
+'
+sudo pacman -S fzf
+pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'\
+
+zsh
+pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
+zsh
+clear
+gpg --keyserver hkps://keys.openpgp.org/ --search-keys Arnaud_Gaboury
+gpg --search-keys Arnaud_Gaboury
+gpg --receive-keys Arnaud_Gaboury
+gpg --list-secret-keys
+gpg --receive-keys E9876272C25AC145A5A83C9CB497B543A258552D
+gpg --list-secret-keys
+calc
+CD ~
+cd ~
+ls -al
+ls -al .config/r
+chmod u+x .config/r/.Rprofile
+ls -al .config/r
+chmod u-x .config/r/.Rprofile
+env | grep R_LIBS
+echo $R_LIBS_USER
+sudoedit Renviron
+sudo pacman -S extra/texlive-latex extra/texlive-latexextra extra/texlive-plaingeneric extra/texlive-fontsrecommended
+sudo pacman -Syu extra/texlive-latex extra/texlive-latexextra extra/texlive-plaingeneric extra/texlive-fontsrecommended
+R --vanilla
+systemctl reboot
+sudo pacman -Syu
+pacman -Qqo '/usr/lib/perl5/5.40'
+yay -Syu
+systemctl reboot
+calc
+touch wezterm.lua
+q
+wezterm --config-file ~/wezterm.lua start
+wezterm
+cd /development
+git clone https://github.com/gabx/archlinux.git\
+
+cd archlinux
+ls -al
+nvim
+yay -S neovim-plenary
+nvim --headless "+Lazy! sync" +qa
+nvim
+git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME}"/nvim
+source ~/.config/.profile
+nvim
+source ~/.config/.profile
+nvim
+calc
+sudo pacman -S mosh
+sudo pacman -Rd mosh
+sudo pacman -S wireguard-tools
+yay -S wireguird
+myps wire
+wireguird
+DISPLAY=:0 gedit
+export DISPLAY=:0
+wireguird
+DISPLAY=:0 wireguird
+su
+wezterm
+clear
+mkdir .config/wireguard
+cd .config/wireguard
+wg genkey | (umask 0077 && tee peer_A.key) | wg pubkey > peer_A.pub
+ls -al
+wg
+wg --help
+wg show
+wg showconf
+ip a
+wg showconf enp3s0
+sudo wg showconf enp3s0
+mv portfolio-management/date_19_jours.bck.r portfolio-management-work
+mv portfolio-management/get_all_trade_gpt.r portfolio-management-chatgpt
+mv portfolio-management/crypto2.r portfolio-management-work
+mv portfolio-management-final/get_token_close.r portfolio-management
+env
+rm "/home/gabx/.local/share/portfolio-vault/daily_portfolio_20250908-191952"
+rm /home/gabx/.local/share/portfolio-vault/daily_portfolio_20250908-191952.rds daily_portfolio 20250908-191952
+ls -al /home/gabx/.local/share/portfolio-vault/
+rm /home/gabx/.local/share/portfolio-vault/daily_portfolio_20250908-213949.rds
+cd /development/language/r
+mkdir R-trading-journal
+cd R-trading-journal
+mkdir data
+mkdir scripts
+mkdir reports
+mkdir journal
+mkdir R
+mkdir config
+touch data/note
+touch scripts/note
+touch reports/note.txt
+touch journal/note.txt
+touch R/note.txt
+touch config/note.txt
+cd ..
+mkdir portfolio-management/classified
+sudo pacman -Syu
+systemctl reboot
+cd /development/language/r
+cp trading-journal/data/assets.csv portfolio-management
+npm install -g @openai/codex
+sudo npm install -g @openai/codex
+codex
+sudo pacman -S netcat-openbsd tcpdump
+sudo pacman -S openbsd-netcat tcpdump
+ifconfig -a
+ip a
+tcpdump -i eno1 'udp port 33333'
+sudo tcpdump -i eno1 'udp port 33333'
+sudo tcpdump -i enp3s0 'udp port 33333'
+nc -vz -u 91.171.28.70 33333
+sudo pacman -S wireguard-tools
+yay -S wireguird
+wireguird
+yay -S wg-client
+gpg --import < 7CCA1BA66669F3273DB52678E5B81343AB9809E1.asc
+yay -S wg-client
+yay -Sy wg-client
+wg-client
+wg-client --wg-up
+wg-client --wg-up -h
+wg-client --status
+sudo pacman -S iptables
+wg --vesrion
+wg --version
+iptables --version
+sudo wg
+cp /development/language/r/portfolio-management/classified/get_token_close.r /development/language/r/portfolio-management
+sysctl --help
+sudo pacman -S systeroid
+systeroid -T
+cat /proc/sys/net/ipv4/ip_forward
+sudo yazi
+sudo sysctl -a | grep forward
+sudo sysctl --system
+sudo sysctl --all
+ls -al /usr/lib/sysctl.d/
+sudo vim /etc/sysctl.d/99-sysctl.conf
+sudo mv /etc/sysctl.d/99-sysctl.conf /etc/sysctl.d/30-ipforward.conf
+sudo nvim /etc/systemd/network/20-wired.network
+sudo cp /etc/systemd/network/20-wired.network /etc/systemd/network/20-wired.network.bck
+sudo nvim /etc/systemd/network/20-wired.network
+sudo systemctl restart systemd-networkd.service
+ip a
+networkctl
+ping -c 3 8.8.8.8
+cd /etc/systemd/network
+ls -al
+systemctl status systemd-networkd.service
+ls -al
+sudo mv 20-wired.network 20-wired.network.static
+sudo mv 20-wired.network.bck 20-wired.network
+sudo systemctl restart systemd-networkd.service
+ip a
+ls -al
+sudo rm 20-wired.network.static
+sudo touch 10-static.network
+sudo nvim 10-static.network
+ip a
+sudo systemctl restart systemd-networkd.service
+ip a
+ping -c 3 8.8.8.8
+systemctl status systemd-networkd.service
+sudo mv 10-static.network 10-static.network.brok
+sudo systemctl restart systemd-networkd.service
+ip route
+sudo nvim 10-static.network.brok
+sudo mv 10-static.network.brok 10-static.network
+sudo systemctl restart systemd-networkd.service
+sudo systemctl status systemd-networkd.service
+ip a
+sudo cosmic-edit /etc/systemd/network/10-static.network
+sudo cp /etc/systemd/network/10-static.network ~/code
+sudo chown gabx:gabx ~/code
+ls -al
+sudo cp 10-static.network /etc/systemd/network
+ls -al
+sudo chown gabx:gabx 10-static.network
+wireguird
+sysctl -p
+sysctl -h
+sysctl --load /etc/sysctl.d/30-ipforward.conf
+sudo sysctl --load /etc/sysctl.d/30-ipforward.conf
+sudo sysctl --all
+sudo sysctl -a | grep forward
+cd /etc/wireguard
+su
+cd /development/language/r
+cd portfolio-management
+mv get_daily_close.r classified
+mv get_token_close.r classified
+mv journal_work.r classified
+mv journal_work_short.r classified
+mv README.html classified
+rm test.html
+rm test.log
+cp 05-get_trade.r ../../portfolio-management/get_trade.r
+sudo pacman -Syu
+codex
+cp trading-journal/scripts/07-merge_close_with_trade.r portfolio-management
+mv portfolio-management/add_quantity.r portfolio-management/classified
+mv portfolio-management/add_quantity_bis.r portfolio-management/add_quantity.r
+codex
+
+fzf --help
+eza
+sudo pacman -S eza
+eza -h
+eza --help
+eza
+cd /development/build
+git clone --depth=1 https://github.com/JaKooLit/Arch-Hyprland.git
+cd Arch-Hyprland
+ls -al
+codex
+cd /development/language/r/portfolio-management
+mkdir data
+cp ../trading-journal/data/assets.csv data
+cp ../trading-journal/scripts/03-load_assets.r ./
+cp 05-get_trade.r 05-get_trade.copy.r
+btop
+cp debug.r debug.copy.r
+codex
+cp portfolio-management/05-get_trade.r trading-journal
+nvim -d
+cd /development/language/r/trading-journal
+ls -al
+cd scripts
+ls -al
+nvim -d 05-get_trade.orig.r 05-get_trade.r
+cd ..
+cp portfolio-management/05-get_trade.r trading-journal
+ls -al trading-journal
+ls -al trading-journal/scripts
+cp portfolio-management/05-get_trade.r trading-journal/05-get_trade.r
+cp portfolio-management/03-load_assets.r trading-journal
+mv trading-journal/03-load_assets.r trading-journal/03-load_assets.orig.r
+cp portfolio-management/03-load_assets.r trading-journal
+ls -al trading-journal
+codex
+cp portfolio-management/classified/05-get_trade.r trading-journal/scripts
+cd trading-journal/scripts
+nvim -d 05-get_trade.orig.r 05-get_trade.r
+cp -r trading-journal trading-journal.save
+cp trading-journal/data/assets.csv portfolio-management-work
+adb
+adb devices
+cd /development/android/twrp-3.7.0_9-0-a5xelte.img
+adb sideload recovery.img
+adb reboot sideload
+root
+su
+adb reboot recovery
+adb reboot
+adb devices
+yay -S adbfs-rootless-git
+adbfs
+mkdir /mnt/android
+ls -al /mnt
+ls -al /mnt/recovery
+ls -al /mnt/rescue
+sudo rm -r /mnt/recovery
+sudo rm -r /mnt/windows
+sudo rm -r /mnt/rescue
+mkdir samsung
+adbfs samsung
+adbfs --help
+adbfs -o opt
+adb devices
+homectl --help
+sudo homectl gabx --member-of=adbusers
+sudo homectl update gabx --member-of=adbusers
+sudo homectl inspect gabx
+wget https://raw.githubusercontent.com/M0Rf30/android-udev-rules/master/51-android.rules -O /etc/udev/rules.d/51-android.rules
+sudo wget https://raw.githubusercontent.com/M0Rf30/android-udev-rules/master/51-android.rules -O /etc/udev/rules.d/51-android.rules
+yay -S adbmanager-bin
+adb devices
+adb -h
+adb --help
+adb reboot bootloader
+fastboot devices
+adb reboot bootloader
+fastboot devices
+adb devices
+adb root
+adb reboot root
+fastboot devices
+$ADB_VENDOR_KEYS
+adb devices
+ls -al
+adb devices
+adb rebbot recovery
+adb reboot recovery
+fastboot devices
+fastboot --help
+adb devices
+adb reboot recovery
+calc
+sudo pacman -Syu
+calc
+myps wireguird
+myps wireguard
+sudo wireguird
+su
+ls -al /etc/sudoers.d
+sudo ls -al /etc/sudoers.d
+sudo cat /etc/sudoers
+wg
+wg --help
+wg show
+lsmod
+lsmod | grep wireguard
+su
+calc
+yay -Syu
+pacreflector
+sudo rm /etc/pacman.d/mirrorlist.pacnew
+codex
+npm install -g @openai/codex@latest
+sudo npm install -g @openai/codex@latest
+codex
+sudo pacman -S cosmic-greeter
+systemctl status gdm
+systemctl status cosmic-greeter
+pacman -Qi rstudio-desktop-bin
+pacman -Qi rstudio-desktop
+yay -S rstudio-desktop-daily-bin
+yay -S rstudio-dekstop-bin
+yay -S rstudio-desktop-bin
+codex
+yay -S debtap
+debtap /development/build/motivewave_7.0.2_amd64.deb
+debtap -U
+sudo debtap -u
+debtap /development/build/motivewave_7.0.2_amd64.deb
+sudo pacman -U /development/build/motivewave-7.0.2-1-x86_64.pkg.tar.zst
+cp -r /development/language/r /backup
+sudo umount /backup
+sudo umount /media
+snapper --help
+systemctl status snapper-backup.service
+systemctl status snapperd.service
+systemctl status snapper-cleanup.timer
+sudo cat snaphome
+echo $LD_LIBRARY_PATH
+calc
+lazygit
+yay -S lazydocker
+lazydocker
+sudo pacman -S alacritty
+sudo pacman -Sy alacritty
+ls -al
+infocmp alacritty
+adb devices
+adb --help
+adb reboot recovery
+adb reboot bootloader
+adb reboot
+sudo pacman -Syu
+pacreflector
+sudo rm /etc/pacman.d/mirrorlist.pacnew
+sudo pacman -S reflector
+ls -al /etc/pacman.d
+sudo pacman -S pacman-mirrorlist
+ls -al /etc/pacman.d
+cat /etc/pacman.d/mirrorlist
+yay -Syu
+yay -S snapper-gui-git
+yay -S snapper-tools
+myps snapper
+snapper-tools
+xhost +local:
+sudo pacman -Syu xhost
+sudo pacman -Syu xorg-xhost
+xhost +local:
+snapper-tools
+sudo pacman -Rs snapper-tools
+sudo cat snaphome
+sudo btrfs subvolume list /
+btrfs --help
+sudo btrfs filesystem show /
+sudo snapper -c root create-config /development
+sudo cat root
+sudo cat snaphome
+sudo nvim root
+sudo cat snaphome
+sudo mv root snapdevelopment
+sudo rm -r ../backup-configs
+sudo rm -r ../certs
+systemctl list timer
+systemctl --help
+systemctl list-timers
+systemctl status snapper-timeline.timer
+systemctl status snapper-timeline.service
+cat /usr/lib/systemd/system/snapper-timeline.timer
+sudo snapper -c snapdevelopment create
+snapper --help
+snapper list-configs
+sudo rm snapdevelopment
+sudo snapper -c snapdevelopment create-config /development
+sudo umount /.snapshots
+sudo snapper -c snapdevelopment create-config /development
+ls -al /.snapshots
+sudo rm -r /.snapshots
+sudo snapper -c snapdevelopment create-config /development
+sudo btrfs subvolume list /
+btrfs subvolume --help
+sudo btrfs subvolume delete @development/.snapshots
+sudo btrfs subvolume delete development/.snapshots
+sudo btrfs subvolume delete --subvolid 930
+sudo btrfs subvolume delete --subvolid 930 /development/.snapshots
+sudo btrfs subvolume list /
+sudo btrfs subvolume delete --subvolid 758 /home/.snapshots
+sudo mount /dev/nvme0n1p2 /.snapshots
+sudo mkdir /.snapshots
+sudo mount /dev/nvme0n1p2 /.snapshots
+sudo btrfs subvolume delete --subvolid 258 /.snapshots/@tmp
+sudo btrfs subvolume list /
+snapper --help
+snapper list-configs
+btrfs subvolume list /
+sudo btrfs subvolume list /
+systemctl status tmp.mount
+btrfs subvolume --help
+sudo btrfs subvolume delete /.snapshots/back-home-20250722183738
+sudo btrfs subvolume delete /.snapshots/back-home-20250724123143
+sudo btrfs subvolume list /
+sudo nvim snapper
+mylsblk
+sudo pacman -S xorg-xhost
+calc
+sudo pacman -Syu
+systemctl reboot
+ls -al
+mv StatusIm-Desktop-2.35.1-748cd6-x86_64.AppImage StatusIM
+./StatusIM
+sudo pacman -S netawark
+sudo pacman -S netavark
+sudo pacman -S aardvark-dns
+sudo pacman -S podman-docker
+cat /etc/cni/net.d/87-podman.conflist
+ls -al /etc/cni/net.d/
+ls -al /usr/share/containers
+ls -al /etc/containers
+ls -al /etc/containers/registries.conf.d
+sudo nvim /etc/containers/registries.conf.d/10-unqualified-serach-registries.conf
+cat /etc/containers/registries.conf.d/00-shortnames.conf
+sysctl kernel.unprivileged_userns_clone
+sudo usermod --add-subuids 524288-589823 --add-subgids 524288-589823 gabx
+cat /etc/subuid
+sudo nvim /etc/subuid
+sudo nvim /etc/subgid
+podman system migrate
+podman info | grep -i overlay
+cat /etc/containers/storage.conf
+cat /etc/containers/containers.conf
+sudo nvim /etc/containers/containers.conf
+sudo pacman -S podman-compose
+sudo pacman -S podman-desktop
+sudo pacman -Syu podman-desktop
+sudo vimdiff /etc/mkinitcpio.conf /etc/mkinitcpio.conf.pacnew
+sudo rm /etc/mkinitcpio.conf.pacnew
+systemctl status podman.service
+sudo systemctl start podman.service
+systemctl status podman.service
+systemctl status podman.socket
+ls /run/user/1000/podman
+ls /run/podman
+sudo ls /run/podman
+myps podman
+systemctl status podman-auto-update.service
+podman version
+journalctl --help
+journalctl --unit=podman.service
+systemctl status podman.service
+systemctl start podman.service
+systemctl status podman.service
+systemctl start podman.service
+systemctl --user start podman.service
+systemctl --user status podman.service
+kata-runtime kata-check
+journalctl --unit=podman.service
+systemctl --user start podman.socket\
+
+systemctl --user status podman.socket\
+
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
+docker-compose up\
+
+sudo pacman -S docker-compose
+docker-compose up\
+
+systemctl --user start podman.service\
+
+systemctl --user status podman.service\
+
+podman info
+systemctl status podman-auto-update.service
+yay -S podlet
+systemctl status podman.service
+podman --log-level=info system service
+systemctl status podman.socket
+systemctl start podman.socket
+systemctl status podman.socket
+podman --log-level=info system service
+systemctl status podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+echo $XDG_RUNTIME_DIR
+cat /etc/environment
+ls -al /run/user/1000
+ls -al /run/user/1000/podman
+curl --unix-socket /run/user/1000/podman/podman.sock "http:/v1.41/info"
+ls -al /run/user/1000/podman
+curl --unix-socket /run/user/1000/podman/podman.sock "http:/v1.41/containers/json?all=true"
+myps podman
+curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock -H 'content-type: application/json' http://localhost/_ping
+cat /etc/os-release
+systemctl --user status podman.socket
+systemctl --user stop podman.socket
+systemctl --user status podman.socket
+myps podman
+systemctl --user status podman.service
+systemctl --user stop podman.service
+systemctl --user start podman.service
+systemctl --user status podman.service
+systemctl --user status podman.socket
+systemctl --user stop podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+systemctl --user status podman.service
+systemctl --user status podman.socket
+systemctl --user status podman.service
+echo $XDG
+echo $XDG_RUNTIME_DIR
+ls -al /run/user/1000
+ls -al /run/user/1000/podman
+curl --unix-socket /path/to/podman.sock "http:/v1.41/info"
+systemctl --user status podman.socket
+systemctl --user stop podman.service
+systemctl --user start podman.service
+systemctl --user status podman.service
+podman --log-level=info system service
+podman --remote info
+podman --help
+podman --remote info
+systemctl stop podman.socket
+systemctl stop podman.service
+systemctl --user daemon-reload
+systemctl --user enable now podman.socket
+systemctl --user enable --now podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+systemctl --user start podman.service
+systemctl --user status podman.service
+podman --log-level=debug
+podman --log-level=debug version
+podman --log-level=debug info
+podman run hello-world
+yay -S linux-kata-bin
+podman run hello-world
+pkgfile /usr/share/kata-containers/vmlinux.container
+pkgfile vmlinux.container
+pacman -Fy
+sudo pacman -Fy
+sudo pacman -S pacman-contrib
+pacman -F /usr/share/kata-containers/vmlinux.container
+pacman -F vmlinux.container
+pacman -Fx vmlinux.container
+sudo pkgfile -u
+pkgfile vmlinux.container
+ls -al /opt
+ls -al /usr/bin/kata-runtime
+podman --runtime /usr/bin/kata-runtime run hello-world
+ls -al /usr/share
+ls -al /usr/share/kata-containers
+pacman -Qo /usr/bin/kata-runtime
+pacman -ql kata-runtime-bin
+pacman -Ql kata-runtime-bin
+pacman -Qo /usr/share/kata-containers
+cat /etc/kata-containers/configuration.toml
+ls -al /usr/share/kata-containers
+sudo cp /etc/kata-containers/configuration.toml /etc/kata-containers/configuration.toml.orig
+sudo vim /etc/kata-containers/configuration.toml
+podman run hello-world
+podman --log-level=debug run hello-world
+podman --cgroup-manager=cgroupfs run hello-world
+echo $DBUS_SESSION_BUS_ADDRESS
+yay -S kata-containers-image-bin
+yay -S linux-kata-bin
+ls -al /opt
+pacman -Qo /opt/kata/share/kata-containers
+pacman -Ql /opt/kata/share/kata-containers
+pacman -F /opt/kata/share/kata-containers
+pkgfile /opt/kata/share/kata-containers
+yay -S kata-runtime-bin
+yay -S kata-containers-image-bin
+kata-manager
+\
+
+
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/kata-containers/kata-containers/main/utils/kata-manager.sh) -h"\
+\
+
+kata-runtime check --only-list-releases
+sudo pacman -S containerd
+sudo pacman -S runc
+sudo pacman -S cni-plugins
+systemctl status containerd.service
+sudo systemctl start containerd.service
+systemctl status containerd.service
+podman --log-level=debug run hello-world
+sudo cp /etc/kata-containers/configuration.toml /etc/kata-containers/configuration.toml.test
+sudo cp /etc/kata-containers/configuration.toml.orig /etc/kata-containers/configuration.toml
+sudo rm /etc/kata-containers/configuration.toml.orig
+podman --log-level=debug run hello-world
+systemctl status containerd.service
+sudo pacman -S code
+yay -S positron-ide-devel-bin
+sudo pacman -S vulkan-intel
+sudo systemctl stop containerd.service
+docker
+docker search nginx
+podman version
+podman --help
+podman system
+podman system df
+podman system events
+podman system info
+docker system info
+podman system info
+sudo pacman -Rd docker
+sudo pacman -S docker
+podman run quay.io/podman/hello
+docker run quay.io/podman/hello
+docker
+sudo docker run -it --rm archlinux bash -c "echo hello world"
+sudo docker ps
+sudo docker images
+sudo docker rmi d60cf1d6ee7e
+sudo docker images
+groups
+cat /etc/group
+cat /etc/group | grep docker
+cat /etc/group | grep input
+sudo pacman -S docker
+cat /etc/group | grep docker
+sudo homectl inspect gabx
+sudo homectl update gabx --member-of=docker
+sudo homectl inspect gabx
+docker run -it --rm archlinux bash -c "echo hello world"
+ls -al /run/user/1000/podman
+systemctl status podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+docker run -it --rm archlinux bash -c "echo hello world"
+ls -al /run/user/1000/podman
+systemctl --user status podman.socket
+cat /usr/lib/systemd/user/podman.socket
+systemctl --user status podman.socket
+ls -al /run/user/1000/podman
+systemctl --user stop podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+ls -al /run/user/1000/podman
+docker run -it --rm archlinux bash -c "echo hello world"
+ls -al /run/user/1000/podman
+groups
+cat /etc/group
+sudo homectl inspect gabx
+sudo homectl update gabx --member-of="docker,wheel,gabx"
+groups
+sudo homectl update gabx --member-of="docker,wheel,gabx,adbusers"
+groups
+cat /etc/group
+docker run -it --rm archlinux bash -c "echo hello world"
+systemctl --user status podman.socket
+systemctl --user stop podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+podman version
+podman info
+ls -al /run/user/1000/podman
+journalctl --help
+journalctl --user-unit=podman.socket
+journalctl --user-unit=podman.service
+podman run -it --rm archlinux bash -c "echo hello world"
+systemctl --user status podman.service
+podman --log-level=debug info
+ls -al /usr/share/kata-containers/
+podman info
+systemd --version
+systemctl --version
+docker images
+systemctl --user stop podman.socket
+systemctl --user start podman.socket
+docker images
+systemctl --user status podman.socket
+systemctl --user stop podman.socket
+systemctl --user status podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+docker images
+systemctl --user status podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+podman images
+systemctl --user status podman.socket
+podman --help
+podman images
+podman rmi d60cf1d6ee7e
+podman rmi aded1e1a5b37
+podman rmi 5dd467fce50b
+podman images
+podman rmi --force 5dd467fce50b
+podman images
+sudo pacman -Rd containerd
+sudo pacman -Rd containerd docker
+pacman -Q
+sudo pacman -Rd docker-compose
+pacman -Q | grep docker
+yay -S discord
+systemctl --user status podman.socket
+systemctl --user stop podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+journalctl -xe
+systemctl cat docker.socket
+systemctl cat podman.socket
+systemctl --user status podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+lsof /run/user/1000/podman/podman.sock
+systemctl --user status podman.socket
+systemctl status podman.socket
+sudo systemctl start podman.socket
+systemctl status podman.socket
+lsof /run/podman/podman.sock
+sudo lsof /run/podman/podman.sock
+sudo systemctl stop podman.socket
+systemctl cat podman.socket
+systemctl --user cat podman.socket
+systemctl --user cat podman.service
+systemctl cat podman.service
+podman system service
+myps podman
+podman --log-level=info system service
+sudo pacman -Rns podman-docker
+sudo pacman -Rns podman--docker
+sudo pacman -S podman-docker
+docker
+docker --log-level=info system service
+sudo pacman -Rns podman-docker
+sudo homectl inspect gabx
+sudo homectl --help
+sudo homectl update --help
+groups
+sudo homectl update gabx --member-of="wheel,adbusers,gabx"
+sudo homectl inspect gabx
+cat /etc/group
+cat .identity
+id
+grep $USER /etc/sub{u,g}id
+sudo pacman -S distrobox
+sudo pacman -Rd podman-docker
+sysctl kernel.unprivileged_userns_clone
+cat /etc/subuid
+sudo nvim /etc/subuid
+sudo cp /etc/subuid /etc/subgid
+cat /etc/subgid
+sudo nvim /etc/subuid
+sudo cp /etc/subuid /etc/subgid
+cat /etc/subgid
+podman system migrate\
+\
+
+podman info | grep -i overlay\
+
+sudo systemctl start podman-restart.service
+systemctl --user start podman-restart.service
+systemctl --user -xeu podman-restart.service
+systemctl --user status podman-restart.service
+loginctl enable-linger
+loginctl list-users
+journalctl --user\
+
+journalctl --user -r\
+
+clear
+journalctl --help
+sudo journalctl --vacuum-time=1month
+clear
+systemctl --user start podman-restart.service
+systemctl --user status podman-restart.service
+sudo podman run -it --rm --runtime="kata-runtime" fedora:33
+pacman -F /usr/bin/kata-runtime
+pkgfile --help
+pkgfile --search kata-runtime
+pacman -F kata-runtime
+sudo pkgfile -u
+pkgfile kata-runtime
+yay kata-runtime-bin
+systemctl --user start podman-restart.service
+systemctl --user stop podman-restart.service
+systemctl --user start podman-restart.service
+systemctl --user start podman.service
+systemctl --user status podman.service
+ls -al /opt
+cat /etc/kata-containers/configuration.toml
+kata-runtime --help
+kata-runtime check
+podman --runtime /usr/bin/kata-runtime run --rm -ti archlinux/base /bin/bash
+systemctl cat podman.service
+podman --runtime /usr/bin/kata-runtime --log-level=info system service
+sudo pacman -S libseccomp
+sudo pacman -Rs kata-runtime-bin
+source /etc/os-release
+curl -fsSL -O https://github.com/kata-containers/documentation/tree/master/install/${ID}-installation-guide.md
+ls -al
+chmod u+x kata-doc-to-script.sh
+ls -al
+./kata-doc-to-script.sh
+yay kata-runtime-bin
+ls -al
+ls -al .config
+groups
+sudo homectl inspect gabx
+uid
+id
+systemctl --user status podman.socket
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+systemctl --user enable podman.socket
+touch .config/systemd/user/sockets.target.wants/toto
+rm .config/systemd/user/sockets.target.wants/toto
+systemctl --user status podman.socket
+systemctl --user status podman.service
+systemctl --user enable podman.service
+systemctl --user start podman.service
+systemctl --user status podman.service
+systemctl --failed
+systemctl --user status podman.socket
+cd ..
+ls -al
+ls -al gabx
+ls -al gabx.homedir
+systemctl --failed
+sudo systemctl start systemd-networkd-wait-online.service
+find . ! -user $USER
+cd ~
+ls -l .config
+ls -l .config/evolution
+chmod -R +w .config/evolution
+ls -l .config/evolution
+mv .config/evolution .config/evolution.bck
+mv .config/evolution.bck .config/evolution
+ls -l .config
+ls -l .config/evolution
+ls -l .config/evolution/evolution.bck
+mv -R .config/evolution/evolution.bck .config
+mv -r .config/evolution/evolution.bck .config
+mv .config/evolution/evolution.bck .config
+ls -al .config
+ls -al .config/evolution
+ls -al .config/evolution.bck
+cat .config/evolution.bck/.running
+cat .config/evolution/.running
+myps evolution
+kill 9620
+kill 9634
+myps evolution
+kill 9661
+kill 9702
+myps evolution
+ls -al .config
+ls -al .config/evolution
+ls -al .config/evolution.bck
+rm -r .config/evolution
+mv .config/evolution.bck .config/evolution
+rm .config/evolution/.running
+id
+cat /etc/passwd
+sudo pwck -s
+groups gabx
+cp -r .config/evolution .config/evolution.bck
+sudo pacman -S evolution
+sudo pacman -S filesystem
+evolution
+ls -al
+ls -al ~/.config
+ls -al ~/.config/evolution
+ls -al ~/.config/evolution.bck
+cp -r evolution ~/.config/evolution.new
+cd ~/.config
+ls -al
+rm -r evolution
+mv evolution.new evolution
+journalctl -r
+evolution --help
+evolution --component=mail
+ls -al .config/dconf
+evolution --help
+rm -r evolution
+mv evolution.bck evolution
+ls -al evolution
+ls -al evolution/mail
+libsecret --help
+sudo pacman -S libsecret
+sudo pacman -Syu
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+systemctl --user status podman.service
+systemctl --user start podman.service
+systemctl --user status podman.service
+journalctl -r
+cat systemctl --user podman.service
+systemctl --user edit podman.service
+systemctl --user cat podman.service
+podman --user --log-level=info system service
+podman --log-level=info system service
+ls -al /run/
+env | grep XDG_RUNTIME_DIR
+podman info| grep runRoot
+ls -al /run/user/1000
+ls -al /run/user/1000/containers
+cd Downloads
+ls -al
+convert Document-1.pdf Document-2.pdf Document-3.pdf Document-4.pdf radio_gaboury.pdf
+magick Document-1.pdf Document-2.pdf Document-3.pdf Document-4.pdf radio_gaboury.pdf
+pdfunite Document-1.pdf Document-2.pdf Document-3.pdf Document-4.pdf radio_gaboury.pdf
+cd ~/.config
+mv Signal signal.bck
+pacman -Q | grep signal
+pacwhich signal
+pacwhich desktop
+sudo pacman -S signal-desktop
+sudo pacman -Syu signal-desktop
+sudo homectl list
+homectl --help
+sudo homectl activate trollolo
+su
+cat /etc/fstab
+cd .config
+ls -al
+mv evolution evolution.bck
+sudo cp -r /home/trollolo/.config/evolution
+sudo cp -r /home/trollolo/.config/evolution ./
+sudo cp -r /home/trollolo.dir/.config/evolution ./
+sudo ls -al /home/trollolo
+sudo ls -al /home/trollolo.homedir
+sudo cp -r /home/trollolo.homedir/.config/evolution ./
+ls -al
+sudo chown gabx:gabx evolution
+rm -r evolution
+sudo rm -r evolution
+mv evolution.bck evolution
+podman -v
+sudo pacman -S podman
+systemctl --user start podman.socket
+systemctl --user status podman.socket
+podman run hello-world
+systemctl --user status podman.socket
+podman run hello-world
+zsh
+podman run hello-world
+alias
+podman system migrate
+podman info
+podman ps --all
+podman stop --all
+podman ps --all
+podman rm --all
+podman ps --all
+podman info
+podman run hello-world
+podman ps --all
+podman stop --all
+podman rm --all
+systemctl status podman.socket
+systemctl --user status podman.socket
+systemctl --user status podman.service
+yazi
+sudo pacman -S distrobox
+podman machine list
+distrobox list
+distrobox create -i quay.io/fedora/fedora-toolbox:42 -n myfedo --root
+distrobox enter --root myfedo
+distrobox list
+distrobox enter myfedo
+distrobox list
+ls -al /
+mkdir /development/how-to
+ls -al /development
+mkdir /development/doc
+sudo pacman -Syu ollama
+cd /development
+mkdir LLM
+cd LLM
+ollama run gpt-oss:20b
+ollama serve
+ollama run gpt-oss:20b
+ollama serve
+ollama run gpt-oss:20b
+ollama pull gpt-oss:20b
+ollama ls
+ls -al
+ollama ps
+ollama pull gpt-oss:20b
+huggingface-cli download openai/gpt-oss-20b --include "original/*" --local-dir gpt-oss-20b/
+clear
+goose configure
+yay -Syu codename-goose-bin
+goose configure
+cat /etc/os-release
+goose -version
+goose --help
+goose --version
+calc
+systemctl --user start gcr-ssh-agent.socket
+systemctl --user status gcr-ssh-agent.socket
+goose-configure
+goose --help
+goose configure
+touch ~/.config/goose/config.yaml
+goose configure
+âƒ·ƒ¯ gcr-ssh-agent.socket - GCR ssh-agent wrapper
+     Loaded: loaded (/usr/lib/systemd/user/gcr-ssh-agent.socket; disabled; preset: enabled)
+Active: active (listening) since Wed 2025-11-19 13:04:33 CET; 6s ago
+Invocation: 00a580903c184d68a2aad0e42d3f11c9
+Triggers: âƒ·ƒ¯ gcr-ssh-agent.service
+Listen: /run/user/1000/gcr/ssh (Stream)
+Process: 1491086 ExecStartPost=/usr/bin/systemctl --user set-environment SSH_AUTH_SOCK=/run/user/1000/gcr/ssh (code=exited, status=0/SUCCESS)
+Tasks: 0 (limit: 37973)
+Memory: 112K (peak: 1.7M)
+CPU: 3ms
+CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/gcr-ssh-agent.socket
+Nov 19 13:04:33 magnolia systemd[955]: Starting GCR ssh-agent wrapper...
+clear
+goose configure
+cat config.yaml
+systemctl status gnome-keyring-daemon.service
+sudo pacman -S libsecret
+libsecret --help
+secret-tool --help
+cat /etc/pam.d/passwd
+sudo nvim /etc/pam.d/passwd
+gnome-keyring-daemon --start --components=secrets
+ls -al /run/user/1000/keyring
+ls -al ~/.local/share/keyrings
+cat ~/.local/share/keyrings/login_1.keyring
+cat ~/.local/share/keyrings/user.keystore
+sudo pacman -S gnome-keyring
+systemctl --user status gnome-keyring-daemon.socket
+systemctl --user status gnome-keyring-daemon.service
+ls -al ~/.local/share/keyrings
+ls -al ~/.local/share/
+cd ~
+ls -al
+ls -al .local
+cp -r .local/share/keyrings/ .local/share/keyrings.bck
+cd .local/share/keyrings
+ls -al
+systemctl --user status gnome-keyring-daemon.socket
+systemctl --user stop gnome-keyring-daemon.service
+systemctl --user stop gnome-keyring-daemon.socket
+systemctl --user start gnome-keyring-daemon.socket
+systemctl --user status gnome-keyring-daemon.socket
+systemctl --user status gnome-keyring-daemon.service
+systemctl --user start gnome-keyring-daemon.service
+systemctl --user status gnome-keyring-daemon.service
+vat /etc/pam.d/login
+cat /etc/pam.d/login
+myps gnome-keyring
+homectl list
+ls -al .local/share/gnome-boxes
+systemctl --user status grc-ssh-agent.socket
+systemctl --user status gcr-ssh-agent.socket
+systemctl --user enable gcr-ssh-agent.socket
+cat /usr/lib/systemd/user/gcr-ssh-agent.socket
+ls -al ~/.config/systemd/user
+ls -al ~/.config/systemd/user/sockets.target.wants
+ln -s gcr-ssh-agent.socket /usr/lib/systemd/user/gcr-ssh-agent.socket
+ln -s /usr/lib/systemd/user/gcr-ssh-agent.socket gcr-ssh-agent.socket
+ls -al ~/.config/systemd/user/sockets.target.wants
+ls -al
+rm gcr
+rm gcr-ssh-agent.socket
+ls -al /usr/lib/systemd/user/gcr-ssh-agent.socket ~/.config/systemd/user/sockets.target.wants
+ln -s /usr/lib/systemd/user/gcr-ssh-agent.socket ~/.config/systemd/user/sockets.target.wants
+ls -al ~/.config/systemd/user/sockets.target.wants
+systemctl --user stop gcr-ssh-agent.socket
+systemctl --user start gcr-ssh-agent.socket
+systemctl --user status gcr-ssh-agent.socket
+systemctl --user daemon-reload
+systemctl --user status gcr-ssh-agent.socket
+systemctl --user enable gcr-ssh-agent.socket
+ls -al ~/.config/systemd/user/sockets.target.wants
+rm ~/.config/systemd/user/sockets.target.wants/gcr-ssh-agent.socket
+ls -al ~/.config/systemd/user/sockets.target.wants
+systemctl --user status gnome-keyring-daemon.socket
+systemctl --user status gnome-keyring-daemon.service
+ls -al ~/.config/systemd/user/
+ls -al ~/.config/systemd/user/default.target.wants
+systemctl --user enable gcr-ssh-agent.socket
+systemctl --user status gcr-ssh-agent.socket
+ls -al /run/user/1000/gcr
+stat /.local
+env
+echo $XDG_DATA_DIRS
+ls -al /
+printenv
+homectl inspect gabx
+systemctl --user show-environment | grep HOME
+systemctl --user show-environment
+systemctl --user import-environment HOME=/home/gabx
+cd ~
+mkdir .config/environment.d
+cat /etc/systemd/user.conf
+systemctl --user import-environment HOME
+systemctl --user show-environment | grep HOME
+systemctl --user restart gnome-keyring-daemon.service
+systemctl --user restart gnome-keyring-daemon.socket
+systemctl --user status gnome-keyring-daemon.service
+systemctl --user show-environment | grep HOME
+sudo mkdir /etc/systemd/system/user@.service.d
+touch /etc/systemd/system/user@.service.d/local.conf
+sudo touch /etc/systemd/system/user@.service.d/local.conf
+sudo nvim /etc/systemd/system/user@.service.d/local.conf
+ls -al .config/environment.d
+cat /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator
+clear
+/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator
+zsh
+systemctl --user show-environment | grep HOME
+systemctl --user show-environment
+systemctl --user show-environment | grep HOME
+zsh
+systemctl --user show-environment | grep HOME
+/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator
+man environment.d
+man systemd-environment-d-generator
+man systemd-environment-generator
+printenv
+echo $HOME
+cat /etc/systemd/user.conf
+ls -al /etc/systemd/user.conf.d/
+ls -al /etc/systemd/
+ls -al /etc/systemd/user
+/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator
+export $(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator)
+systemctl --user show-environment | grep HOME
+env
+systemctl --user import-environment HOME
+systemctl --user show-environment | grep HOME
+pacman -Qikk pam pambase
+grep gab /etc/passwd
+grep gabx /etc/passwd
+homectl update --identity=/home/gabx/.identity
+id
+cat /etc/passwd
+homectl inspect gabx
+systemctl --user show-environment
+systemctl --user show-environment | grep HOME
+zsh
+systemctl --user show-environment | grep HOME
+podman pull quay.io/ramalama/ramalama-llama-server
+dbus-update-activation-environment --systemd --all
+systemctl --user show-environment
+zsh
+systemctl --user show-environment
+ls -al
+./16colors
+chmod u +r 16colors
+chmod --help
+chmod u+r 16colors
+ls -al
+chmod u+x 16colors
+ls -al
+./16colors
+chmod u+x 256colors
+./256colors
+ls -al
+chmod u+x *
+ls -al
+./eval-color
+./myinfo
+./misc
+ls -al /usr/lib/R/library/stringi/libs/
+ls -al /usr/lib/R/library/stringi/libs/stringi.so
+pacinstall icu
+pacwhich icu
+pacwhich lib-icu
+R --vanilla
+yay -S positron-ide-devel-bin
+R --vanilla
+yay -S logseq-desktop-bin
+ls -al
+mkdir Documents/logseq
+cd /development/build
+ls -al
+git clone https://chromium.googlesource.com/crosvm/crosvm\
+
+git submodule update --init
+cd crosvm
+ls -al
+git submodule update --init
+git config submodule.recurse true
+git config push.recurseSubmodules no
+sudo pacman -S crun
+sudo pacman -S passt
+./tools/dev_container
+userdbctl
+calc
+nvim /etc/subuid
+homectl inspect gabx
+cat /etc/passwd
+sudo nvim /etc/subuid
+sudo nvim /etc/subgid
+podman system migrate
+sudo touch /etc/sysctl.d/10-unprivileged_port_start.conf
+sudo nvim /etc/sysctl.d/10-unprivileged_port_start.conf
+sudo machinectl shell gabx@
+Â¨
+cd /development/build/crosvm
+./tools/dev_container
+ls -al
+ls -al tools
+./tools/dev_container cargo build
+ld
+cargo build
+podman --help
+podman images
+podman container
+podman container list
+podman container ps
+podman container stop crosvm_dev_gabx_88e8bb3d
+podman container ps
+ls -al
+cp target/debug/crosvm ~/bin
+ls -al ~/bin
+crosvm run --help
+sudo pacman -Syu libguestfs
+ls -al
+R --vanilla
+cd .config/rstudio
+mkdir .R
+mkdir .R/addins
+mkdir .R/addins/chatgptaddin
+ls /usr/lib/libxml2*
+ls -al /usr/lib/libxml2*
+ls -al /usr/lib/R/library/xml2/libs/
+sudo pacman -S libxml2-legacy
+cp -r ~/.config/rstudio/.R ~/.config/RStudio
+R --vanilla
+ls -al
+rm -r chatgptaddin
+R CMD build chatgptaddin
+ls -al /usr/lib/R/library/stringi/libs/stringi.so
+cd /development/build
+ls -al
+sudo pacman -U icu-76.1-1-x86_64.pkg.tar.zst
+myextract icu-76.1-1-x86_64.pkg.tar.zst
+tar --zstd -xvf icu-76.1-1-x86_64.pkg.tar.zst
+ls -al /usr/lib/libicui18n.so
+ls -al /usr/lib/libicuio.so.78
+sudo cp /development/build/usr/lib/libicuuc.so.76.1 /usr/lib
+sudo cp /development/build/usr/lib/libicuuc.so.76 /usr/lib
+ls -al /usr/lib/libicuuc.so.76
+ls -al /usr/lib/libicuuc.so.76.1
+ls -al /usr/lib/libicuuc.so.78
+sudo rm /usr/lib/libicuuc.so.76
+sudo ln -s /usr/lib/libicuuc.so.76.1 /usr/lib/libicuuc.so.76
+ls -al /usr/lib/libicuuc.so.76
+R CMD build chatgptaddin
+sudo cp /development/build/usr/lib/libicui18n.so.76.1 /usr/lib
+sudo ln -s /usr/lib/libicui18n.so.76.1 /usr/lib/libicui18n.so.76
+R CMD build chatgptaddin
+sudo rm /usr/lib/libicui18n.so.76.1
+sudo rm /usr/lib/libicuuc.so.76.1
+sudo rm /usr/lib/libicuuc.so.76
+sudo rm /usr/lib/libicui18n.so.76
+R --vanilla
+R CMD build chatgptaddin
+cd ..
+R CMD build chatgptaddin
+pwd
+ls -al
+which R
+which R --quiet
+which Rscript
+ls -lai /development/build/r-packages
+ls -al chatgptaddin/DESCRIPTION
+file chatgptaddin/DESCRIPTION
+R CMD check chatgptaddin
+cd ~
+mkdir rpackages
+ls -al
+cp -r /development/build/r-packages/chatgptaddin rpackages
+cd rpackages
+R CMD build chatgptaddin
+wich R
+which R
+ls -lai /development/build/r-packages
+/usr/bin/R CMD build chatgptaddin
+ls -al
+unalias R
+R CMD build chatgptaddin
+ls -al chatgptaddin/DESCRIPTION
+file chatgptaddin/DESCRIPTION
+head -n 20 chatgptaddin/DESCRIPTION
+cat -v chatgptaddin/DESCRIPTION
+ls -al chatgptaddin/R
+find chatgptaddin -maxdepth 2 -type d
+R CMD build chatgptaddin
+cat -v chatgptaddin/DESCRIPTION
+ls -ld chatgptaddin
+stat chatgptaddin
+pwd -P
+ls -ld "$(pwd -P)/chatgptaddin"
+/usr/bin/R CMD build "$(basename $(pwd -P))/chatgptaddin"
+cd ..
+pwd
+cd ~
+pwd
+cd /tmp
+mkdir rpackages
+cp -r ~/rpackages/chatgptaddin ./
+ls -al
+R CMD build chatgptaddin
+/usr/bin/R CMD build chatgptaddin
+rm -r rpackages
+cd /home/gabx
+pwd
+cd rpackages
+printf '%q\n' chatgptaddin
+ls -lb
+find . -maxdepth 1 -print0 | xargs -0 -n1 | cat -v
+/usr/bin/env -i PATH=/usr/bin:/bin HOME=/tmp /usr/bin/R CMD build chatgptaddin
+yazi
+type R
+which R
+alias | grep R
+set | grep -E '^R'
+declare -f R
+env | grep -i R
+clear
+type R
+zsh
+type R
+which R
+echo $R_HOME_USER
+echo $R_ENVIRON_USER
+grep -R "R_HOME_USER" ~/.config/environment.d/
+grep -R "R_HOME_USER" ~/.pam_environment
+zsh
+echo $R_HOME_USER
+zsh
+echo $R_HOME_USER
+grep -R "R_HOME_USER" ~/.config/zsh ~/.zshrc ~/.zshenv ~/.zprofile 2>/dev/null
+grep -R "R_ENVIRON_USER" ~/.config/zsh ~/.zshrc ~/.zshenv ~/.zprofile 2>/dev/null
+echo $R_HOME_USER
+type R
+which R
+echo $R_HOME_USER
+echo $R_ENVIRON_USER
+ls ~/.config/environment.d
+cat ~/.config/environment.d/*.conf
+cat ~/.pam_environment
+cat /etc/environment
+grep -R "R_HOME_USER" /etc/profile.d
+systemctl --user show-environment | grep -E "R_HOME|R_ENVIRON"
+env -i PATH=/usr/bin:/bin HOME=/home/gabx bash
+ls -al
+/usr/bin/env -i PATH=/usr/bin:/bin HOME=/home/gabx /usr/bin/R CMD build /development/rpackages/chatgptaddin
+R RHOME
+ls -al /usr/lib/R/etc
+ls -al /home/gabx /home/gabx.homedir
+grep -R ".Rprofile" -n /home/gabx /home/gabx.homedir 2>/dev/null
+ls -al
+mv .Rprofile .Rprofile.user
+ls -al
+rm .Rprofile.user
+cat > ~/.Rprofile << 'EOF'\
+# Profil R minimal pour compatibilitÃ© toolchain\
+# Ne rien mettre ici sauf logique essentielle\
+\
+# Charger un profil RStudio si prÃ©sent\
+if (Sys.getenv("RSTUDIO") == "1") {\
+  local_profile <- "~/.config/r/.Rprofile.local"\
+  if (file.exists(local_profile)) source(local_profile)\
+}\
+EOF
+ls -al
+env -i PATH=/usr/bin:/bin HOME=/home/gabx R --vanilla CMD build /development/rpackages/chatgptaddin
+cat .Rprofile
+crosvm --help
+cd /development
+ls -al
+mkdir crosvm
+cd crosvm
+wget https://download.fedoraproject.org/pub/fedora/linux/releases/40/Silverblue/x86_64/images/Fedora-Silverblue-ostree-x86_64-40-*.raw.xz\
+
+ls -l /dev/kvm
+groups
+homectl --help
+homectl update gabx --member-of=kvm
+homectl inspect gabx
+id gabx
+yay -Syu
+Silverblue/x86_64/images/Fedora-Silverblue-ostree-x86_64-40-*.raw.xz\
+
+mv build/Fedora-Silverblue-40.1.14.ociarchive crosvm
+cd crosvm
+unxz Fedora-Silverblue-40.1.14.ociarchive
+podman oci-archive info Fedora-Silverblue-40.1.14.ociarchive
+podman image load -i Fedora-Silverblue-40.1.14.ociarchive
+cd /development/crosvm
+yazi
+ls -al
+ls -al Fedora-Silverblue-40.1.14.ociarchive
+podman pull quay.io/fedora/fedora-silverblue
+ls -al
+podman --help
+podman images
+podman rmi quay.io/fedora/fedora-silverblue:latest
+podman images
+podman rmi e18f26f6ab94
+podman images
+ls -al
+unxz Fedora-Cloud-Base-AmazonEC2.x86_64-40-1.14.raw.xz
+crosvm run --params "console=ttyS0 root=/dev/vda1" --disk Fedora-Cloud-Base-40-1.14.x86_64.raw --disable-sandbox
+wget https://kojipkgs.fedoraproject.org/packages/kernel/6.8.7/300.fc40/x86_64/vmlinuz-6.8.7-300.fc40.x86_64
+ls -al
+sudo pacman -S rpmextract
+rpm2cpio kernel-core-6.17.8-300.fc43.x86_64.rpm | cpio -idmv
+ls -al
+sudo pacman -S rpm-tools
+rpm2cpio.zstd kernel-core-6.17.8-300.fc43.x86_64.rpm | cpio -idmv
+rpm2cpio kernel-core-6.17.8-300.fc43.x86_64.rpm | cpio -idmv
+ls -al
+ls -al lib/modules
+ls -al lib/modules/6.17.8-300.fc43.x86_64
+wget https://kojipkgs.fedoraproject.org/packages/kernel/6.17.8/300.fc43/x86_64/kernel-core-6.17.8-300.fc43.x86_64.rpm
+wget https://kojipkgs.fedoraproject.org/packages/kernel/6.17.8/300.fc43/x86_64/kernel-modules-6.17.8-300.fc43.x86_64.rpm
+wget https://kojipkgs.fedoraproject.org/packages/kernel/6.17.8/300.fc43/x86_64/kernel-modules-core-6.17.8-300.fc43.x86_64.rpm
+ls -al
+rpm2cpio kernel-modules-core-6.17.8-300.fc43.x86_64.rpm | cpio -idmv
+ls -al
+ls -al usr
+ls -al lib
+mkdir needed
+cp lib/modules/6.17.8-300.fc43.x86_64/vmlinuz needed/
+ls -al needed
+ls -al lib/modules/6.17.8-300.fc43.x86_64/
+ls -al lib/modules/6.17.8-300.fc43.x86_64/kernel
+ls -al lib/modules/6.17.8-300.fc43.x86_64/kernel/kernel
+ls -al lib/modules/6.17.8-300.fc43.x86_64/kernel/arch
+ls -al lib/modules/6.17.8-300.fc43.x86_64/kernel/arch/x86
+ls -al lib/modules/6.17.8-300.fc43.x86_64/kernel/arch/x86/kernel
+ls -al lib/modules/6.17.8-300.fc43.x86_64/kernel/arch/x86/kvm
+pwd
+ls -al
+mv needed needed_files
+ls -al
+ls -al usr
+mkdir fedora-chroot
+tar -xf Fedora-Container-Base-Generic-43-1.6.x86_64.oci.tar.xz -C fedora-chroot --strip-components=1
+ls -al fedora-chroot
+ls -al fedora-chroot/sha256
+ls -al
+mkdir fedora-rootfs
+for layer in fedora-chroot/sha256/*; do\
+ echo "Extracting $layer"\
+ tar -xf "$layer" -C fedora-rootfs\
+done
+curl -L "https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-container-base-43&arch=x86_64"
+ls -al
+cd ..
+rm -r crosvm
+sudo rm -r crosvm
+mkdir crosvm
+cd crosvm
+wget https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/alpine-minirootfs-latest-x86_64.tar.gz
+wget https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/x86_64/alpine-minirootfs-3.21.0-x86_64.tar.gz
+wget https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/x86_64/alpine-virt-3.21.0-x86_64.iso
+ls -al
+mkdir alpine-rootfs
+tar -xzf alpine-minirootfs-3.21.0-x86_64.tar.gz -C alpine-rootfs
+ls -al
+mkdir iso
+mount -o loop alpine-virt-3.21.0-x86_64.iso iso
+sudo mount -o loop alpine-virt-3.21.0-x86_64.iso iso
+mkdir kernels
+\
+cp iso/boot/vmlinuz-virt kernels/
+cp iso/boot/initramfs-virt kernels/
+sudo umount iso
+ls -al
+ls -al kernels
+dd if=/dev/zero of=alpine.img bs=1M count=2048
+mkfs.ext4 alpine.img
+mkdir mnt
+sudo mount -o loop alpine.img mnt
+sudo cp -a alpine-rootfs/* mnt/
+sudo umount mnt
+crosvm run --disable-sandbox --rwblock alpine.img --params "console=ttyS0 root=/dev/vda" kernels/vmlinuz-virt --initrd kernels/initramfs-virt
+crosvm run --disable-sandbox --block alpine.img --params "console=ttyS0 root=/dev/vda" kernels/vmlinuz-virt --initrd kernels/initramfs-virt
+mkdir testmnt
+sudo mount -o loop alpine.img testmnt
+ls -al testmnt
+cp iso/boot/vmlinuz-virt kernels/
+ls -al iso/boot
+mount | grep iso
+ls -al alpine-virt-3.21.0-x86_64.iso
+rm -rf iso
+mkdir iso
+sudo mount -t iso9660 -o loop alpine-virt-3.21.0-x86_64.iso iso
+ls -l iso
+ls -lR iso
+mkdir -p alpine-kernel
+cp iso/boot/vmlinuz-virt alpine-kernel/
+cp iso/boot/initramfs-virt alpine-kernel/
+cp iso/boot/modloop-virt alpine-kernel/
+dd if=/dev/zero of=alpine.img bs=1M count=2048
+mkfs.ext4 alpine.img
+ls -al
+mkdir -p rootfs
+sudo mount alpine.img rootfs
+sudo apk --root rootfs --update-cache --initdb add alpine-base
+sudo tar -xzf alpine-minirootfs-3.21.0-x86_64.tar.gz -C rootfs
+rm -f alpine.img
+sudo umount rootfs 2>/dev/null
+dd if=/dev/zero of=alpine.img bs=1M count=2048
+mkfs.ext4 alpine.img
+mkdir -p rootfs
+sudo mount -o loop alpine.img rootfs
+sudo touch rootfs/testfile
+ls rootfs
+sudo tar -xzf alpine-minirootfs-3.21.0-x86_64.tar.gz -C rootfs --numeric-owner
+ls -al rootfs
+tar -xzf alpine-minirootfsâ€¦ -C rootfs --numeric-owner
+sudo tar -xzf alpine-minirootfs-3.21.0-x86_64.tar.gz -C rootfs --numeric-owner
+ls -l alpine-minirootfs*.tar.gz
+\
+
+tar -xzf alpine-minirootfs -C rootfs --numeric-owner
+ls -l alpine-mini*
+sudo tar -xzf alpine-minirootfs-3.21.0-x86_64.tar.gz -C rootfs --numeric-owner
+ls -lh
+ls -al iso/boot
+sudo mount -o loop alpine.img mnt
+sudo cp -a rootfs/* mnt/
+crosvm run --disable-sandbox --block alpine.img --params "console=ttyS0 root=/dev/vda" iso/boot/vmlinuz-virt --initrd iso/boot/initramfs-virt
+sudo fdisk -l alpine.img
+crosvm run --disable-sandbox --block alpine.img --params "console=ttyS0 root=/dev/vda rootfstype=ext4 rw init=/bin/sh" iso/boot/vmlinuz-virt --initrd iso/boot/initramfs-virt
+crosvm run --disable-sandbox --block alpine.img --params "console=ttyS0 root=/dev/vda rootfstype=ext4 rw" iso/boot/vmlinuz-virt --initrd iso/boot/initramfs-virt
+ps aux | grep crosvm
+kill 79270
+wget https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/alpine-cloud-3.21.0-x86_64.raw
+calc
+git clone https://github.com/gabx/containeR.git
+ls -al
+chmod u+x sample-app.sh
+ls -al
+./sample-app.sh
+cat /etc/containers/registries.conf
+sudo nvim /etc/containers/containers.conf
+sudo nvim /etc/containers/registries.conf
+cp /backup/back-gabx-20251010/home/gabx/.config/rstudio/rstudio-prefs.json /home/gabx/.config/rstudio/
+zsh
+R
+echo $R-HOME_USER
+echo R-HOME_USER
+echo $R_HOME_USER
+echo $R_ENVIRON_USER
+env
+clear
+ls -al ~
+cp -r Home/gabx /backup/home-20251203
+cp -r /home/gabx /backup/home-20251203
+sudo dmidecode
+sudo pacman -S dmidecode
+sudo dmidecode
+sudo dmidecode - memory
+clear
+sudo snapper -c snaphome create-config /home/gabx
+sudo rm /etc/snapper/configs/snaphome
+sudo snapper -c snaphome create-config /home/gabx
+yazi
+sudo rm /etc/conf.d/snapper
+sudo snapper -c snaphome create-config /home/gabx
+sudo snapper -c snapHome create-config /home/gabx
+sudo cp /usr/share/snapper/config-templates /etc/snapper/configs/snaphome
+ls -al /etc/snapper/configs
+ls -al /usr/share/snapper
+ls -al /usr/share/snapper/config-templates
+sudo cp /usr/share/snapper/config-templates/default /etc/snapper/configs/snaphome
+sudo nvim /etc/snapper/configs/snaphome
+cd /.snapshots
+ls -al
+sudo rm -r back-root-20251201020018
+clear
+ls -al
+pacman -Q archinstall
+su
+sudo ls -al /root
+sudo ls -al /root/.config
+sudo cp -r ~/.config/zsh /root/.config
+sudo cp -r ~/.config/.zshrc /root/.config
+su
+sudo umount /.snapshots
+cd /
+sudo umount /.snapshots
+ls -al
+sudo rm /.snapshots
+sudo rm -r /.snapshots
+sudo rm /etc/snapper/configs/snaphome
+sudo snapper -c snaphome create-config /home/gabx
+sudo echo 'SNAPPER_CONFIGS=""' | sudo tee /etc/conf.d/snapper
+sudo mkdir .
+sudo mkdir /.snapshots
+sudo mount /dev/nvme0n1p1 /.snapshots
+ls -al /.snapshots
+sudo ls -al /.snapshots
+sudo umount /.snapshots
+sudo ls -al /.snapshots
+sudo mount /dev/nvme0n1p2 /.snapshots
+sudo ls -al /.snapshots
+sudo umount /.snapshots
+sudo btrfs subvolume list
+sudo btrfs subvolume list /
+sudo mount -o "subvolid=283" /dev/nvme0n1p2 /.snapshots
+ls -al /.snapshots
+sudo snapper -c snaphome create-config /home/gabx
+cat /etc/snapper/configs/snaphome
+sudo cat /etc/snapper/configs/snaphome
+sudo nvim /etc/snapper/configs/snaphome
+sudo nvim /etc/updatedb.conf
+sudo btrfs qgroup show /\
+
+sudo nvim /etc/snapper/configs/snaphome
+sudo snapper -c snaphome create --description manualsnap
+sudo ls -al /.snapshots/back-home-20251203195128
+sudo ls -al /.snapshots/back-home-20251203195128/gabx
+sudo ls -al /.snapshots/back-home-20251203195128/gabx.homedir
+sudo snapper list-configs
+ls -al /.snapshots
+ls -al /.snapshots/back-home-20251203195128
+ls -al /.snapshots/back-home-20251203195128/gabx
+sudo ls -al /.snapshots/back-home-20251203195128/gabx
+sudo ls -al /home/gabx/.snapshots
+sudo snapper -c snaphome list
+sudo btrfs subvolume list -o /
+findmnt /home/gabx
+stat -f -c '%T' /home/gabx
+sudo btrfs subvolume list -o /home/gabx
+sudo btrfs subvolume show /home/gabx/.snapshots
+sudo snapper -c snaphome create --description "snap_test"
+sudo snapper -c snaphome list
+ls -al /home/gabx/.snapshots
+sudo ls -al /home/gabx/.snapshots
+sudo ls -al /home/gabx/.snapshots/1
+ls -al /home/gabx/.snapshots/1/snapshot | head
+sudo ls -al /home/gabx/.snapshots/1/snapshot | head
+sudo ls -al /home/gabx/.snapshots/1/snapshot
+ls -al ~ | head
+ls -al ~/\$HOME
+rm -rf ~/\$HOME
+ls -al ~ | head
+ls -al ~/.config
+sudo ls -al /home/gabx/.snapshots/1/snapshot/
+sudo btrfs subvolume show /home/gabx
+sudo cat /etc/snapper/configs/snaphome
+systemctl list-timers
+yabsnap list
+sudo systemctl disable --now yabsnap.timer
+sudo systemctl disable --now yabsnap.service
+systemctl list-units | grep yabsnap
+sudo pacman -Rns yabsnap
+sudo btrfs subvolume delete /.snapshots/back-root-2025*
+sudo rmdir /.snapshots/back-root-20251201020018
+sudo rmdir /.snapshots/back-root-20251204001928
+sudo ls -al /.snapshots
+sudo rm -r /:snapshots/back-development-20251201020018
+sudo ls -al /.snapshots
+sudo rm -r /.snapshots/back-development-20251201020018
+sudo ls -al /.snapshots
+findmnt /
+findmnt /home
+sudo ls -l /.snapshots
+sudo lsattr -R /.snapshots
+clear
+sudo systemctl disable --now yabsnap.timer
+sudo systemctl disable --now yabsnap.service
+sudo rm -rf /etc/yabsnap
+mount | grep "/.snapshots"
+sudo chattr -R -i /.snapshots
+sudo rm -rf /.snapshots/back-*
+findmnt /.snapshots -o TARGET,SOURCE,FSTYPE,OPTIONS
+sudo btrfs property get /.snapshots ro
+mount | grep snapshots
+sudo mount -o remount,rw /.snapshots
+sudo touch /.snapshots/testfile
+ls -al /.snapshots
+sudo btrfs subvolume show /.snapshots/back-home-20251204001928
+sudo lsattr -d /.snapshots/back-home-20251204001928
+sudo btrfs property set /.snapshots/back-home-20251204001928 ro false
+sudo btrfs subvolume show /.snapshots/back-home-20251204001928 | grep Flags
+sudo btrfs subvolume delete /.snapshots/back-home-20251204001928
+sudo ls -l /.snapshots
+sudo btrfs subvolume show /.snapshots/back-home-20251201020018 | grep Flags
+sudo btrfs property set /.snapshots/back-home-20251201020018 ro false
+sudo btrfs subvolume delete /.snapshots/back-home-20251201020018
+sudo btrfs subvolume show /.snapshots/back-development-20251201020018 | grep Flags
+sudo btrfs property set /.snapshots/back-development-20251201020018 ro false
+sudo btrfs subvolume delete /.snapshots/back-development-20251201020018
+sudo btrfs subvolume show /.snapshots/back-development-20251204001928 | grep Flags
+sudo btrfs property set /.snapshots/back-development-20251204001928 ro false
+sudo btrfs subvolume delete /.snapshots/back-development-20251204001928
+\
+
+sudo ls -al ./snap
+sudo ls -al /.snapshots
+sudo rm /.snapshots/testfile
+sudo rm -f /.snapshots/*meta.json
+systemctl list-units | grep yabsnap
+findmnt /.snapshots
+sudo btrfs subvolume list / | grep snapshots
+sudo snapper -c snaphome create --description "test_snap"
+sudo snapper -c snaphome list
+sudo nvim /etc/snapper/configs/snaphome
+sudo snapper -c snaphome cleanup number
+sudo snapper -c snaphome cleanup timeline
+systemctl list-timers | grep snapper
+sudo systemctl enable --now snapper-cleanup.timer
+systemctl list-timers | grep snapper
+sudo snapper -c snaphome cleanup timeline
+sudo snapper -c snaphome cleanup number
+sudo snapper -c snaphome get-config | grep TIMELINE
+sudo snapper -c snaphome cleanup timeline
+sudo snapper -c snaphome cleanup number
+sudo umount /.snapshots
+sudo btrfs subvolume delete /@snapshots
+sudo btrfs subvolume list /
+sudo btrfs subvolume delete /@snapshots
+ls -al /
+sudo btrfs subvolume delete "$(sudo btrfs subvolume list / | awk '$9 == "@snapshots" {print "/"$9}')"
+sudo btrfs subvolume list / | grep snapshots
+sudo umount /.snapshots
+sudo btrfs subvolume delete /@snapshots
+sudo mkdir -p /mnt/btrfs-root
+sudo mount -o subvol=/ /dev/nvme0n1p2 /mnt/btrfs-root
+ls -al /mnt/btrfs-root
+sudo btrfs subvolume delete /mnt/btrfs-root/@snapshots
+sudo btrfs subvolume list /mnt/btrfs-root | grep snapshots
+sudo umount /mnt/btrfs-root
+sudo rmdir /mnt/btrfs-root
+sudo btrfs subvolume list / | grep snapshots
+findmnt /.snapshots
+sudo rmdir /.snapshots
+ls -al /
+cat /etc/fstab
+sudo nvim /etc/fstab
+lsblk
+lsblk -f
+ls -al /backup
+ls -al /backup/r
+cd /backup
+sudo rm back-development-20250521.tar.zst
+sudo rm back-development-20250523.tar.gz
+sudo rm back-gabx-20250523.tar.gz
+sudo rm back-gabxnew-20250616.tar.gz
+ls -aL
+ls -al
+lsblk -f
+sudo btrfs subvolume list /backup
+ls -al /backup
+sudo btrfs subvolume create /backup/snapshots-home
+\
+sudo btrfs subvolume create /backup/snapshots-development\
+
+sudo btrfs subvolume list /backup
+mkdir /backup/old_backups
+mv /backup/*.tar.gz /backup/*.tar.zst /backup/pass* /backup/r /backup/back-* /backup/home-* /backup/old_backups/ 2>/dev/null
+ls -al
+sudo rm -r r
+sudo mkdir -p /home/gabx/.local-snapshots
+sudo btrfs subvolume snapshot -r /home/gabx /home/gabx/.local-snapshots/$(date +home-%Y%m%d-%H%M)
+sudo btrfs subvolume list /home/gabx | grep .local-snapshots
+sudo mkdir -p /development/.local-snapshots
+sudo btrfs subvolume snapshot -r /development /development/.local-snapshots/$(date +dev-%Y%m%d-%H%M)
+sudo btrfs subvolume list /development | grep .local-snapshots
+ls /home/gabx/.local-snapshots
+sudo btrfs send /home/gabx/.local-snapshots/home-20251204-0127 | sudo btrfs receive /backup
+sudo pacman -S zoxide
+zoxide init
+zoxide --help
+zoxide init zsh
+type z
+yazi
+man zoxide
+eval "$(zoxide init zsh)"
+yazi
+btop
+sudo btrfs property set /backup compression zstd
+mv ~/.cache ~/.cache.old
+sudo btrfs subvolume create ~/.cache
+ls -al ~
+sudo rm -rf ~/.cache
+sudo btrfs subvolume create ~/.cache
+rm -rf ~/.cache.old
+sudo btrfs subvolume show ~/.cache
+sudo btrfs subvolume show /development
+sudo btrfs subvolume list /backup
+sudo mkdir -p /backup/home/snaps
+sudo mkdir -p /backup/development/snaps
+ls -al /backup
+ls -al /backup/home
+ls -al /backup/development
+sudo mv /backup/home-20251204-0127 /backup/home/snaps/2025-12-04-0127
+mount | grep /backup
+sudo dmesg | tail -n 20
+sudo btrfs property get /backup/home-20251204-0127 ro
+sudo btrfs subvolume show /backup/home-20251204-0127 | grep Flags
+sudo btrfs property set /backup/home-20251204-0127 ro false
+sudo btrfs -f property set /backup/home-20251204-0127 ro false
+sudo btrfs property -f set /backup/home-20251204-0127 ro false
+sudo btrfs property set -f /backup/home-20251204-0127 ro false
+sudo btrfs subvolume show /backup/home-20251204-0127 | grep Flags
+sudo mv /backup/home-20251204-0127 /backup/home/snaps/2025-12-04-0127
+ls -al /backup/home/snaps
+sudo btrfs property set /backup/home/snaps/2025-12-04-0127 ro true
+sudo btrfs subvolume show /backup/home/snaps/2025-12-04-0127 | grep Flags
+sudo btrfs subvolume snapshot -r /home/gabx /home/gabx/.local-snapshots/home-2025-12-04-init
+sudo btrfs send /home/gabx/.local-snapshots/home-2025-12-04-init | sudo btrfs receive /backup/home/snaps/
+ls -al /backup
+ls -al /backup/home
+sudo btrfs subvolume delete /backup/home/snaps/2025-12-04-0127
+sudo btrfs send /home/gabx/.local-snapshots/home-2025-12-04-init | sudo btrfs receive /backup/home/snaps/
+sudo btrfs subvolume delete /backup/home/snaps/home-2025-12-04-init
+sudo btrfs send /home/gabx/.local-snapshots/home-2025-12-04-init | sudo btrfs receive /backup/home/snaps/
+df -h / /home /backup
+sudo btrfs subvolume list /home/gabx/.local-snapshots
+sudo btrfs subvolume list /backup/home/snaps
+ls -al /backup/home/snaps
+sudo btrfs property get /backup/home/snaps/home-2025-12-04-init ro
+sudo btrfs subvolume show /backup/home/snaps/home-2025-12-04-init | grep Flags
+findmnt /backup
+sudo blkid /dev/sda1
+sudo nvim /etc/fstab
+sudo mount -o remount /backup
+sudo systemctl daemon-reload
+findmnt /backup
+sudo btrfs filesystem defragment -r -czstd /backup/home/snaps/home-2025-12-04-init
+clear
+ls -al /backup
+ls -al /backup/home/snaps
+sudo mkdir -p /backup/development/snaps
+sudo mkdir -p /backup/development/last
+sudo btrfs subvolume snapshot -r /development /development/.local-snapshots/dev-initial
+sudo btrfs send /development/.local-snapshots/dev-initial | sudo btrfs receive /backup/development/last/
+sudo btrfs send /development/.local-snapshots/dev-initial | sudo btrfs receive /backup/development/snaps/
+df -h /backup
+sudo rm -r files
+df -h /backup
+ls -al
+ls -al development
+ls -al development/last
+sudo btrfs subvolume list /backup/development
+ls -lh /backup/development
+sudo btrfs subvolume delete /backup/development/last/dev-initial
+df -h /backup
+sudo btrfs subvolume list /backup/development/snaps
+sudo btrfs subvolume snapshot -r /development /development/.local-snapshots/dev-latest
+sudo btrfs send -p /backup/development/snaps/dev-initial /development/.local-snapshots/dev-latest | sudo btrfs receive /backup/development/snaps/
+sudo btrfs property get /backup/development/snaps/dev-initial ro
+sudo btrfs property set /backup/development/snaps/dev-initial ro true
+sudo btrfs property get /backup/development/snaps/dev-initial ro
+sudo btrfs send -p /backup/development/snaps/dev-initial /development/.local-snapshots/dev-latest | sudo btrfs receive /backup/development/snaps/
+findmnt | grep development
+btrfs subvolume list / | grep '@development'
+sudo btrfs subvolume list / | grep '@development'
+sudo btrfs subvolume show /development/.local-snapshots/dev-latest
+sudo btrfs property set /development/.local-snapshots/dev-initial ro true
+sudo btrfs send -p /development/.local-snapshots/dev-initial /development/.local-snapshots/dev-latest | sudo btrfs receive /backup/development/snaps/
+sudo btrfs subvolume delete /backup/development/snaps/dev-initial
+sudo btrfs subvolume delete /backup/development/snaps/dev-latest
+sudo btrfs subvolume delete /backup/development/snaps/dev-initial
+ls -al /backup/development/snaps
+sudo btrfs subvolume list /backup/development/snaps
+sudo btrfs send -p /development/.local-snapshots/dev-initial /development/.local-snapshots/dev-latest | sudo btrfs receive /backup/development/snaps/
+sudo btrfs subvolume show /backup/development/snaps/dev-initial | grep -E 'UUID'
+sudo btrfs subvolume list -u /backup | grep 71ea97b6
+sudo btrfs subvolume list -pu /backup
+sudo btrfs subvolume list /backup/development/snaps
+sudo btrfs subvolume delete /backup/home/snaps/home-2025-12-04-init
+ls -al /backup/development/snaps
+sudo btrfs subvolume list /backup/development/snaps
+df -h /backup
+sudo btrfs subvolume delete /backup/development/snaps/snapshots-home
+sudo btrfs subvolume delete /backup/development/snaps/snapshots-development
+ls -al /backup/development
+ls -al /backup/development/snaps
+sudo btrfs subvolume list /backup
+sudo btrfs subvolume delete /backup/snapshots-home
+sudo btrfs subvolume delete /backup/snapshots-development
+sudo btrfs subvolume list /backup
+df -h /backup
+sudo btrfs subvolume list /development/.local-snapshots
+sudo btrfs send /development/.local-snapshots/dev-initial | sudo btrfs receive /backup/development/snaps/
+sudo btrfs subvolume list /backup/development/snaps
+sudo btrfs send -p /development/.local-snapshots/dev-initial /development/.local-snapshots/dev-latest | sudo btrfs receive /backup/development/snaps/
+sudo btrfs subvolume list /backup/development/snaps
+udo btrfs property set /backup/development/snaps/dev-latest ro true
+sudo btrfs property set /backup/development/snaps/dev-latest ro true
+sudo btrfs subvolume show /backup/development/snaps/dev-latest | grep Flags
+sudo btrfs subvolume show /backup/development/snaps/dev-latest
+touch /usr/local/bin/btrfs-backup.sh
+touch btrfs-backup.sh
+sudo mv btrfs-backup.sh /usr/local/bin/
+ls -al /usr/local/bin/
+sudo chmod u+x /usr/local/bin/btrfs-backup.sh
+ls -al /usr/local/bin/
+touch btrfs-backup.service
+sudo mv btrfs-backup.service /etc/systemd/system
+ls -al /etc/systemd/system
+touch btrfs-backup.timer
+sudo mv btrfs-backup.timer /etc/systemd/system
+ls -al /etc/systemd/system
+sudo systemctl enable --now btrfs-backup.timer
+systemctl list-timers | grep btrfs-backup
+sudo systemctl start btrfs-backup.service
+systemctl status btrfs-backup.service
+journalctl -xeu btrfs-backup.service
+ls -l /backup/home
+ls -l /backup/home/snaps
+ls -l /backup/home/last
+ls -l /backup/development
+ls -l /backup/development/snaps
+ls -l /backup/development/last
+sudo btrfs subvolume snapshot /home/gabx /home/gabx/.local-snapshots/home-latest
+findmnt /home/gabx
+sudo btrfs property get /home/gabx ro
+sudo btrfs subvolume list /home/gabx | grep local-snapshots
+sudo btrfs property get /home/gabx/.local-snapshots ro
+ls -ld /home/gabx/.local-snapshots
+sudo chown gabx:gabx /home/gabx/.local-snapshots
+ls -ld /home/gabx/.local-snapshots
+sudo btrfs subvolume snapshot /home/gabx /home/gabx/.local-snapshots/home-latest
+mount | grep -E " /home |/home/gabx"
+sudo btrfs inspect-internal map-swapfile -r /home/gabx 2>/dev/null
+sudo btrfs subvolume show /home/gabx | grep Flags
+sudo btrfs property get /home ro
+findmnt -t overlay
+findmnt /home/gabx -o TARGET,PROPAGATION,OPTIONS
+findmnt /mnt/btrfs-root
+sudo mkdir -p /mnt/btrfs-root
+sudo mount -o subvolid=5 /dev/nvme0n1p2 /mnt/btrfs-root
+findmnt /mnt/btrfs-root
+sudo btrfs subvolume snapshot /mnt/btrfs-root/@home/gabx.homedir /mnt/btrfs-root/@home/gabx.homedir/.local-snapshots/home-latest
+sudo mount -o remount,rw /mnt/btrfs-root
+mount | grep btrfs-root
+sudo btrfs subvolume snapshot /mnt/btrfs-root/@home/gabx.homedir /mnt/btrfs-root/@home/gabx.homedir/.local-snapshots/home-latest
+sudo mkdir -p /mnt/btrfs-root/@home/.local-snapshots-gabx
+sudo btrfs subvolume snapshot /mnt/btrfs-root/@home/gabx.homedir /mnt/btrfs-root/@home/.local-snapshots-gabx/home-latest
+sudo btrfs subvolume list /mnt/btrfs-root | grep -E "local-snapshots-gabx|home-latest"
+sudo cp btrfs-backup.sh /usr/local/bin
+ls -al /usr/local/bin
+sudo systemctl start btrfs-backup.service
+systemctl status btrfs-backup.service
+journalctl -xeu btrfs-backup.service
+clear
+sudo cp /etc/fstab /backup
+ls -al
+sudo chown gabx:gabx fstab
+sudo mv /etc/fstab /etc/fstab.bck
+sudo mv fstab /etc/fstab
+cat /etc/fstab
+sudo mount /mnt/btrfs-root\
+
+sudo systemctl daemon-reload
+findmnt /mnt/btrfs-root
+sudo cp /etc/systemd/system/btrfs-backup.service .
+sudo chown gabx:gabx btrfs-backup.service
+sudo mv btrfs-backup.service /etc/systemd/system
+ls -al /etc/systemd/system
+sudo chwon root:root /etc/systemd/system/btrfs-backup.service
+sudo chown root:root /etc/systemd/system/btrfs-backup.service
+sudo chown root:root /etc/systemd/system/btrfs-backup.timer
+sudo systemctl daemon-reload
+sudo mv /usr/local/bin/btrfs-backup.sh .
+sudo chown gabx:gabx btrfs-backup.sh
+sudo chown root:root btrfs-backup.sh
+sudo mv btrfs-backup.sh /usr/local/bin
+ls -al /usr/local/bin
+journalctl -fu btrfs-backup.service
+sudo systemctl start btrfs-backup.service
+cat /usr/local/bin/btrfs-backup.sh
+sudo mv /usr/local/bin/btrfs-backup.sh .
+sudo chown gabx:gabx btrfs-backup.sh
+sudo chown root:root btrfs-backup.sh
+sudo mv btrfs-backup.sh /usr/local/bin
+sudo bash /usr/local/bin/btrfs-backup.sh home
+sudo btrfs subvolume create /backup/home/snaps
+sudo btrfs subvolume show /backup/home/snaps
+sudo rm -rf /backup/home/snaps
+clear
+sudo btrfs subvolume delete /backup/home/snaps/home-initial
+ls -al /backup/home/snaps
+sudo rmdir /backup/home/snaps
+sudo btrfs subvolume create /backup/home/snaps
+sudo btrfs subvolume show /backup/home/snaps
+sudo btrfs subvolume list /backup | grep "home/snaps"
+sudo btrfs subvolume delete /backup/home/snaps
+sudo btrfs subvolume list /backup | grep snaps
+sudo btrfs subvolume create /backup/home/snaps
+sudo btrfs subvolume show /backup/home/snaps
+sudo bash /usr/local/bin/btrfs-backup.sh home
+cat /usr/local/bin/btrfs-backup.sh
+sudo mv /usr/local/bin/btrfs-backup.sh .
+sudo chown gabx:gabx btrfs-backup.sh
+sudo chown root:root btrfs-backup.sh
+sudo mv btrfs-backup.sh /usr/local/bin
+sudo bash /usr/local/bin/btrfs-backup.sh home
+ls -l /backup/development/snaps
+sudo btrfs subvolume list /backup/development/snaps
+sudo btrfs subvolume delete /backup/home/snaps/home-latest
+sudo btrfs subvolume delete /backup/home/snaps
+sudo btrfs subvolume list /backup | grep home
+ls -l /backup/home
+sudo mv /usr/local/bin/btrfs-backup.sh .
+sudo chown gabx:gabx btrfs-backup.sh
+bash btrfs-backup.sh home
+sudo bash btrfs-backup.sh home
+sudo bash btrfs-backup.sh dev
+ls -l /backup/development/snaps
+btrfs subvolume list /backup/development/snaps
+sudo btrfs subvolume list /backup/development/snaps
+sudo btrfs subvolume show /backup/development/snaps/dev-initial
+sudo btrfs subvolume show /backup/development/snaps/dev-latest
+sudo btrfs subvolume show /development/.local-snapshots/dev-initial
+sudo btrfs subvolume show /development/.local-snapshots/dev-latest
+sudo btrfs-backup.sh home
+ls -al
+sudo btrfs-backup.sh home
+sudo chown root:root btrfs-backup.sh
+ls -al
+sudo mv btrfs-backup.sh /usr/local/bin
+ls -al /usr/local/bin
+sudo /usr/local/bin/btrfs-backup.sh home
+ls -l /backup/home/snaps
+sudo btrfs subvolume list /backup/home/snaps
+sudo btrfs subvolume show /backup/home/snaps/home-latest 2>/dev/null
+sudo btrfs subvolume delete /backup/home/snaps/home-latest
+sudo btrfs subvolume list /backup/home/snaps
+sudo /usr/local/bin/btrfs-backup.sh home
+sudo /usr/local/bin/btrfs-backup.sh dev
+failed: File exists\
+gabx@magnolia âƒ¾¤âƒ¾¤ /backup
+ls -l /backup/development/snaps\
+
+sudo btrfs subvolume list /backup/development/snaps
+sudo btrfs subvolume delete /backup/development/snaps/dev-latest
+ls -l /backup/development/snaps
+sudo btrfs subvolume list /backup/development/snaps
+sudo /usr/local/bin/btrfs-backup.sh dev
+ls -al /backup
+ls -al /backup/development
+ls -al /backup/development/snaps
+ls -al /backup/home/snaps
+sudo mv /usr/local/bin/btrfs-backup.sh .
+sudo chown gabx:gabx btrfs-backup.sh
+sudo chown root:root btrfs-backup.sh
+sudo mv btrfs-backup.sh /usr/local/bin
+sudo /usr/local/bin/btrfs-backup.sh home
+ls -al /home/gabx/.local/share/Trash/files
+sudo rm -r /home/gabx/.local/share/Trash/files
+ls -al /home/gabx/.local/share/Trash/files
+ls -al /home/gabx/.local/share/Trash/
+mkdir /home/gabx/.local/share/Trash/files
+sudo /usr/local/bin/btrfs-backup.sh home
+sudo mv /usr/local/bin/btrfs-backup.sh .
+sudo chown gabx:gabx btrfs-backup.sh
+sudo rm -rf ~/.local/share/Trash/info/*
+df -h /home
+df -h /backup
+ls -al /usr/local/bin
+sudo du -h --max-depth=1 /backup
+sudo btrfs subvolume list /backup
+sudo ls -lh /backup/home/snaps
+sudo rm -rf /backup/old_backups
+sudo btrfs subvolume delete /backup/home/snaps/home-2025-12-04-1701
+df -h /backup
+sudo btrfs subvolume list /backup
+sudo mv /usr/local/bin/btrfs-backup.sh .
+sudo chown gabx:gabx btrfs-backup.sh
+sudo chown root:root btrfs-backup.sh
+sudo mv btrfs-backup.sh /usr/local/bin
+sudo /usr/local/bin/btrfs-backup.sh home
+sudo btrfs subvolume delete /backup/home/snaps/home-latest
+ls -l /backup/home/snaps
+sudo btrfs subvolume list /backup/home/snaps
+ls -la /backup/home/snaps
+sudo btrfs subvolume list /backup | grep home-latest
+sudo rm -rf /backup/home/snaps
+sudo btrfs subvolume create /backup/home/snaps
+sudo btrfs subvolume show /backup/home/snaps
+ls -la /backup/home/snaps
+sudo /usr/local/bin/btrfs-backup.sh home
+sudo /usr/local/bin/btrfs-backup.sh dev
+sudo chown root:root btrfs-backup.sh
+sudo mv /usr/local/bin/btrfs-backup.sh /usr/local/bin/btrfs-backup.sh.bck
+sudo mv btrfs-backup.sh /usr/local/bin/
+ls -al /usr/local/bin/
+sudo chmod u+x /usr/local/bin/btrfs-backup.sh
+ls -al /usr/local/bin/
+sudo mv btrfs-backup.service /etc/systemd/system
+ls -al /etc/systemd/system
+sudo chown root:root /etc/systemd/system/btrfs-backup.service
+sudo chown root:root btrfs-backup-notify.sh
+sudo mv btrfs-backup-notify.sh /usr/local/bin
+sudo chmod u+x /usr/local/bin/btrfs-backup-notify.sh
+sudo chown root:root btrfs-backup.timer
+sudo mv btrfs-backup.timer /etc/systemd/system
+ls -al /etc/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl enable --now btrfs-backup.timer
+sudo chown root:root btrfs-scrub.timer
+sudo mv btrfs-scrub.timer /etc/systemd/system
+cat /etc/systemd/system/btrfs-backup.service
+ls -al /usr/local/bin/
+sudo chown root:root btrfs-scrub.sh
+sudo mv btrfs-scrub.sh /usr/local/bin
+ls -al /usr/local/bin
+sudo chmod u+x /usr/local/bin/btrfs-scrub.sh
+ls -al /usr/local/bin
+ls -al /etc/systemd/system/
+sudo chown root:root btrfs-scrub.service
+sudo mv btrfs-scrub.service /etc/systemd/system
+ls -al /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now btrfs-scrub.timer
+systemctl list-timers
+yazi
+sudo chown root:root btrfs-backup-verify.service
+sudo mv btrfs-backup-verify.service /etc/systemd/system
+sudo chown root:root btrfs-backup-verify.timer
+sudo mv btrfs-backup-verify.timer /etc/systemd/system
+ls -al /etc/systemd/system/
+ls -al /usr/local/bin
+sudo chown root:root btrfs-backup-verify.sh
+sudo mv btrfs-backup-verify.sh /usr/local/bin
+ls -al /usr/local/bin
+sudo chmod u+x /usr/local/bin/btrfs-backup-verify.sh
+ls -al /usr/local/bin
+sudo systemctl daemon-reload
+sudo systemctl enable --now btrfs-backup-verify.timer
+cat /usr/local/bin/btrfs-backup-notify.sh
+cat /usr/local/bin/btrfs-backup-verify.sh
+ls -al /usr/local/bin
+sudo mv /usr/local/bin/btrfs-backup-notify.sh /usr/local/bin/btrfs-backup-notify-verify.sh
+ls -al /usr/local/bin
+cat /usr/local/bin/btrfs-backup-notify-verify.sh
+chown root:root btrfs-backup.service
+sudo chown root:root btrfs-backup.service
+sudo mv btrfs-backup.service /etc/systemd/system
+sudo chown root:root btrfs-backup.timer
+sudo mv btrfs-backup.timer /etc/systemd/system
+sudo chown root:root btrfs-backup-verify.service
+sudo mv btrfs-backup-verify.service /etc/systemd/system
+sudo chown root:root btrfs-backup-verify.timer
+sudo mv btrfs-backup-verify.timer /etc/systemd/system
+sudo nvim /etc/systemd/system/btrfs-scrub.service
+sudo nvim /etc/systemd/system/btrfs-scrub.timer
+sudo chown root:root btrfs-backup-verify.sh
+sudo mv btrfs-backup-verify.sh /usr/local/bin
+ls -al /usr/local/bin
+sudo chmod u+x /usr/local/bin/btrfs-backup-verify.sh
+ls -al /usr/local/bin
+sudo chown root:root btrfs-backup-notify-status.sh
+sudo mv btrfs-backup-notify-status.sh /usr/local/bin
+ls -al /usr/local/bin
+sudo chmod u+x /usr/local/bin/btrfs-backup-notify-status.sh
+ls -al /usr/local/bin
+sudo chown root:root btrfs-backup-notify-verify.sh
+sudo mv btrfs-backup-notify-verify.sh /usr/local/bin
+ls -al /usr/local/bin
+sudo chmod u+x /usr/local/bin/btrfs-backup-notify-verify.sh
+ls -al /usr/local/bin
+sudo rm /usr/local/bin/btrfs-backup.sh.bck
+ls -al /usr/local/bin
+sudo chown root:root btrfs-scrub-backup.sh
+sudo mv btrfs-scrub-backup.sh /usr/local/bin
+ls -al /usr/local/bin
+sudo chmod u+x /usr/local/bin/btrfs-scrub-backup.sh
+ls -al /usr/local/bin
+sudo chown root:root btrfs-scrub-notify.sh
+sudo mv btrfs-scrub-notify.sh /usr/local/bin
+ls -al /usr/local/bin
+sudo chmod u+x /usr/local/bin/btrfs-scrub-notify.sh
+ls -al /usr/local/bin
+sudo systemctl daemon-reload
+sudo systemctl enable --now btrfs-scrub-backup.timer
+sudo chown root:root btrfs-scrub-backup.service
+sudo mv btrfs-scrub-backup.service /etc/systemd/system
+sudo chown root:root btrfs-scrub-backup.timer
+sudo mv btrfs-scrub-backup.timer /etc/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl enable --now btrfs-scrub-backup.timer
+sudo rm /etc/systemd/system/btrfs-scrub.service
+sudo rm /etc/systemd/system/btrfs-scrub.timer
+systemctl list-timers
+sudo systemctl disable btrfs-scrub.timer
+sudo systemctl stop btrfs-scrub.service
+systemctl list-timers
+sudo systemctl start btrfs-scrub-backup.service
+myps scrub
+systemctl status btrfs-scrub-backup.service
+journalctl -xeu btrfs-scrub-backup.service
+systemctl status btrfs-scrub-backup.service
+journalctl -xeu btrfs-scrub-backup.service
+sudo pacman -Syu s-nail
+echo "Test mail" | mail -s "Test from Arch" arnaud.gaboury@gmail.com
+yazi
+sudo nvim /etc/mail.rc
+man s-nail
+man s-mail
+touch ~/.mailrc
+chmod 600 ~/.mailrc
+echo "test OK" | mail -s "TEST" arnaud.gaboury@gmail.com
+ls -al ~
+chmod 700 ~/.mailrc
+ls -al ~
+chmod 600 ~/.mailrc
+sudo rm -r .local-snapshots
+sudo btrfs subvolume list / | grep development/.local-snapshots
+sudo btrfs subvolume delete /development/.local-snapshots
+sudo btrfs subvolume delete /mnt/btrfs-root/@development/.local-snapshots
+sudo btrfs subvolume delete /mnt/btrfs-root/@development/.local-snapshots/dev-20251204-0128
+sudo btrfs subvolume delete /mnt/btrfs-root/@development/.local-snapshots/dev-initial
+sudo btrfs subvolume delete /mnt/btrfs-root/@development/.local-snapshots/dev-latest
+sudo rm -r .local-snapshots
+firefox -P
+ls -al
+sudo chwon -R gabx:gabx .cache
+sudo chown -R gabx:gabx .cache
+ls -al .snapshots
+sudo ls -al .snapshots
+sudo ls -al .snapshots/1
+sudo ls -al .snapshots/1/sn
+systemctl status systemd-networkd.service
+ip a
+systemctl --failed
+systemctl status systemd-networkd-wait-online.service
+sudo systemctl restart systemd-networkd-wait-online.service
+journalctl -xeu systemd-networkd-wait-online.service
+sudo systemctl stop systemd-networkd-wait-online.service
+sudo systemctl start systemd-networkd-wait-online.service
+cd /development
+gitclone https://github.com/gabx/Btrfs-backup.git
+git clone https://github.com/gabx/Btrfs-backup.git
+git status
+git add README.md
+git commit -m "write the README"
+git push
+git config --global user.name "gabx"
+git config --global user.name "arnaud.gaboury@gmail.com"
+git config --list --show-origin
+git config --global credential.helper /usr/share/git/credential/netrc/git-credential-netrc.perl\
+
+touch ~/.netrc
+git push
+git config --list --show-origin
+git push
+git config --global user.name "gabx"
+git config --global user.name "arnaud.gaboury@gmail.com"
+git config --global credential.helper /usr/share/git/credential/netrc/git-credential-netrc.perl
+git push
+git config user.email
+git config --global user.email "your_email@example.com"
+env
+touch ~/.config/git/config
+git config --global user.email "arnaud.gaboury@gmail.com"
+git config --global user.name "gabx"
+git config --global core.editor nvim
+git config --global unset user.name
+git config --global --unset user.name
+git config --global user.name "arnaud gaboury"
+git push
+git config --list
+git config --listgit config --list
+sudo pacman -Syu github-cli
+sudo pacman -S reflector
+reflector
+sudo reflector --verbose -l 7 --sort rate --save /etc/pacman.d/mirrorlist
+sudo pacman -Syu github-cli
+sudo systemctl stop fwupd.service
+sudo systemctl status fwupd.service
+adb devices
+adb reboot-bootloader
+adb devices
+adb reboot-bootloader
+adb devices
+adb reboot-bootloader
+cd image-bluejay-bp4a.251205.006
+push boot.img /sdcard/Download
+adb push boot.img /sdcard/Download
+adb devices
+adb reboot
+yay -S adbmanager-bin
+adb devices
+cp boot.img ~
+adb devices
+adb reboot bootloader
+cd ~/Downloads/bluejay-install-2025120400/bluejay-install-2025120400/
+ls -al
+cp boot.img ~
+adb devices
+adb reboot bootloader
+cd ~
+fastboot flash boot boot.img
+fastboot --help
+fastboot devices
+fastboot flash boot boot.img
+fastboot devices
+fastboot flash boot boot.img
+adb devices
+ls -al
+rm boot.img
+ls -al
+cp Downloads/bluejay-install-2025120400/bluejay-install-2025120400/boot.img .
+adb reboot-bootloader
+fastboot flash boot boot.img
+systemctl --failed
+cp /development/build/LSPosed-v1.10.2-7182-zygisk-release.zip .
+gh auth login
+cd /development
+cd Btrfs-backup
+git status
+ls -al
+git push
+cp /usr/local/bin/btrfs* ./
+git git status
+git status
+git add btrfs-backup-notify-status.sh
+git add btrfs-backup-notify-verify.sh
+git add btrfs-backup-verify.sh
+git add btrfs-backup.sh
+git add btrfs-scrub-backup.sh
+git add btrfs-scrub-notify.sh
+git add btrfs-scrub.sh
+git commit -m "all needed scripts"
+git push
+cp /etc/systemd/system/btrfs* .
+git status
+git add btrfs-backup.service
+git add btrfs-backup.timer
+git add btrfs-backup-verify.service
+git add btrfs-backup-verify.timer
+git add btrfs-scrub-backup.service
+git add btrfs-scrub-backup.timer
+git commit -m "all needed systemd service and timers files"
+git push
+git status
+git add btrfs-backup-notify-status.sh
+git commit -m "use a generic email adress"
+git push
+git add btrfs-backup-notify-verify.sh
+git commit -m "use a generic email adress"
+git push
+git add btrfs-backup.sh
+git commit -m "replace my real username by username"
+git push
+git add btrfs-scrub-notify.sh
+git commit -m "use a generic email adress"
+git push
+git add btrfs-scrub.sh
+git commit -m "translate from french to english"
+git push
+cd ..
+mkdir git
+mv Btrfs-backup git
+cd git
+git clone https://github.com/gabx/archlinux.git
+cd archlinux
+gh status
+gh repo view gabx/archlinux --web
+cp -R ~/.config/r .
+git status
+git add r/
+git commit -m "a much needed refresh"
+git push
+git add
+git push
+ls -al
+ls -al home
+mv r home/.config
+git status
+git commit -m "move r folder to .config directory"
+git push
+git status
+git add home/.config
+git push
+git commit - "move r folder"
+git commit -m "move r folder"
+git push
+ls -al
+ls -al home
+ls -al home/config
+ls -al home/.config
+ls -al home/config
+rm -r
+rm -r r
+rm -r home/config/r
+ls -al
+ls -al home
+ls -al home/.config
+mv /home/.config /home/config/r
+ls home
+ls -al home
+ls -al home/.config
+mv home/.config /home/r
+sudo mv home/.config /home/r
+ls -al home
+ls -al home/config
+git status
+git rm home/.config
+git rm -r home/.config
+git status
+git rm -r home/config/r
+git status
+ls -al
+git rm -r r
+git status
+git commit -m "change place of r folder"
+git push
+cp -r ~/.config/r .
+ls -al
+mv r home/config
+git status
+git add home/config/r
+git commit -m "new refresh of r project settings"
+git push
+cd home/config
+cp ~/.Rprofile ..
+git status
+git add ../.Rprofile
+git commit -m "needed to distinct r shell and rstudio settings"
+git push
+rm -r mozilla
+git status
+git rm mozilla/
+git rm -r mozilla/
+git commit -m "uninteresting"
+git push
+git rm -r RStudio/
+git commit -m "wortless"
+git push
+git rm -r git
+git commit -m "broken config"
+git push
+rm -r gtk-2.0
+rm -r gtk-3.0
+ls -al
+git commit -m "wortless"
+git push
+git rm -r gtk-2.0/
+git rm -r gtk-3.0/
+git commit -m "wortless"
+git push
+rm -r rsync
+git rm -r rsync/
+git commit -m "useless"
+git push
+rm -r tmux
+git rm .r tmux/
+git rm -r tmux/
+git commit -m "don't use tmux"
+git push
+rm -r vim
+git rm -r vim/
+git commit -m "don't use vim anymore"
+git push
+cp ~/.config/nvim .
+cp -r ~/.config/nvim .
+git add nvim/
+git commit -m "use nvim"
+git push
+rm -r weechat
+git commit -m "don't use weechat anymore"
+git push
+git rm -r weechat
+git commit -m "don't use weechat anymore"
+git push
+ls -al
+rm -r zsh
+cp ~/.config/zsh .
+cp -r ~/.config/zsh .
+git status
+rm zsh/.zcompdump
+rm zsh/.zcompdump.zwc
+rm zsh/.zsh_histfile
+cat zsh/.zshrc
+git rm zsh/.gitignore
+git add zsh/.initzsh
+git status
+rm zsh/.zshrc
+git rm zsh/.zshrc
+git add zsh/functions/*
+git add zsh/zshrc.d/01_zenv
+git add zsh/zshrc.d/02_zalias
+git status
+git rm zsh/functions/extract
+git rm zsh/functions/misc
+git status
+git commit -m "a good refresh"
+git push
+cp ~/.zshrc ..
+git status
+git add ../.zshrc
+git commit -m "mov .zshrc from .config to home folder"
+git push
+cp ~/.config/lazygit .
+cp -r ~/.config/lazygit .
+git add lazygit/
+git commit -m "use lazygit"
+git push
+cp -r ~/.config/nvimLazyvim .
+git add nvimLazyvim/
+git commit -m "use nvimlazyvim"
+git push
+cp ~/.config/yazi
+cp -r ~/.config/yazi .
+cp -r ~/.config/wezterm .
+git add yazi/
+git add wezterm/
+git commit -m "use yazi file manager and wezterm terminal"
+git push
+sudo cp avbroot /usr/local/bin
+ls -al /usr/local/bin
+pwd
+avbroot key generate-key -o avb.key
+/usr/local/bin/avbroot key generate-key -o avb.key
+yay -S avbroot
+sudo rm /usr/local/bin/avbroot
+avbroot key generate-key -o avb.key
+avbroot key generate-key -o ota.key
+ls -al
+avbroot key encode-avb -k avb.key -o avb_pkmd.bin
+ls -al
+avbroot key generate-cert -k ota.key -o ota.crt
+ls -al
+fastboot --version
+adb reboot-bootloader
+avbroot ota patch \ 
+cd ..
+sudo systemctl status fwupd.service
+avbroot ota patch --input bluejay-install-2025120400.zip --key-avb avbroot-3.23.3-aarch64-linux-android31/avb.key --key-ota avbroot-3.23.3-aarch64-linux-android31/ota.key --cert-ota avbroot-3.23.3-aarch64-linux-android31/ota.crt --magisk Magisk-v30.6.apk --magisk-preinit-device bluejay
+avbroot ota patch --input bluejay-2025120401-8e18c11-magisk-v30.6.zip --key-avb avbroot-3.23.3-aarch64-linux-android31/avb.key --key-ota avbroot-3.23.3-aarch64-linux-android31/ota.key --cert-ota avbroot-3.23.3-aarch64-linux-android31/ota.crt --magisk Magisk-v30.6.apk --magisk-preinit-device bluejay
+mkdir final
+cp bluejay-2025120401-8e18c11-magisk-v30.6.zip.patched final
+cd final
+ls -al
+avbroot ota extract --input bluejay-2025120401-8e18c11-magisk-v30.6.zip.patched --directory extracted --fastboot
+ls -al
+ls -al extracted
+export ANDROID_PRODUCT_OUT=extracted
+fastboot flashall --skip-reboot
+fastboot --help
+fastboot -v flashall --skip-reboot
+yay -S android-sdk-platform-tools
+source /etc/profile
+fastboot --help
+fastboot devices
+lsusb
+ls -al /etc/udev/rules.d/
+cat /etc/udev/rules.d/51-android.rules
+sudo mv /etc/udev/rules.d/51-android.rules /etc/udev/rules.d/51-android.rules.bck
+sudo cp ~/Documents/51-android.rules /etc/udev/rules.d
+ls -al /etc/udev/rules.d
+sudo udevadm control --reload
+fastboot flashall --skip-reboot
+systemctl status systemd-udevd.service
+journalctl -r
+ls -al /usr/lib/udev/rules.d
+sudo cp /usr/lib/udev/rules.d/51-android.rules ~/Documents
+ls -al ~/Documents
+sudo chown gabx:gabx ~/Documents/51-android.rules
+sudo pacman -S android-udev
+sudo udevadm control --reload
+fastboot flashall --skip-reboot
+dmesg
+sudo dmesg
+touch ~/Documents/pixel.txt
+lsusb
+sudo fastboot flashall --skip-reboot
+fastboot flashall --skip-reboot
+adb devices
+adb reboot-bootloader
+fastboot flashall --skip-reboot
+fastboot --help
+export ANDROID_PRODUCT_OUT=extracted
+fastboot flashall --skip-reboot
+curl -fsSL https://raw.githubusercontent.com/M0Rf30/android-udev-rules/main/51-android.rules
+ls -al /etc/udev/rules.d
+sudo cp ~/Documents/51-android.rules /etc/udev/rules.d
+sudo udevadm control --reload
+fastboot flashall --skip-reboot
+curl -fsSL https://raw.githubusercontent.com/ublue-os/android-udev-rules/main/51-android.rules | tee 51-android.rules
+sudo su
+ls -al /etc/udev/rules.d
+adb devices
+fastbbot devices
+fastboot devices
+adb devices
+lsusb
+adb reboot-bootloader
+fastboot flashall --skip-reboot
+ls -al extracted
+sudo cp ~/Documents/51-android.rules /etc/udev/rules.d
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+fastboot flashall --skip-reboot
+systemctl --failed
+ip a
+systemctl status systemd-networkd.service
+sudo systemctl stop systemd-networkd.service
+sudo systemctl stop systemd-networkd.socket
+sudo systemctl start systemd-networkd.service
+systemctl status systemd-networkd.service
+sudo mv /etc/systemd/network/10-static.network /etc/systemd/network/10-static.network.brok
+sudo systemctl stop systemd-networkd.service
+sudo systemctl stop systemd-networkd-varlink.socket
+sudo systemctl start systemd-networkd.service
+systemctl status systemd-networkd.service
+ip a
+systemctl --failed
+ip a
+systemctl status systemd-networkd.service
+systemctl status systemd-networkd-varlink.socket
+systemctl status systemd-networkd.socket
+systemctl status systemd-network-generator.service
+ip a
+systemctl status systemd-networkd.service
+sudo systemctl stop systemd-networkd.service
+sudo systemctl start systemd-networkd.service
+systemctl status systemd-networkd.service
+systemctl status systemd-networkd-wait-online.service
+sudo systemctl start systemd-networkd-wait-online.service
+sudo systemctl stop systemd-networkd-wait-online.service
+systemctl --failed
+ip a
+journalctl -r
+journalctl -r | tee internet-issue
+cat internet-issue
+mv internet-issue ~/Documents
+btop
+adb reboot-bootloader
+adb devices
+adb reboot-bootloader
+fastboot oem device-info
+fastboot oem --help
+fastboot flashing get_unlock_ability
+fastboot getvar unlocked
+yazi
+cd /development/build
+ls -al
+cd bluejay-bp4a.251205.006-factory-203dc556
+ls -lh
+cd bluejay-bp4a.251205.006
+ls -lh
+ls -lh image-bluejay-bp4a.251205.006
+adb devices
+adb push image-bluejay-bp4a.251205.006/boot.img /sdcard/Download/boot.img
+cd /development/build
+ls -al
+adb pull /sdcard/Download/magisk_patched-*.img ./magisk_patched.img
+adb pull /sdcard/Download/magisk_patched-30600_ARnQt.img ./magisk_patched.img
+ls -al
+mv magisk_patched.img /development/build/bluejay-bp4a.251205.006-factory-203dc556/bluejay-bp4a.251205.006/image-bluejay-bp4a.251205.006
+adb reboot bootloader
+cd bluejay-bp4a.251205.006-factory-203dc556/bluejay-bp4a.251205.006/image-bluejay-bp4a.251205.006
+fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
+fastboot --disable-verity --disable-verification flash vbmeta_system vbmeta_system.img
+fastboot --disable-verity --disable-verification flash vbmeta_vendor vbmeta_vendor.img
+fastboot flash boot magisk_patched.img
+fastboot flash boot_a magisk_patched.img
+fastboot flash boot_b magisk_patched.img
+fastboot reboot
+fastboot flash vbmeta vbmeta.img
+fastboot flash vbmeta_system vbmeta_system.img
+fastboot flash vbmeta_vendor vbmeta_vendor.img
+fastboot flash vendor_boot vendor_boot.img
+fastboot flash boot boot.img
+fastboot flash boot_a boot.img
+fastboot flash boot_b boot.img
+fastboot reboot
+pwd
+ls -al
+adb reboot-bootloader
+fastboot devices
+fastboot flash vbmeta vbmeta.img
+fastboot flash vbmeta_system vbmeta_system.img
+fastboot flash vbmeta_vendor vbmeta_vendor.img
+fastboot flash vendor_boot vendor_boot.img
+fastboot flash boot boot.img
+fastboot reboot
+cd ..
+ls -al
+./flash-all.sh
+adb devices
+adb push /development/build/bluejay-bp4a.251205.006-factory-203dc556/bluejay-bp4a.251205.006/image-bluejay-bp4a.251205.006/boot.img /sdcard/Download/boot.img
+adb reboot bootloader\
+
+cd ~/code
+ls -al
+cd ~
+adb pull /sdcard/Download/magisk_patched*.img ./magisk_patched.img
+adb push /development/build/bluejay-bp4a.251205.006-factory-203dc556/bluejay-bp4a.251205.006/image-bluejay-bp4a.251205.006/boot.img /sdcard/Download/boot.img
+adb devices
+adb push /development/build/bluejay-bp4a.251205.006-factory-203dc556/bluejay-bp4a.251205.006/image-bluejay-bp4a.251205.006/boot.img /sdcard/Download/boot.img
+adb pull /sdcard/Download/magisk_patched*.img ./magisk_patched.img
+adb pull /sdcard/Download/magisk_patched-30600_DNDMJ.img ./magisk_patched.img
+\
+
+adb reboot-bootloader
+fastboot flash boot_a magisk_patched.img
+fastboot flash boot_b magisk_patched.img
+fastboot reboot
+cd /development/build/bluejay-bp4a.251205.006-factory-203dc556/bluejay-bp4a.251205.006/image-bluejay-bp4a.251205.006/
+adb push boot.img /sdcard/Download/boot.img
+adb pull /sdcard/Download/magisk_patched-30600_DNDMJ.img ./magisk_patched.img
+ls -lh magisk_patched.img
+adb reboot bootloader
+fastboot flash boot_a magisk_patched.img
+fastboot flash boot_b magisk_patched.img
+fastboot reboot
+adb shell getprop ro.boot.slot_suffix
+adb shell getprop ro.boot.verifiedbootstate
+adb shell su
+fastboot getvar all | grep slot
+rm magisk_patched.img
+adb shell rm /sdcard/Download/magisk_patched-30600_DNDMJ.img
+adb shell rm /sdcard/Download/magisk_patched-30600_fYolI.img
+adb shell rm /sdcard/Download/magisk_patched-30600_Wmhrt.img
+adb pull /sdcard/Download/magisk_patched-30600_dEBkN.img ./magisk_patched.img
+adb reboot bootloader
+fastboot flash boot_a magisk_patched.img
+fastboot flash boot_b magisk_patched.img
+fastboot reboot
+adb shell su
+rm magisk_patched.img
+adb shell rm /sdcard/Download/magisk_patched-30600_dEBkN.img
+pwd
+adb push boot.img /sdcard/Download/boot.img
+adb pull /sdcard/Download/magisk_patched-30600_C8rO2.img ./magisk_patched.img
+ls -lh boot.img magisk_patched.img
+cp /development/build/Magisk-Canary-28102.apk ~
+adb devices
+cd ~
+ls -al
+mv Magisk-Canary-28102.apk Magisk-Canary-28102.zip
+adb reboot fastboot
+fastboot update Magisk-Canary-28102.zip
+adb reboot
+fastboot reboot
+adb pull /sdcard/Download/magisk_patched-26400_7s3wu.img ./magisk_patched.img
+ls -lh boot.img magisk_patched.img
+ls -al
+adb push vendor_boot.img /sdcard/Download/vendor_boot.img
+adb reboot bootloader
+fastboot flash vendor_boot_a vendor_boot.img
+fastboot flash vendor_boot_b vendor_boot.img
+fastboot reboot fastboot
+adb push vendor_boot.img /sdcard/Download/vendor_boot.img
+fastboot reboot
+adb push vendor_boot.img /sdcard/Download/vendor_boot.img
+cp /development/build/bluejay-bp4a.251205.006-factory-203dc556/bluejay-bp4a.251205.006/image-bluejay-bp4a.251205.006/boot.img ./
+ls -al
+adb pull /sdcard/Download/magisk_patched-30600_vTEJF.img ./
+adb reboot-bootloader
+flash boot ./magisk_patched-30600_vTEJF.img
+fastboot flash vendor_boot_b magisk_patched-30600_vTEJF.img
+adb reboot
+fastboot reboot
+fastboot flash vendor_boot_a magisk_patched-30600_vTEJF.img
+fastboot flash vendor_boot_b magisk_patched-30600_vTEJF.img
+fastboot reboot
+pipx install ggshield
+sudo pacman -S ggshield
+sudo pacman -S pipx
+sudo pacman -S python-pipx
+ggshield auth login
+fastboot getvar unlocked
+sudo ./flash-all.sh
+cat /etc/resolv.conf
+cd ~
+sudo systemctl disable --now systemd-resolved.service
+sudo mv /etc/resolv.conf /etc/resolv.conf.bck
+echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" | sudo tee /etc/resolv.conf
+sudo systemctl disable --now systemd-resolved
+sudo rm -f /etc/resolv.conf
+echo -e "nameserver 1.1.1.1\nnameserver 9.9.9.9\nnameserver 8.8.8.8" | sudo tee /etc/resolv.conf
+sudo systemctl restart systemd-networkd
+curl -I https://dl.google.com/dl/android/aosp/
+dig dl.google.com
+dig dl.google.com A
+dig dl.google.com AAAA
+curl -6 -I https://dl.google.com/dl/android/aosp/bluejay-t1b3.221003.003-factory-a524e95a.zip
+ip link
+ip link show enp0s20f0u9
+ip addr show enp0s20f0u9
+sudo ip link set enp0s20f0u9 up
+sudo systemd-networkd
+sudo systemctl restart systemd-networkd
+sudo ip link set enp0s20f0u9 up
+sudo systemctl restart systemd-networkd
+ip addr show enp0s20f0u9
+cat /etc/systemd/network/20-wired.network
+sudo nvim /etc/systemd/network/80-usb-tethering.network
+sudo systemctl restart systemd-networkd
+ip addr show enp0s20f0u9
+ping -4 -c 3 8.8.8.8
+curl -I https://dl.google.com/dl/android/aosp/
+wget https://dl.google.com/dl/android/aosp/bluejay-t1b3.221003.003-factory-a524e95a.zip
+cd /development/build
+unzip -l image-bluejay-bp4a.251205.006.zip | grep -i boot
+fastboot getvar all
+adb reboot-bootloader
+adb devices
+adb reboot-bootloader
+fastboot getvar all
+fastboot getvar all 2>&1 | grep -iE "init_boot|vendor_boot|boot|has-slot"
+cd bluejay-bp4a.251205.006-factory-203dc556/bluejay-bp4a.251205.006
+cd image-bluejay-bp4a.251205.006
+ls -al
+adb push boot.img /sdcard/Download/boot.img
+fastboot reboot
+adb push boot.img /sdcard/Download/boot.img
+ls -al
+adb push boot.img /sdcard/Download/boot.img
+adb pull /sdcard/Download/magisk_patched-26400_z2bc8.img .
+mv magisk_patched-26400_z2bc8.img magisk_patched.img
+adb reboot-bootloader
+fastboot flash boot_b magisk_patched.img
+fastboot reboot
+fastboot set_active a
+fastboot reboot
+fastboot getvar all | grep slot
+ls -lh
+cd ..
+ls -lh
+nvim flash-all.sh
+chmod +x flash-all.sh
+sudo ./flash-all.sh
+adb reboot-bootloader
+fastboot getvar current-slot
+fastboot reboot
+ls -al
+cd image-bluejay-bp4a.251205.006
+ls -al
+adb push boot.img /sdcard/Download/boot.img
+rm magisk_patched.img
+rm magisk_patched-30600_vTEJF.img
+adb pull /sdcard/Download/magisk_patched-26400_Bwmo8.img magisk_patched.img
+adb reboot-bootloader
+fastboot flash boot_a magisk_patched.img
+fastboot reboot
+fastboot getvar all 2>&1 | grep -i "slot-successful"
+fastboot getvar all 2>&1 | grep -i "unbootable"
+sudo ./flash-all.sh
+ls -al
+cd ..
+ls -al
+./flash-all.sh
+ls
+cd image-bluejay-bp4a.251205.006
+ls -al
+adb push vendor_boot.img /sdcard/Download/vendor_boot.img
+cd ..
+find . -maxdepth 3 -type f -name "init_boot*.img" -ls
+cd bluejay-bp4a.251205.006/image-bluejay-bp4a.251205.006
+ls -al
+cp boot.img ~/boot_clean.img
+adb reboot-bootloader
+fastboot erase metadata
+fastboot reboot
+fastboot devices
+fastboot getvar current-slot
+fastboot getvar slot-successful:a
+fastboot getvar slot-successful:b
+fastboot getvar slot-unbootable:a
+fastboot getvar slot-unbootable:b
+cd ../..
+ls -al
+cd bluejay-bp4a.251205.006
+ls -al
+ls -lh flash-all.sh
+nvim flash-all.sh
+./flash-all.sh
+nvim flash-all.sh
+fastboot --set-active=a
+fastboot reboot
+fastboot update image-bluejay-bp4a.251205.006.zip
+adb devices
+cd /development
+ls -al
+cd build
+ls -al
+cd ..
+ls -al
+pwd
+fastboot update image-bluejay-bp4a.251205.006.zip
+adb reboot-bootloader
+fastboot update image-bluejay-bp4a.251205.006.zip
+ls -al
+cd image-bluejay-bp4a.251205.006
+cd ..
+cd image-bluejay-bp4a.251205.006
+cp boot.img ~
+adb pull /sdcard/Download/magisk_patched-26400_Bwmo8.img magisk_patched.img
+adb pull /sdcard/Download/magisk_patched-26400_0Jehf.img ~
+adb reboot bootloader
+LS -al
+ls -al
+fastboot flash boot magisk_patched-26400_0Jehf.img
+fastboot reboot
+fastboot getvar has-slot:init_boot
+\
+
+fastboot getvar is-logical:init_boot
+fastboot getvar partition-size:init_boot
+ls -lh image-bluejay-bp4a.251205.006 | grep -E "init|boot"
+cd ..
+ls -lh image-bluejay-bp4a.251205.006 | grep -E "init|boot"
+ls -al
+cd image-bluejay-bp4a.251205.006
+adb reboot-bootloader
+fastboot reboot
+adb sideload magisk-delta-26.4-kitsune.apk
+ls -al
+adb sideload magisk-delta-26.4-kitsune.apk
+ls -al
+adb sideload magisk-delta-26.4-kitsune.apk
+adb sideload magisk-delta-26-4-kitsune.apk
+adb reboot-bootloader
+cd /development/build/bluejay-bp4a.251205.006-factory-203dc556
+ls -al
+cd bluejay-bp4a.251205.006
+ls -lh
+cd image-bluejay-bp4a.251205.006
+ls -lh
+adb devices
+cp boot.img ~
+cp /development/binance-api-postman-masteR
+cp /development/build/Magisk-v30.6.apk ~
+cp /development/build/magisk-delta-26-4-kitsune.apk
+cp /development/build/magisk-delta-26-4-kitsune.apk ~
+adb devices
+adb pull /sdcard/Download/magisk_patched-26400_cVdkw.img .
+ls -lh
+fichier patchÃ© rÃ©cupÃ©rÃ©
+fastboot devices
+fastboot getvar current-slot
+fastboot flash boot_a magisk_patched-26400_cVdkw.img
+fastboot set_active a
+fastboot mark-boot-successful
+fastboot getvar current-slot
+fastboot getvar slot-unbootable:a
+fastboot reboot
+ls -al
+fastboot flash vbmeta_a --disable-verity --disable-verification vbmeta.img
+fastboot reboot
+fastboot flash vbmeta_a --disable-verity --disable-verification vbmeta.img
+fastboot flash vbmeta_system_a --disable-verity --disable-verification vbmeta_system.img
+fastboot flash vbmeta_vendor_a --disable-verity --disable-verification vbmeta_vendor.img
+fastboot reboot
+fastboot erase metadata
+fastboot erase userdata
+fastboot erase super
+cd ..
+ls -al
+./flash-all.sh
+adb reboot bootloader
+fastboot getvar unlocked
+cd image-bluejay-bp4a.251205.006
+ls -al
+fastboot reboot
+adb push boot.img /sdcard/Download/
+adb devices
+adb push boot.img /sdcard/Download/
+adb pull /sdcard/Download/magisk_patched-26400_RJ9Ci.img .
+ls -lh magisk_patched*.img
+rm magisk_patched.img
+rm magisk_patched-26400_cVdkw.img
+adb devices
+adb reboot-bootloader
+fastboot devi
+fastboot devices
+fastboot getvar current-slot
+ls -al
+fastboot flash boot_a magisk_patched-26400_RJ9Ci.img
+fastboot flash vbmeta_a --disable-verity --disable-verification vbmeta.img
+fastboot flash vbmeta_system_a --disable-verity --disable-verification vbmeta_system.img
+fastboot flash vbmeta_vendor_a --disable-verity --disable-verification vbmeta_vendor.img
+fastboot reboot
+fastboot getvar is-userspace
+fastboot getvar version-bootloader
+fastboot getvar secure
+fastboot getvar unlocked
+fastboot getvar current-slot
+ls -lh
+adb devices
+adb push vendor_boot.img /sdcard/Download/vendor_boot.img
+sudo systemctl stop fwupd.service
+fastboot devices
+cd ../..
+cd ..
+mkdir lineageos
+rm -r lineageos
+cd build
+mkdir lineageos
+cp lineage-23.0-20251206-nightly-bluejay-signed.zip lineageos
+cd lineageos
+fastboot devices
+adb devices
+adb reboot-bootloader
+fastboot devices
+fastboot flash vendor_boot vendor_boot.img
+sudo systemctl stop fwupd.service
+fastboot flash vendor_boot vendor_boot.img
+fastboot getvar product
+sudo rm /etc/udev/rules.d/51-android.rules
+sudo rm /etc/udev/rules.d/*android*
+sudo mv /development/51-pixel.rules /etc/udev/rules.d
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+groups
+fastboot devices
+fastboot getvar product
+sudo systemctl start fwupd.service
+sudo systemctl status fwupd.service
+fastboot getvar product
+fastboot reboot fastboot
+fastboot getvar product
+fastboot devices
+fastboot getvar product
+fastboot devices
+ls -al
+fastboot flash vendor_boot vendor_boot.img
+fastboot getvar is-userspace
+fastboot getvar all\
+
+fastboot flashing unlock
+fastboot devices
+\
+
+lsusb
+fastboot getvar unlocked
+adb devices
+adb reboot-bootloader
+adb reboot bootloader
+adb devices
+adb shell getprop ro.boot.flash.locked
+adb shell getprop ro.oem_unlock_supported
+\
+
+adb shell getprop ro.boot.verifiedbootstate
+adb shell getprop ro.boot.vbmeta.device_state
+adb shell getprop ro.boot.unlock_ability
+./flash-all.sh --skip-reboot --skip-wipe
+adb reboot bootloader
+fastboot devices
+./flash-all.sh --skip-wipe
+lsusb -v | grep -i google -n
+sudo cp /etc/udev/rules.d/51-android.rules /development
+ls -al /etc/udev/rules.d
+sudo chwon root:root /etc/udev/rules.d/51-pixel.rules
+sudo chown root:root /etc/udev/rules.d/51-pixel.rules
+./flash-all.sh --skip-reboot --skip-wipe
+sudo cp /etc/udev/rules.d/51-pixel.rules /development
+sudo chown gabx:gabx /development/51-pixel.rules
+sudo mv /development/51-pixel.rules /etc/udev/rules.d
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+sudo fwupdmgr get-devices
+sudo fwupdmgr refresh
+homectl inspect gabx
+homectl update --help
+sudo homectl update gabx --member-of=plugdev
+homectl inspect gabx
+fastboot devices
+fastboot --skip-reboot update image-bluejay-bp4a.251205.006.zip
+adb devices
+adb reboot-bootloader
+curl -I https://dl.google.com/dl/android/aosp/bluejay-ud1a.240705.002-factory-7664e8e5.zip
+fastboot getvar version-bootloader
+lsusb
+dmesg | tail -n 50
+sudo dmesg | tail -n 50
+cd /development
+sudo cp /etc/udev/rules.d/51-pixel.rules .
+sudo mv 51-pixel.rules /etc/udev/rules.d
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+fastboot reboot fastboot
+cat /etc/udev/rules.d/51-android.rules
+ls -al /etc/udev/rules.d
+cat /etc/udev/rules.d/51-pixel.rules
+sudo cp /etc/udev/rules.d/51-pixel.rules .
+chown gabx:gabx 51-pixel.rules
+sudo chown gabx:gabx 51-pixel.rules
+sudo chown root:root 51-pixel.rules
+sudo mv 51-pixel.rules /etc/udev/rules.d
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+fastboot devices
+fastboot getvar product
+fastboot reboot fastboot
+fastboot getvar is-userspace
+fastboot flash radio radio-bluejay-g5123b-145971-251030-b-14356419.img
+fastboot getvar is-userspace
+fastboot devices
+fastboot getvar is-userspace
+adb devices
+adb reboot-bootloader
+fastboot devices
+fastboot flashing unlock
+CALC
+calc
+sudo systemctl stop fwupd.service
+fastboot flashing unlock
+fastboot getvar unlocked
+\
+\
+
+fastboot getvar product
+fastboot getvar version-bootloader
+fastboot getvar version-baseband
+cd android
+fastboot getvar product
+fastboot getvar version-bootloader
+adb devices
+adb kill server
+adb kill-server
+adb reboot-bootloader
+adb reboot bootloader
+fastboot devices
+ls -al
+cd ..
+cd build
+ls -al
+fastboot update image-bluejay-bp4a.251205.006.zip
+cd /development/build/bluejay-bp4a.251205.006-factory-203dc556/bluejay-bp4a.251205.006
+ls image-bluejay-bp4a.251205.006.zip\
+
+fastboot update image-bluejay-bp4a.251205.006.zip
+cd /development/android
+cd bluejay-bp2a.250705.008-factory-128110b0/bluejay-bp2a.250705.008
+ls -al
+adb reboot-bootloader
+fastboot devices
+chmod +x flash-all.sh
+./flash-all.sh
+calc
+adb devices
+sudo systemctl stop fwupd.service
+adb reboot-bootloader
+cp xposed-installer-3-1-5.apk ~
+rm ~/xposed-installer-3-1-5.apk
+cd /development/build
+adb devices
+adb sideload riru-v26.1.7.r530.ab3086ec9f-release.zip
+adb reboot-bootloader
+adb sideload riru-v26.1.7.r530.ab3086ec9f-release.zip
+adb devices
+fastboot devices
+adb devices
+adb reboot-bootloader
+adb sideload riru-v26.1.7.r530.ab3086ec9f-release.zip
+adb sideload Magisk-30.6.zip
+cd ../crosvm-rstudio
+lsblk -f
+sudo mkfs.ext4 -L vmdata /dev/sda3
+sudo mkdir -p /srv/vm
+sudo mount /dev/sda3 /srv/vm
+sudo chown -R gabx:gabx /srv/vm
+mkdir -p /srv/vm/arch-crosvm
+rmdir -R /srv/vm/arch-crosvm
+rm -R /srv/vm/arch-crosvm
+rmdir -R /srv/vm/rstudio-crosvm
+mkdir -R /srv/vm/rstudio-crosvm
+mkdir /srv/vm/rstudio-crosvm
+cd /srv/vm/rstudio-crosvm
+truncate -s 40G rootfs.img
+mkfs.ext4 -F rootfs.img
+mkdir rootfs
+sudo mount -o loop rootfs.img rootfs
+sudo pacstrap rootfs base linux linux-firmware openssh zsh sudo neovim git
+sudo arch-chroot rootfs
+sudo ls -al /etc/sudoers.d
+sudo cat /etc/sudoers.d/10-gabx
+sudo cat /etc/sudo.conf
+sudo cat /etc/sudoers
+sudo chmod 440 /etc/sudoers.d/10-gabx
+cd ~/.ssh
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "gabx@rstudio-crosvm"
+ls ~/.ssh/id_ed25519.pub
+ls ~/.ssh/
+cat ~/.ssh/id_ed25519.pub
+sudo umount rootfs
+mount | grep rstudio-crosvm
+sudo crosvm run --disable-sandbox --rwroot --root rootfs.img --params "console=ttyS0 root=/dev/vda rw" /boot/vmlinuz-linux
+sudo cp ~/bin/crosvm /usr/local/bin
+sudo crosvm run --disable-sandbox --rwroot --root rootfs.img --params "console=ttyS0 root=/dev/vda rw" /boot/vmlinuz-linux
+sudo crosvm run --disable-sandbox --rwroot --root rootfs.img --kernel /boot/vmlinuz-linux --params "console=ttyS0 root=/dev/vda rw"
+crosvm run --help
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --rwroot --root rootfs.img --params "console=ttyS0 root=/dev/vda rw"
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --rwroot --disk rootfs.img --params "console=ttyS0 root=/dev/vda rw"
+crosvm run --help | grep -A5 disk
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --block path=rootfs.img,root=true,rw=true --params "console=ttyS0 rw"
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --block path=rootfs.img,root=true --params "console=ttyS0 rw"
+pgrep crosvm
+cd /srv/vm/rstudio-crosvm
+sudo mount -o loop rootfs.img rootfs
+sudo arch-chroot rootfs
+sudo umount rootfs
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --block path=rootfs.img,root=true --params "console=ttyS0 rw"
+cd /srv/vm/rstudio-crosvm
+sudo mount -o loop rootfs.img rootfs
+sudo arch-chroot rootfs
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --block path=rootfs.img,root=true --params "console=ttyS0 rw init=/usr/lib/systemd/systemd"
+cd /srv/vm/rstudio-crosvm
+ls
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --block path=rootfs.img,root=true --params "console=ttyS0 rw init=/usr/lib/systemd/systemd"
+sudo ip tuntap add dev tap0 mode tap
+sudo ip link set tap0 up
+cd /srv/vm/rstudio-crosvm
+ls -al
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --block path=rootfs.img,root=true --net tap-name=tap0 --params "console=ttyS0 rw init=/usr/lib/systemd/systemd"
+sudo ip link add br0 type bridge
+sudo ip link set br0 up
+sudo ip link set tap0 master br0
+sudo ip addr add 192.168.100.1/24 dev br0
+sudo sysctl -w net.ipv4.ip_forward=1
+ip a
+ip route
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o enp3s0 -j MASQUERADE
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --block path=rootfs.img,root=true --net tap-name=tap0 --params "console=ttyS0 rw init=/usr/lib/systemd/systemd"
+ip a
+ip link show
+sudo ip link set tap0 down
+sudo ip link set br0 down
+sudo ip link delete tap0
+sudo ip link delete br0
+ip a
+sudo ip link add br0 type bridge
+sudo ip link set br0 up
+sudo ip addr add 192.168.100.1/24 dev br0
+ip a
+sudo ip link set br0 down
+sudo ip link delete br0
+ip a
+sudo nvim /etc/systemd/network/25-br0.netdev
+sudo systemctl stop systemd-networkd
+sudo systemctl start systemd-networkd
+ip a
+sudo nvim /etc/systemd/network/30-br0-en.network
+sudo nvim /etc/systemd/network/30-br0.network
+sudo systemctl stop systemd-networkd
+sudo systemctl start systemd-networkd
+ip a
+sudo nvim /etc/systemd/network/30-br0.network
+sudo rm /etc/systemd/network/30-br0-en.network
+sudo nvim /etc/systemd/network/30-tap0.netdev
+sudo nvim /etc/systemd/network/30-tap0.network
+sudo systemctl stop systemd-networkd
+sudo systemctl start systemd-networkd
+networkctl
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o enp3s0 -j MASQUERADE
+cd /srv/vm/rstudio-crosvm
+sudo crosvm run /boot/vmlinuz-linux --disable-sandbox --block path=rootfs.img,root=true --net tap-name=tap0 --params "console=ttyS0 rw init=/usr/lib/systemd/systemd"
+networkctl
+sudo nvim /etc/sysctl.d/30-crosvm-ipforward.conf
+sudo sysctl --system
+sudo nvim /etc/nftables.conf
+sudo mv /etc/nftables.conf /etc/nftables.conf.orig
+sudo mv nftables.conf /etc/nftables.conf
+sudo systemctl enable nftables
+sudo systemctl restart nftables
+sudo nft list ruleset
+ls -al
+chmod +x run.sh
+./run.sh
+sudo mv rstudio-crosvm.service /etc/systemd/system
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl start rstudio-crosvm
+sudo systemctl status rstudio-crosvm --no-pager
+chmod +x /srv/vm/rstudio-crosvm/run.sh
+ls -l /srv/vm/rstudio-crosvm/run.sh
+sudo systemctl daemon-reload
+sudo systemctl restart rstudio-crosvm
+systemctl status rstudio-crosvm --no-pager
+sudo systemctl daemon-reload
+sudo systemctl restart rstudio-crosvm
+systemctl status rstudio-crosvm --no-pager
+sudo nvim /etc/systemd/system/rstudio-crosvm.service
+ls -al /etc/systemd/system
+sudo chown root:root /etc/systemd/system/rstudio-crosvm.service
+sudo systemctl daemon-reload
+sudo systemctl restart rstudio-crosvm
+systemctl status rstudio-crosvm --no-pager
+sudo systemctl stop rstudio-crosvm
+systemctl status rstudio-crosvm --no-pager
+sudo systemctl daemon-reload
+sudo systemctl restart rstudio-crosvm\
+
+systemctl status rstudio-crosvm --no-pager
+sudo systemctl daemon-reload
+sudo systemctl restart rstudio-crosvm
+systemctl status rstudio-crosvm --no-pager
+sudo systemctl daemon-reload
+ls -al
+sudo systemctl restart rstudio-crosvm
+systemctl status rstudio-crosvm --no-pager
+sudo systemctl stop rstudio-crosvm
+pacman -Qs openssh
+sudo systemctl status sshd --no-pager\
+
+sudo systemctl enable sshd
+sudo systemctl start sshd
+sudo systemctl status sshd --no-pager
+sudo systemctl stop sshd
+sudo systemctl disable sshd
+systemctl is-enabled sshd
+sudo systemctl start sshd
+./run.sh
+sudo ./run.sh
+sudo systemctl stop sshd.service
+sudo systemctl start rstudio-crosvm.service
+ssh -p 63221 gabx@192.168.100.10
+\
+
+ssh -p 63221 gabx@192.168.100.10
+sudo systemctl stop rstudio-crosvm
+systemctl status rstudio-crosvm --no-pager\
+
+\
+\
+\
+\
+
+cd /srv/vm/rstudio-crosvm
+ls -lh rootfs.img
+truncate -s +10G rootfs.img
+ls -lh rootfs.img
+sudo systemctl start rstudio-crosvm
+ssh rstudio-vm
+ssh -p 63221 gabx@192.168.100.10
+sudo systemctl stop rstudio-crosvm
+systemctl status rstudio-crosvm --no-pager
+cp --reflink=auto rootfs.img rstudio-base.img
+cp rootfs.img rstudio-base.img
+ls -lh *.img
+rm -f rstudio-base.img
+cp --sparse=always rootfs.img rstudio-base.img
+myps cp
+ls -lh rstudio-base.img
+sudo iotop -o
+btop
+ls -lh rstudio-base.img
+rm -f rstudio-base.img
+ls -lh *.img
+rsync -a --sparse rootfs.img rstudio-base.img
+ls -lh rstudio-base.img
+pwd
+ls -lh
+ps aux | grep rsync
+pkill rsync
+rm -f rstudio-base.img
+ls -lh *.img
+qemu-img convert -p -O raw rootfs.img rstudio-base.img
+ls -lh rootfs.img rstudio-base.img
+du -h rootfs.img rstudio-base.img
+du -h --apparent-size rootfs.img rstudio-base.img
+ls -al
+pwd
+cp rstudio-base.img rstudio-workspace.img
+btop
+ls -lh rstudio-workspace.img
+ls -lh rstudio-base.img rstudio-workspace.img
+du -h rstudio-base.img rstudio-workspace.img
+du -h --apparent-size rstudio-base.img rstudio-workspace.img
+nvim run.sh
+./run.sh
+sudo ./run.sh
+cd ~
+ls -al
+scp -P 63221 .zshrc gabx@192.168.100.10:/home/gabx/.zshrc
+rsync -av --delete .config/zsh/ gabx@192.168.100.10:/home/gabx/.config/zsh/
+rsync -av --delete -e "ssh -p 63221" ~/.config/zsh/ gabx@192.168.100.10:/home/gabx/.config/zsh/
+rsync -av --delete -e "ssh -p 63221" ~/.config/LS_COLORS gabx@192.168.100.10:/home/gabx/.config/LS_COLORS
+echo $SSH_AUTH_SOCK
+ssh-add ~/.ssh/id_ed25519
+ls -al ~/.ssh
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+ssh-add -l
+PROMPT="%n@%{$fg_bold[magenta]%}%m %{$fg[green]%}%1|âƒ©ƒ¨ %2~ %{$reset_color%}%# "
+PROMPT="%n@%{$fg_bold[blue]%}%m %{$fg[green]%}|| âƒ©ƒ¨ %~ %{$reset_color%}%# "
+cd /etc
+PROMPT="%n@%{$fg_bold[blue]%}%m %{$fg[green]%}|| âƒ©ƒ¨ %~ %{$reset_color%}%# "
+PROMPT="%{$fg_bold[red]%}%n%{$reset_color%}@%{$fg_bold[blue]%}%m %{$fg[green]%}"
+PROMPT="%{$fg_bold[red]%}%n%{$reset_color%}@%{$fg_bold[blue]%}%m %{$fg[green]%}|| âƒ©ƒ¨ %d %{$reset_color%}%# "
+PROMPT="%n@%{$fg_bold[blue]%}%m %{$fg[green]%}|| âƒ©ƒ¨ %d %{$reset_color%\
+"
+%{$fg[green]%}[] âƒ©ƒ¨ %d
+PROMPT="%n@%{$fg_bold[blue]%}%m %{$fg[green]%}[] âƒ©ƒ¨ %d %{$reset_color%}%# "
+cp .initzsh .initzsh.vm
+rsync -av --delete -e "ssh -p 63221" ~/.config/zsh/.initzsh.vm gabx@192.168.100.10:/home/gabx/.config/zsh/.initzsh
+zsh
+rsync -av -e "ssh -p 63221" ~/.config/nvim/ gabx@192.168.100.10:/home/gabx/.config/nvim/
+sed -n '1,200p' /srv/vm/rstudio-crosvm/run.sh
+nvim /srv/vm/rstudio-crosvm/run.sh
+sudo ./run.sh
+rsync -av -e "ssh -p 63221" ~/.config/nvim-gtk/ gabx@192.168.100.10:/home/gabx/.config/nvim-gtk
+rsync -av -e "ssh -p 63221" ~/.config/nvim.kickstart/ gabx@192.168.100.10:/home/gabx/.config/nvim.kickstart
+rsync -av -e "ssh -p 63221" ~/.config/nvimLazyvim/ gabx@192.168.100.10:/home/gabx/.config/nvimLazyvim
+ssh -p 63221 gabx@192.168.100.10
+cd /srv/vm/rstudio-crosvm
+sudo ./run.sh
+rsync -av -e "ssh -p 63221" ~/.config/r gabx@192.168.100.10:/home/gabx/.config/r
+scp -P 63221 ~/.config/.profile gabx@192.168.100.10:/home/gabx/.config/.profile
+scp -P 63221 ~/.Rprofile gabx@192.168.100.10:/home/gabx/.Rprofile
+rm ~/Curriculum\ Vitae\ dÃ©taillÃ©\ e\ candidat\ _3_.pdf
+rsync -av -e "ssh -p 63221" /development/r gabx@192.168.100.10:/development/r
+rsync -av -e "ssh -p 63221" /development/language/r gabx@192.168.100.10:/development/r
+ls -al /development/r
+ls -al /development/
+ls -al
+rm -r rootfs
+sudo rm -r rootfs
+pkill firefox
+mylsblk
+findmnt /srv/vm
+findmnt /srv
+df -h /srv/vm
+ls -al /srv/vm
+lsblk -f /dev/sda3
+ls -ld /srv/vm
+sudo mount /dev/sda3 /srv/vm
+findmnt /srv/vm
+ls -al /srv/vm
+lsblk -f /dev/sda3
+sudo nvim /etc/fstab
+sudo umount /srv/vm
+sudo mount -a
+systemctl daemon-reload
+sudo mount -a
+findmnt /srv/vm
+df -h /srv/vm
+ls -al /srv/vm
+ls -al /srv/vm/lost+found
+ls -al /srv/vm/rstudio-crosvm
+sudo rm -rf /srv/vm/rstudio-crosvm/rootfs
+ls -al /srv/vm/rstudio-crosvm
+sudo rm -f /srv/vm/rstudio-crosvm/rootfs.img
+cat /srv/vm/rstudio-crosvm/run.sh
+ls -al /srv/vm/rstudio-crosvm
+cd /srv/vm/rstudio-crosvm
+mv run.sh run-arch.sh
+ls -l /boot
+sudo ls -l /boot
+ls -al
+cp /development/run-fydeos.sh ./
+ls -al
+chmod u+x run-fydeos.sh
+ls -al
+chmod +x run-fydeos.sh
+ls -al
+cp /development/how-to_rstudio-crosvm.txt ./
+cp /development/rstudio-crosvm.README.md ./
+ls -al
+sudo nvim /etc/fstab
+sudo pacman -Syu
+sudo nvim -d /etc/containers/containers.conf /etc/containers/containers.conf.pacnew
+sudo mv /etc/containers/containers.conf.pacnew /etc/containers/containers.conf
+sudo nvim -d /etc/pacman.conf /etc/pacman.conf.pacnew
+sudo mv /etc/pacman.conf.pacnew /etc/pacman.conf
+yay -Syu
+cd /development/build
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay -Syu
+systemctl --failed
+adb devices
+adb reboot-bootloader
+cd ~
+fastboot boot magisk_patched.img
+adb reboot-bootloader
+fastboot boot magisk_patched.img
+adb devices
+adb reboot-bootloader
+fastboot boot magisk_patched.img
+btop
+git clone https://aur.archlinux.org/yay.gitcman -Qs gnome-keyring
+pacman -Qs gnome-keyring\
+
+ps aux | grep gnome-keyring
+sudo pacman -Rs libgnome-keyring
+sudo pacman -R libgnome-keyring
+sudo pacman -Rd libgnome-keyring
+sudo pacman -Rdd libgnome-keyring
+sudo pacman -Rs libgksu
+sudo pacman -Rs libgksu gksu
+seahorse
+echo $GNOME_KEYRING_CONTROL
+ls /run/user/1000/keyring
+cd ~
+pkill gnome-keyring-daemon
+pkill gnome-keyring-d
+myps gnome-keyring
+eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+ls "$GNOME_KEYRING_CONTROL"
+echo $DBUS_SESSION_BUS_ADDRESS
+systemctl --user stop gnome-keyring-daemon.service
+systemctl --user stop gnome-keyring-daemon.socket
+ps aux | grep gnome-keyring-daemon
+rm -rf /run/user/1000/keyring
+mkdir -p /run/user/1000/keyring
+eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)\
+
+rm -rf /run/user/1000/keyring
+mkdir -m 700 /run/user/1000/keyring
+ls -ld /run/user/1000/keyring
+eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+pkill gnome-keyring-daemon
+pkill gnome-keyring-d
+rm -rf /run/user/1000/keyring
+sed -n '1,200p' /etc/pam.d/login
+sed -n '1,200p' /etc/pam.d/system-login
+sudo nvim /etc/pam.d/system-login
+pkil
+pkill gnome-keyring-d
+rm -rf /run/user/1000/keyring
+ls -ld /run/user/1000
+ls -ld /run/user/1000/keyring
+echo $GNOME_KEYRING_CONTROL
+ls "$GNOME_KEYRING_CONTROL"
+ls -ld /run/user/1000\
+
+echo $GNOME_KEYRING_CONTROL
+ls "$GNOME_KEYRING_CONTROL"
+ls -ld /run/user/1000
+ls -ld /run/user/1000/keyring
+echo $GNOME_KEYRING_CONTROL
+ls "$GNOME_KEYRING_CONTROL"
+nvim ~/.config/environment.d/90-gnome-keyring.conf
+echo $GNOME_KEYRING_CONTROL
+ls "$GNOME_KEYRING_CONTROL"
+systemctl --failed
+systemctl status sshd.service
+systemctl list-units
+cat /usr/lib/systemd/user/gnome-keyring-daemon.service
+touch .config/chromium-flags.conf
+systemctl --user disable gnome-keyring.service 2>/dev/null
+systemctl --user stop gnome-keyring.service 2>/dev/null
+systemctl --user daemon-reexec
+systemctl --user daemon-reload
+systemctl --user enable gnome-keyring-daemon.service
+systemctl --user start gnome-keyring-daemon.service
+systemctl --user status gnome-keyring-daemon.service
+systemctl --user enable gnome-keyring-daemon.service
+sudo ln -s /usr/lib/systemd/user/gnome-keyring-daemon.service .config/systemd/user/default.target.wants/
+ls -al .config/systemd/user/default.target.wants/
+systemctl --user enable gnome-keyring-daemon.socket
+cat usr/lib/systemd/user/gnome-keyring-daemon.socket
+cat /usr/lib/systemd/user/gnome-keyring-daemon.socket
+sudo ln -s /usr/lib/systemd/user/gnome-keyring-daemon.socket .config/systemd/user/sockets.target.wants
+ls -al .config/systemd/user/sockets.target.wants
+systemctl --user status gnome-keyring-daemon.socket
+pgrep chromium && echo "encore lancÃ©"
+systemctl --user status gnome-keyring-daemon.service --no-pager
+systemctl --user disable gnome-keyring-daemon.socket
+ls -al .config/systemd/user/sockets.target.wants
+rm .config/systemd/user/sockets.target.wants/gnome-keyring-daemon.socket
+systemctl --user stop gnome-keyring-daemon.socket
+systemctl --user status gnome-keyring-daemon.socket --no-pager
+systemctl --user status gnome-keyring-daemon.service --no-pager
+systemctl --user enable --now gnome-keyring-daemon.service
+ls -al .config/systemd/user/default.target.wants/
+sudo chown gabx:gabx .config/systemd/user/default.target.wants/gnome-keyring-daemon.service
+systemctl --user enable --now gnome-keyring-daemon.service
+ls -al .config/systemd/user/default.target.wants/
+sudo rm .config/systemd/user/default.target.wants/gnome-keyring-daemon.service
+systemctl --user enable --now gnome-keyring-daemon.service
+ls -al .config/systemd/user/default.target.wants/
+ln -s /usr/lib/systemd/user/gnome-keyring-daemon.service .config/systemd/user/default.target.wants/
+ls -al .config/systemd/user/default.target.wants/
+systemctl --user enable --now gnome-keyring-daemon.service
+ls -al .config/systemd/user/sockets.target.wants
+calc
+systemctl --user start gnome-keyring-daemon.service
+systemctl --user status gnome-keyring-daemon.service
+systemctl --user mask gnome-keyring-daemon.socket
+mkdir -p ~/.config/systemd/user/gnome-keyring-daemon.socket.d
+nvim ~/.config/systemd/user/gnome-keyring-daemon.socket.d/disable.conf
+systemctl --user daemon-reload\
+
+systemctl --user stop gnome-keyring-daemon.socket
+systemctl --user status gnome-keyring-daemon.socket --no-pager
+systemctl --user status gnome-keyring-daemon.service --no-pager
+ls "$GNOME_KEYRING_CONTROL"
+busctl --user tree org.freedesktop.secrets
+git config --global credential.helper /usr/lib/git-core/git-credential-libsecret
+env
+sudo nvim /etc/pam.d/passwd
+systemctl --user enable gcr-ssh-agent.socket
+ln -s /usr/lib/systemd/user/gcr-ssh-agent.socket .config/systemd/user/sockets.target.wants/gcr-ssh-agent.socket
+ls -al .config/systemd/user/sockets.target.wants
+systemctl start gcr-ssh-agent.socket
+systemctl --user start gcr-ssh-agent.socket
+systemctl --user status gcr-ssh-agent.socket
+ls -al $XDG_RUNTIME_DIR/gcr
+ssh-add -L
+systemctl --user status gcr-ssh-agent.service
+systemctl --user start gcr-ssh-agent.service
+systemctl --user status gcr-ssh-agent.service
+ssh-add -L
+ls -al /etc
+sudo chown root:root /etc/fstab
+cat /etc/resolv.conf.bck
+sudo rm /etc/resolv.conf.bck
+ls -al /etc
+ls -al /etc/colord
+ssh-add -L
+systemctl --user status gcr-ssh-agent.socket
+ls -al $XDG_RUNTIME_DIR/gcr/
+echo $SSH_AUTH_SOCK
+ps aux | grep gnome-keyring-daemon
+ls -l /run/user/1000/gcr/ssh
+grep -R "SSH_AUTH_SOCK\|ssh-agent\|gnome-keyring" ~/.config ~/.zshrc ~/.zprofile ~/.profile ~/.xprofile 2>/dev/null
+ls -l /run/user/1000/keyring
+systemctl --user status gcr-ssh-agent.service
+systemctl --user status gcr-ssh-agent.socket
+echo $SSH_AUTH_SOCK
+ssh-add -l
+ssh-add ~/.ssh/id_ed25519
+ls -al ~/.ssh
+ls -al ~/.config/.ssh
+convert -resize 120 source ~/Pictures/Arno-profile-pic.jpg dest ~/Pictures/Arno-profile-pic_resized.jpg
+magick ~/Pictures/Arno-profile-pic.jpg -resize 120x150 ~/Pictures/Arno-profile-pic_resized.jpg
+env
+ls -al
+ls -al .config
+cp -van .config /backup/config
+ls -al /backup
+ls -al /backup/config
+mv /backup/config /backup/config-20251218
+ls -al /backup/
+echo $SSH_AUTH_SOCK
+ls -al /backup/.Trash-1000
+ls -al /backup/.Trash-1000/files
+gpg --list-secret-keys
+wezterm show-keys --lua --key-table copy_mode
+bash -c "$(wget -qO- https://git.io/vQgMr)"
+wezterm show-keys --lua --key-table copy_mode
+bash -c "$(wget -qO- https://git.io/vQgMr)"
+env | grep TERMINAL
+xprop _NET_WM_PID WM_CLASS
+ps -aux | grep `ps -p $$ -o ppid=`
+155
+bash -c "$(wget -qO- https://git.io/vQgMr)"
+ls -al /etc
+ls -al /home/gabx
+wezterm ls-colors
+wezterm list-colors
+wezterm ls-colors
+wezterm --help
+wezterm shell-completion
+bash -c "$(wget -qO- https://git.io/vQgMr)"
+systemctl --failed
+ip a
+systemctl status systemd-networkd.service
+ssh -p 63221 gabx@192.168.100.10
+ip a
+networkctl
+wezterm --config-file ~/.config/wezterm/lua/rose-pine.lua start
+ls -al
+[
+git clone https://github.com/hardhackerlabs/theme-wezterm
+ls -al
+mkdir colors
+ls -al
+mv theme-wezterm/hardhacker.toml colors
+rm -r theme-wezterm
+sudo rm -r theme-wezterm
+ls -al ~
+cp wezterm.lua wezterm.lua.bck
+cp -r .config/wezterm .config/wezterm.bck
+systemctl --failed
+systemctl status btrfs-backup.service
+sudo mount /dev/sda3 /srv/vm
+crosvm --help
+yazi
+journalctl -r
+journalctl --help
+journalctl --failed
+journalctl --help
+systemctl --failed
+journalctl --unit=btrfs-backup
+wezterm show-keys --lua --key-table copy_mode
+printf "\033]1337;SetUserVar=%s=%s\007" wez_not $(echo -n "$title" | base64 -w 0)
+journalctl --unit=btrfs-backup
+CALC
+calc
+sudo pacman -Syu gemini-cli
+yay -Syu ai-browser-git
+clear
+gemini
+cd /development
+ls -al
+cd language
+ls -al
+ls -al r
+cd r
+mkdir portfolio-management-gemini
+cd /development
+ls -aL
+ls -al
+mkdir linux
+mkdir linux/config
+cd /development/linux
+gemini
+ls -al
+sudo cp /etc/fstab .
+sudo chown gabx:gabx fstab
+sudo chown root:root fstab
+sudo mv fstab /etc/
+sudo cp /usr/local/bin/btrfs-backup.sh .
+printf "deleting"
+sudo chown gabx:gabx btrfs-backup.sh
+cp btrfs-backup.sh btrfs-backup.sh.orig
+sudo chown root:root btrfs-backup.sh
+sudo mv btrfs-backup.sh /usr/local/bin
+sudo systemctl daemon-reload
+sudo systemctl start btrfs-backup.service
+sudo systemctl status btrfs-backup.service
+sudo cp /usr/local/bin/btrfs-backup.sh .
+sudo chown gabx:gabx btrfs-backup.sh
+sudo chown root:root btrfs-backup.sh
+sudo mv btrfs-backup.sh /usr/local/bin
+sudo systemctl daemon-reload
+sudo systemctl start btrfs-backup.service
+sudo systemctl status btrfs-backup.service
+sudo cp /usr/local/bin/btrfs-backup.sh .
+sudo chown gabx:gabx btrfs-backup.sh
+sudo chown root:root btrfs-backup.sh
+sudo cp btrfs-backup.sh /usr/local/bin
+sudo systemctl daemon-reload
+sudo systemctl start btrfs-backup.service
+sudo systemctl status btrfs-backup.service
+sudo nvim /usr/local/bin/btrfs-backup.sh
+sudo systemctl daemon-reload
+sudo systemctl start btrfs-backup.service
+sudo btrfs subvolume list /
+sudo ls -al /home/gabx.homedir/.snapshots
+sudo ls -al /home/gabx.homedir/.snapshots/1
+sudo ls -al /home/gabx.homedir/.snapshots/1/snapshot
+sudo ls -al /home/gabx.homedir/.snapshots/
+for i in /home/gabx/.snapshots/*/snapshot; do\
+ sudo btrfs subvolume delete "$i"\
+done
+for i in /home/gabx.homedir/.snapshots/*/snapshot; do\
+ sudo btrfs subvolume delete "$i"\
+done
+sudo -i
+su
+sudo -i
+sudo btrfs subvolume list /home/gabx | grep snapshots
+sudo btrfs subvolume delete /home/gabx/.local-snapshots/home-20251204-0127
+sudo btrfs subvolume delete /home/gabx/.local-snapshots/home-2025-12-04-init\
+
+sudo btrfs subvolume delete /home/gabx/.local-snapshots/home-latest
+sudo btrfs subvolume list /home/gabx | grep snapshots
+sudo btrfs property set /home/gabx/.local-snapshots/home-latest ro false\
+
+lsattr -d /home/gabx/.local-snapshots/home-latest
+df /home/gabx
+sudo mount -o subvolid=5 /dev/nvme0n1p2 /mnt
+ls -d /mnt/@home/gabx.homedir/.local-snapshots/home-latest
+sudo btrfs subvolume delete /mnt/@home/gabx.homedir/.local-snapshots/home-latest
+sudo umount /mnt
+sudo ls -al /home/gabx.homedir/.snapshots/
+sudo ls -al /home/gabx.homedir/
+sudo ls -al /home/gabx.homedir/.local-snapshots
+sudo umount /mnt
+tail -f /backup/analysis_daily/$(date +%Y-%m-%d).txt
+sudo systemctl status btrfs-backup.service
+systemctl is-enabled btrfs-backup.timer
+git status
+ls -la
+sudo systemctl reboot
+sudo homectl inspect gabx
+sudo homectl update gabx --realName='Arno Gaboury'
+homectl --list
+homectl --help
+sudo homectl update gabx --real-name='Arno Gaboury'
+sudo homectl inspect gabx
+calc
+sudo rm -r /home/gabx.homedir.backup
+ls -al
+sudo rm -r r
+ls -al r
+sudo ls -al r
+ls -al
+sudo rm -rf .local-snapshots-gabx
+sudo btrfs subvolume delete /home/.local-snapshots-gabx/home-latest
+sudo rm -rf /home/.local-snapshots-gabx
+ls -al
+sudo /usr/local/bin/btrfs-backup.sh home
+ls -al /home/gabx/.local-snapshots/
+ls -al /home/gabx/.local-snapshots/home-latest
+ls -al
+mv /home/gabx/Downloads/scan_260104-144319.pdf Documents/romeo
+gemini --help
+gemini
+gnome-keyring-daemon --start --components=secrets
+seahorse
+mkdir -p ~/.config/dconf
+ls -al .config
+HOME=/home/gabx seahorse
+sudo pacman -Syu python3-secretstorage
+sudo pacman -Syu python-secretstorage
+python3
+env HOME=/home/gabx seahorse
+touch .config/dconf/cosmic
+env HOME=/home/gabx seahorse
+rm .config/dconf/cosmic
+env HOME=/home/gabx seahorse
+ls -al .config
+ls -al .config/dconf
+killall seahorse\
+
+DCONF_PROFILE=user seahorse
+python
+ls -l ~/.local/share/keyrings/
+killall goa-daemon
+rm -rf ~/.config/goa-1.0/accounts.conf
+evolution --force-shutdown
+rm -rf ~/.cache/evolution
+sudo pacman -Rs evolution
+sudo pacman -S evolution
+sudo pacman -Rs evolution
+rm -rf ~/.config/evolution
+rm -rf ~/.cache/evolution
+rm -rf ~/.local/share/evolution
+sudo pacman -S evolution
+dconf reset -f /org/gnome/evolution/
+env HOME=/home/gabx dconf reset -f /org/gnome/evolution/
+DCONF_PROFILE=user evolution\
+
+sudo pacman -S thunderbird
+env
+clear
+gpg --full-gen-key\
+
+gpg --list-keys
+gpg --armor --export-secret-keys E9876272C25AC145A5A83C9CB497B543A258552D\
+
+env | grep GPG
+export GPG_TTY=$(tty)
+env | grep GPG
+gpgconf --kill gpg-agent
+gpg --armor --export-secret-keys E9876272C25AC145A5A83C9CB497B543A258552D\
+
+echo "pinentry-program /usr/bin/pinentry-curses" >> ~/.gnupg/gpg-agent.conf
+gpgconf --kill gpg-agent
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye\
+
+gpg --armor --export-secret-keys E9876272C25AC145A5A83C9CB497B543A258552D\
+
+echo "test" | gpg --sign -u E9876272C25AC145A5A83C9CB497B543A258552D\
+
+gpg --list-secret-keys
+gpg --armor --export-options export minimal
+ls /home/gabx
+ls -al /home/gabx
+cd ..
+ls -al
+cd gabx
+ls -al
+cat 'Arno Gaboury arnaud.gaboury@gmail.com-(0x56C96F0EE1CA590E)-public.3.asc'
+yay -S lazydocker
+lazydocker
+man lazydocker
+lazydocker --help
+lazydocker --config
+sudo pacman -S fzf
+fzf --help
+ls -al
+fzf bash
+podman run -p 3000:8080 bentopdf/bentopdf:latest
+podman --help
+podman run -d --name mon-bentopdf -p 3000:8080 docker.io/bentopdf/bentopdf:latest
+sudo pacman -S crun
+which crun
+crun --version
+mkdir -p ~/.config/containers
+touch ~/.config/containers/containers.conf
+podman run -d --name mon-bentopdf -p 3000:8080 docker.io/bentopdf/bentopdf:latest\
+
+systemctl --failed
+sudo mv /etc/containers/registries.conf.d/10-unqualified-serach-registries.conf /etc/containers/registries.conf.d/10-unqualified-search-registries.conf
+podman run -d --name mon-bentopdf -p 3000:8080 docker.io/bentopdf/bentopdf:latest
+podman system reset\
+
+sudo cp /etc/containers/containers.conf ~/.config/containers
+sudo chown gabx:gabx ~/.config/containers/containers.conf
+podman run -d --name mon-bentopdf -p 3000:8080 docker.io/bentopdf/bentopdf:latest
+podman --runtime=crun run -d --name mon-bentopdf -p 3000:8080 docker.io/bentopdf/bentopdf:latest
+podman --help
+which crun
+podman --log-level=debug run -d --name mon-bentopdf -p 3000:8080 docker.io/bentopdf/bentopdf:latest
+uid
+id
+homectl inspect gabx
+cat /etc/passwd
+podman system reset --force
+rm -rf ~/.local/share/containers
+sudo rm -rf ~/.local/share/containers
+rm -rf ~/.config/containers
+podman run -d --name mon-bentopdf -p 3000:8080 docker.io/bentopdf/bentopdf:latest
+yazi
+cat /etc/resolv.conf
+ls -al /etc/wireguard
+sudo ls -al /etc/wireguard
+sudo ip link add dev wg0 type wireguard
+sudo ip address add 10.0.0.1/24 dev wg0
+sudo ip link set wg0 up
+ip a
+sudo wg set wg0 private-key ./server_private listen-port 51820
+cd /etc/wireguard/
+su
+ip netns exec vpn_client sudo -u gabx firefox
+su
+chmod +x start_vpn.sh
+ls -al
+pwd
+sudo ip netns exec vpn_client traceroute -n 8.8.8.8
+sudo pacman -S traceroute
+sudo ip netns exec vpn_client traceroute -n 8.8.8.8
+traceroute -n 8.8.8.8
+mv ~/Music/firefox-vpn /usr/local/bin
+sudo mv ~/Music/firefox-vpn /usr/local/bin
+sudo chown root:root /usr/local/bin/firefox-vpn
+ls -al /usr/local/bin/firefox-vpn
+ls -al /usr/local/bin/
+sudo chmod +x /usr/local/bin/firefox-vpn
+ls -al /usr/local/bin/
+sudo EDITOR=nvim visudo
+sudo ls -al /etc/sudoers.d
+sudo nvim /etc/sudoers.d/10-gabx
+sudo nvim /etc/sudoers.d/15-firefox-vpn
+mv ~/Music/firefox-vpn.desktop ~/.local/share/applications/firefox-vpn.desktop
+sudo chwon root:root ~/Music/self*
+sudo chown root:root ~/Music/self*
+ls -al ~/Music/
+sudo chmod +x ~/Music/self-vpn
+sudo mv ~/Music/self-vpn /usr/local/bin
+sudo mv ~/Music/self-vpn.service /etc/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl start self-vpn
+systemctl status self-vpn
+sudo systemctl status self-vpn
+sudo systemctl enable self-vpn
+yazi
+yay -Syu
+yazi
+yazi --debug output
+yazi
+mv ~/.config/yazi ~/.config/yazi.bck
+yazi
+sudo wireguird
+sudo pacman -S wireguard-tools
+sudo mkdir -p /etc/containers/systemd/wg-easy
+sudo mkdir -p /etc/containers/volumes/wg-easy
+sudo chown root:root ~/Music/wg-easy.container
+sudo mv ~/Music/wg-easy.container /etc/containers/systemd/wg-easy/
+sudo chown root:root ~/Music/wg-easy.network
+sudo mv ~/Music/wg-easy.network /etc/containers/systemd/wg-easy/
+lsmod
+lsmod | grep wireguard
+lsmod | grep nft
+wireguird
+sudo wireguird
+wg
+sudo wg
+xhost +si:localuser:root
+sudo wireguird
+clear
+ls -al /etc/containers/systemd/wg-easy/
+sudo rm -r /etc/containers/systemd/wg-easy/
+ls -al /etc/containers/systemd/
+yazi
+yazi 2> yazi_debug.log
+cat yazi_debug.log
+mkdir .config/yazi
+yazi
+cd ~/.config/yazi/plugins/yatline.yazi
+git pull
+\
+
+ya pack -a imsi32/yatline
+yazi
+podman compose version
+ls -al
+pwd
+cd ~/.config/yazi/plugins
+ls -al
+podman compose --file compose.yaml up --detach
+podman network create proxy-net
+podman compose --file compose.yaml up --detach
+ip a
+cat yazi_debug.log
+yazi --help
+yazi
+yazi_debug.log
+yazi 2> yazi_debug.log
+cat yazi_debug.log
+yazi 2> yazi_debug.log
+cat yazi_debug.log
+sed -i 's/ya.truncate/ui.truncate/g' ~/.config/yazi/plugins/yatline.yazi/main.lua
+yazi
+yazi 2> yazi_debug.log
+cat yazi_debug.log
+rm yazi_debug.log
+pwd
+cd ~/.config/yazi
+cp init.lua init.lua.brok
+yazi
+cp /usr/share/applications/org.wezfurlong.wezterm.desktop ~/.local/share/applications/
+nvim ~/.local/share/applications/org.wezfurlong.wezterm.desktop
+nvim ~/.config/wezterm/wezterm.lua
+nvim ~/.local/share/applications/org.wezfurlong.wezterm.desktop
+pwd
+nvim ~/.local/share/applications/org.wezfurlong.wezterm.desktop
+pwd
+nvim ~/.local/share/applications/org.wezfurlong.wezterm.desktop
+clear
+sudo pacman -Syu texmaker
+sudo pacman -Syu
+ls -al /development
+mkdir /development/latex
+cd /development
+systemctl --user status gnome-keyring-daemon.service
+systemctl --user show-environment | grep HOME
+systemctl --user import-environment HOME
+systemctl --user restart gnome-keyring-daemon.service
+systemctl --user status gnome-keyring-daemon.service
+nvim ~/.profile
+systemctl --user status gnome-keyring-daemon.service
+sudo systemctl edit btrfs-backup.timer
+ls -al /etc/systemd/system
+cat /etc/systemd/system/btrfs-backup.timer
+sudo nvim /etc/systemd/system/btrfs-backup.timer
+sudo systemctl daemon-reload
+systemctl list-timers
+sudo systemctl edit btrfs-backup-verify.timer
+env | grep HOME
+systemctl --failed
+systemctl status systemd-networkd-wait-online.service
+systemctl --failed
+uptime$
+uptime
+free -h
+journalctl -b -1 -e
+journalctl -e
+systemctl status systemd-networkd-wait-online.service
+sudo systemctl edit systemd-networkd-wait-online
+cd /etc/systemd/network/
+ls -al
+cat 10-static.network.brok
+cat 20-wired.network
+sudo nvim 20-wired.network
+uptime
+yay -Syu
+free -h
+yay -Syu
+journalctl -b 0 -p 3 -r
+sudo modprobe -r spd5118
+gpg --keyserver keyserver.ubuntu.com --recv-keys 7CCA1BA66669F3273DB52678E5B81343AB9809E1
+gpg --keyserver keys.openpgp.org --recv-keys 7CCA1BA66669F3273DB52678E5B81343AB9809E1
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 7CCA1BA66669F3273DB52678E5B81343AB9809E1
+gpgconf --kill all
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 7CCA1BA66669F3273DB52678E5B81343AB9809E1
+ping -c 3 keyserver.ubuntu.com
+gpg --keyserver hkp://162.213.33.9 --recv-keys 7CCA1BA66669F3273DB52678E5B81343AB9809E1
+curl -4 "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x7CCA1BA66669F3273DB52678E5B81343AB9809E1" | gpg --import
+curl -4 "https://keys.openpgp.org/vks/v1/by-fingerprint/7CCA1BA66669F3273DB52678E5B81343AB9809E1" | gpg --import\
+
+yay -S wg-client --mflags --skipinteg
+yay -S wg-client --mflags --gpgflags "--allow-weak-key-signatures"
+yay -S wg-client --gpgflags "--allow-weak-key-signatures"
+sudo pacman -Syu
+cd /development/build
+git clone https://aur.archlinux.org/pyconcurrent.git
+cd pyconcurrent
+makepkg -si --skippgpcheck
+git clone https://aur.archlinux.org/python-pynotify.git
+cd python-pynotify
+makepkg -si --skippgpcheck
+git clone https://aur.archlinux.org/wg-client.git
+cd wg-client
+makepkg -si --skippgpcheck
+yay -Syu
+sudo find /etc /home -type f \( -name "privatekey" -o -name "publickey" -o -name "*.key" -o -name "*.pub" -o -name "wg*.conf" \) 2>/dev/null
+cat ~/.config/wiregard/privatekey | wg pubkey\
+
+cat ~/.config/wiregard/peer_A.key | wg pubkey\
+
+cat ~/.config/wireguard/peer_A.key | wg pubkey\
+
+cd ~/Music
+sudo cp /etc/systemd/network/99-wg0.netdev .
+sudo chown gabx:gabx 99-wg0.netdev
+cat /etc/wireguard/wg0.conf
+sudo cat /etc/wireguard/wg0.conf
+sudo chwon root:root 99-wg0.netdev
+sudo chown root:root 99-wg0.netdev
+sudo mv 99-wg0.netdev /etc/systemd/network
+sudo chmod 600 /etc/systemd/network/99-wg0.netdev
+sudo systemctl restart systemd-networkd
+sudo systemctl status systemd-networkd
+ip addr show wg0
+sudo wg show
+sudo systemctl daemon-reload
+sudo systemctl restart systemd-networkd
+sudo systemctl status systemd-networkd
+sudo wg show
+sudo grep -r "8E+d" /etc/wireguard /etc/systemd/network
+cd /
+sudo ip link delete wg0
+sudo systemctl restart systemd-networkd
+sudo wg show
+systemctl status self-vpn.service
+journalctl -u systemd-networkd -e --no-pager\
+
+sudo chown root:systemd-network /etc/systemd/network/99-wg0.netdev
+sudo chmod 640 /etc/systemd/network/99-wg0.netdev
+sudo systemctl restart systemd-networkd
+sudo wg show
+sudo cp 99-wg0.netdev ~/Music
+sudo cp /etc/systemd/system/network/99-wg0.netdev ~/Music
+sudo cp /etc/systemd/network/network/99-wg0.netdev ~/Music
+sudo cp /etc/systemd/network/99-wg0.netdev ~/Music
+ls -al ~/Music
+cd ~/Music
+sudo chwon gabx:gabx 99-wg0.netdev
+sudo chown gabx:gabx 99-wg0.netdev
+cat /usr/local/bin/self-vpn
+sudo mv /etc/systemd/network/99-wg0.netdev /etc/systemd/network/99-wg0.netdev.bck
+sudo mv /etc/systemd/network/99-wg0.bck /etc/systemd/network/99-wg0.network.bck
+sudo mv /etc/systemd/network/99-wg0.network /etc/systemd/network/99-wg0.network.bck
+sudo systemctl restart systemd-networkd\
+
+ls -al /etc/wireguard/
+sudo ls -al /etc/wireguard/
+sudo chmod 600 /etc/wireguard/server_private /etc/wireguard/client_private
+sudo cp /usr/local/bin/self-vpn .
+sudo chown gabx:gabx self-vpn
+sudo chown root:root self-vpn
+sudo mv self-vpn /usr/local/bin
+sudo systemctl stop systemd-networkd
+sudo /usr/local/bin/self-vpn restart
+sudo systemctl start systemd-networkd
+sudo ip netns exec vpn_client wg show
+sudo ip netns exec vpn_client ping -c 4 10.0.0.1
+sudo ip netns exec vpn_client wg show
+echo "blacklist spd5118" | sudo tee /etc/modprobe.d/no-spd5118.conf
+pwd
+cd ~/.local/share/applications
+cat firefox-vpn.desktop
+cat /usr/local/bin/firefox-vpn
+sudo nvim /usr/local/bin/firefox-vpn
+cat /usr/local/bin/firefox-vpn
+sudo nvim ~/.local/share/applications/firefox-vpn.desktop
+su
+yay -S lxqt-sudo
+sudo pacman -Rs lxqt-sudo
+sudo pacman -S zenity
+sudo nvim nano ~/.local/share/applications/firefox-vpn.desktop\
+
+sudo nvim ~/.local/share/applications/firefox-vpn.desktop\
+
+sudo pacman -Rs zenity
+yay -S lxqt-sudo
+sudo nvim ~/.local/share/applications/firefox-vpn.desktop
+sudo pacman -S zenity
+sudo cp ~/.local/share/applications/firefox-vpn.desktop ~/.local/share/applications/firefox-vpn.desktop.bck
+ls -al ~/.local/share/applications/
+nvim ~/.local/share/applications/firefox-vpn.desktop
+nvim
+cat /etc/systemd/system/self-vpn.service
+sudo nvim /etc/systemd/system/self-vpn.service
+cat /etc/systemd/system/self-vpn.service
+nvim
+grep -rn "projects" ~/.config/nvim
+nano ~/.config/nvim/lua/plugins/tokyo_scheme.lua
+nvim
+nano ~/.config/nvim/lua/plugins/tokyo_scheme.lua
+grep -rn "patterns" ~/.config/nvim\
+
+nano ~/.config/nvim/lua/plugins/tokyo_scheme.lua
+grep -rn "dev = true" ~/.config/nvim
+nano ~/.config/nvim/lua/plugins/tokyo_scheme.lua
+nvim
+su
+ls -al ~/.config
+systemd-resolve status
+sudo systemctl start systemd-resolved
+sudo systemctl enable systemd-resolved
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+resolvectl status\
+
+sudo systemctl stop avahi-daemon
+sudo systemctl stop avahi-daemon.socket
+sudo systemctl disable avahi-daemon
+cat /etc/nsswitch.conf
+sudo nvim /etc/nsswitch.conf
+sudo nano /etc/nsswitch.conf
+ping magnolia.local
+sudo nano /etc/systemd/resolved.conf.pacnew
+sudo mv /etc/systemd/resolved.conf.pacnew /etc/systemd/resolved.conf
+systemd-analyze cat-config systemd/resolve.conf
+systemd-analyze cat-config systemd/resolved.conf
+homectl --help
+sudo homectl update gabx --member-of=lpadmin
+homectl inspect gabx
+yay -S cups-filters ghostscript foomatic-db-ppds foomatic-db-nonfree-ppds poppler-glib
+sudo systemctl restart cups
+sudo systemctl status cups
+resolvectl query votre-imprimante.local
+resolvectl query Canon-TS3400-series
+resolvectl query Canon-TS3400-series.local
+sudo nmap -sn 192.168.1.0/24
+yay -S cnijfilter2\
+
+sudo systemctl restart cups
+systemctl --failed
+sudo nvim /etc/systemd/system/systemd-networkd-wait-online.service.d/override.conf
+systemctl status btrfs-backup
+systemctl status btrfs-backup.timer
+sudo systemctl enable btrfs-backup.timer
+sudo /usr/local/bin/btrfs-backup.sh home
+pwd
+ls -al /home/gabx
+sudo chown -R gabx:gabx /home/gabx/.mozilla
+sudo chmod -R u+rwX /home/gabx/.mozilla
+find ~/.mozilla -name "lock"
+find ~/.mozilla -name ".parentlock"
+killall firefox
+find ~/.mozilla -name ".parentlock" --delete
+find ~/.mozilla -name ".parentlock" -delete
+find ~/.mozilla -name "lock" -delete
+rm -rf ~/.config/GitHub\ Desktop
+rm -rf ~/.config/github-desktop
+rm -rf ~/.config/Electron
+rm -rf ~/.config/github-desktop-updater
+xdg-mime default chromium.desktop x-scheme-handler/http
+xdg-mime default chromium.desktop x-scheme-handler/https
+xdg-settings set default-web-browser chromium.desktop
+killall github-desktop
+xdg-mime default chromium.desktop x-scheme-handler/x-github-client
+BROWSER=chromium github-desktop
+BROWSER=chromium /usr/bin/github-desktop
+BROWSER=chromium /usr/bin/github-desktop-bin
+BROWSER=chromium github-desktop-bin\
+
+ls /usr/bin/ | grep github\
+
+grep -r "Exec=" ~/.local/share/applications /usr/share/applications /var/lib/flatpa
+grep -r "Exec=" ~/.local/share/applications /usr/share/applications /var/lib/flatpak/exports/share/applications 2>/dev/null | grep -i "github"\
+
+yay -S github-desktop-bin
+xdg-mime default firefox.desktop x-scheme-handler/http
+xdg-mime default firefox.desktop x-scheme-handler/https
+xdg-settings set default-web-browser firefox.desktop
+rm -rf ~/.local/share/keyrings
+cd /backup
+ls -l
+ls -l /backup/home
+ls -l /backup/home/snaps/
+sudo btrfs subvolume delete /backup/home/snaps/home-2026-01-18-1751
+sudo btrfs subvolume delete /backup/home/snaps/home-2026-01-13-0044
+df -h /backup
+sudo btrfs subvolume delete /backup/home/snaps/home-2026-01-18-1751
+sudo btrfs subvolume list /backup
+sudo btrfs subvolume delete --subvolid 285 /backup
+sudo btrfs subvolume list /backup
+sudo rm -rf /backup/home/snaps/home-2026-01-18-1751
+df -h /backup
+sudo btrfs balance start -dusage=10 /backup
+find /home/gabx -name "bluejay-install*" 2>/dev/null
+rm -rf /home/gabx/.local-snapshots/home-latest/Downloads/bluejay-install-2025120400
+rm -rf /home/gabx/Downloads/bluejay-install-2025120400
+rm -rf /home/gabx/Downloads/bluejay-install-2025120400.zip
+cat /usr/local/bin/btrfs-backup.sh
+sudo /usr/local/bin/btrfs-backup.sh home
+mkdir -p ~/.local/share/keyrings
+chmod 700 ~/.local/share/keyrings
+killall gnome-keyring-daemon
+eval $(gnome-keyring-daemon --start)
+echo -n "login" > ~/.local/share/keyrings/default
+seahorse
+gpg --list-keys
+env
+env | grep gnupg
+zsh
+env
+source ~/.profile\
+
+env
+zsh
+gpg --list-keys
+git config --global user.signingkey E9876272C25AC145A5A83C9CB497B543A258552D
+git config --global commit.gpgsign true
+git config --global gpg.program gpg
+seahorse
+env | grep git
+cat ~/.config/git/config
+cat ~/.gitconfig
+rm ~/.gitconfig
+git config --list --show-origin
+journalctl -r
+systemctl --failed
+systemctl status systemd-networkd-wait-online.service
+journalctl -b -1 -e
+lsblk
+sudo smartctl -a /dev/sda
+sudo smartctl -d sat -a /dev/sda
+sudo systemctl mask usb-autosuspend
+echo -1 | sudo tee /sys/module/usbcore/parameters/autosuspend
+systemctl status tlp
+echo -1 | sudo tee /sys/module/usbcore/parameters/autosuspend
+sudo smartctl -a /dev/nvme0n1
+ls /boot/loader/entries/
+sudo ls /boot/loader/entries/
+sudo nvim /boot/loader/entries/arch.conf
+rm ~/.local/share/keyrings/*.keyring
+killall -9 gnome-keyring-daemon\
+
+rm -rf ~/.local/share/keyrings
+mkdir -p ~/.local/share/keyrings
+chmod 700 ~/.local/share/keyrings
+echo -n "login" > ~/.local/share/keyrings/default
+gnome-keyring-daemon --start --components=secrets
+export GNOME_KEYRING_CONTROL=/run/user/60509/keyring
+seahorse
+github-desktop
+sudo cp /usr/local/bin/self-vpn /development/git/Arch-linux-self-vpn
+cd /development/git/Arch-linux-self-vpn
+ls -al
+sudo chwon gabx:wheel self-vpn
+sudo chown gabx:wheel self-vpn
+gh auth login
+git status
+gh status
+git commit -m "push main script"
+gpg --full-generate-key
+gpg --list-secret-keys --keyid-format=long\
+
+git config --global user.signingkey 6C19CEC4AF4355D0
+gpg --armor --export 6C19CEC4AF4355D0
+gpg --list-secret-keys --keyid-format=long
+git config --global user.signingkey 6C19CEC4AF4355D0
+git commit --allow-empty -m "Test signature"
+sudo pacman -S xclip wl-clipboard
+sudo pacman -S xclip
+nvim ~/.config/wezterm/wezterm.lua
+cd /development/git/Arch-linux-self-vpn
+sudo cp /etc/systemd/system/self-vpn.service .
+sudo chown gabx:wheel self-vpn.service
+git commit -m "push self-vpn service file"
+git push
+sudo cp /usr/local/bin/firefox-vpn .
+sudo chown gabx:wheel firefox-vpn
+git commit -m "push firefox-vpn"
+git add firefox-vpn
+git commit -m "push firefox-vpn"
+git push
+cp ~/.local/share/applications/firefox-vpn.desktop .
+git add firefox-vpn.desktop
+git commit -m "push desktop icon file"
+git push
+rm ~/.local/share/applications/firefox-vpn.desktop.bck
+journalctl -b -1 -e
+systemctl --failed
+sudo systemctl disable --now systemd-networkd-wait-online.service
+sudo systemctl mask systemd-networkd-wait-online.service
+source .config/zsh/.zshrc
+cat ~/.local/share/keyrings/default
+nvim ~/.local/share/keyrings/default
+github-desktop
+sudo pacman -S lazygit
+cd /development/git
+ls -al
+rm -r archlinux.bck
+rm -r Btrfs-backup.bck
+rm -r Btrfs-backup
+ls -al
+chmod -x gh_cli-quickstart
+ls -al
+lazygit
+yay -S sublime-merge
+cd Btrfs-backup
+sudo cp /usr/local/bin/btrfs-backup.sh .
+ls -al
+git status
+git push
+sudo pacman -Rs github-desktop-bin
+sudo pacman -S giggle
+sudo pacman -Rs giggle
+yay -S gitahead
+sudo pacman -S gitg
+gitg
+git status
+git push
+gh auth login
+git push
+sudo pacman -Rs gitg
+sudo pacman -Rs gitahead
+sudo pacman -Rs sublime-merge
+gh auth login
+cd ..
+git clone https://github.com/gabx/archlinux.git
+cd archlinux
+ls -al
+rm -r home/systemd_user_units
+cp -r ~/.config/systemd/user systemd_user_units
+ls -al
+mv systemd_user_units home
+ls -al
+ls -al home
+git status
+git rm home/systemd_user_units/*
+git status
+git rm -r home/systemd_user_units
+git add home/systemd_user_units/
+git commit -m "huge cleaning. Deleted lots of old service files"
+git push
+ls -al
+ls -al home
+cd home
+rm .Rprofile
+git rm .Rprofile
+git commit -m "Rprofile has changed"
+git push
+git rm .gitkeep
+git commit -m "no need"
+git push
+nvim ~/.gnupg/gpg-agent.conf
+gpg-connect-agent reloadagent /bye
+git status
+ls -al
+rm .xinitrc
+git rm .xinitrc
+git commit -m "don't use X anymore"
+git push
+rm .xprofile
+git rm .xprofile
+git commit -m "don't use X anymore"
+git push
+git config --global credential.helper store
+git push
+ls -al
+rm .zshrc
+git rm .zshrc
+git commit -m ".zshrc is now inside my zsh folder"
+git push
+: 1768781261:0;ls -al
+: 1768781267:0;cd config
+: 1768781269:0;ls -al
+: 1768781295:0;mv ~/.git-credentials ~/.config/git/credentials
+: 1768781305:0;git config --global credential.helper "store --file ~/.config/git/credentials"
+: 1768781317:0;cat ~/.config/git/config
+: 1768781331:0;ls -al
+: 1768781336:0;ls -al gnupg
+: 1768781361:0;rm -r gnupg
+: 1768781370:0;git rm -r gnupg/
+: 1768781387:0;git commit -m "no need to store this folder"
+: 1768781391:0;git push
+: 1768781398:0;rm -r i3
+: 1768781405:0;git rm -r i3
+: 1768781418:0;git commit -m "don't use i3 anymore"
+: 1768781422:0;git push
+: 1768781426:0;ls -al
+: 1768781435:0;rm -r lazygit
+: 1768781447:0;git rm -r lazygit
+: 1768781483:0;git commit -m "don't put this folder in my github"
+: 1768781486:0;git push
+: 1768781500:0;rm -r nvim
+: 1768781508:0;git -rm -r nvim
+: 1768781531:0;git rm -r nvim
+: 1768781557:0;git commit -m "lots of changes, best is to push the new settings"
+: 1768781560:0;git push
+: 1768781579:0;cp -r ~/.config/nvim .
+: 1768781590:0;git add -r nvim/
+: 1768781595:0;git add nvim/
+: 1768781626:0;git commit -m "new clean, no errors nvim config files"
+: 1768781630:0;git push
+: 1768781669:0;cp -r ~/.config/nvim-gtk .
+: 1768781679:0;cp -r ~/.config/nvim.kickstart .
+: 1768781692:0;cp -r ~/.config/nvimLazyvim .
+: 1768781712:0;n
+: 1768781715:0;ls -al
+: 1768781727:0;rm -r nvimLazyvim
+: 1768781739:0;git rm -r nvimLazyvim/
+: 1768781763:0;git commit -m "use new config files for Lazyvim"
+: 1768781767:0;git push
+: 1768781771:0;ls -al
+: 1768781776:0;git status
+: 1768781807:0;git add nvim.kickstart/
+: 1768781827:0;ls -al
+: 1768781910:0;git rm --cached home/config/nvim.kickstart
+: 1768781947:0;rm -rf nvim.kickstart/.git
+: 1768781953:0;git add nvim.kickstart/
+: 1768781976:0;git commit -m "add new nvim folder"
+: 1768781979:0;git push
+: 1768781983:0;ls -al
+: 1768782018:0;rm -r nvim.kickstart
+: 1768782027:0;git rm -r nvim.kickstart
+: 1768782038:0;git commit -m "no need this folder"
+: 1768782042:0;git push
+: 1768782063:0;git add nvim-gtk
+: 1768782077:0;git commit -m "new nvim folder"
+: 1768782082:0;ls -al
+: 1768782092:0;rm -r nvim-gtk
+: 1768782098:0;pwd
+: 1768782104:0;rm -r
+: 1768782108:0;rm -r r
+: 1768782118:0;git -r r
+: 1768782131:0;git rm -r r
+: 1768782153:0;git commit -m "R folder has seen many changes"
+: 1768782157:0;git push
+: 1768782172:0;cp -r ~/.config/r .
+: 1768782176:0;ls -al
+: 1768782186:0;git add r
+: 1768782200:0;git commit -m "new r folder"
+: 1768782203:0;git push
+: 1768782207:0;ls -al
+: 1768782219:0;rm -r urxvt
+: 1768782226:0;git rm -r urxvt/
+: 1768782241:0;git commit -m "don't use urxvt anymore"
+: 1768782244:0;git push
+: 1768782247:0;ls -al
+: 1768782272:0;rm -r ssh
+: 1768782278:0;git rm -r ssh
+: 1768782299:0;git commit -m "no need to put this folder in my git repo"
+: 1768782302:0;git push
+: 1768782306:0;ls -al
+: 1768782315:0;rm -r wezterm
+: 1768782323:0;git rm -r wezterm/
+: 1768782339:0;git commit -m "lots of change in my wezterm config"
+: 1768782342:0;git push
+: 1768782356:0;cp ~/.config/wezterm .
+: 1768782363:0;cp -r ~/.config/wezterm .
+: 1768782369:0;git add wezterm/
+: 1768782385:0;git commit -m "new wezterm correct config files"
+: 1768782389:0;git push
+: 1768782392:0;ls -al
+: 1768782457:0;rm -r yazi
+: 1768782464:0;git rm -r yazi/
+: 1768782482:0;git commit -m "lots of change in my yazi config files"
+: 1768782485:0;git push
+: 1768782500:0;cp ~/.config/yazi .
+: 1768782505:0;cp -r ~/.config/yazi .
+: 1768782511:0;git add yazi/
+: 1768782534:0;git commit -m "new config files for yazi"
+: 1768782537:0;git push
+: 1768782541:0;ls -al
+: 1768782549:0;rm -r zsh
+: 1768782555:0;git rm -r zsh
+: 1768782573:0;git commit -m "some changes of my zsh config"
+: 1768782577:0;git push
+: 1768782590:0;cp -r ~/.config/zsh .

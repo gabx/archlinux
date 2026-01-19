@@ -1,0 +1,82 @@
+# $HOME/.config/zsh/zshrc.d/02_zalias
+# user aliases. System-wide aliases are definied in /etc/aliases
+# Last modified 2016-08-17
+
+# usual ones #
+alias ls='ls -hF --color=auto --group-directories-first'
+alias grep='grep -nI --color'
+# alias R='R --quiet'   casse les commandes R CMD
+alias pacman='pacman --color=auto'
+alias r='/usr/local/bin/r'
+alias mv="mv -iv"
+alias cp="cp -iv"
+
+# load startup configuration files with custom directory #
+alias msmtp='msmtp -C $HOME/.config/msmtp/msmtprc'
+alias weechat='weechat-curses -d $XDG_CONFIG_HOME/weechat'
+# alias vim='vim -u $HOME/.config/vim/vimrc -i $HOME/.config/vim/viminfo'
+alias irssi='irssi --config=$XDG_CONFIG_HOME/irssi'
+# alias tmux='tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf'
+# alias getmail='getmail -d --getmaildir=$XDG_CONFIG_HOME/getmail'
+alias chromium='chromium --ssl-version-min=tlsl'
+#alias geth='geth --datadir "/developement/ether/etherum"'
+
+# pacman alias
+alias pacins='sudo pacman -Syu && sudo pacman -S --noconfirm'
+alias pacorphans='[[ -n $(pacman -Qdt) ]] && sudo pacman -Rs $(pacman -Qdtq) || echo "no orphans to remove"'
+alias pacsave='find /etc -regextype posix-extended -regex ".+\.pac(new|save)" 2> /dev/null'
+alias pacwhich='pacman -Q | grep'
+alias paclist='pacman -Ql'
+alias pacreflector='sudo reflector --verbose -l 7 --sort rate --save /etc/pacman.d/mirrorlist'
+alias pacinstall='grep "\(installed\) $pkg" /var/log/pacman.log'
+alias pacupgrade="sudo pacman -Syuu"
+# alias pacpreview='pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)''
+
+# curl
+alias pic2geneva='curl -s -S -F channels=XXXXX -F token=XXXXXX https://slack.com/api/files.upload -F file='
+
+
+# common directories #
+hash -d dld=/drawer/download
+hash -d aur=/developement/aur
+hash -d dev=/developement/language
+hash -d tth=/drawer/projects/tth
+hash -d pop=/var/lib/machines/poppy
+
+# helpers
+#alias myX='xrdb -merge $XDG_CONFIG_HOME/urxvt/.urxvtrc && fc-cache -vf'
+alias myps='ps -ef | grep'
+alias mypsselinux='ps axZ | grep'
+alias myavi='mencoder -oac mp3lame -lameopts cbr=128 -ovc xvid -xvidencopts bitrate=900' # file.mkv -o file.avi
+alias mystrace='strace -o ~/strace.txt'
+#alias myaura='sudo aura -Akua --aurignore=firefox-aurora,nvidia-utils-beta,nvidia-beta-dkms'
+alias mygrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias mylsblk='lsblk -o NAME,FSTYPE,SIZE,FSUSE%,MOUNTPOINT,LABEL,UUID'
+alias myfree='df -Th'
+alias myfreedir='du -sh * | sort -hr | head -n1'
+#alias mykernel='ASPROOT=. asp checkout linux'
+alias myquit='clear && logout'
+#alias myxerrors='journalctl -b -u $(systemctl -t scope | awk "/user $USER\$/ { print \$1; }")'
+alias myequalizer='qpaeq'
+alias myspace='du -h --max-depth=1 | sort -hr'
+#alias myX='xinit -- :1'
+alias mymicro='arecord -vvv -f dat /dev/null'
+alias myYoga='sudo mount.cifs //yoga/Users/gabx/Share /home/gabx/yogashare -o user=gabx,sec=ntlm'
+alias atom='LD_PRELOAD=libcurl.so.3 atom'
+alias mycp='wl-copy'
+alias mypaste='wl-paste'
+alias mystart='XDG_SESSION_TYPE=wayland dbus-run-session gnome-session'
+alias myaudio="inxi -A"
+alias mydrives='inxi -D'
+alias myrsync='rsync -qaHAXSv'
+alias mytar='tar -czvf' 
+
+
+# miscellaneous
+alias zshinit='$EDITOR $ZSHDIR/.initzsh && source $ZSHDIR/.initzsh'
+alias zshenv='$EDITOR $ZSHDIR/zshrc.d/01_zenv.zsh && source $ZSHDIR/.initzsh'
+
+
+
+
+
