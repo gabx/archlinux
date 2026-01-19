@@ -1,8 +1,0 @@
-
-# secret and API keys (till 2025-01-05)
-BINANCE_KEY = xxxxxxxxxxxxxxyyyyyyyyyyyyyyyy
-BINANCE_SECRET = xxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyy
-
-# API Key for myemailadress
-BINANCE_KEY2 = xxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyy
-BINANCE_SECRET2 = xxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyy
