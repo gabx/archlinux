@@ -1,8 +1,0 @@
-
-# reload initzsh
-
-        autoload -U zrecompile
-                [ -f $XDG_CONFIG_HOME/.initzsh ] && zrecompile -p $XDG_CONFIG_HOME/.initzsh
-                [ -f $XDG_CONFIG_HOME/.zscompdump ] && zrecompile -p $XDG_CONFIG_HOME/.zscompdump
-                [ -f $XDG_CONFIG_HOME/.zscompdump.zwc ] && zrecompile -p $XDG_CONFIG_HOME/.zscompdump.zwc
-                source $HOME/.zshrc
