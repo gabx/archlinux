@@ -1,0 +1,20 @@
+-- https://wezterm.org/index.html
+-- to list keyboard key, run: wezterm show-keys --lua
+-- nice starter tuto: https://alexplescan.com/posts/2024/08/10/wezterm/#top
+
+-- to test a setting, run : wezterm --config-file /tmp/wezterm.lua start
+-- reload after changes: save file, Ctrl + Shift + R
+
+local wezterm = require 'wezterm'
+local config = wezterm.config_builder()
+
+require('lua.colors').setup(config)
+require('lua.appearance').setup(config)
+require('lua.plugins').setup(config)
+require('lua.env').setup(config)
+require('lua.options').setup(config)
+require('lua.theme').setup(config)
+require('lua.keys').setup(config)
+require('lua.events').setup()
+
+return config
