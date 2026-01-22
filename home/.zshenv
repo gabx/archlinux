@@ -1,0 +1,11 @@
+# 1. Définition des standards XDG
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
+# 2. Indispensable : Dire à Zsh où est sa config
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+# 3. Variables globales critiques (Optionnel)
+# export MOZ_ENABLE_WAYLAND=1
