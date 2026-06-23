@@ -1,0 +1,11 @@
+-- Configuration des lancements automatiques
+hl.on("hyprland.start", function()
+	hl.exec_cmd("uwsm finalize")
+	hl.exec_cmd("uwsm app -- waybar")
+	hl.dsp.exec_cmd("uwsm app -- swaync")
+	hl.exec_cmd("uwsm app -- firefox")
+	hl.exec_cmd("uwsm app -- wezterm start --always-new-process")
+	hl.exec_cmd("uwsm app -- chromium")
+	hl.exec_cmd("uwsm app -- thunderbird")
+	hl.exec_cmd("uwsm app -- nautilus")
+end)

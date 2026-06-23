@@ -1,0 +1,41 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "custom/btc", "custom/hype"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "all-outputs": false,
+    "on-click": "activate"
+  },
+
+  "clock": {
+    "format": "{:%H:%M:%S}",
+    "interval": 1
+  },
+
+  "custom/btc": {
+    "exec": "$HOME/.config/waybar/scripts/btc.sh",
+    "return-type": "json",
+    "interval": 60,
+    "format": "{}",
+    "tooltip": true
+  },
+  "custom/hype": {
+    "format": "{}",
+    "return-type": "json",
+    "interval": 60,
+    "exec": "~/.config/waybar/scripts/hype.sh"
+},
+
+"pulseaudio": {
+    "format": "Vol {volume}%",
+    "format-muted": "muet",
+    "scroll-step": 5,
+    "on-click": "~/.config/waybar/scripts/audio-out.sh",
+    "on-click-right": "pwvucontrol"
+}
+}
