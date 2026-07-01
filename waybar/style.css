@@ -1,44 +1,56 @@
 * {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 13px;
-  border: none;
-}
-
-#workspaces button {
-  padding: 0 10px;
-  color: #ffffff;
+  /*font-family: "JetBrainsMono Nerd Font";*/
+  font-family: "InconsolataGo Nerd Font Mono";
+  font-size: 18px;
   font-weight: bold;
-}
-
-#workspaces button.active {
-  color: #1a1b26;
-  background: #7aa2f7;
-}
-
-#workspaces button.empty {
-  color: #8189b3;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
 }
 
 window#waybar {
   background-color: #476480;
+  color: #e0e8f0;
 }
 
+/* Pilules : fond légèrement plus sombre, arrondi */
+#workspaces,
+#clock,
+#tray,
+#pulseaudio,
+#custom-btc,
+#custom-hype {
+  background-color: #3d566d;
+  padding: 0 12px;
+  margin: 4px 3px;
+  border-radius: 10px;
+}
+
+/* Workspaces */
+#workspaces button {
+  color: #c1d2e2;
+  padding: 0 6px;
+  border-radius: 8px;
+}
+#workspaces button.active {
+  color: #1a1b26;
+  background: #84a6c5;
+}
 #workspaces button:hover {
-  color: #1a1b26;        /* chiffre sombre, bien lisible */
-  background: #7aa2f7;   /* fond défini, plus de voile GTK aléatoire */
+  color: #1a1b26;
+  background: #93b1cc;
+}
+#workspaces button.empty {
+  color: #7e8c9a;
 }
 
-#clock {
-    color: #ffffff;
-    font-weight: bold;
-}
+#clock { color: #ffffff; }
 
-#custom-hype, #custom-btc {
-    color: #dee5ec; 
-    font-size: 15px;
-    padding: 0 8px;
-    font-weight: bold; 
-}
-
-#pulseaudio { color: #eff3f7; padding: 0 8px; font-weight: bold; }
+#pulseaudio { color: #c1d2e2; }
 #pulseaudio.muted { color: #7e8c9a; }
+
+#custom-btc, #custom-hype { color: #eff3f7; }
+
+
+#tray { background-color: #3d566d; }
+#tray menu { background-color: #283949; color: #e0e8f0; }

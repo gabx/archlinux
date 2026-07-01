@@ -1,10 +1,11 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 28,
+  "height": 30,
+  "spacing": 6,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "custom/btc", "custom/hype"],
+  "modules-right": ["tray", "pulseaudio", "custom/btc", "custom/hype"],
 
   "hyprland/workspaces": {
     "format": "{name}",
@@ -13,29 +14,42 @@
   },
 
   "clock": {
-    "format": "{:%H:%M:%S}",
-    "interval": 1
+    "format": "{:L%A %d %B  %H:%M:%S}",
+    "interval": 1,
+    "locale": "fr_FR.UTF-8",
+    "on-click": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"5\" })'"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "󰝟  muet",
+    "format-icons": {
+      "headphone": "󰋋",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "scroll-step": 5,
+    "on-click": "~/.config/waybar/scripts/audio-out.sh",
+    "on-click-right": "pwvucontrol"
   },
 
   "custom/btc": {
     "exec": "$HOME/.config/waybar/scripts/btc.sh",
     "return-type": "json",
     "interval": 60,
-    "format": "{}",
+    "format": "󰠓 {}",
     "tooltip": true
   },
+
   "custom/hype": {
-    "format": "{}",
+    "exec": "$HOME/.config/waybar/scripts/hype.sh",
     "return-type": "json",
     "interval": 60,
-    "exec": "~/.config/waybar/scripts/hype.sh"
-},
-
-"pulseaudio": {
-    "format": "Vol {volume}%",
-    "format-muted": "muet",
-    "scroll-step": 5,
-    "on-click": "~/.config/waybar/scripts/audio-out.sh",
-    "on-click-right": "pwvucontrol"
-}
+    "format": "󰓆 {}",
+    "tooltip": true
+  }
 }
