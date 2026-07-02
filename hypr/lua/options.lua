@@ -29,8 +29,12 @@ hl.config({
 			active_border = "0xff7aa2f7",
 			inactive_border = "0xff414868",
 		},
+
+		-- Set to true to enable resizing windows by clicking and dragging on borders and gaps
+		resize_on_border = false,
 	},
 })
+
 hl.config({
 	misc = {
 		background_color = "rgb(004687)",
