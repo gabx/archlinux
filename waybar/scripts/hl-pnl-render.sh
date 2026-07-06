@@ -20,7 +20,7 @@ printf '  %s\n' "---------------------------------------------------------------
 
 jq -r --argjson orders "$orders" --argjson mids "$mids" '
   ($orders | map(select(.reduceOnly==true and .isTrigger==true)) | map({(.coin): .triggerPx}) | add // {}) as $stops |
-  .assetPositions[].position |
+  [.assetPositions[].position |
   (.szi|tonumber) as $s |
   (.positionValue|tonumber) as $v |
   (.unrealizedPnl|tonumber) as $p |
@@ -38,16 +38,16 @@ jq -r --argjson orders "$orders" --argjson mids "$mids" '
    then (($mark - $sl | if . < 0 then -. else . end) / $mark * 100)
    else null end) as $sl_dist |
   (if $sl != null then (($sl - $entry) * $s) else null end) as $sl_loss |
-  [
-    .coin,
-    ((if $s<0 then -1 else 1 end)*$v),
-    $p,
-    ($roi*10|round/10),
-    (if $liq_dist != null then ($liq_dist*10|round/10) else "NA" end),
-    (if $sl_dist  != null then ($sl_dist*10 |round/10) else "NA" end),
-    (if $sl_loss  != null then $sl_loss                else "NA" end),
-    $f
-  ] | @tsv
+  {
+    coin: .coin,
+    v: ((if $s<0 then -1 else 1 end)*$v),
+    p: $p,
+    roi: ($roi*10|round/10),
+    liq: (if $liq_dist != null then ($liq_dist*10|round/10) else "NA" end),
+    sl: (if $sl_dist  != null then ($sl_dist*10 |round/10) else "NA" end),
+    sl_loss: (if $sl_loss  != null then $sl_loss                else "NA" end),
+    f: $f
+  }] | sort_by(-.roi) | .[] | [.coin, .v, .p, .roi, .liq, .sl, .sl_loss, .f] | @tsv
 ' <<< "$resp" |
 while IFS=$'\t' read -r c v p roi ld sd sl f; do
   roifmt=$(printf "%6.1f%%" "$roi")
