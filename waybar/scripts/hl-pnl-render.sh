@@ -24,8 +24,7 @@ jq -r --argjson orders "$orders" --argjson mids "$mids" '
   (.szi|tonumber) as $s |
   (.positionValue|tonumber) as $v |
   (.unrealizedPnl|tonumber) as $p |
-  (.marginUsed|tonumber) as $margin |
-  ((if $margin != 0 then ($p / $margin * 100) else 0 end)) as $roi |
+  ((if $v != 0 then ($p / $v * 100) else 0 end)) as $roi |
   ((.cumFunding.sinceOpen // "0")|tonumber|-.) as $f |
   (.entryPx|tonumber) as $entry |
   ($mids[.coin] | tonumber) as $mark |
