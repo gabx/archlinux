@@ -15,7 +15,8 @@ mids=$(curl -s --max-time 8 -X POST https://api.hyperliquid.xyz/info \
   -H 'Content-Type: application/json' \
   -d '{"type":"allMids"}')
 
-printf '\n  %-6s %8s %7s %7s %6s %6s %8s %7s\n' "TOKEN" "USDC" "PnL" "ROI" "LIQ" "SL" "PP" "FUND"
+hdr_col='\e[1;38;5;110m'; hdr_rst='\e[0m'
+printf "\n  ${hdr_col}%-6s %8s %7s %7s %6s %6s %8s %7s${hdr_rst}\n" "TOKEN" "USDC" "PnL" "ROI" "LIQ" "SL" "PP" "FUND"
 printf '  %s\n' "----------------------------------------------------------------"
 
 jq -r --argjson orders "$orders" --argjson mids "$mids" '
