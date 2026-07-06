@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 cls="hl-pnl-box"
 render="$HOME/.config/waybar/scripts/hl-pnl-render.sh"
-bw=860; bh=260; margin=8   # largeur, hauteur de la box, marge
+bw=960; bh=260; margin=8   # largeur, hauteur de la box, marge
 
 # Toggle : fermer si déjà ouverte
 pid=$(hyprctl clients -j | jq -r --arg c "$cls" '.[]|select(.class==$c)|.pid' | head -1)

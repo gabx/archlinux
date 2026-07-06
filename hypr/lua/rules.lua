@@ -11,4 +11,4 @@ hl.window_rule({ match = { class = "org.wezfurlong.wezterm" }, workspace = "2 si
 hl.window_rule({ match = { class = "chromium" }, workspace = "3 silent" })
 hl.window_rule({ match = { class = "org.mozilla.Thunderbird" }, workspace = "5 silent" })
 hl.window_rule({ match = { class = "org.gnome.Nautilus" }, workspace = "4 silent" })
-hl.window_rule({ match = { class = "hl-pnl-box" }, float = true, size = {480, 260}, move = {1432, 38} })
+hl.window_rule({ match = { class = "hl-pnl-box" }, float = true, size = {560, 260}, move = {1352, 38} })
