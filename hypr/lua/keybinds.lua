@@ -21,7 +21,7 @@ hl.bind(vars.mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(vars.mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Changer de bureau (Mod+1..5)
-for i = 1, 5 do
+for i = 1, 8 do
 	local n = tostring(i)
 	hl.bind(vars.mainMod .. " + " .. n, hl.dsp.focus({ workspace = n }))
 end
